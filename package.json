@@ -1,0 +1,9 @@
+{
+  "name": "rpg-gps-wiki",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "wiki:build": "node scripts/build-wiki.mjs",
+    "test": "node --test tests/wiki-history.test.js"
+  }
+}
