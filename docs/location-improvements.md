@@ -67,3 +67,8 @@ Le bouton **Courrier** présente les messages reçus. L’action **Envoyer un me
 ## Validation
 
 `node --test tests/*.test.js` vérifie les règles du moteur et les régressions. `tests/location-improvement-rules.test.js` couvre notamment les niveaux de fortification, les soins cumulés, les formations, les stocks d’importation, les objets renforcés, les habitants en expédition, les sauvegardes, le guet et la livraison des courriers.
+
+
+## PNJ et marché
+
+Les PNJ ne sont pas des marchandises : spécialistes (géologue, cartographe, ouvriers, etc.), officiers, personnages de quête et populations sont exclus des offres du marché. Le serveur refuse leur achat et leur vente, même par commande directe, sans modifier les stocks ni l’or. Leur recrutement et leurs interactions dédiées restent inchangés.

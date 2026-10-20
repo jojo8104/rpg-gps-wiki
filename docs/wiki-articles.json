@@ -1,0 +1,390 @@
+{
+  "startup-menu.md": {
+    "summary": "Choisir le bon parcours pour démarrer, rejoindre ou reprendre une partie.",
+    "explanation": [
+      "Jeu rapide et préparation détaillée répondent à deux besoins : entrer dans une salle avec peu de réglages, ou préparer les lieux et le terrain d’une sortie. Dans les deux cas, choisir un joueur et valider le terrain ne remplace pas la validation du démarrage par le serveur.",
+      "Les paragraphes datés ci-dessous retracent l’évolution de l’interface. Ils expliquent notamment pourquoi un ancien écran ou bouton peut avoir été déplacé ; ils ne constituent pas de nouvelles règles de progression."
+    ],
+    "images": [
+      {
+        "path": "welcome-landscape.png",
+        "caption": "Illustration d’accueil du jeu, utilisée pour présenter les aventures."
+      }
+    ]
+  },
+  "party-preparation.md": {
+    "summary": "Préparer le terrain réel, les quêtes, les lieux et les QR codes avant la sortie.",
+    "explanation": [
+      "La préparation suit un ordre : le terrain fixe le cadre, puis le scénario détermine les quêtes et leurs lieux. Un lieu partagé entre plusieurs quêtes conserve une seule configuration, ce qui évite de placer plusieurs fois le même village.",
+      "Un emplacement QR doit être confirmé sur le terrain ; une position connue sur la carte et une installation réellement validée sont deux états différents. Les contraintes de présence et d’accès continuent d’être contrôlées par le serveur."
+    ],
+    "images": [
+      {
+        "path": "markers/village.png",
+        "caption": "Repère de village : un lieu peut être commun à plusieurs quêtes."
+      }
+    ]
+  },
+  "hero-items.md": {
+    "summary": "Comprendre les emplacements, les sources d’équipement et les limites d’acquisition.",
+    "explanation": [
+      "Il faut distinguer posséder un objet dans les bagages et le porter. Les incompatibilités, comme une arme à deux mains et un objet déjà tenu, sont vérifiées avant toute modification : un refus ne doit pas consommer l’objet.",
+      "Les stocks et quotas évitent qu’un rechargement de page crée de nouveaux équipements. Une récompense débloquée peut encore dépendre du quota disponible au moment de son retrait. Le nom du fichier d’image n’indique pas les pouvoirs de l’objet : seuls sa fiche et ses bonus font foi."
+    ],
+    "images": [
+      {
+        "path": "equipment/iron-sword.png",
+        "caption": "Épée de fer : illustration associée explicitement à cet équipement dans le catalogue."
+      },
+      {
+        "path": "equipment/round-shield.png",
+        "caption": "Bouclier rond : son emplacement et ses bonus proviennent de la fiche d’équipement."
+      }
+    ]
+  },
+  "hero-progression-display.md": {
+    "summary": "Distinguer progression officielle, récompense de marche et animation d’XP.",
+    "explanation": [
+      "Le serveur attribue la progression ; l’interface annonce la différence entre deux états officiels. Revoir une animation ou rafraîchir la page ne donne donc pas un second gain.",
+      "Les paliers de marche portent sur la distance fiable cumulée. À 500 mètres validés, le bonus décrit ici est de 100 XP ; une mesure rejetée ne contribue pas au total. La carte fictive utilise la conversion prévue par le même calcul serveur."
+    ],
+    "images": [
+      {
+        "path": "portraits/hero-wanderer.png",
+        "caption": "Portrait du héros guerrier. La progression et le grade restent des données du moteur."
+      }
+    ]
+  },
+  "mage-astral-travel.md": {
+    "summary": "Interagir à distance avec une cible visible sans déplacer le corps du Mage.",
+    "explanation": [
+      "La projection déplace une portée d’interaction, pas le héros réel. Une cible doit être connue ou détectée et son centre doit rester dans le rayon du grade. Le geste de glissement facilite le ciblage mais n’accorde aucun droit supplémentaire.",
+      "La fenêtre de dix secondes commence à l’activation, tout comme la recharge de dix minutes. Ouvrir une fiche ne consomme pas le pouvoir ; une action réussie le fait. Ce pouvoir disponible est distinct du concept de combat à distance encore prévu."
+    ],
+    "images": [
+      {
+        "path": "portraits/hero-mage.png",
+        "caption": "Portrait du Mage, classe disposant du voyage astral."
+      }
+    ]
+  },
+  "hero-map-sprites.md": {
+    "summary": "Reconnaître les classes et comprendre l’orientation des héros sur la carte.",
+    "explanation": [
+      "L’apparence suit la classe officielle connue. Les poses de marche et les miroirs des directions ouest servent uniquement à rendre les déplacements lisibles ; changer de côté un accessoire dans une image ne change pas l’équipement.",
+      "Le navigateur interpole les positions reçues pour obtenir une marche fluide. Il ne calcule ni déplacement officiel ni XP à partir des pas dessinés."
+    ],
+    "images": [
+      {
+        "path": "heroes/mage-jrpg-walk-v1.png",
+        "caption": "Planche de marche du Mage : plusieurs orientations et poses du même personnage."
+      },
+      {
+        "path": "heroes/ranger-jrpg-walk-v1.png",
+        "caption": "Planche de l’Éclaireur ; les vues ouest utilisent les miroirs prévus par le rendu."
+      }
+    ]
+  },
+  "army-map-banners.md": {
+    "summary": "Lire un étendard sans le confondre avec une statistique de combat.",
+    "explanation": [
+      "La forme renseigne une tranche d’effectif déjà connue : 1 à 9, 10 à 29, puis 30 soldats ou plus. Elle ne révèle pas une armée dont le niveau d’information masque encore les effectifs.",
+      "Les couleurs indiquent la relation avec le joueur qui regarde la carte. Les étendards sont dessinés en CSS : il n’existe pas de fichier d’illustration à ajouter pour leur attribuer de nouvelles propriétés."
+    ],
+    "status": "Présentation"
+  },
+  "watch-lookout-sprite.md": {
+    "summary": "La vigie de l’Éclaireur prend l’apparence d’un guetteur camouflé.",
+    "explanation": [
+      "Le petit guetteur représente la balise de surveillance existante. Sa silhouette basse et ses herbes sont un choix graphique, sans bonus supplémentaire de furtivité.",
+      "Le cercle visible reste celui de la surveillance officielle. La taille du dessin varie avec le zoom ; cette variation ne modifie ni le rayon ni les alertes."
+    ],
+    "status": "Présentation",
+    "images": [
+      {
+        "path": "groups/watch-lookout-v1.png",
+        "caption": "Guetteur immobile utilisé comme apparence de la vigie."
+      }
+    ]
+  },
+  "hero-sprite-art.md": {
+    "summary": "Comment les héros restent lisibles lorsque la carte tourne ou s’incline.",
+    "explanation": [
+      "Les directions du personnage dépendent de la caméra : le même déplacement du monde peut être vu de face ou de dos. L’illustration reste droite tandis que son ancrage suit le plan de la carte.",
+      "La planche historique citée dans ce document décrit une étape de création. Les apparences actuelles sont présentées dans l’article Apparence du héros ; la priorité visuelle ne révèle jamais un héros caché."
+    ],
+    "status": "Présentation",
+    "images": [
+      {
+        "path": "heroes/hero-jrpg-walk-v2.png",
+        "caption": "Planche actuelle de marche de l’aventurier ; elle ne doit pas être confondue avec l’ancien asset de huit directions cité dans le texte historique."
+      }
+    ]
+  },
+  "location-improvements.md": {
+    "summary": "Choisir des bâtiments selon les services, la production et les places disponibles.",
+    "explanation": [
+      "Un bâtiment présent applique son effet même si le lieu a changé de type, mais cela ne rend pas toutes les constructions possibles partout. Les restrictions de construction et les effets des bâtiments sont deux règles distinctes.",
+      "Le bonus du niveau actuel remplace celui du niveau précédent : une ferme améliorée ne cumule pas tous ses anciens paliers. Les emplacements réservés aux bâtiments requis évitent qu’un développement facultatif empêche l’évolution du camp."
+    ],
+    "images": [
+      {
+        "path": "improvements/farm.png",
+        "caption": "Ferme : production de nourriture et croissance selon le niveau."
+      },
+      {
+        "path": "improvements/tavern.png",
+        "caption": "Taverne : lieu de services et de missions annexes."
+      },
+      {
+        "path": "improvements/forge.png",
+        "caption": "Forge : ses services dépendent du bâtiment et des règles d’acquisition."
+      }
+    ]
+  },
+  "location-taxes.md": {
+    "summary": "Une réserve fiscale plafonnée se remplit au rythme de la production.",
+    "explanation": [
+      "Avec 20 habitants et une ferme de niveau 2, le plafond vaut 24 or et le revenu 0,24 or par cycle. Le revenu dépend donc de la capacité fiscale ; il ne s’agit pas d’un prélèvement immédiat sur le joueur.",
+      "Attendre au-delà du plafond ne rapporte plus d’impôts. La collecte laisse les fractions dans la réserve et, en expert, diminue le contentement selon le montant prélevé. Un échec de collecte ne doit pas appliquer cette pénalité."
+    ],
+    "images": [
+      {
+        "path": "markers/village.png",
+        "caption": "Les villages actifs et peuplés font partie des lieux qui accumulent des impôts."
+      }
+    ]
+  },
+  "territories.md": {
+    "summary": "Comprendre la différence entre influence, frontière et prise de contrôle.",
+    "explanation": [
+      "La frontière est calculée à partir de l’influence des lieux contrôlés. Elle représente une approximation en cellules : le dessin ne constitue ni une mesure GPS exacte ni une extension de vision.",
+      "Être dans une zone de son équipe ne suffit pas à posséder tous ses lieux. La capture et la connexion territoriale suivent leurs propres conditions, vérifiées par le serveur."
+    ],
+    "images": [
+      {
+        "path": "markers/fort.png",
+        "caption": "Un fort est un point d’influence parmi les types de lieux pris en compte."
+      }
+    ]
+  },
+  "capital-ai.md": {
+    "summary": "La capitale utilise un trésor, des exploitations et des convois pour soutenir son armée.",
+    "explanation": [
+      "La reconquête consomme des ressources réelles : le réseau économique et les convois ont donc un rôle stratégique, au-delà du décor. Capturer une exploitation peut interrompre sa liaison à la capitale.",
+      "Le document décrit aussi une phase de campagne liée aux Greniers du roi. Sa présence dans les modules historiques ne signifie pas que tous les scénarios ou toutes les nouvelles parties déclenchent cette phase. Les anciennes sauvegardes sans cette configuration gardent leur état."
+    ],
+    "images": [
+      {
+        "path": "markers/capital.png",
+        "caption": "Illustration de la capitale, centre du réseau économique décrit ici."
+      }
+    ]
+  },
+  "caravan-map-sprites.md": {
+    "summary": "Reconnaître un convoi et distinguer sa représentation de son chargement.",
+    "explanation": [
+      "La charrette chargée est un symbole générique : le nombre de caisses dessinées ne permet pas de déduire le stock transporté ni la force de l’escorte. Il faut ouvrir la fiche officielle pour les connaître.",
+      "La marche de l’âne suit la trajectoire reçue. Tourner la caméra ou agrandir le sprite ne change ni son commerce ni son déplacement."
+    ],
+    "status": "Présentation",
+    "images": [
+      {
+        "path": "groups/caravan-jrpg-walk-v1.png",
+        "caption": "Planche de la caravane : orientations et poses du convoi générique."
+      }
+    ]
+  },
+  "autonomous-group-map-sprites.md": {
+    "summary": "Les groupes d’éclaireurs et de brigands disposent d’apparences distinctes.",
+    "explanation": [
+      "Les trois personnages des brigands forment une illustration, pas un décompte de soldats. Un groupe visible garde ses véritables effectifs, son propriétaire et sa mission dans l’état du serveur.",
+      "Un déserteur n’est pas automatiquement un brigand. Le choix du sprite respecte le type et l’identification du groupe, sans modifier les règles de détection ou les rencontres."
+    ],
+    "status": "Présentation",
+    "images": [
+      {
+        "path": "groups/brigands-jrpg-walk-v1.png",
+        "caption": "Planche des brigands : les trois silhouettes sont décoratives."
+      },
+      {
+        "path": "groups/scout-jrpg-walk-v1.png",
+        "caption": "Planche de l’éclaireur autonome, distinct du héros joueur Éclaireur."
+      }
+    ]
+  },
+  "scenario-map-definition.md": {
+    "summary": "Séparer les lieux créés, leur position, leur visibilité et leur apparition en quête.",
+    "explanation": [
+      "Un lieu peut être placé sans être découvert ; à l’inverse, connaître son nom ne valide pas sa position. Le rôle, la visibilité et la durée de vie expliquent pourquoi une trace de quête ne se comporte pas comme un village permanent.",
+      "Le monde initial minimal comprend dix lieux obligatoires. Les autres définitions du catalogue ne sont pas automatiquement créées : une quête qui exige des lieux encore non raccordés peut rester indisponible même si sa fiche existe."
+    ],
+    "images": [
+      {
+        "path": "markers/mine.png",
+        "caption": "Mine : un lieu de production et un emplacement de quête doivent être distingués par leurs définitions."
+      }
+    ]
+  },
+  "enemy-map-sprites.md": {
+    "summary": "Choisir une apparence de groupe sans inventer ses troupes ou son comportement.",
+    "explanation": [
+      "L’apparence et l’alignement sont indépendants : un loup ou un orc peut être configuré comme ennemi, neutre ou allié. L’illustration seule ne dit donc pas si le groupe attaquera.",
+      "Les modèles commencent avec une armée vide. Le concepteur doit renseigner les troupes du catalogue ; les statistiques animales et les comportements spécifiques ne sont pas déduits de l’image."
+    ],
+    "images": [
+      {
+        "path": "groups/wolves-map-front-back-v1.png",
+        "caption": "Planche du groupe de loups ; les silhouettes ne déterminent pas son effectif."
+      },
+      {
+        "path": "groups/orcs-map-front-back-v1.png",
+        "caption": "Apparence de groupe d’orcs, configurable séparément de son alignement."
+      }
+    ]
+  },
+  "quest-definition.md": {
+    "summary": "Le serveur suit les actions, les branches et les preuves de résolution d’une quête.",
+    "explanation": [
+      "Une dépendance indique ce qui doit être terminé avant une action. Un lien conditionnel choisit un chemin à partir de la sortie officielle d’une action. Ces mécanismes permettent de proposer des choix sans laisser le navigateur décider librement d’une réussite.",
+      "Une action écartée n’est pas une action accomplie : son état skipped permet de fermer une branche devenue impossible. Pour un combat à plusieurs sorties, une défaite reconnue peut être une résolution ; les récompenses réservées à la victoire doivent donc être explicitement filtrées."
+    ],
+    "images": [
+      {
+        "path": "markers/quest.png",
+        "caption": "Repère de quête ; sa progression repose sur les actions validées par le serveur."
+      }
+    ]
+  },
+  "missing-prospectors.md": {
+    "summary": "Parcours de sauvetage et de livraison des preuves des prospecteurs perdus.",
+    "explanation": [
+      "Cette fiche distingue la mission du catalogue et sa disponibilité dans le monde initial minimal. Les étapes décrites peuvent être testées lorsque les lieux requis existent ; leur présence au catalogue ne suffit pas à rendre la mission jouable au démarrage.",
+      "Le rapport et le géologue occupent chacun une place de bagage. Les prendre puis les remettre matérialise le sauvetage et ses preuves : lire le dialogue ne remplace pas ces transferts officiels."
+    ],
+    "status": "Disponibilité limitée",
+    "images": [
+      {
+        "path": "characters/armand-valgrise.png",
+        "caption": "Armand à Valgrise, interlocuteur du parcours des prospecteurs."
+      }
+    ]
+  },
+  "quest-authoring-guide.md": {
+    "summary": "Construire une fiche de quête réalisable, avec actions, dialogues et conséquences.",
+    "explanation": [
+      "Le template décrit une livraison pour montrer la structure ; ses identifiants d’exemple doivent être remplacés par des références du scénario. Copier le JSON ne crée pas à lui seul les lieux et objets nécessaires.",
+      "Commencez par un parcours simple, vérifiez chaque action sur le serveur, puis ajoutez les embranchements. Une jonction ET attend tous les chemins requis ; une jonction OU accepte un chemin sélectionné. Les récompenses de victoire doivent être rattachées à la bonne sortie."
+    ],
+    "status": "Conception"
+  },
+  "quest-editor.md": {
+    "summary": "Dessiner des actions et préparer les définitions sans confondre édition et exécution.",
+    "explanation": [
+      "Les positions des blocs organisent le schéma ; les dépendances, sorties et conditions définissent la progression. Déplacer un bloc ne change donc pas le déroulement officiel d’une quête.",
+      "Les modes coopératifs et événements stratégiques récents restent des données de conception tant que leur moteur serveur n’est pas raccordé. Le refus d’installation de ces projets protège cette distinction : un panneau éditable n’est pas la preuve que son comportement est jouable."
+    ],
+    "status": "Conception"
+  },
+  "quest-creations.md": {
+    "summary": "Déclarer ce qu’une quête crée, quand elle le crée et à quel lieu cela appartient.",
+    "explanation": [
+      "Une création est une conséquence de quête, pas un ajout libre de l’interface. Ses dépendances et son rattachement au monde permettent de conserver un état cohérent lors d’une sauvegarde ou d’une reprise.",
+      "Vérifiez les types et références acceptés dans les détails ci-dessous : un lieu, un stock et un groupe autonome ne partagent pas les mêmes données ni les mêmes règles de présence."
+    ],
+    "status": "Conception"
+  },
+  "battle-tactics.md": {
+    "summary": "Programmer les ordres sur le plateau et anticiper une résolution simultanée.",
+    "explanation": [
+      "Les deux camps préparent leurs intentions avant la résolution. Une cible peut donc ne plus être à portée au moment où l’attaque s’exécute. Valider un ordre ne garantit pas son succès si la situation change.",
+      "Le commandement limite les ordres du tour, tandis que l’autorité limite l’armée. Défendre sans ordre et choisir quelles cartes déployer font partie de la gestion de ce budget. Le dernier paragraphe sur l’interface décrit le remplacement des anciens panneaux textuels par les indications sur les cases."
+    ],
+    "images": [
+      {
+        "path": "units/spearman-thumbnail.png",
+        "caption": "Lanciers : l’un des types d’unités du combat tactique."
+      },
+      {
+        "path": "units/archer-thumbnail.png",
+        "caption": "Archer : sa portée et les effets de terrain influencent les positions à choisir."
+      }
+    ]
+  },
+  "tactical-bonuses.md": {
+    "summary": "Capturer les bonus centraux sans les confondre avec une récompense immédiate.",
+    "explanation": [
+      "Il faut occuper la case à la fin d’un déplacement officiel. Traverser brièvement un bonus pendant un harcèlement ne suffit pas : le trajet visuel ne vaut pas capture.",
+      "Les bonus d’attaque et de défense modifient temporairement des statistiques. L’XP et les objets suivent le traitement de fin de bataille ; leur apparition est aussi limitée selon la présence de joueurs humains dans les camps."
+    ],
+    "images": [
+      {
+        "path": "equipment/iron-sword.png",
+        "caption": "L’objet de bonus prévu par cette version est une épée de fer, remise par le circuit de butin sous conditions."
+      }
+    ]
+  },
+  "tactical-terrain-effects.md": {
+    "summary": "Adapter ses unités aux cases, aux structures et aux trajectoires autorisées.",
+    "explanation": [
+      "Un multiplicateur de défense ne garantit pas la même baisse en pourcentage des dégâts, puisque la défense entre dans une formule. Les effets de terrain et de structure se multiplient avant le calcul des dégâts.",
+      "Le ralentissement d’entrée sur certains terrains concerne l’étape d’entrée, pas la vitesse permanente ni la priorité d’ordre. L’ordre d’activation du mur de lances compte aussi : il ne protège pas rétroactivement contre un échange déjà résolu."
+    ],
+    "images": [
+      {
+        "path": "units/heavy-infantry-thumbnail.png",
+        "caption": "Infanterie lourde : sa défense et ses restrictions d’eau lui donnent un usage différent de la cavalerie."
+      },
+      {
+        "path": "units/light-cavalry-thumbnail.png",
+        "caption": "Cavalerie légère : la charge et le harcèlement dépendent des terrains traversés."
+      }
+    ]
+  },
+  "battle-duel-rules.md": {
+    "summary": "Retrouver le fonctionnement des anciennes batailles sauvegardées en duels.",
+    "explanation": [
+      "Les passes utilisent les effectifs et le moral du début de chaque échange, puis appliquent les pertes avant la suite. Il faut distinguer soldat blessé hors combat et soldat mort : seuls les soldats encore aptes participent.",
+      "Ces règles expliquent les duels historiques. Elles ne remplacent pas les règles de déplacement et de programmation des nouveaux plateaux tactiques."
+    ],
+    "status": "Système historique"
+  },
+  "ranged-combat.md": {
+    "summary": "Un concept de combat à distance, avec projection et pouvoirs, encore à intégrer.",
+    "explanation": [
+      "Ce texte est une spécification prévue, pas une notice de pouvoir disponible. Les dégâts du fantôme, les coûts et les conséquences de victoire ne doivent pas être déduits du voyage astral actuel.",
+      "Le point structurant envisagé est de séparer le corps réel, la projection et l’armée engagée. Tant que les validations et conséquences serveur ne sont pas intégrées, aucune nouvelle capacité de combat ne découle de cette description."
+    ],
+    "status": "Prévu — non disponible",
+    "images": [
+      {
+        "path": "portraits/hero-mage.png",
+        "caption": "Le Mage illustre ce concept ; cette image n’annonce pas sa disponibilité."
+      }
+    ]
+  },
+  "dashboard-monitoring.md": {
+    "summary": "Observer l’état officiel et ses relevés sans faire avancer une partie en pause.",
+    "explanation": [
+      "Le suivi enregistre des échantillons, pas tous les mouvements continus. Une ligne entre deux points ne prouve donc pas le trajet exact entre ces instants. Les relevés ne sont pas non plus des sauvegardes restaurables.",
+      "Le score de puissance sert à comparer les courbes avec une convention de supervision. Il ne remplace ni l’autorité ni le résultat d’un combat ; les fiches actuelles et la chronologie des positions répondent à des questions différentes."
+    ],
+    "status": "Administration"
+  },
+  "powershell-server-guide.md": {
+    "summary": "Savoir dans quelle fenêtre et sur quelle machine exécuter les commandes.",
+    "explanation": [
+      "Le tunnel SSH reste ouvert dans une première fenêtre Windows. Une deuxième sert aux commandes : après connexion SSH, elles s’exécutent sur Linux jusqu’à exit. Cette distinction évite de chercher un service Linux dans le terminal local.",
+      "Déployer, consulter le Dashboard et redémarrer sont trois opérations différentes. Un redémarrage interrompt les connexions ; fermer le tunnel ferme seulement cet accès au Dashboard, sans arrêter le serveur du jeu."
+    ],
+    "status": "Administration"
+  },
+  "wiki-maintenance.md": {
+    "summary": "Mettre à jour les articles et publier le wiki en conservant ses anciennes versions.",
+    "explanation": [
+      "Les sources sont maintenues avec le jeu afin d’accompagner ses changements. La génération met en forme les données et les documents ; l’explication éditoriale doit toujours être vérifiée lorsque les règles changent.",
+      "Chaque article possède son propre historique. Une correction crée une nouvelle version ; elle ne réécrit pas l’archive qui permet de retrouver ce qui était indiqué auparavant."
+    ],
+    "status": "Documentation"
+  }
+}

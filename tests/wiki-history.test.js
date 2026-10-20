@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { mkdtemp, readFile, rm } from "node:fs/promises";
+import { mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { pathToFileURL } from "node:url";
@@ -9,7 +9,12 @@ import { versionArticles } from "../scripts/wiki-history.mjs";
 test("le wiki conserve les versions, exige une note et ne versionne que les articles modifiés", async () => {
   const directory = await mkdtemp(join(tmpdir(), "rpg-wiki-"));
   const root = pathToFileURL(directory + "/");
-  const article = (snapshot) => ({ id: "combats", title: "Combats", snapshot });
+  const article = (snapshot) => ({
+    id: "combats",
+    title: "Combats",
+    currentHref: "combats.html",
+    snapshot,
+  });
   const unchanged = () => ({
     id: "lieux",
     title: "Lieux",
@@ -25,6 +30,7 @@ test("le wiki conserve les versions, exige une note et ne versionne que les arti
       new URL("wiki/archives/combats/v1.html", root),
       "utf8",
     );
+    assert.match(archive, /href="\.\.\/\.\.\/combats.html"/);
     const initial = await readFile(new URL("wiki/history.json", root), "utf8");
     await versionArticles({ root, articles: [article("Avant"), unchanged()] });
     assert.equal(
@@ -59,6 +65,20 @@ test("le wiki conserve les versions, exige une note et ne versionne que les arti
     assert.match(
       await readFile(new URL("wiki/archives/combats/v2.html", root), "utf8"),
       /Après/,
+    );
+    const occupied = new URL("wiki/archives/combats/v3.html", root);
+    await writeFile(occupied, "Archive déjà présente, à conserver");
+    await assert.rejects(
+      versionArticles({
+        root,
+        articles: [article("Autre correction")],
+        note: "Correction",
+      }),
+      { code: "EEXIST" },
+    );
+    assert.equal(
+      await readFile(occupied, "utf8"),
+      "Archive déjà présente, à conserver",
     );
   } finally {
     await rm(directory, { recursive: true, force: true });

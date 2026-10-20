@@ -1,5 +1,41 @@
 # Moteur de quêtes à actions
 
+Pour le template JSON, la liste des champs, les sept fiches d'action, les
+dialogues, conditions, créations, conséquences et transitions, consulter
+[Concevoir une quête](quest-authoring-guide.md). Ce guide distingue les
+dépendances, objectifs parallèles et embranchements maintenant disponibles
+dans le moteur. L'éditeur visuel reste prévu ; son format de progression
+serveur est déjà utilisable dans une fiche JSON.
+
+## Sorties et liens conditionnels
+
+`actions[].outputs` déclare les sorties nommées. `links` relie `from`, `output`
+et `to`, avec des `conditions` serveur facultatives, évaluées une seule fois à
+la sortie de l'action source, après les effets de sa réaction ActionCompleted.
+Une action ciblée par un lien n'est pas active au départ. `join: "any"` (défaut)
+attend un lien sélectionné ; `join: "all"` les attend tous. `requires` continue
+d'exiger toutes les dépendances, en plus des liens. Les cycles mixtes sont refusés.
+
+Parler utilise le `goal` du choix officiel comme sortie déclarée ; `dialogue.goal`
+n'est plus nécessaire si `outputs` est présent. Combattre peut déclarer `victory`,
+`defeat`, `draw` ; les preuves restent officielles et uniques. Sans `outputs`,
+la règle historique de victoire reste inchangée. Les autres actions utilisent
+la sortie `success` par défaut.
+
+La sortie obtenue et les décisions des liens sont sauvegardées. Une branche
+impossible devient `skipped`, sans interaction ni récompense. Cette exclusion
+se propage aux dépendances et aux liens descendants. La quête réussit lorsque
+toutes les actions sont terminées ou écartées. `terminalOutcome: "success"` ou
+`"failure"` permet une fin explicite ; les actions restantes sont alors écartées.
+Les récompenses d'action sont liées à la résolution : pour un combat à sorties,
+une défaite déclarée est une résolution, pas un refus technique. Réserver les
+effets propres à la victoire aux réactions filtrées par `actionId` et `output`.
+
+La jonction `any` ne supprime pas un autre chemin déjà sélectionné. Plusieurs
+liens de la même sortie peuvent ouvrir plusieurs objectifs parallèles. Pour
+un choix exclusif, déclarer des sorties distinctes. Sans liens ni sorties, les
+fiches et les sauvegardes existantes gardent leur progression historique.
+
 `Quest` représente une fiche immuable, sérialisable et validée. Le nouveau
 format contient `actions`, `requires`, `prerequisites`, `events`, `outcomes`,
 `publicationCondition`, `accessConditions` et `participationModes`.
@@ -137,6 +173,24 @@ indisponible si un de ses lieux manque. Les créations de lieux temporaires
 explicitement déclarées dans les prérequis restent possibles ; aucune création
 automatique ne remplace un lieu du scénario manquant.
 
+### Villages partagés du ravitaillement
+
+Le ravitaillement utilise les quatre villages économiques existants autour de
+la capitale : Aurive (`capital-resource-gold-village`), Ferrières
+(`capital-resource-iron-village`), Boisclair (`capital-resource-wood-village`)
+et Rochevive (`capital-resource-stone-village`). La fiche référence leurs
+emplacements officiels pour les conditions, les arrivées, les collectes et les
+révélations. Elle crée seulement cinq rations réservées à l'instance dans chaque
+village ; elle ne crée aucun village et ne remplace pas leurs stocks économiques.
+Les quatre collectes restent parallèles et la livraison reste de vingt rations.
+Le fort de Rochegarde est le seul lieu spécifique au ravitaillement.
+
+Les anciens emplacements `supply-village-*` sont retirés du catalogue et de la
+préparation des nouvelles parties. Les références de l'ancien scénario désactivé,
+y compris Les greniers du roi à Aurive, utilisent les villages partagés. Une partie
+déjà sauvegardée peut conserver les anciens lieux : ce changement ne supprime
+pas les lieux des sauvegardes existantes.
+
 ## Deuxième mission : Les prospecteurs perdus
 
 Le catalogue serveur contient les deux fiches à actions et leurs dialogues.
@@ -157,3 +211,26 @@ le camp, les indices, le champ de bataille et la mine. Les quêtes existantes
 peuvent conserver leurs effets revealLocation pour enrichir les renseignements
 sans modifier l’apparition. Les positions cachées ne sont pas transmises et
 la présence n’est pas accordée avant apparition au participant.
+
+
+## Journal et acceptation explicite
+
+Une proposition consultée auprès d’un chef ou à la taverne ne crée aucune entrée
+persistante dans les quêtes du héros. Seule l’acceptation validée par le serveur
+enregistre la mission active. « Plus tard » laisse le journal inchangé.
+Le journal est rafraîchi à réception de l’état officiel, y compris lorsqu’un écran
+de gestion est ouvert. Les missions du moteur sont séparées entre missions en cours
+et historique, avec progression et objectifs ; les offres restent chez leur donneur.
+Cette présentation ne modifie ni les récompenses ni les conditions de réussite.
+
+
+### Lisibilité du journal — 17 octobre 2026
+
+La page des quêtes reprend les surfaces parchemin clair, l’encre brune et la
+progression dorée des autres menus. Les anciens fonds verts des offres et résultats
+sont supprimés. Les objectifs indisponibles gardent un texte opaque lisible.
+Ce changement de présentation ne modifie aucune règle ni sauvegarde de quête.
+
+## Contrat de coopération en conception — 20 octobre 2026
+
+Le champ optionnel cooperation de la quête définit mode (solo/open/leader/together), minimumPlayers, maximumPlayers, invitation (ga-messenger) et joinInProgress (allowed/closed). Il est conservé par Quest et sa validation impose des effectifs cohérents. Le champ cooperation.type des actions accepte simultaneous, roles, relay et contribution et nécessite une quête multijoueur. Ces données décrivent une intention de conception ; leur exécution serveur reste à développer, sans modification de la progression ni des récompenses actuelles. Voir quest-editor.md pour les événements stratégiques et leurs blocs.

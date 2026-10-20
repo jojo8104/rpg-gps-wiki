@@ -4,6 +4,6 @@
   "type": "module",
   "scripts": {
     "wiki:build": "node scripts/build-wiki.mjs",
-    "test": "node --test tests/wiki-history.test.js"
+    "test": "node --test tests/wiki*.test.js"
   }
 }

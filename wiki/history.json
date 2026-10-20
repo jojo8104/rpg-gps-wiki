@@ -55,6 +55,223 @@
       "note": "Publication du wiki dans un dépôt GitHub dédié, avec conservation des archives",
       "hash": "dec27020f99f6bd06e11e4d3e5bb6b202539b807dfb2c8831551eaef8707912e",
       "file": "archives/premiers-pas/v8.html"
+    },
+    {
+      "version": 9,
+      "date": "2026-10-10T20:52:02.030Z",
+      "note": "Carte : commandes transparentes, quête serveur visible et languette de lieu sélectionné",
+      "hash": "a6cca41d2bfa6185b51e7935dc701d63f5b61bb07a2695c1bd088fe7cba42baa",
+      "file": "archives/premiers-pas/v9.html"
+    },
+    {
+      "version": 10,
+      "date": "2026-10-10T20:59:19.288Z",
+      "note": "Lisibilité et navigation cohérente des écrans de préparation",
+      "hash": "12dd14f0dfc498460e35ec6a0d7cbcc60eb10e030db4d44658281fe0a5aa4f49",
+      "file": "archives/premiers-pas/v10.html"
+    },
+    {
+      "version": 11,
+      "date": "2026-10-10T21:01:18.592Z",
+      "note": "Lisibilité et navigation cohérente des écrans de préparation",
+      "hash": "3302b02b25d171ffbe04c58f58930a958639f562288869e278ba6498f500cc7a",
+      "file": "archives/premiers-pas/v11.html"
+    },
+    {
+      "version": 12,
+      "date": "2026-10-10T21:07:28.279Z",
+      "note": "Carte : pouvoirs centrés et recentrage au-dessus de la languette de lieu",
+      "hash": "b4b5fb4c1684a5b13d8b33f84a27cebea344744da6cfec883e1ec272845422a0",
+      "file": "archives/premiers-pas/v12.html"
+    },
+    {
+      "version": 13,
+      "date": "2026-10-10T21:17:12.127Z",
+      "note": "Correction du DOM simulé des tests du menu et vérification du nettoyage de l’éditeur de terrain, sans changement des règles",
+      "hash": "f1fc726896237b158809da7810c04b3353f7fee1a1fab7c557d5aedc69441418",
+      "file": "archives/premiers-pas/v13.html"
+    },
+    {
+      "version": 14,
+      "date": "2026-10-10T22:27:20.420Z",
+      "note": "Préparation inspirée du test local, progression cliquable et dimensions du terrain",
+      "hash": "7a9b901ba4d07c62493322fa77a9f2b682d14b13f09b8e970db725c7d427a47c",
+      "file": "archives/premiers-pas/v14.html"
+    },
+    {
+      "version": 15,
+      "date": "2026-10-10T22:30:34.822Z",
+      "note": "Bouton de scan QR sur la carte au-dessus du centrage joueur",
+      "hash": "7de1a9ef945f91cda72d0c0a260eee5404fe705ef9662fd933ead607944f1a68",
+      "file": "archives/premiers-pas/v15.html"
+    },
+    {
+      "version": 16,
+      "date": "2026-10-10T22:30:54.680Z",
+      "note": "Bouton de menu : trois barres sans texte visible",
+      "hash": "19235e69e4a512161b74cc40258a7d02c853113c7f95e510cc2e4ab7846e35c0",
+      "file": "archives/premiers-pas/v16.html"
+    },
+    {
+      "version": 17,
+      "date": "2026-10-11T05:58:00.722Z",
+      "note": "Carte : zoom dégagé du menu en portrait et pouvoirs bas en paysage",
+      "hash": "94dfc9c2bc45361b4359d411b43ee34a129a83daed988bd368522d57ec55997d",
+      "file": "archives/premiers-pas/v17.html"
+    },
+    {
+      "version": 18,
+      "date": "2026-10-11T06:42:04.074Z",
+      "note": "Retrait des lieux exclusifs des quêtes désélectionnées et clarification des contraintes de placement ; formats de terrain prévus",
+      "hash": "5906f0542c2cac36ae31be427a80ce5299a6c9844846be46e6502b16598153dc",
+      "file": "archives/premiers-pas/v18.html"
+    },
+    {
+      "version": 19,
+      "date": "2026-10-11T08:28:05.870Z",
+      "note": "Conserver les lieux économiques réutilisés par les quêtes et préciser le principe d’association aux lieux du monde",
+      "hash": "77d4cf95be955c1b7717041b9b88c2150f57883159f0d188459b9d9c49c86f1f",
+      "file": "archives/premiers-pas/v19.html"
+    },
+    {
+      "version": 20,
+      "date": "2026-10-11T15:36:59.152Z",
+      "note": "Validation progressive de la préparation IRL, date et impression conditionnelles aux QR, repères de lieux sur la carte",
+      "hash": "7d4f8ef1ae2328aa560fc2dff1292e9206ec62f8117e88dbe3f0e93ad4ae5649",
+      "file": "archives/premiers-pas/v20.html"
+    },
+    {
+      "version": 21,
+      "date": "2026-10-11T16:43:35.801Z",
+      "note": "Monde initial de dix lieux et report des missions nécessitant des lieux supplémentaires",
+      "hash": "f060f65b149ffbccca60acc5f5d594a167f380e6455c26cf09e234a9fbec23da",
+      "file": "archives/premiers-pas/v21.html"
+    },
+    {
+      "version": 22,
+      "date": "2026-10-11T16:45:01.945Z",
+      "note": "Partie rapide : terrain, réglages compacts, joueurs ; scénario facultatif et reprise séparée",
+      "hash": "048a3f52ef21b2722cad1824d5a20cbbde0f7636d7a8543cefb16c5340f83805",
+      "file": "archives/premiers-pas/v22.html"
+    },
+    {
+      "version": 23,
+      "date": "2026-10-11T16:53:34.805Z",
+      "note": "Retrait de sept tests de quêtes historiques obsolètes, démarrage sans ancien camp et mesure correcte des diffusions réseau",
+      "hash": "1e8e0df344c6d10d4b0b70c807a337235a7fa31fd091983e97c5708783b302f2",
+      "file": "archives/premiers-pas/v23.html"
+    },
+    {
+      "version": 24,
+      "date": "2026-10-11T17:13:13.755Z",
+      "note": "Accès organisateur dans le menu et fermeture des configurations au retour au jeu",
+      "hash": "1c117240b1598076c36ae5965325fdd830c6ecfeb61a86f9cc9dd225b4fea020",
+      "file": "archives/premiers-pas/v24.html"
+    },
+    {
+      "version": 25,
+      "date": "2026-10-11T18:13:36.271Z",
+      "note": "Placements différés par les joueurs après marche et stock de cases validées par repérage",
+      "hash": "35e6beec2da1cd1beda46551f7949556aa40e17a493399e482764491dd75b0e6",
+      "file": "archives/premiers-pas/v25.html"
+    },
+    {
+      "version": 26,
+      "date": "2026-10-14T11:32:10.661Z",
+      "note": "Scénarios de l’éditeur disponibles dans la salle et lancement du monde officiel",
+      "hash": "79eee9d727fa14c0c2202444aec7ca5f30e8ac1b39d63ff79931c1baf9894aa0",
+      "file": "archives/premiers-pas/v26.html"
+    },
+    {
+      "version": 27,
+      "date": "2026-10-14T12:07:01.939Z",
+      "note": "Isolation des lieux de chaque scénario et placements officiels en simulation",
+      "hash": "d59952ee838a1a1d97166d7fb2de2d39df2ee2f26f5be3f4c8486ff5ab2715ff",
+      "file": "archives/premiers-pas/v27.html"
+    },
+    {
+      "version": 28,
+      "date": "2026-10-14T19:37:54.517Z",
+      "note": "Parcours guidés, options avancées repliables et fenêtre cartographique plein écran",
+      "hash": "af1a0328508632842b3cfb8e960af77edbd9646a8fc2b0eaa72b719f392cb92d",
+      "file": "archives/premiers-pas/v28.html"
+    },
+    {
+      "version": 29,
+      "date": "2026-10-14T19:47:50.927Z",
+      "note": "Déplacement des sommets du contour et des exclusions par glisser-déposer",
+      "hash": "e9b823d3b9a5879cce0b93d3300af0fd9382bfab29e1888bb14a9accd86c32d4",
+      "file": "archives/premiers-pas/v29.html"
+    },
+    {
+      "version": 30,
+      "date": "2026-10-16T21:54:02.278Z",
+      "note": "Choix du personnage par les mêmes fiches dans le lobby et la partie test",
+      "hash": "ffee312e219c72158f9145ba2b6f7bffd52ffc8e40ffd66b3dc183dd3086084f",
+      "file": "archives/premiers-pas/v30.html"
+    },
+    {
+      "version": 31,
+      "date": "2026-10-16T22:34:00.128Z",
+      "note": "Correction de la fixture du rendu en arrière-plan : actualiser les quêtes en préservant les panneaux de gestion",
+      "hash": "a8385244635bcb1f6cbc37a93c30269ff5102f8108334e042669444e4785a51b",
+      "file": "archives/premiers-pas/v31.html"
+    },
+    {
+      "version": 32,
+      "date": "2026-10-17T12:49:04.924Z",
+      "note": "Intégration des neuf armoiries noir et blanc aux fiches QR, sans modification des règles",
+      "hash": "f0a3ccda4d7ed614a84529dd0b5342786cbc0c915778de9445d1d9b98ce0644d",
+      "file": "archives/premiers-pas/v32.html"
+    },
+    {
+      "version": 33,
+      "date": "2026-10-18T21:55:52.702Z",
+      "note": "Respect des zones de sécurité du téléphone dans les premiers menus et bouton corbeille des joueurs",
+      "hash": "c66c4713b69da9cf4de58f11f81906cafadf265a74faff9cf2be436b15fe3e69",
+      "file": "archives/premiers-pas/v33.html"
+    },
+    {
+      "version": 34,
+      "date": "2026-10-19T10:28:07.883Z",
+      "note": "Correction de la validation initiale du scénario et des marges système sur téléphone",
+      "hash": "5603131347647c6115fb67a1d462ebc6034782068b34007abe6e2654cd8ebbde",
+      "file": "archives/premiers-pas/v34.html"
+    },
+    {
+      "version": 35,
+      "date": "2026-10-20T16:15:17.184Z",
+      "note": "Retour de test chaos : carte continue, progression de marche, sauvegardes, convois et supervision historique",
+      "hash": "c84eab76f9befaec92ff221b45a75e4062c002918ad8567e626d6bacfb585489",
+      "file": "archives/premiers-pas/v35.html"
+    },
+    {
+      "version": 36,
+      "date": "2026-10-20T21:44:14.751Z",
+      "note": "Récupération des extractions OSM expirées par secteurs persistants et délais coordonnés",
+      "hash": "cd5f0bb5dee31c096f777d462fcb1c1034e780b5bcd52f9bdb3f3265af3d2a05",
+      "file": "archives/premiers-pas/v36.html"
+    },
+    {
+      "version": 37,
+      "date": "2026-10-20T22:23:10.702Z",
+      "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
+      "hash": "2befca95023e57c42e6ea343962783d7c72a7a5ca283c33ab5cc9fc24a4b21c6",
+      "file": "archives/premiers-pas/v37.html"
+    },
+    {
+      "version": 38,
+      "date": "2026-10-20T22:31:55.923Z",
+      "note": "Guide organisé en articles HTML illustrés et liens de référence expliqués",
+      "hash": "231e6ec6fc4430d9870b4ab04ff7113f88eb5b6003443119c5e79c0c4f74564b",
+      "file": "archives/premiers-pas/v38.html"
+    },
+    {
+      "version": 39,
+      "date": "2026-10-20T22:34:00.953Z",
+      "note": "Pages individuelles, résumés de lecture et articles de référence expliqués et illustrés",
+      "hash": "54df8608a150fa032f049036091fd88e77e5e57466fe4eb9e4a3d7ed9130f4d2",
+      "file": "archives/premiers-pas/v39.html"
     }
   ],
   "heros-armee": [
@@ -148,6 +365,27 @@
       "note": "Suppression des cavaliers d’essai et de la montée de niveau automatique au démarrage des héros joueurs",
       "hash": "f2e11108d87242ca301c06665ee68c1af2867195707afc87be8d9ebd5ea8abd0",
       "file": "archives/heros-armee/v13.html"
+    },
+    {
+      "version": 14,
+      "date": "2026-10-20T16:15:17.184Z",
+      "note": "Retour de test chaos : carte continue, progression de marche, sauvegardes, convois et supervision historique",
+      "hash": "c924ac5f203e406879f159c8f91a3c6001e679461e041503c59fe2803fc0ceef",
+      "file": "archives/heros-armee/v14.html"
+    },
+    {
+      "version": 15,
+      "date": "2026-10-20T22:23:10.702Z",
+      "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
+      "hash": "7e0dd7f3c7f26a6e5fddff7bf8bdc0a8f21b8d7511d9b54f1f06a0167e4bbcce",
+      "file": "archives/heros-armee/v15.html"
+    },
+    {
+      "version": 16,
+      "date": "2026-10-20T22:34:00.953Z",
+      "note": "Pages individuelles, résumés de lecture et articles de référence expliqués et illustrés",
+      "hash": "f1201b9619684a101abcf02fc7d9c0ccb09bee41cee944c7948c78c88006569d",
+      "file": "archives/heros-armee/v16.html"
     }
   ],
   "lieux": [
@@ -241,6 +479,76 @@
       "note": "Précisions sur les positions préférées et la visibilité des lieux durables",
       "hash": "84f5da9c80cff0e3345b7ce27fe060209d14df8f8d6b23e1e8ebe5113bf2f673",
       "file": "archives/lieux/v13.html"
+    },
+    {
+      "version": 14,
+      "date": "2026-10-11T15:21:47.907Z",
+      "note": "Actualisation des fixtures historiques vers les villages économiques partagés, sans changement des règles",
+      "hash": "cfcab5a4252bdb97576d8da5f78a099fdecd2456946da0e9cfd8db8635c07616",
+      "file": "archives/lieux/v14.html"
+    },
+    {
+      "version": 15,
+      "date": "2026-10-11T16:42:30.299Z",
+      "note": "Monde initial limité à la capitale, quatre villages, quatre ressources et Rochegarde",
+      "hash": "72ec4690d6579279902a6f88cd28694387157e2d1854b8ff8917046ec4fcd1ab",
+      "file": "archives/lieux/v15.html"
+    },
+    {
+      "version": 16,
+      "date": "2026-10-11T16:53:34.805Z",
+      "note": "Retrait de sept tests de quêtes historiques obsolètes, démarrage sans ancien camp et mesure correcte des diffusions réseau",
+      "hash": "147087856968b619fb3714ad88b873077496c270a965075d0b1430e71452f804",
+      "file": "archives/lieux/v16.html"
+    },
+    {
+      "version": 17,
+      "date": "2026-10-11T18:13:36.271Z",
+      "note": "Placements différés par les joueurs après marche et stock de cases validées par repérage",
+      "hash": "7cfb9368124fac55362eab96db279a5ab52ca936634ab5e20ca3af2fbba1ba71",
+      "file": "archives/lieux/v17.html"
+    },
+    {
+      "version": 18,
+      "date": "2026-10-11T23:15:01.228Z",
+      "note": "Ajout de l’atelier web PC : schéma de quête, fiches par action, carte optionnelle et export validé par le serveur",
+      "hash": "ec459c5e57a814cfca83d4662fb8fb2916486685606c874d3175481836630961",
+      "file": "archives/lieux/v18.html"
+    },
+    {
+      "version": 19,
+      "date": "2026-10-17T16:48:33.129Z",
+      "note": "Interdire le commerce des PNJ et populations au marché",
+      "hash": "8a88cf22228eeff6183134fb6f401a97f86b74fc36359924ee70f9006c3cbd1e",
+      "file": "archives/lieux/v19.html"
+    },
+    {
+      "version": 20,
+      "date": "2026-10-18T04:20:40.205Z",
+      "note": "Préparation des sprites face et dos des ennemis et de la faune, sans changement de règles",
+      "hash": "ac435d005b0c64b77916a711803a345ddd141b9611c0f65b590109299dad3c3c",
+      "file": "archives/lieux/v20.html"
+    },
+    {
+      "version": 21,
+      "date": "2026-10-18T04:54:22.953Z",
+      "note": "Modèles de groupes autonomes gobelins, orcs et faune : références éditeur, alignements et sprites de carte",
+      "hash": "582092159412f88ed73a56a3d1704fffa85adbfe56334ed54eaca233cad9ee78",
+      "file": "archives/lieux/v21.html"
+    },
+    {
+      "version": 22,
+      "date": "2026-10-20T22:23:10.702Z",
+      "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
+      "hash": "75b019a14f4afd15468e6103836665932c33457b308d6d50ac1b2fb52700fd73",
+      "file": "archives/lieux/v22.html"
+    },
+    {
+      "version": 23,
+      "date": "2026-10-20T22:34:00.953Z",
+      "note": "Pages individuelles, résumés de lecture et articles de référence expliqués et illustrés",
+      "hash": "0be04118074605ce87a3e85a0e78e7e6abc6d7386a05935c71e4eebb5d5aa300",
+      "file": "archives/lieux/v23.html"
     }
   ],
   "quetes": [
@@ -334,6 +642,90 @@
       "note": "Traces de pas pour les indices des prospecteurs sur la carte",
       "hash": "4c3fb2cce05017bf2146663a67d25062454c4ecb14146ede3e25041dbb3cd471",
       "file": "archives/quetes/v13.html"
+    },
+    {
+      "version": 14,
+      "date": "2026-10-11T08:23:53.329Z",
+      "note": "Le ravitaillement réutilise les quatre villages économiques autour de la capitale",
+      "hash": "4794e9ab2ff824b1b53d6b597e9a9ccb136bbb7cf67c6154d11ab2f4df0cab59",
+      "file": "archives/quetes/v14.html"
+    },
+    {
+      "version": 15,
+      "date": "2026-10-11T08:24:36.625Z",
+      "note": "Le ravitaillement réutilise les quatre villages économiques autour de la capitale",
+      "hash": "4086b8bdd9111a8c4ab7630d0a02094b11babe1cba5af79c3f1d107a182815d0",
+      "file": "archives/quetes/v15.html"
+    },
+    {
+      "version": 16,
+      "date": "2026-10-11T15:05:35.193Z",
+      "note": "Documentation du template de quête, des sept actions et des limites des embranchements",
+      "hash": "ef2034ee5dba556bacfe9f44e92b6206eebf540b90121b3c807c3b2129aa1e45",
+      "file": "archives/quetes/v16.html"
+    },
+    {
+      "version": 17,
+      "date": "2026-10-11T15:21:47.907Z",
+      "note": "Actualisation des fixtures historiques vers les villages économiques partagés, sans changement des règles",
+      "hash": "b3f29a9b708977c0a34dee1f3c99e8de38e1f234ff60090e9824687f10c4cbe2",
+      "file": "archives/quetes/v17.html"
+    },
+    {
+      "version": 18,
+      "date": "2026-10-11T16:43:35.801Z",
+      "note": "Monde initial de dix lieux et report des missions nécessitant des lieux supplémentaires",
+      "hash": "369223994269cba8e9bfa07e0b291cf2f85b66ae8c703f23f0650448c6a51e82",
+      "file": "archives/quetes/v18.html"
+    },
+    {
+      "version": 19,
+      "date": "2026-10-11T16:53:34.805Z",
+      "note": "Retrait de sept tests de quêtes historiques obsolètes, démarrage sans ancien camp et mesure correcte des diffusions réseau",
+      "hash": "6e7719a8d67863be6444fa917701021f111410c14b7f45bdcf5c5907bf06647f",
+      "file": "archives/quetes/v19.html"
+    },
+    {
+      "version": 20,
+      "date": "2026-10-11T17:07:37.388Z",
+      "note": "Moteur de quêtes : sorties nommées, liens conditionnels, jonctions et fins de branches",
+      "hash": "0f937bc82a766d7d6d5c8048074535a6e30931d6acb11008b97fe5c0c5400d34",
+      "file": "archives/quetes/v20.html"
+    },
+    {
+      "version": 21,
+      "date": "2026-10-16T21:53:14.371Z",
+      "note": "Journal actualisé à l’acceptation et consultation des missions sans enregistrement",
+      "hash": "4a5232e6256b63fec485c9a61da2e0f0fd57de67b73a986b435d8429a76963ad",
+      "file": "archives/quetes/v21.html"
+    },
+    {
+      "version": 22,
+      "date": "2026-10-17T04:44:48.217Z",
+      "note": "Lisibilité des quêtes : palette parchemin des menus et suppression des fonds verts",
+      "hash": "849611b6df7608b4e97a0c3abf67b6ed0bc2188c8a527d4e4db52c55f66a2c15",
+      "file": "archives/quetes/v22.html"
+    },
+    {
+      "version": 23,
+      "date": "2026-10-19T22:51:38.903Z",
+      "note": "Éditeur : coopération et événements stratégiques en conception",
+      "hash": "0868d95e0dd648689fba87d8980fed9d67d7a6cc3033bc8df7dd53c61b36a1d4",
+      "file": "archives/quetes/v23.html"
+    },
+    {
+      "version": 24,
+      "date": "2026-10-20T22:23:10.702Z",
+      "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
+      "hash": "02a98601e2bd91fabf0d03c8fce8ad0b93bc891ab889cf45bc347c2be6758d6c",
+      "file": "archives/quetes/v24.html"
+    },
+    {
+      "version": 25,
+      "date": "2026-10-20T22:34:00.953Z",
+      "note": "Pages individuelles, résumés de lecture et articles de référence expliqués et illustrés",
+      "hash": "f928920e99ca1a02567bf635a479570554aecbdd636f36a8694bedd671b1c23e",
+      "file": "archives/quetes/v25.html"
     }
   ],
   "combats": [
@@ -371,6 +763,20 @@
       "note": "Combat compact : carte stable, notice, validation séparée et pertes visuelles officielles",
       "hash": "ec367603368cb8775a18de5090a5e583ce3482d8fc0f23ca194c16ba2c66cb99",
       "file": "archives/combats/v5.html"
+    },
+    {
+      "version": 6,
+      "date": "2026-10-20T22:23:10.702Z",
+      "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
+      "hash": "48733d3e900ef42bfc2859cb677780a17dc12751b42954e48bebf81b57ad2534",
+      "file": "archives/combats/v6.html"
+    },
+    {
+      "version": 7,
+      "date": "2026-10-20T22:34:00.953Z",
+      "note": "Pages individuelles, résumés de lecture et articles de référence expliqués et illustrés",
+      "hash": "925adea8122b4effe3d51445e4f6f7e59537a5d5ecb444acfa5e3394cb4a0b8b",
+      "file": "archives/combats/v7.html"
     }
   ],
   "classes": [
@@ -380,6 +786,13 @@
       "note": "Version initiale du wiki",
       "hash": "d58ad2efdef52fa6d9ce3ce303c865e2d17eaf9277c3df58043d6cd13bcb8333",
       "file": "archives/classes/v1.html"
+    },
+    {
+      "version": 2,
+      "date": "2026-10-20T22:23:10.702Z",
+      "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
+      "hash": "5321c4b4ae44634e7530dbed10047c47bfbe05a1d3af72eae129eed9c486c092",
+      "file": "archives/classes/v2.html"
     }
   ],
   "unites": [
@@ -389,6 +802,13 @@
       "note": "Version initiale du wiki",
       "hash": "87f132270b6305fe6a8bb8eed6fd7baeae3431732fa08623c6966de7c13bab4b",
       "file": "archives/unites/v1.html"
+    },
+    {
+      "version": 2,
+      "date": "2026-10-20T22:23:10.702Z",
+      "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
+      "hash": "45d0c4efa44593740d9217772957d11ecb7c3be60f3ce33ace31b3e54ef21e0f",
+      "file": "archives/unites/v2.html"
     }
   ],
   "dashboard-monitoring": [
@@ -398,6 +818,625 @@
       "note": "Dashboard : relevés du monde et graphiques militaires et économiques",
       "hash": "de0a020ba5f3558d6876758ac00d926b624465f95eceb410a1dfd944c32f09c8",
       "file": "archives/dashboard-monitoring/v1.html"
+    },
+    {
+      "version": 2,
+      "date": "2026-10-20T16:15:17.184Z",
+      "note": "Retour de test chaos : carte continue, progression de marche, sauvegardes, convois et supervision historique",
+      "hash": "f1a7567def6f943f8e1903bc36d4bb35914b40be28cf64df89fe553e7f706054",
+      "file": "archives/dashboard-monitoring/v2.html"
+    },
+    {
+      "version": 3,
+      "date": "2026-10-20T16:17:27.668Z",
+      "note": "Précisions sur la conservation complète de la supervision et accès aux sauvegardes",
+      "hash": "816073a8f8f51609b320057cc74e400892bd8f910d5b3f0d9d8e03253ec819ee",
+      "file": "archives/dashboard-monitoring/v3.html"
+    },
+    {
+      "version": 4,
+      "date": "2026-10-20T20:59:13.817Z",
+      "note": "Supervision sans joueur connecté, fiches détaillées, perspective de vision, exploration et frontières",
+      "hash": "33e2992166fcc4f874c889767145210ac60255f182bc6980305676e20f8763c9",
+      "file": "archives/dashboard-monitoring/v4.html"
+    },
+    {
+      "version": 5,
+      "date": "2026-10-20T22:23:10.702Z",
+      "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
+      "hash": "b001ad868eec128a060b2a7e8e81ebbe843f2e76e4029d647fdfb560ec9698f3",
+      "file": "archives/dashboard-monitoring/v5.html"
+    },
+    {
+      "version": 6,
+      "date": "2026-10-20T22:34:00.953Z",
+      "note": "Pages individuelles, résumés de lecture et articles de référence expliqués et illustrés",
+      "hash": "9eb7116818a3e03008d74822ed09fedb86a595505ea174c2ae5e277f0dcafab8",
+      "file": "archives/dashboard-monitoring/v6.html"
+    }
+  ],
+  "concevoir-quetes": [
+    {
+      "version": 1,
+      "date": "2026-10-11T15:05:35.193Z",
+      "note": "Documentation du template de quête, des sept actions et des limites des embranchements",
+      "hash": "222f4ba83a254621b0420d71f28179ce74a3065a90d9f1aa3452969af340e18c",
+      "file": "archives/concevoir-quetes/v1.html"
+    },
+    {
+      "version": 2,
+      "date": "2026-10-11T17:07:37.388Z",
+      "note": "Moteur de quêtes : sorties nommées, liens conditionnels, jonctions et fins de branches",
+      "hash": "fc5df12301f27baedbe025ee278cffbc64a5ba8a7204b7ab700bb7fc940e791e",
+      "file": "archives/concevoir-quetes/v2.html"
+    },
+    {
+      "version": 3,
+      "date": "2026-10-11T23:15:01.228Z",
+      "note": "Ajout de l’atelier web PC : schéma de quête, fiches par action, carte optionnelle et export validé par le serveur",
+      "hash": "3f7c40c012855aa3f2d17a9df553f56ee59986993c4b8c0e2a6a7d1627899cb2",
+      "file": "archives/concevoir-quetes/v3.html"
+    },
+    {
+      "version": 4,
+      "date": "2026-10-12T22:38:16.862Z",
+      "note": "Atelier : Nouvelle quête visible, aides contextuelles et fiches PNJ, groupes autonomes et objets",
+      "hash": "fcb2d615812f120c80cce980b0f90c36df80857a1ff2516f791fcbc200584503",
+      "file": "archives/concevoir-quetes/v4.html"
+    },
+    {
+      "version": 5,
+      "date": "2026-10-12T22:38:56.604Z",
+      "note": "Atelier : Nouvelle quête visible, aides contextuelles et fiches PNJ, groupes autonomes et objets",
+      "hash": "2bf126a95fcdd1f6b569a909ac2ba95d3861c14f7e2972e13eb5f18425f93207",
+      "file": "archives/concevoir-quetes/v5.html"
+    },
+    {
+      "version": 6,
+      "date": "2026-10-12T22:45:16.111Z",
+      "note": "Atelier : composition de scénarios et enchaînements de quêtes",
+      "hash": "4dbfac8491df7bcf6762616cfa1cc7842d110ae77beba5757cae27a52e098a92",
+      "file": "archives/concevoir-quetes/v6.html"
+    },
+    {
+      "version": 7,
+      "date": "2026-10-12T22:46:44.518Z",
+      "note": "Atelier : composition de scénarios et enchaînements de quêtes",
+      "hash": "cbe0116870cffbbcbc4f411bfec662d563205afa6eac274b558488d62c63abfd",
+      "file": "archives/concevoir-quetes/v7.html"
+    },
+    {
+      "version": 8,
+      "date": "2026-10-13T04:58:28.793Z",
+      "note": "Créations de GA par les quêtes, dépendances de lieux et enregistrement serveur depuis l’éditeur",
+      "hash": "b099d2d3fafde01cc38d3e175eb7d76ece5f54d76077a029ffdbdbbe154b2a77",
+      "file": "archives/concevoir-quetes/v8.html"
+    },
+    {
+      "version": 9,
+      "date": "2026-10-13T05:07:22.812Z",
+      "note": "Documentation des créations de GA et du catalogue serveur versionné",
+      "hash": "44b0797cd746f7e3b30f329a85411bb9dbb37e1abeab5f78358ba08c02e85006",
+      "file": "archives/concevoir-quetes/v9.html"
+    },
+    {
+      "version": 10,
+      "date": "2026-10-14T09:08:01.170Z",
+      "note": "Bibliothèque d’images et apparences des lieux, PNJ, objets et GA",
+      "hash": "8c6b39c64e9e9953f51bf3be68233f22aedbebccde894319a486f11a85ed4f61",
+      "file": "archives/concevoir-quetes/v10.html"
+    },
+    {
+      "version": 11,
+      "date": "2026-10-14T09:58:53.420Z",
+      "note": "Saisie des champs structurés par clés et valeurs typées dans l’éditeur",
+      "hash": "96b2a77d679fdc22e8616dbf845d72a84b39365473e81cbecb64dc8d68f7f28f",
+      "file": "archives/concevoir-quetes/v11.html"
+    },
+    {
+      "version": 12,
+      "date": "2026-10-14T11:32:10.661Z",
+      "note": "Scénarios de l’éditeur disponibles dans la salle et lancement du monde officiel",
+      "hash": "1a97fe7142b16bd48e611f6480f5267e22c7983c8f53c332fc19419a6b7e3be1",
+      "file": "archives/concevoir-quetes/v12.html"
+    },
+    {
+      "version": 13,
+      "date": "2026-10-14T12:07:01.939Z",
+      "note": "Isolation des lieux de chaque scénario et placements officiels en simulation",
+      "hash": "85d061a95db2a87f950473579de463bc0593f0944bb14e723a89356090b42e7d",
+      "file": "archives/concevoir-quetes/v13.html"
+    },
+    {
+      "version": 14,
+      "date": "2026-10-14T12:46:27.066Z",
+      "note": "Terrain de scénario réutilisé et validé automatiquement dans la salle",
+      "hash": "57bf0c5894c36c335f1f084f2854455a0dd7ef68eac4ccf992d3b2dc499df0a3",
+      "file": "archives/concevoir-quetes/v14.html"
+    },
+    {
+      "version": 15,
+      "date": "2026-10-14T12:54:50.620Z",
+      "note": "Rôle des champs dans les aides contextuelles de l’éditeur",
+      "hash": "d87f7be2f332df1af773afeaaf111347ac688c1e2be88a54b4bafe29dbe45710",
+      "file": "archives/concevoir-quetes/v15.html"
+    },
+    {
+      "version": 16,
+      "date": "2026-10-14T13:03:10.856Z",
+      "note": "Boutons de génération aléatoire des fiches d’objets, de lieux et de PNJ",
+      "hash": "1196457b0ced361b5c2bb4d6164a96665bb6a20eeecd7ee058ce6e4737ae679b",
+      "file": "archives/concevoir-quetes/v16.html"
+    },
+    {
+      "version": 17,
+      "date": "2026-10-14T15:42:43.968Z",
+      "note": "Carte Leaflet et fond OpenStreetMap dans l’éditeur de terrain",
+      "hash": "28c0b75fd18ea9115ec138d71a0b2ce4f5c7b2d3e20de480b9baf609773379f5",
+      "file": "archives/concevoir-quetes/v17.html"
+    },
+    {
+      "version": 18,
+      "date": "2026-10-16T21:53:14.371Z",
+      "note": "Journal actualisé à l’acceptation et consultation des missions sans enregistrement",
+      "hash": "088e6aeb0b235011243b8f84a11285032db7b17f356a9b3652acfea41a369175",
+      "file": "archives/concevoir-quetes/v18.html"
+    },
+    {
+      "version": 19,
+      "date": "2026-10-17T04:44:48.217Z",
+      "note": "Lisibilité des quêtes : palette parchemin des menus et suppression des fonds verts",
+      "hash": "66387cbed9bf9d00ef9b5cc3f892f7c00e7b2c2a31ce0a30477ddb7997107a8e",
+      "file": "archives/concevoir-quetes/v19.html"
+    },
+    {
+      "version": 20,
+      "date": "2026-10-19T22:51:38.903Z",
+      "note": "Éditeur : coopération et événements stratégiques en conception",
+      "hash": "222a735b7eeaa24ea119bb5c5965ad64a377877f1d6183cafce6ddfb5a3dcd65",
+      "file": "archives/concevoir-quetes/v20.html"
+    },
+    {
+      "version": 21,
+      "date": "2026-10-20T22:23:10.702Z",
+      "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
+      "hash": "824e7f379fb33e29f492db5aada57b3170566ad5b326dec2d46c61d7f4a8e4f4",
+      "file": "archives/concevoir-quetes/v21.html"
+    },
+    {
+      "version": 22,
+      "date": "2026-10-20T22:34:00.953Z",
+      "note": "Pages individuelles, résumés de lecture et articles de référence expliqués et illustrés",
+      "hash": "b5c94efbe4da4d7faf6b33e7904c0c09c5b6d85b8ab045583730d93b8d0d5122",
+      "file": "archives/concevoir-quetes/v22.html"
+    }
+  ],
+  "commandes-powershell": [
+    {
+      "version": 1,
+      "date": "2026-10-11T15:30:20.224Z",
+      "note": "Ajout du guide PowerShell : déploiement, tunnel SSH et supervision serveur",
+      "hash": "e19e68c09f84a40307022c66c8ffbd7f47479b6c4eea2917b293d447932bfef5",
+      "file": "archives/commandes-powershell/v1.html"
+    },
+    {
+      "version": 2,
+      "date": "2026-10-20T22:23:10.702Z",
+      "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
+      "hash": "5b3800b2a2204bde8ae40bb03d1aa054ea6adb9903bca26460f7681c93c6a939",
+      "file": "archives/commandes-powershell/v2.html"
+    },
+    {
+      "version": 3,
+      "date": "2026-10-20T22:34:00.953Z",
+      "note": "Pages individuelles, résumés de lecture et articles de référence expliqués et illustrés",
+      "hash": "983dfda8fe353947e5b1f38311122a226e1f142a1e93e0eeb1e1c45515cfa33e",
+      "file": "archives/commandes-powershell/v3.html"
+    }
+  ],
+  "atelier-quetes": [
+    {
+      "version": 1,
+      "date": "2026-10-11T23:15:01.228Z",
+      "note": "Ajout de l’atelier web PC : schéma de quête, fiches par action, carte optionnelle et export validé par le serveur",
+      "hash": "972dbf42bde2cea61f2716a29d408ee566bb928192d01871d239cf1c6514a747",
+      "file": "archives/atelier-quetes/v1.html"
+    },
+    {
+      "version": 2,
+      "date": "2026-10-12T22:38:16.862Z",
+      "note": "Atelier : Nouvelle quête visible, aides contextuelles et fiches PNJ, groupes autonomes et objets",
+      "hash": "e7b83b5748776658a7e4cfb255dd45888112a28b74861ff242d8bee94f8eaeac",
+      "file": "archives/atelier-quetes/v2.html"
+    },
+    {
+      "version": 3,
+      "date": "2026-10-12T22:38:56.604Z",
+      "note": "Atelier : Nouvelle quête visible, aides contextuelles et fiches PNJ, groupes autonomes et objets",
+      "hash": "5824be2168faa756f65632fa2e946c8bc9ceec40f140c702691a946ad0decaa5",
+      "file": "archives/atelier-quetes/v3.html"
+    },
+    {
+      "version": 4,
+      "date": "2026-10-12T22:45:16.111Z",
+      "note": "Atelier : composition de scénarios et enchaînements de quêtes",
+      "hash": "97472e4421defe4eb1eacd6002ab889106b171dd2793043894d3c7d7a83fcc6d",
+      "file": "archives/atelier-quetes/v4.html"
+    },
+    {
+      "version": 5,
+      "date": "2026-10-12T22:46:44.518Z",
+      "note": "Atelier : composition de scénarios et enchaînements de quêtes",
+      "hash": "d00cda6457149cf5118aacc60db55a8e5773ddf9d03d4b2d6c9dda71245a8525",
+      "file": "archives/atelier-quetes/v5.html"
+    },
+    {
+      "version": 6,
+      "date": "2026-10-13T04:58:28.793Z",
+      "note": "Créations de GA par les quêtes, dépendances de lieux et enregistrement serveur depuis l’éditeur",
+      "hash": "0b77ada9cf5b3325851195786890b022b9b1b5aa9a1517da53f2863ad2287936",
+      "file": "archives/atelier-quetes/v6.html"
+    },
+    {
+      "version": 7,
+      "date": "2026-10-13T05:07:22.812Z",
+      "note": "Documentation des créations de GA et du catalogue serveur versionné",
+      "hash": "7b0d61ec7259f34236e1980fb8e269153ad106db3fbc2aee26b1a1c0d46315ab",
+      "file": "archives/atelier-quetes/v7.html"
+    },
+    {
+      "version": 8,
+      "date": "2026-10-14T09:08:01.170Z",
+      "note": "Bibliothèque d’images et apparences des lieux, PNJ, objets et GA",
+      "hash": "ab180c0153d37ce693fa4ffbef527d10cd9efabf12f7cf2c735e1786fdfce27d",
+      "file": "archives/atelier-quetes/v8.html"
+    },
+    {
+      "version": 9,
+      "date": "2026-10-14T09:58:53.420Z",
+      "note": "Saisie des champs structurés par clés et valeurs typées dans l’éditeur",
+      "hash": "27cef1d3958fe091304966cd264b10ba72fbe9edf489fbb992f7507ef61ea111",
+      "file": "archives/atelier-quetes/v9.html"
+    },
+    {
+      "version": 10,
+      "date": "2026-10-14T11:32:10.661Z",
+      "note": "Scénarios de l’éditeur disponibles dans la salle et lancement du monde officiel",
+      "hash": "34fad8c84e08dab0a1c99194dbcbf2a3653ada9674345dd02665af52166ff999",
+      "file": "archives/atelier-quetes/v10.html"
+    },
+    {
+      "version": 11,
+      "date": "2026-10-14T12:07:01.939Z",
+      "note": "Isolation des lieux de chaque scénario et placements officiels en simulation",
+      "hash": "f813ca002c48c0f3b072799d921433fc475c0bbe233fb42055c918eb62b8eb43",
+      "file": "archives/atelier-quetes/v11.html"
+    },
+    {
+      "version": 12,
+      "date": "2026-10-14T12:46:27.066Z",
+      "note": "Terrain de scénario réutilisé et validé automatiquement dans la salle",
+      "hash": "d5d1cf03dde76941b36f4038d3d1f2dd828bb05524e0779f63f03aaa56b1c16a",
+      "file": "archives/atelier-quetes/v12.html"
+    },
+    {
+      "version": 13,
+      "date": "2026-10-14T12:54:50.620Z",
+      "note": "Rôle des champs dans les aides contextuelles de l’éditeur",
+      "hash": "5cbee6f6dd72dd1d70a48e2cec3baf26a3d4cd510d40fa134f47a440a5543a91",
+      "file": "archives/atelier-quetes/v13.html"
+    },
+    {
+      "version": 14,
+      "date": "2026-10-14T13:03:10.856Z",
+      "note": "Boutons de génération aléatoire des fiches d’objets, de lieux et de PNJ",
+      "hash": "acd3efe4818d467d52494eba86056911abc8e00ed90ce2abc0f107d0c5ebd93f",
+      "file": "archives/atelier-quetes/v14.html"
+    },
+    {
+      "version": 15,
+      "date": "2026-10-14T15:42:43.968Z",
+      "note": "Carte Leaflet et fond OpenStreetMap dans l’éditeur de terrain",
+      "hash": "879e605c1cb346f989fe023c1654e5124b73a38b4930e76f932934fd409eb8b7",
+      "file": "archives/atelier-quetes/v15.html"
+    },
+    {
+      "version": 16,
+      "date": "2026-10-19T22:51:38.903Z",
+      "note": "Éditeur : coopération et événements stratégiques en conception",
+      "hash": "7b696e35ef959d992b60a04ad6173ab6939161f094245a6cb1990b1e8a676cdd",
+      "file": "archives/atelier-quetes/v16.html"
+    },
+    {
+      "version": 17,
+      "date": "2026-10-20T22:23:10.702Z",
+      "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
+      "hash": "cdffd8fb68b21d2dbf2df0dc56ec4cf2a069f580681bb87bbb023579c6ccff58",
+      "file": "archives/atelier-quetes/v17.html"
+    },
+    {
+      "version": 18,
+      "date": "2026-10-20T22:34:00.953Z",
+      "note": "Pages individuelles, résumés de lecture et articles de référence expliqués et illustrés",
+      "hash": "622560a264e52c57fb474d119f1fc25aff1e17dec792041c3797ea58c42bf827",
+      "file": "archives/atelier-quetes/v18.html"
+    }
+  ],
+  "article-startup-menu": [
+    {
+      "version": 1,
+      "date": "2026-10-20T22:23:10.702Z",
+      "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
+      "hash": "986f9d001644c5f742450780979a07912805001cf32a78d0dcdae100bf09a888",
+      "file": "archives/article-startup-menu/v1.html"
+    }
+  ],
+  "article-party-preparation": [
+    {
+      "version": 1,
+      "date": "2026-10-20T22:23:10.702Z",
+      "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
+      "hash": "58351df9920454c5e321fe2e7777630ae33f082774de4c854e42558b1f2e7065",
+      "file": "archives/article-party-preparation/v1.html"
+    }
+  ],
+  "article-hero-items": [
+    {
+      "version": 1,
+      "date": "2026-10-20T22:23:10.702Z",
+      "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
+      "hash": "fdbc5bdc2ea04a676cd5353565b5a9d3f60d5d5bcde83c2ee06b7d61f64a7f85",
+      "file": "archives/article-hero-items/v1.html"
+    }
+  ],
+  "article-hero-progression-display": [
+    {
+      "version": 1,
+      "date": "2026-10-20T22:23:10.702Z",
+      "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
+      "hash": "8dd23ca9918cf8dc486974bcd14fcd7abdbcb0490c76f06398fd04cd7819aa1c",
+      "file": "archives/article-hero-progression-display/v1.html"
+    }
+  ],
+  "article-mage-astral-travel": [
+    {
+      "version": 1,
+      "date": "2026-10-20T22:23:10.702Z",
+      "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
+      "hash": "8d6ff51a055900211486a192c62d846f19616cf71a2fb03d20f8dfa93b9939a7",
+      "file": "archives/article-mage-astral-travel/v1.html"
+    }
+  ],
+  "article-hero-map-sprites": [
+    {
+      "version": 1,
+      "date": "2026-10-20T22:23:10.702Z",
+      "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
+      "hash": "384d7e90100b5a723cbc1d31a5f5b3d7fcde1a51e633228a1d51dc22d5345751",
+      "file": "archives/article-hero-map-sprites/v1.html"
+    }
+  ],
+  "article-army-map-banners": [
+    {
+      "version": 1,
+      "date": "2026-10-20T22:23:10.702Z",
+      "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
+      "hash": "9f33321124070693efb02ea32301b593fefa4212965c3db8512df8d8ebd0ab5a",
+      "file": "archives/article-army-map-banners/v1.html"
+    }
+  ],
+  "article-watch-lookout-sprite": [
+    {
+      "version": 1,
+      "date": "2026-10-20T22:23:10.702Z",
+      "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
+      "hash": "26873778cd12519724df5fdc4d30a6faba6cf21d8e66208aa9e8ad81ece1d0bf",
+      "file": "archives/article-watch-lookout-sprite/v1.html"
+    }
+  ],
+  "article-hero-sprite-art": [
+    {
+      "version": 1,
+      "date": "2026-10-20T22:23:10.702Z",
+      "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
+      "hash": "b7bf90cffa41b2be6fe14b7a1eac1015226d1467f809a3ed020c40fb5b0a89b0",
+      "file": "archives/article-hero-sprite-art/v1.html"
+    }
+  ],
+  "article-location-improvements": [
+    {
+      "version": 1,
+      "date": "2026-10-20T22:23:10.702Z",
+      "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
+      "hash": "c7fee3fd092b2ce515f3bb48fdd07e5c56e63889032c103dbc6c1ad160ab196f",
+      "file": "archives/article-location-improvements/v1.html"
+    }
+  ],
+  "article-location-taxes": [
+    {
+      "version": 1,
+      "date": "2026-10-20T22:23:10.702Z",
+      "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
+      "hash": "d59763a41f09a8b4fb8e8dce1c0d4b492717bf5f7f1fdc51252d23b594adeabf",
+      "file": "archives/article-location-taxes/v1.html"
+    }
+  ],
+  "article-territories": [
+    {
+      "version": 1,
+      "date": "2026-10-20T22:23:10.702Z",
+      "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
+      "hash": "20aa660351c2c54e6b79fa136a244ce16a6593f60c2c515c80506295eebafb71",
+      "file": "archives/article-territories/v1.html"
+    }
+  ],
+  "article-capital-ai": [
+    {
+      "version": 1,
+      "date": "2026-10-20T22:23:10.702Z",
+      "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
+      "hash": "f90800d31f366328e39a45c39b1e76fc9270473a48eab72f0fa6cab18a70c891",
+      "file": "archives/article-capital-ai/v1.html"
+    }
+  ],
+  "article-caravan-map-sprites": [
+    {
+      "version": 1,
+      "date": "2026-10-20T22:23:10.702Z",
+      "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
+      "hash": "9fd586d97aecedb9599f9ebd97af2b0cc5298fc2fa21285730b86bd38bbce458",
+      "file": "archives/article-caravan-map-sprites/v1.html"
+    }
+  ],
+  "article-autonomous-group-map-sprites": [
+    {
+      "version": 1,
+      "date": "2026-10-20T22:23:10.702Z",
+      "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
+      "hash": "2dc6497d2451ad1a7faa721f01c97eff669f21e79ae952d6a45727ea1fe70203",
+      "file": "archives/article-autonomous-group-map-sprites/v1.html"
+    }
+  ],
+  "article-scenario-map-definition": [
+    {
+      "version": 1,
+      "date": "2026-10-20T22:23:10.702Z",
+      "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
+      "hash": "9d1763fd294810ecf8dd6b9f7e4824c005aaae9fad3b6d0311500b7a3dbf2406",
+      "file": "archives/article-scenario-map-definition/v1.html"
+    }
+  ],
+  "article-enemy-map-sprites": [
+    {
+      "version": 1,
+      "date": "2026-10-20T22:23:10.702Z",
+      "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
+      "hash": "dbc1570cffdfb537a67d755d46f1edb5e3fb7db6697aa203e4f514f5a3d85eac",
+      "file": "archives/article-enemy-map-sprites/v1.html"
+    }
+  ],
+  "article-quest-definition": [
+    {
+      "version": 1,
+      "date": "2026-10-20T22:23:10.702Z",
+      "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
+      "hash": "cbbb5095534d91b5d7e291d96c5b70b9a852e3056e9974138302b9fe8ba877c8",
+      "file": "archives/article-quest-definition/v1.html"
+    }
+  ],
+  "article-missing-prospectors": [
+    {
+      "version": 1,
+      "date": "2026-10-20T22:23:10.702Z",
+      "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
+      "hash": "7d857f6e3c65ca319ac5d82b95b17119e25c4094058df86e1109bc96070079d6",
+      "file": "archives/article-missing-prospectors/v1.html"
+    }
+  ],
+  "article-quest-authoring-guide": [
+    {
+      "version": 1,
+      "date": "2026-10-20T22:23:10.702Z",
+      "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
+      "hash": "f0eb602c10f29cda437fee045cbce92b7618187f89f4ad285996eeec235f803c",
+      "file": "archives/article-quest-authoring-guide/v1.html"
+    }
+  ],
+  "article-quest-editor": [
+    {
+      "version": 1,
+      "date": "2026-10-20T22:23:10.702Z",
+      "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
+      "hash": "9d62d31618c8c983eb9c543dfe40d764f29a23056991461596c6a2d2e996e1c3",
+      "file": "archives/article-quest-editor/v1.html"
+    }
+  ],
+  "article-battle-tactics": [
+    {
+      "version": 1,
+      "date": "2026-10-20T22:23:10.702Z",
+      "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
+      "hash": "8eb39d98b7378f16afb127da03733f59f6a0917c5adb5058f92a8637c8d6cc9d",
+      "file": "archives/article-battle-tactics/v1.html"
+    }
+  ],
+  "article-tactical-bonuses": [
+    {
+      "version": 1,
+      "date": "2026-10-20T22:23:10.702Z",
+      "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
+      "hash": "8076a1801f3517e3fa936be1a12f17679518f71ac2f28ec77a2c1322fc2e62e5",
+      "file": "archives/article-tactical-bonuses/v1.html"
+    }
+  ],
+  "article-tactical-terrain-effects": [
+    {
+      "version": 1,
+      "date": "2026-10-20T22:23:10.702Z",
+      "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
+      "hash": "e726fa793edfef39fc1709fa93694e7f4de367bc56c621d6c380125bf381e55e",
+      "file": "archives/article-tactical-terrain-effects/v1.html"
+    }
+  ],
+  "article-battle-duel-rules": [
+    {
+      "version": 1,
+      "date": "2026-10-20T22:23:10.702Z",
+      "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
+      "hash": "13d3e41a75d6a7ab3c42404e04709a7e391bda62fcfd6674169459f54a6cdb9a",
+      "file": "archives/article-battle-duel-rules/v1.html"
+    }
+  ],
+  "article-ranged-combat": [
+    {
+      "version": 1,
+      "date": "2026-10-20T22:23:10.702Z",
+      "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
+      "hash": "dc4e4d3ba47e381c7c2737b9cdb33bbabbb40ce83c4d90455e68711c5948e87d",
+      "file": "archives/article-ranged-combat/v1.html"
+    }
+  ],
+  "article-dashboard-monitoring": [
+    {
+      "version": 1,
+      "date": "2026-10-20T22:23:10.702Z",
+      "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
+      "hash": "39503b1064cac8acac550a8a9ab239e1bbd75e4db5a662b104c2222e164fb11d",
+      "file": "archives/article-dashboard-monitoring/v1.html"
+    }
+  ],
+  "article-powershell-server-guide": [
+    {
+      "version": 1,
+      "date": "2026-10-20T22:23:10.702Z",
+      "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
+      "hash": "899e18c7f2b808392f562323b56404fe3b343d17e4795a04ff188de531f384a6",
+      "file": "archives/article-powershell-server-guide/v1.html"
+    }
+  ],
+  "article-wiki-maintenance": [
+    {
+      "version": 1,
+      "date": "2026-10-20T22:23:10.702Z",
+      "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
+      "hash": "3f59732e12360cc6614e328a0f5b9d2138757464e4e12eb549a6c6254090b6d2",
+      "file": "archives/article-wiki-maintenance/v1.html"
+    },
+    {
+      "version": 2,
+      "date": "2026-10-20T22:25:35.734Z",
+      "note": "Documentation HTML par sujet, explications éditoriales et médias conservés avec les archives",
+      "hash": "9c1f74eb1d6baf8d996862a5031bfadfc722478afb6d4193d3445d1c4f61da62",
+      "file": "archives/article-wiki-maintenance/v2.html"
+    }
+  ],
+  "article-quest-creations": [
+    {
+      "version": 1,
+      "date": "2026-10-20T22:23:10.702Z",
+      "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
+      "hash": "186b5bf2b79dedac7106facbc37c5db1cd16beda3e5a60a9be27a8cf09da5ab5",
+      "file": "archives/article-quest-creations/v1.html"
     }
   ]
 }

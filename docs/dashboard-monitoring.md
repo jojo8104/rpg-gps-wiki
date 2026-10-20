@@ -4,15 +4,15 @@ Le Dashboard administrateur reste disponible sur `/dashboard/`, avec sa clé d�
 
 ## Relevés
 
-Le serveur enregistre un relevé compact toutes les 4 secondes lorsqu’une partie commencée possède au moins un joueur connecté. Sans joueur, simulation et relevés s’arrêtent ; consulter le Dashboard ne connecte pas un joueur. La limite de deux parties actives est conservée.
+Le serveur enregistre un relevé compact toutes les 4 secondes pour chaque partie commencée, même lorsque le dernier joueur se déconnecte. Sans joueur, le monde reste en pause mais les relevés de supervision continuent, marqués comme tels ; consulter le Dashboard ne connecte pas un joueur. Les héros déconnectés n’ajoutent pas de densité à la heatmap. La limite de deux parties actives reste inchangée.
 
-Chaque relevé contient les positions des héros, leurs effectifs mobiles et en garnison par type, autorité et score, les totaux par équipe, la population, le niveau, la production et le stock des lieux, ainsi que les résultats des combats terminés depuis le relevé précédent. Il s’agit de données de suivi, pas d’une sauvegarde permettant de restaurer tout le monde à un instant passé.
+Chaque relevé contient le statut de pause, la connexion et la vision des héros, leurs positions, leurs effectifs mobiles et en garnison par type, autorité et score, les totaux par équipe, la population, le niveau, la production et le stock des lieux, ainsi que les résultats des combats terminés depuis le relevé précédent. Il s’agit de données de suivi, pas d’une sauvegarde permettant de restaurer tout le monde à un instant passé.
 
-Les 2 000 derniers relevés sont consultables : environ 2 h 13 min de jeu continu. Les périodes sans joueurs créent des trous dans la chronologie. Le stockage est du NDJSON dans `dashboard-history/` sous le répertoire de données serveur (habituellement `/var/lib/rpg-gps`). La rotation utilise des segments de 200 relevés et garde au plus 11 segments, soit jusqu’à 2 200 lignes physiques ; seuls les 2 000 derniers relevés sont exposés. La taille réelle dépend du nombre de héros, unités et lieux : 20 Mo est une estimation, pas un plafond garanti.
+Les relevés sont conservés sur disque pendant toute la durée de la partie, sans rotation automatique, dans dashboard-history/ sous le répertoire de données serveur. Les fichiers NDJSON sont segmentés par 200 relevés. La suppression explicite d’une partie supprime son historique ; les anciennes données déjà purgées ne peuvent pas être reconstituées. Les relevés comprennent les positions des héros et des GA : les groupes disparus restent présents dans les parcours historiques.
 
-Le serveur conserve seulement les curseurs et une écriture en cours par partie ; un disque trop lent ne crée pas de file illimitée. Les lectures suivantes chargent uniquement les segments nécessaires depuis le dernier relevé reçu. Le navigateur conserve au plus 2 000 relevés de la partie sélectionnée. L’historique survit au redémarrage du serveur ; supprimer une partie depuis le Dashboard supprime aussi son historique. Aucun historique antérieur à cette version n’est reconstitué.
+L’API historique conserve une lecture récente limitée par défaut et propose scope=all pour la chronologie complète, avec un curseur since pour les mises à jour. Le Dashboard conserve cette chronologie en mémoire pendant la consultation : l’utilisation mémoire augmente avec la durée de la partie. Le curseur permet de consulter les positions jusqu’à un instant passé ; à droite, il suit le direct. Les parcours des joueurs sont continus et ceux des GA pointillés. La heatmap cumule les positions des joueurs depuis le premier relevé jusqu’à l’instant sélectionné. Les relevés sont pris toutes les 4 secondes : ils ne constituent pas un enregistrement GPS continu entre ces instants.
 
-La heatmap et les traces sur la carte restent basées sur les 2 000 dernières mesures de position, tous joueurs confondus, échantillonnées à cette même cadence. Ce tampon de carte est distinct des 2 000 relevés du monde conservés sur disque.
+Le tampon récent de positions reste disponible dans l’état courant pour compatibilité. Il sert seulement en l’absence de relevés historiques ; la vue historique utilise les données persistantes. Les graphiques de puissance et d’économie restent consultables sous la carte. La présentation regroupe les commandes, met en évidence la partie et adapte les panneaux aux petits écrans. Aucun effet sur les règles du jeu.
 
 ## Graphiques disponibles
 
@@ -31,3 +31,21 @@ La puissance des troupes vaut effectif × qualité ; les troupes mobiles reçoiv
 Les garnisons appartiennent actuellement à un joueur, sans lien enregistré avec le héros qui les a déposées. Pour éviter le double comptage, elles sont attribuées à son premier héros par identifiant stable. Le total d’équipe additionne les scores des héros, garnisons incluses une seule fois. Cette convention doit être prise en compte lorsqu’un joueur possède plusieurs héros.
 
 Ces mesures n’ont aucun effet sur les règles : le serveur reste l’unique autorité des actions, de la production, des déplacements et des combats. Le Dashboard ne charge aucun moteur de jeu sur le navigateur et utilise des graphiques Canvas sans bibliothèque de graphiques supplémentaire.
+
+## Fiches des éléments
+
+Un clic sur un joueur de la liste ou de la carte ouvre une fiche de son état officiel actuel : classe, grade, niveau, XP, PV, commandement, distance, caractéristiques, armée, équipement, bagages et ressources. Les objets de l’inventaire ouvrent leur propre fiche. Les quêtes à actions affichent leur titre, statut et liste d’objectifs, les missions actives en premier. Les renseignements et les champs supplémentaires restent consultables dans des rubriques dépliables.
+
+Les lieux détaillent propriété, contrôle, population, niveau, stocks, production, garnison, bâtiments et services. Les GA détaillent faction, comportement, statut, départ, destination, armée, chargement, mission et historique disponible. Les fiches d’objets présentent description, image disponible, usage, emplacement, rareté et bonus. Le catalogue des objets, les combats, butins, sites et zones de ressources sont également consultables. La recherche filtre les listes par nom, identifiant ou type. Les champs complémentaires utilisent des libellés et des listes structurées, sans blocs JSON. La sélection et les rubriques dépliées restent ouvertes pendant les rafraîchissements.
+
+Les fiches représentent toujours l’état actuel du serveur : déplacer le curseur historique de la carte ne prétend pas reconstituer un ancien inventaire ou une ancienne armée complète.
+
+## Perspective d’un joueur
+
+Sélectionner un joueur ou son héros choisit sa perspective cartographique ; le sélecteur permet de revenir à la vue administrateur. Le trajet affiché est alors celui de ce joueur. Les commandes indépendantes affichent le champ de vision, le brouillard supervisé et les frontières actuelles de chaque camp. Les marqueurs administrateur restent visibles au-dessus du brouillard afin de permettre la supervision du monde ; ce n’est pas une projection filtrée des seules entités connues du joueur.
+
+Le serveur fournit le rayon de vision officiel de la classe et du niveau, les zones de surveillance et la divination actives. L’interface réutilise les géométries visuelles du jeu. Les frontières proviennent directement de la vue territoriale calculée par le moteur : aucune possession n’est déduite localement depuis la proximité d’un lieu. Leur survol indique le camp.
+
+L’exploration supervisée est enregistrée séparément pour chaque joueur à partir de ses positions officielles, avec la date de première révélation des cellules et le même rayon d’exploration que dans le jeu. Elle persiste dans l’état serveur de la partie lors d’un redémarrage. Le précédent brouillard local, conservé dans le navigateur du joueur, ne peut pas être récupéré rétroactivement : la carte indique la date de début des observations disponibles. Les anciennes parties ou les terrains sans grille compatible restent consultables sans inventer de cellules explorées.
+
+Le curseur historique utilise les positions et rayons de vision enregistrés ainsi que les dates de révélation disponibles. Les zones temporaires de surveillance et de divination ne sont affichées qu’au présent ; les frontières et les fiches restent explicitement celles de l’état actuel. Les relevés de supervision ne modifient ni les règles, ni les actions, ni les gains du joueur.
