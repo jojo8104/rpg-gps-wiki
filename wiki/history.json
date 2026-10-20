@@ -272,6 +272,13 @@
       "note": "Pages individuelles, résumés de lecture et articles de référence expliqués et illustrés",
       "hash": "54df8608a150fa032f049036091fd88e77e5e57466fe4eb9e4a3d7ed9130f4d2",
       "file": "archives/premiers-pas/v39.html"
+    },
+    {
+      "version": 40,
+      "date": "2026-10-20T22:42:37.520Z",
+      "note": "Diagnostic du changement de fond OSM, accès explicite à la carte classique et sélection de personnage commune",
+      "hash": "a021365eded00b8dd4ddd18893a869584105949ac32bcb41ae15a158056b1d72",
+      "file": "archives/premiers-pas/v40.html"
     }
   ],
   "heros-armee": [
@@ -386,6 +393,13 @@
       "note": "Pages individuelles, résumés de lecture et articles de référence expliqués et illustrés",
       "hash": "f1201b9619684a101abcf02fc7d9c0ccb09bee41cee944c7948c78c88006569d",
       "file": "archives/heros-armee/v16.html"
+    },
+    {
+      "version": 17,
+      "date": "2026-10-20T22:36:14.196Z",
+      "note": "Ajout des portraits et sprites des variantes Guerrière, Mage et Éclaireur",
+      "hash": "1b018c25810b132598461bacb900eaecc8f88f94d8c08bd9b84b732b7430c7ca",
+      "file": "archives/heros-armee/v17.html"
     }
   ],
   "lieux": [
@@ -1169,6 +1183,13 @@
       "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
       "hash": "986f9d001644c5f742450780979a07912805001cf32a78d0dcdae100bf09a888",
       "file": "archives/article-startup-menu/v1.html"
+    },
+    {
+      "version": 2,
+      "date": "2026-10-20T22:42:37.520Z",
+      "note": "Diagnostic du changement de fond OSM, accès explicite à la carte classique et sélection de personnage commune",
+      "hash": "0769964f3b2c1900a162e692dea3707ba528a48d7e71be3077a5bdac2eaab8d0",
+      "file": "archives/article-startup-menu/v2.html"
     }
   ],
   "article-party-preparation": [
@@ -1437,6 +1458,24 @@
       "note": "Un article par page, documents de règles expliqués en HTML et illustrations des assets du jeu",
       "hash": "186b5bf2b79dedac7106facbc37c5db1cd16beda3e5a60a9be27a8cf09da5ab5",
       "file": "archives/article-quest-creations/v1.html"
+    }
+  ],
+  "article-hero-gender-variants": [
+    {
+      "version": 1,
+      "date": "2026-10-20T22:36:14.196Z",
+      "note": "Ajout des portraits et sprites des variantes Guerrière, Mage et Éclaireur",
+      "hash": "4ded2c0db747042038824c9ea84a0e8f77e86a82501ac8d2b23b3dabbc7ea894",
+      "file": "archives/article-hero-gender-variants/v1.html"
+    }
+  ],
+  "article-idees-et-todo": [
+    {
+      "version": 1,
+      "date": "2026-10-20T22:42:37.520Z",
+      "note": "Diagnostic du changement de fond OSM, accès explicite à la carte classique et sélection de personnage commune",
+      "hash": "fd711bb03361e95b038de0dc7c528e717ec00890c2769bd78876a5fe528a492e",
+      "file": "archives/article-idees-et-todo/v1.html"
     }
   ]
 }

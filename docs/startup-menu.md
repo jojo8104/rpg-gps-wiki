@@ -105,3 +105,9 @@ La fenêtre de préparation du scénario respecte les zones de sécurité du té
 ## Correction du retour de test (20 octobre 2026)
 
 Le menu Sauvegardes est accessible à l’organisateur dans le lobby, y compris en partie rapide, sans être renvoyé à l’écran terrain. Son ouverture charge automatiquement les sauvegardes disponibles pour son identité serveur. Créer un lobby avec le même compte ou le même appareil, ouvrir Sauvegardes et charger la partie nommée ; les anciens joueurs récupèrent ensuite leurs héros. Les contrôles serveur de propriété et de reprise restent identiques.
+
+## Même sélection de personnage après création ou connexion (21 octobre 2026)
+
+La création, le test et la connexion au lobby utilisent le même contenu de sélection de classe : titre, description, portraits, forces et caractéristiques, avec une légende accessible commune. Le sélecteur affiche un chargement tant que le catalogue n’est pas disponible ; la liste déroulante historique n’est plus présentée comme une interface alternative. L’arrivée par Rejoindre cible explicitement la page des joueurs et de leur personnage.
+
+Une classe déjà confirmée par le serveur est conservée lors du rafraîchissement du catalogue. Le lobby ne présélectionne pas une classe à la place d’un joueur et le bouton de disponibilité reste désactivé pendant le chargement des fiches. Les verrouillages d’une partie commencée ou d’une sauvegarde reprise et les rôles organisateurs sans héros restent appliqués. Ces ajustements de présentation ne changent ni les statistiques ni les validations serveur.

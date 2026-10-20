@@ -39,7 +39,9 @@
         "La fenêtre de préparation du scénario respecte les zones de sécurité du téléphone en haut et en bas. Sa hauteur est limitée à l’espace restant, tandis que le contenu central peut défiler et que les actions de validation restent accessibles. Valider et continuer initialise correctement une préparation encore absente : il n’est plus nécessaire de retirer puis remettre une quête. Le passage à l’étape suivante attend la confirmation de l’enregistrement serveur ; en cas de refus ou d’enregistrement non confirmé, l’étape reste affichée avec un message. Cette correction d’interface ne modifie ni la sélection des quêtes, ni leurs règles, ni les validations du moteur.",
         "Le fond cartographique de préparation reste visible pendant le téléchargement de la carte 2D et en cas d’échec ; Réessayer relance le téléchargement, avec un budget serveur de 120 secondes et un délai navigateur de 130 secondes. Le menu Sauvegardes de l’organisateur est accessible aussi dans une partie rapide et charge automatiquement la liste. Ces changements ne modifient pas les règles de jeu.",
         "Si l’extraction de la carte OSM expire sur les fournisseurs configurés, le serveur tente quatre secteurs successifs et réutilise ceux déjà téléchargés lors d’une reprise. Seule une carte complète est publiée, avec dédoublonnage des géométries et conservation des îlots. Le budget est de deux minutes côté serveur et 130 secondes côté navigateur ; le fond précédent reste affiché. Les limites de surface et les règles du jeu ne changent pas.",
-        "Le wiki propose désormais une page HTML par article. Les liens de référence ouvrent des articles expliqués, avec leurs tableaux et exemples mis en forme, plutôt que des fichiers texte. Les illustrations proviennent des assets du jeu ; une note en bas de page donne accès aux versions archivées. Cette organisation documentaire ne modifie aucune règle du jeu."
+        "Le wiki propose désormais une page HTML par article. Les liens de référence ouvrent des articles expliqués, avec leurs tableaux et exemples mis en forme, plutôt que des fichiers texte. Les illustrations proviennent des assets du jeu ; une note en bas de page donne accès aux versions archivées. Cette organisation documentaire ne modifie aucune règle du jeu.",
+        "Pendant le chargement de la carte 2D ou après une erreur d’extraction, Continuer avec la carte OSM conserve le fond classique raster et empêche un résultat 2D tardif de le remplacer dans la zone courante. L’ancien affichage direct des tuiles n’exigeait pas d’extraction Overpass ; la nouvelle carte 2D ajoute cette dépendance. Les essais sur le serveur du 21 octobre ont confirmé des échecs des fournisseurs même sur une très petite requête synthétique. Ce retour au fond classique ne modifie aucune règle de jeu.",
+        "La sélection de personnage utilise le même contenu en création, test et connexion : titre, portraits, descriptions et caractéristiques. Le chargement du catalogue reste explicite au lieu d’afficher une liste déroulante alternative. Rejoindre une partie ouvre directement cette étape ; une classe déjà confirmée reste sélectionnée. Les règles et validations serveur sont inchangées."
       ],
       "references": [
         {
@@ -49,6 +51,10 @@
         {
           "label": "Préparation détaillée IRL et QR codes",
           "file": "party-preparation.md"
+        },
+        {
+          "label": "Idées à implémenter, todo list et carnet d’idées",
+          "file": "idees-et-todo.md"
         }
       ],
       "summary": "Créer, préparer ou rejoindre une partie, puis se repérer dans les commandes du jeu."
@@ -67,7 +73,8 @@
         "Un étendard derrière le héros indique la taille de son armée connue : fanion pour 1 à 9 soldats, bannière verticale inspirée du sashimono pour 10 à 29, longue oriflamme verticale à deux pointes dès 30. Sans armée, aucun étendard. Pour les autres joueurs, il reste masqué tant que les effectifs ne sont pas connus au niveau d’information 3. Les couleurs reprennent celles des relations sur la carte ; ces seuils et cette animation ne changent aucune règle de jeu.",
         "Les balises de vigie de l’Éclaireur prennent l’apparence d’un petit guetteur immobile et camouflé dans les herbes, avec une capuche et un masque de tissu. Une seule vue de face reste droite lors des rotations de carte. Le sprite mesure environ 40 pixels de haut à l’échelle normale, contre 64 pour un héros. Cette apparence ne modifie ni surveillance, ni détection, ni visibilité validées par le serveur.",
         "Le glissement du fantôme astral est limité au cercle affiché : il s’arrête au bord même si le doigt ou la souris continue au-delà. Les héros déjà visibles, locaux ou distants, sont dessinés au-dessus des lieux, groupes et décors ; cette priorité d’affichage ne change pas les règles de visibilité ni de jeu.",
-        "Les convois royaux relient la capitale aux exploitations d’or, fer, bois et pierre de son économie, même si leur placement final dépasse le rayon indicatif. Les contrôles de propriété, de coût et de transport restent appliqués par le serveur."
+        "Les convois royaux relient la capitale aux exploitations d’or, fer, bois et pierre de son économie, même si leur placement final dépasse le rayon indicatif. Les contrôles de propriété, de coût et de transport restent appliqués par le serveur.",
+        "Trois variantes visuelles sont préparées : une Guerrière, un Mage masculin et un Éclaireur masculin, avec portraits et planches de marche. Ces assets sont consultables dans le wiki ; leur sélection en partie reste à raccorder. Ils ne modifient aucune règle ni validation serveur."
       ],
       "references": [
         {
@@ -97,6 +104,10 @@
         {
           "label": "Calques et sprites des héros",
           "file": "hero-sprite-art.md"
+        },
+        {
+          "label": "Variantes visuelles des héros",
+          "file": "hero-gender-variants.md"
         }
       ],
       "summary": "Développer son héros, équiper ses objets et composer son armée."

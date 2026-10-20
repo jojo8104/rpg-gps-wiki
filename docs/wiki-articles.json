@@ -386,5 +386,57 @@
       "Chaque article possède son propre historique. Une correction crée une nouvelle version ; elle ne réécrit pas l’archive qui permet de retrouver ce qui était indiqué auparavant."
     ],
     "status": "Documentation"
+  },
+  "hero-gender-variants.md": {
+    "summary": "Une Guerrière, un Mage et un Éclaireur avec portraits et sprites de marche.",
+    "explanation": [
+      "Trois variantes visuelles sont préparées : une Guerrière, un Mage masculin et un Éclaireur masculin, avec portraits et planches de marche. Ces assets sont consultables dans le wiki ; leur sélection en partie reste à raccorder. Ils ne modifient aucune règle ni validation serveur.",
+      "Chaque planche présente le même personnage dans cinq directions et trois poses. Les quinze silhouettes sont des poses d’animation, sans effet sur les effectifs ou les déplacements officiels."
+    ],
+    "status": "Visuels préparés ; sélection en partie à raccorder",
+    "images": [
+      {
+        "path": "portraits/hero-warrior-female-v1.png",
+        "caption": "Portrait de la variante Guerrière."
+      },
+      {
+        "path": "heroes/warrior-female-jrpg-walk-v1.png",
+        "caption": "Planche de marche de la variante Guerrière : cinq orientations et trois poses."
+      },
+      {
+        "path": "portraits/hero-mage-male-v1.png",
+        "caption": "Portrait de la variante Mage."
+      },
+      {
+        "path": "heroes/mage-male-jrpg-walk-v1.png",
+        "caption": "Planche de marche de la variante Mage : cinq orientations et trois poses."
+      },
+      {
+        "path": "portraits/hero-ranger-male-v1.png",
+        "caption": "Portrait de la variante Éclaireur."
+      },
+      {
+        "path": "heroes/ranger-male-jrpg-walk-v1.png",
+        "caption": "Planche de marche de la variante Éclaireur : cinq orientations et trois poses."
+      }
+    ]
+  },
+  "idees-et-todo.md": {
+    "summary": "Distinguer les fonctionnalités prévues, les idées à explorer et douze tâches concrètes pour faire avancer le jeu.",
+    "explanation": [
+      "Cette page est un carnet de conception et une proposition de priorités. Elle distingue les éléments déjà documentés, ceux qui restent à concevoir et les suggestions nouvelles ; aucune de ces listes ne rend une fonctionnalité disponible.",
+      "La todo list commence par une aventure complète et fiable, puis un socle de coopération, avant les extensions de combat et de préparation. Chaque tâche possède un résultat vérifiable ; les priorités restent à arbitrer selon les essais."
+    ],
+    "status": "Conception — priorités proposées",
+    "images": [
+      {
+        "path": "markers/quest.png",
+        "caption": "Repère de quête : les idées de missions doivent devenir des parcours validés par le serveur avant d’être jouables."
+      },
+      {
+        "path": "improvements/barracks.png",
+        "caption": "Illustration de caserne, en lien avec les projets de fort et de coopération militaire."
+      }
+    ]
   }
 }
