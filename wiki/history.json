@@ -561,6 +561,13 @@
       "note": "Guide des règles par thème complété : bâtiments, formations, courrier, surveillance et restrictions du marché",
       "hash": "e5f313a88dd56f8e7a9c4df4f6c6019a9dedde737582e0d26e0dfb987f34f401",
       "file": "archives/heros-armee/v24.html"
+    },
+    {
+      "version": 25,
+      "date": "2026-10-25T16:38:50.886Z",
+      "note": "Tableaux de statistiques illustrés, introductions courtes, explications de lecture et exemples illustrés",
+      "hash": "2d982af83859a684eab7ec21bdc3cfe0a9c875f8f47da464cedf0fd5abb58745",
+      "file": "archives/heros-armee/v25.html"
     }
   ],
   "lieux": [
@@ -1190,6 +1197,13 @@
       "note": "Refonte du guide joueur par thèmes : règles, conditions, exemples et séparation des outils et notes de développement",
       "hash": "acb3abbc631e1f0a53950be8917f47fbe94831b49e7a7ffe09f076be70c36ab9",
       "file": "archives/combats/v11.html"
+    },
+    {
+      "version": 12,
+      "date": "2026-10-25T16:38:50.886Z",
+      "note": "Tableaux de statistiques illustrés, introductions courtes, explications de lecture et exemples illustrés",
+      "hash": "7cf52aca7f6beb3ec90577754e3f338205e00d50091f66c9b9fb5b7d41e16f3b",
+      "file": "archives/combats/v12.html"
     }
   ],
   "classes": [
@@ -1213,6 +1227,13 @@
       "note": "Portraits anime des héros, mage masculin sans chapeau, calques de PNJ et décors par lieu",
       "hash": "dee5fffcac4e6c04d8e52fc5d43e8f87db078ef4248b50f4b37c5eebd542a5da",
       "file": "archives/classes/v3.html"
+    },
+    {
+      "version": 4,
+      "date": "2026-10-25T16:38:50.886Z",
+      "note": "Tableaux de statistiques illustrés, introductions courtes, explications de lecture et exemples illustrés",
+      "hash": "6a79e724644db541315cf5e361a1927149901612fd6aa84aaafbdac11201bfe7",
+      "file": "archives/classes/v4.html"
     }
   ],
   "unites": [
@@ -1236,6 +1257,13 @@
       "note": "Refonte du guide joueur par thèmes : règles, conditions, exemples et séparation des outils et notes de développement",
       "hash": "531c8d6a31114b362c2ba37ebc947b42810cc1576244cc179f8673ff82b44afd",
       "file": "archives/unites/v3.html"
+    },
+    {
+      "version": 4,
+      "date": "2026-10-25T16:38:50.886Z",
+      "note": "Tableaux de statistiques illustrés, introductions courtes, explications de lecture et exemples illustrés",
+      "hash": "2a1791a1ab4755c439178975cce18c673a43e02af81875c252f7361f60d328b2",
+      "file": "archives/unites/v4.html"
     }
   ],
   "dashboard-monitoring": [
@@ -2289,6 +2317,13 @@
       "note": "Refonte du guide joueur par thèmes : règles, conditions, exemples et séparation des outils et notes de développement",
       "hash": "2d4d754adf1ab64530dd633e087887d89bb7a63f909acc31f54af6c3bc90f159",
       "file": "archives/article-wiki-maintenance/v3.html"
+    },
+    {
+      "version": 4,
+      "date": "2026-10-25T16:38:50.886Z",
+      "note": "Tableaux de statistiques illustrés, introductions courtes, explications de lecture et exemples illustrés",
+      "hash": "9d77e7dfeb27959e81be6bd1148159bc14e7002696be315e39c21867c0c85b83",
+      "file": "archives/article-wiki-maintenance/v4.html"
     }
   ],
   "article-quest-creations": [
@@ -2648,6 +2683,13 @@
       "note": "Refonte du guide joueur par thèmes : règles, conditions, exemples et séparation des outils et notes de développement",
       "hash": "b638d7944355ecde5713c98ad591aaa401767f785ee27aa646304b6450828757",
       "file": "archives/pouvoirs/v1.html"
+    },
+    {
+      "version": 2,
+      "date": "2026-10-25T16:38:50.886Z",
+      "note": "Tableaux de statistiques illustrés, introductions courtes, explications de lecture et exemples illustrés",
+      "hash": "b7b53bffc0b07e863cd11fb88dc600bf9dec830172b07693cae5ef41c65478c6",
+      "file": "archives/pouvoirs/v2.html"
     }
   ],
   "armee": [
@@ -2657,6 +2699,13 @@
       "note": "Refonte du guide joueur par thèmes : règles, conditions, exemples et séparation des outils et notes de développement",
       "hash": "87ef53c606fafd450d17f3019ced0cf78ec7c103155e9d86c41bd6b2ebd6d136",
       "file": "archives/armee/v1.html"
+    },
+    {
+      "version": 2,
+      "date": "2026-10-25T16:38:50.886Z",
+      "note": "Tableaux de statistiques illustrés, introductions courtes, explications de lecture et exemples illustrés",
+      "hash": "ee5cc09a70122dce57de472258e872ffdca844647c69a3b350b22fbc83ec4671",
+      "file": "archives/armee/v2.html"
     }
   ],
   "equipement": [
@@ -2666,6 +2715,13 @@
       "note": "Refonte du guide joueur par thèmes : règles, conditions, exemples et séparation des outils et notes de développement",
       "hash": "538a0d3595d2c62e2beb377ba7442e4b8dece9afb458d9c90c24d303e6275577",
       "file": "archives/equipement/v1.html"
+    },
+    {
+      "version": 2,
+      "date": "2026-10-25T16:38:50.886Z",
+      "note": "Tableaux de statistiques illustrés, introductions courtes, explications de lecture et exemples illustrés",
+      "hash": "1cf7a01ac30ef831067cfcde60e1909d8817cc350ca6957e14eaeef5541f5c62",
+      "file": "archives/equipement/v2.html"
     }
   ],
   "economie": [
@@ -2682,6 +2738,13 @@
       "note": "Guide des règles par thème complété : bâtiments, formations, courrier, surveillance et restrictions du marché",
       "hash": "c5e0a63504df8e03d220cb77c8b02f471ccb02db9ca7077c71dd56cab5a82216",
       "file": "archives/economie/v2.html"
+    },
+    {
+      "version": 3,
+      "date": "2026-10-25T16:38:50.886Z",
+      "note": "Tableaux de statistiques illustrés, introductions courtes, explications de lecture et exemples illustrés",
+      "hash": "e028d80025dfc04df8a1fcd554b73411068c158f3ac8352e6260c8503cbe02e1",
+      "file": "archives/economie/v3.html"
     }
   ],
   "cooperation": [
@@ -2707,6 +2770,13 @@
       "note": "Refonte du guide joueur par thèmes : règles, conditions, exemples et séparation des outils et notes de développement",
       "hash": "6d9670aaf0fa7589d35501e5dfb632b1786fa2c20db87a4264d8e4943e13dae1",
       "file": "archives/sante/v1.html"
+    },
+    {
+      "version": 2,
+      "date": "2026-10-25T16:38:50.886Z",
+      "note": "Tableaux de statistiques illustrés, introductions courtes, explications de lecture et exemples illustrés",
+      "hash": "3b81b7509e46a1477575287abcc618d5e5d3f51c8d3d58ed314fc477a77bdb25",
+      "file": "archives/sante/v2.html"
     }
   ],
   "butin": [

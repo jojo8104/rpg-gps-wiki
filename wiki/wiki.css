@@ -465,3 +465,66 @@ footer {
     margin-top: 0.5rem;
   }
 }
+.stat-table table {
+  min-width: 520px;
+}
+.stat-table th,
+.stat-table td {
+  vertical-align: middle;
+}
+.stat-table thead th:not(:first-child),
+.stat-table td {
+  text-align: center;
+}
+.stat-table tbody th {
+  min-width: 125px;
+}
+.illustration.stat-thumbnail {
+  max-width: 135px;
+  margin: 0.25rem auto 0.65rem;
+}
+.stat-thumbnail img {
+  width: 72px;
+  height: 80px;
+  object-fit: contain;
+}
+.stat-thumbnail figcaption {
+  font-size: 0.65rem;
+  line-height: 1.35;
+}
+.table-explanation {
+  margin-top: 1rem;
+}
+.rule-example {
+  clear: both;
+  padding: 1.25rem;
+  border: 1px solid #617d60;
+  background: #18292c;
+  border-radius: 0.75rem;
+  margin: 1.75rem 0;
+  display: flow-root;
+}
+.rule-example h2 {
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+.illustration.example-art {
+  float: left;
+  width: 120px;
+  margin: 0.25rem 1.25rem 0.5rem 0;
+}
+.example-art img {
+  width: 110px;
+  max-height: 140px;
+  object-fit: contain;
+}
+@media (max-width: 520px) {
+  .illustration.example-art {
+    float: none;
+    margin: 0.5rem auto 1rem;
+  }
+  .stat-table th,
+  .stat-table td {
+    padding: 0.5rem;
+  }
+}

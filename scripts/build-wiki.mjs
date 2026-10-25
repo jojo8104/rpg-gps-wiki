@@ -3,6 +3,7 @@ import { createHash } from "node:crypto";
 import { pathToFileURL } from "node:url";
 import { versionArticles } from "./wiki-history.mjs";
 import { escapeHtml as esc, renderMarkdown, slug } from "./wiki-markdown.mjs";
+import { renderStatTable, renderRuleExample } from "./wiki-stat-tables.mjs";
 
 export async function buildWiki({
   root = new URL("../", import.meta.url),
@@ -95,7 +96,11 @@ export async function buildWiki({
       await access(target);
     } catch (error) {
       if (error.code !== "ENOENT") throw error;
-      await writeFile(target, bytes, { flag: "wx" });
+      try {
+        await writeFile(target, bytes, { flag: "wx" });
+      } catch (writeError) {
+        if (writeError.code !== "EEXIST") throw writeError;
+      }
     }
     imageManifest.add(`media/${file}`);
     assets[asset] = `media/${file}`;
@@ -164,12 +169,14 @@ export async function buildWiki({
     const topicIds = topics.map((topic) => `theme-${slug(topic.title)}`);
     if (new Set(topicIds).size !== topics.length)
       throw new Error(`Rubriques dupliquées : ${guide.id}`);
-    const topicBody = topics
-      .map(
-        (topic, i) =>
-          `<section class="rule-topic" id="${topicIds[i]}"><h2>${esc(topic.title)}</h2>${topic.paragraphs.map((p) => `<p>${esc(p)}</p>`).join("")}</section>`,
+    const topicBody = (
+      await Promise.all(
+        topics.map(
+          async (topic, i) =>
+            `<section class="rule-topic" id="${topicIds[i]}"><h2>${esc(topic.title)}</h2>${topic.paragraphs.map((p) => `<p>${esc(p)}</p>`).join("")}${topic.table ? await renderStatTable(topic.table, image) : ""}${(topic.explanation ?? []).map((p) => `<p class="table-explanation">${esc(p)}</p>`).join("")}${await renderRuleExample(topic.example, image)}</section>`,
+        ),
       )
-      .join("");
+    ).join("");
     const toc = topics.length
       ? `<details class="article-toc" open><summary>Les règles de ce thème</summary><ul>${topics.map((topic, i) => `<li><a href="#${topicIds[i]}">${esc(topic.title)}</a></li>`).join("")}</ul></details>`
       : "";
@@ -182,7 +189,7 @@ export async function buildWiki({
       audience,
       category: audiences[audience],
       summary: guide.summary ?? guide.paragraphs[0],
-      body: `${guide.summary ? `<p class="lead">${esc(guide.summary)}</p>` : ""}${art ? await image(...art, "guide-art") : ""}${toc}${guide.paragraphs.map((p) => `<p>${esc(p)}</p>`).join("")}${topicBody}${playerReferences.length ? `<h2>Règles détaillées et cas particuliers</h2>${articleLinks(playerReferences)}` : ""}${guide.seeAlso?.length ? `<h2>Thèmes liés</h2>${articleLinks(guide.seeAlso.map((id) => ({ id, title: guides.find((g) => g.id === id)?.title ?? { classes: "Classes de héros", unites: "Catalogue des unités" }[id] ?? id })))}` : ""}${otherReferences.length ? `<details class="article-toc"><summary>Conception, présentation et autres références</summary>${articleLinks(otherReferences)}</details>` : ""}`,
+      body: `${guide.summary ? `<p class="lead">${esc(guide.summary)}</p>` : ""}${art ? await image(...art, "guide-art") : ""}${toc}${guide.paragraphs.map((p) => `<p>${esc(p)}</p>`).join("")}${topicBody}${await renderRuleExample(guide.example, image)}${playerReferences.length ? `<h2>Règles détaillées et cas particuliers</h2>${articleLinks(playerReferences)}` : ""}${guide.seeAlso?.length ? `<h2>Thèmes liés</h2>${articleLinks(guide.seeAlso.map((id) => ({ id, title: guides.find((g) => g.id === id)?.title ?? { classes: "Classes de héros", unites: "Catalogue des unités" }[id] ?? id })))}` : ""}${otherReferences.length ? `<details class="article-toc"><summary>Conception, présentation et autres références</summary>${articleLinks(otherReferences)}</details>` : ""}`,
     });
   }
   for (const doc of documents.values()) {
@@ -216,34 +223,56 @@ export async function buildWiki({
       body: `<p class="lead">${esc(doc.summary)}</p><section class="explanation"><h2>Comprendre ce que cela implique</h2>${doc.explanation.map((p) => `<p>${esc(p)}</p>`).join("")}</section>${illustrations.length ? `<div class="illustrations">${illustrations.join("")}</div>` : ""}${toc.length ? `<details class="article-toc"><summary>Dans cet article</summary><ul>${toc.map((h) => `<li><a href="#${h.id}">${esc(h.title)}</a></li>`).join("")}</ul></details>` : ""}<h2>Détails de référence</h2><p class="source-note">Texte de référence mis en forme et conservé dans l’historique de cet article. Les paragraphes datés peuvent décrire une évolution ou une étape antérieure.</p><div class="reference-body">${rendered.html}</div>${parents.length ? `<h2>Revenir au guide</h2>${articleLinks(parents)}` : ""}`,
     });
   }
-  const classCards = await Promise.all(
-    classes.map(async (hero) => {
-      const portrait = {
-        warrior: "hero-warrior-male-anime-v2.png",
-        ranger: "hero-ranger-female-anime-v2.png",
-        mage: "hero-mage-female-anime-v2.png",
-      }[hero.id];
-      return `<div class="catalog-card">${portrait ? await image(`portraits/${portrait}`, `Portrait : ${hero.name}`, "portrait") : ""}<h2>${esc(hero.name)}</h2><p>${esc(hero.advantage)}</p><dl>${Object.entries(
-        {
-          Attaque: hero.baseStats.attack,
-          Défense: hero.baseStats.defense,
-          Moral: hero.baseStats.morale,
-          Mobilité: hero.baseStats.mobility,
-          Commandement: hero.baseStats.command,
-          PV: hero.baseStats.health,
-        },
-      )
-        .map(([k, v]) => `<div><dt>${k}</dt><dd>${esc(v)}</dd></div>`)
-        .join("")}</dl></div>`;
-    }),
+  const portraits = {
+    warrior: "hero-warrior-male-anime-v2.png",
+    ranger: "hero-ranger-female-anime-v2.png",
+    mage: "hero-mage-female-anime-v2.png",
+  };
+  const classTable = await renderStatTable(
+    {
+      caption: "Caractéristiques de départ des classes",
+      columns: [
+        "Classe",
+        "Attaque",
+        "Défense",
+        "Moral",
+        "Mobilité",
+        "Commandement",
+        "PV",
+        "Bonus d’autorité",
+      ],
+      rows: classes.map((hero) => ({
+        label: hero.name,
+        values: [
+          hero.baseStats.attack,
+          hero.baseStats.defense,
+          hero.baseStats.morale,
+          hero.baseStats.mobility,
+          hero.baseStats.command,
+          hero.baseStats.health,
+          hero.authorityBonus ?? 0,
+        ],
+        ...(portraits[hero.id]
+          ? {
+              illustration: {
+                path: "portraits/" + portraits[hero.id],
+                caption: "Portrait : " + hero.name,
+              },
+            }
+          : {}),
+      })),
+    },
+    image,
   );
+  const warrior = classes.find((hero) => hero.id === "warrior");
+  const mage = classes.find((hero) => hero.id === "mage");
   add({
     id: "classes",
     title: "Classes de héros",
     category: "Catalogue",
     summary:
       "Comparer les caractéristiques de départ du Guerrier, de l’Éclaireur et du Mage.",
-    body: `<p class="lead">Les classes orientent les caractéristiques et les capacités du héros.</p><p>Ces valeurs proviennent du catalogue du jeu, avant progression et équipement. Elles ne prédisent pas à elles seules le résultat d’un combat.</p><div class="cards">${classCards.join("")}</div>`,
+    body: `<p class="lead">La classe définit les caractéristiques et les capacités de départ du héros. Le tableau compare leurs valeurs de base avant équipement et progression.</p>${classTable}<p class="table-explanation">L’attaque et la défense interviennent dans les combats. Le Commandement contribue au budget d’ordres ; le bonus d’autorité s’ajoute à la capacité d’armée et ne représente pas ce budget. Les PV indiquent la santé maximale de départ.</p><p>Les capacités propres à chaque classe complètent ces chiffres : détection et vigies pour l’Éclaireur, divination et voyage astral pour le Mage, profil militaire pour le Guerrier. <a href="pouvoirs.html">Voir les pouvoirs</a>.</p>${warrior && mage ? await renderRuleExample({ title: "Exemple : deux profils de départ", paragraphs: [`Le Guerrier commence avec ${warrior.baseStats.health} PV et ${warrior.baseStats.command} en Commandement ; le Mage avec ${mage.baseStats.health} PV et ${mage.baseStats.command} en Commandement. Cela compare leurs bases, sans prédire l’issue d’un combat.`, "Le choix de classe dépend aussi des capacités recherchées et des objectifs de l’aventure."], illustration: { path: "portraits/hero-warrior-male-anime-v2.png", caption: "Portrait du Guerrier utilisé dans cette comparaison de caractéristiques." } }, image) : ""}`,
   });
   const unitRows = await Promise.all(
     units.map(async (u) => {
@@ -269,7 +298,7 @@ export async function buildWiki({
     category: "Catalogue",
     summary:
       "Comparer les effectifs maximaux, l’autorité et les statistiques de base des unités.",
-    body: `<p class="lead">Les valeurs du catalogue décrivent un type d’unité, avant les bonus du héros, du terrain et de la bataille.</p><p>L’effectif maximal dépend du grade de la troupe : Soldat 6, Caporal 10, Sergent 14, Adjudant 18, Lieutenant 24. Le coût d’autorité ci-dessous concerne le type ; le coût du grade s’y ajoute. <a href="armee.html">Comprendre recrutement, grades et autorité</a>.</p><div class="table-scroll" tabindex="0" role="region" aria-label="Catalogue des unités"><table><caption>Statistiques de base des types d’unités</caption><thead><tr>${["Unité", "Faction", "Autorité du type", "Attaque", "Défense", "PV / soldat", "Vitesse", "Portée"].map((s) => `<th scope="col">${s}</th>`).join("")}</tr></thead><tbody>${unitRows.join("")}</tbody></table></div>`,
+    body: `<p class="lead">Les valeurs du catalogue décrivent un type d’unité, avant les bonus du héros, du terrain et de la bataille.</p><p>L’effectif maximal dépend du grade de la troupe : Soldat 6, Caporal 10, Sergent 14, Adjudant 18, Lieutenant 24. Le coût d’autorité ci-dessous concerne le type ; le coût du grade s’y ajoute. <a href="armee.html">Comprendre recrutement, grades et autorité</a>.</p><div class="table-scroll stat-table" tabindex="0" role="region" aria-label="Catalogue des unités"><table><caption>Statistiques de base des types d’unités</caption><thead><tr>${["Unité", "Faction", "Autorité du type", "Attaque", "Défense", "PV / soldat", "Vitesse", "Portée"].map((s) => `<th scope="col">${s}</th>`).join("")}</tr></thead><tbody>${unitRows.join("")}</tbody></table></div><p class="table-explanation">La portée et la vitesse aident à comparer les usages, mais les dégâts finaux dépendent aussi du nombre de soldats aptes, du moral, des techniques et du terrain. Les PV sont ceux d’un seul soldat, pas de toute la troupe.</p>${await renderRuleExample({ title: "Exemple : composer une troupe", paragraphs: ["Une troupe de miliciens au grade Soldat peut contenir six soldats. Son coût d’autorité est le coût du type, auquel s’ajoute celui du grade ; ses soldats peuvent être blessés séparément.", "L’image montre le type d’unité, pas un effectif garanti de soldats présents ou aptes."], illustration: { path: "units/militia-thumbnail.png", caption: "Vignette des miliciens du catalogue." } }, image)}`,
   });
   const history = await versionArticles({
     root,

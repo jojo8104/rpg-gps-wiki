@@ -88,7 +88,56 @@
         {
           "title": "Grades et nombre de troupes",
           "paragraphs": [
-            "Capitaine au niveau 1 : 3 troupes. Banneret au niveau 5 : 4. Commandant au niveau 10 : 5. Seigneur au niveau 15 : 6. Maréchal au niveau 20 : 7. Il faut aussi respecter l’autorité nécessaire à ces troupes."
+            "Le grade du héros ouvre des places de troupes supplémentaires, indépendamment du budget d’ordres de combat."
+          ],
+          "table": {
+            "caption": "Grades du héros et capacités standards",
+            "columns": ["Grade", "Niveau requis", "Troupes maximum", "Bagages"],
+            "rows": [
+              {
+                "label": "Capitaine",
+                "values": [1, 3, 8],
+                "illustration": {
+                  "path": "portraits/hero-warrior-male-anime-v2.png",
+                  "caption": "Portrait de héros ; le grade est indiqué par le libellé de la ligne."
+                }
+              },
+              {
+                "label": "Banneret",
+                "values": [5, 4, 10],
+                "illustration": {
+                  "path": "portraits/hero-warrior-male-anime-v2.png",
+                  "caption": "Portrait de héros ; le grade est indiqué par le libellé de la ligne."
+                }
+              },
+              {
+                "label": "Commandant",
+                "values": [10, 5, 12],
+                "illustration": {
+                  "path": "portraits/hero-warrior-male-anime-v2.png",
+                  "caption": "Portrait de héros ; le grade est indiqué par le libellé de la ligne."
+                }
+              },
+              {
+                "label": "Seigneur",
+                "values": [15, 6, 14],
+                "illustration": {
+                  "path": "portraits/hero-warrior-male-anime-v2.png",
+                  "caption": "Portrait de héros ; le grade est indiqué par le libellé de la ligne."
+                }
+              },
+              {
+                "label": "Maréchal",
+                "values": [20, 7, 16],
+                "illustration": {
+                  "path": "portraits/hero-warrior-male-anime-v2.png",
+                  "caption": "Portrait de héros ; le grade est indiqué par le libellé de la ligne."
+                }
+              }
+            ]
+          },
+          "explanation": [
+            "Les limites indiquées sont les capacités standards de chaque grade. Remplir tous les emplacements de troupes exige aussi assez d’autorité. Les bagages constituent une limite distincte."
           ]
         },
         {
@@ -217,7 +266,44 @@
         {
           "title": "Éclaireur : détection et vigies",
           "paragraphs": [
-            "La vision de l’Éclaireur progresse avec son niveau ; il bénéficie de bonus de détection, de discrétion et de renseignements. Ses vigies surveillent une zone selon le rang de l’aptitude correspondante. Le catalogue limite le réseau à trois vigies. Leur guetteur illustré n’ajoute pas de soldat à l’armée."
+            "Les vigies surveillent une zone ; leur rayon dépend du rang de l’aptitude de l’Éclaireur."
+          ],
+          "table": {
+            "caption": "Vigies de l’Éclaireur",
+            "columns": [
+              "Rang de l’aptitude",
+              "Rayon de vigie",
+              "Vigies maximum"
+            ],
+            "rows": [
+              {
+                "label": "Novice",
+                "values": ["30 unités de rayon selon le mode", 3],
+                "illustration": {
+                  "path": "groups/watch-lookout-v1.png",
+                  "caption": "Le guetteur représente une vigie, pas une troupe supplémentaire."
+                }
+              },
+              {
+                "label": "Avancé",
+                "values": ["37 unités de rayon selon le mode", 3],
+                "illustration": {
+                  "path": "groups/watch-lookout-v1.png",
+                  "caption": "Le guetteur représente une vigie, pas une troupe supplémentaire."
+                }
+              },
+              {
+                "label": "Maître",
+                "values": ["45 unités de rayon selon le mode", 3],
+                "illustration": {
+                  "path": "groups/watch-lookout-v1.png",
+                  "caption": "Le guetteur représente une vigie, pas une troupe supplémentaire."
+                }
+              }
+            ]
+          },
+          "explanation": [
+            "Le catalogue prévoit ces rayons selon le rang de l’aptitude. L’apparence du guetteur ne donne pas de soldat supplémentaire. La vision propre du héros et sa détection ont des bonus distincts."
           ]
         },
         {
@@ -230,10 +316,94 @@
         {
           "title": "Mage : voyage astral",
           "paragraphs": [
-            "Le voyage astral ouvre une fenêtre d’interaction de 10 secondes avec une cible connue ou détectée. Le corps réel ne bouge pas ; glisser la projection ne donne pas d’XP de marche.",
-            "La portée de ciblage est de 15, 25, 40, 60 ou 90 selon le grade, dans les unités de distance du mode. La recharge de 10 minutes commence à l’activation. Ouvrir une fiche ne consomme pas à lui seul le pouvoir ; une action réussie sur la cible le consomme.",
-            "Les règles d’accès, de ressources, d’alliance et de PvP continuent de s’appliquer. Le voyage astral ne donne pas de droit supplémentaire sur un stock."
-          ]
+            "Le voyage astral ouvre une interaction à distance sans déplacer le corps réel du Mage."
+          ],
+          "table": {
+            "caption": "Portée du voyage astral selon le grade",
+            "columns": [
+              "Grade",
+              "Portée de ciblage",
+              "Fenêtre active",
+              "Recharge"
+            ],
+            "rows": [
+              {
+                "label": "Capitaine",
+                "values": [
+                  "15 m en GPS / unités en simulation",
+                  "10 secondes",
+                  "10 minutes"
+                ],
+                "illustration": {
+                  "path": "portraits/hero-mage-female-anime-v2.png",
+                  "caption": "Mage utilisant le voyage astral."
+                }
+              },
+              {
+                "label": "Banneret",
+                "values": [
+                  "25 m en GPS / unités en simulation",
+                  "10 secondes",
+                  "10 minutes"
+                ],
+                "illustration": {
+                  "path": "portraits/hero-mage-female-anime-v2.png",
+                  "caption": "Mage utilisant le voyage astral."
+                }
+              },
+              {
+                "label": "Commandant",
+                "values": [
+                  "40 m en GPS / unités en simulation",
+                  "10 secondes",
+                  "10 minutes"
+                ],
+                "illustration": {
+                  "path": "portraits/hero-mage-female-anime-v2.png",
+                  "caption": "Mage utilisant le voyage astral."
+                }
+              },
+              {
+                "label": "Seigneur",
+                "values": [
+                  "60 m en GPS / unités en simulation",
+                  "10 secondes",
+                  "10 minutes"
+                ],
+                "illustration": {
+                  "path": "portraits/hero-mage-female-anime-v2.png",
+                  "caption": "Mage utilisant le voyage astral."
+                }
+              },
+              {
+                "label": "Maréchal",
+                "values": [
+                  "90 m en GPS / unités en simulation",
+                  "10 secondes",
+                  "10 minutes"
+                ],
+                "illustration": {
+                  "path": "portraits/hero-mage-female-anime-v2.png",
+                  "caption": "Mage utilisant le voyage astral."
+                }
+              }
+            ]
+          },
+          "explanation": [
+            "La cible doit être connue ou détectée et rester dans la portée officielle. Le délai actif et la recharge commencent à l’activation. Ouvrir une fiche ne consomme pas à lui seul le pouvoir ; une action réussie le consomme.",
+            "Le héros réel reste sur place. La projection ne donne pas d’XP de marche ni de permission supplémentaire sur les stocks, échanges ou adversaires."
+          ],
+          "example": {
+            "title": "Exemple : cibler un lieu sans déplacer le Mage",
+            "paragraphs": [
+              "Au grade Capitaine, une cible connue dont le centre est à 12 m se trouve dans la portée de 15 m. Une cible à 20 m est hors de cette portée.",
+              "Le ciblage reste soumis à la validation officielle et aux droits du lieu. La projection n’est pas le futur mode de combat à distance."
+            ],
+            "illustration": {
+              "path": "portraits/hero-mage-female-anime-v2.png",
+              "caption": "Le portrait illustre le Mage ; les distances de l’exemple ne sont pas une capture de carte."
+            }
+          }
         },
         {
           "title": "Projets distincts des pouvoirs disponibles",
@@ -264,9 +434,73 @@
         {
           "title": "Troupes, soldats et grades",
           "paragraphs": [
-            "Une troupe regroupe des soldats d’un type, avec un grade et une expérience. Le grade du héros limite le nombre de troupes ; le grade de chaque troupe fixe son effectif maximal.",
-            "Les capacités actuelles sont : Soldat 6, Caporal 10, Sergent 14, Adjudant 18 et Lieutenant 24. Le type fournit notamment attaque, défense, portée et PV par soldat."
-          ]
+            "Une troupe est un groupe de soldats : son grade fixe sa capacité et ajoute un coût d’autorité à celui de son type."
+          ],
+          "table": {
+            "caption": "Grades des troupes",
+            "columns": [
+              "Grade",
+              "XP requise",
+              "Soldats maximum",
+              "Autorité du grade"
+            ],
+            "rows": [
+              {
+                "label": "Soldat",
+                "values": [0, 6, 1],
+                "illustration": {
+                  "path": "units/militia-thumbnail.png",
+                  "caption": "Miliciens : exemple visuel de troupe, sans représentation graphique du grade."
+                }
+              },
+              {
+                "label": "Caporal",
+                "values": [100, 10, 2],
+                "illustration": {
+                  "path": "units/militia-thumbnail.png",
+                  "caption": "Miliciens : exemple visuel de troupe, sans représentation graphique du grade."
+                }
+              },
+              {
+                "label": "Sergent",
+                "values": [250, 14, 3],
+                "illustration": {
+                  "path": "units/militia-thumbnail.png",
+                  "caption": "Miliciens : exemple visuel de troupe, sans représentation graphique du grade."
+                }
+              },
+              {
+                "label": "Adjudant",
+                "values": [500, 18, 4],
+                "illustration": {
+                  "path": "units/militia-thumbnail.png",
+                  "caption": "Miliciens : exemple visuel de troupe, sans représentation graphique du grade."
+                }
+              },
+              {
+                "label": "Lieutenant",
+                "values": [900, 24, 5],
+                "illustration": {
+                  "path": "units/militia-thumbnail.png",
+                  "caption": "Miliciens : exemple visuel de troupe, sans représentation graphique du grade."
+                }
+              }
+            ]
+          },
+          "explanation": [
+            "Le grade du héros limite le nombre de troupes ; celui de la troupe fixe son effectif. Les valeurs d’XP sont les seuils du grade, pas un prix à payer. La promotion ne remplit pas automatiquement les nouvelles places."
+          ],
+          "example": {
+            "title": "Exemple : une troupe de miliciens",
+            "paragraphs": [
+              "Au grade Soldat, la troupe peut accueillir six soldats. Elle coûte 1 point pour son type et 1 pour son grade, soit 2 points d’autorité. Au grade Caporal, sa capacité devient dix soldats et le coût du grade passe à 2, soit 3 points au total.",
+              "La promotion ne fait pas apparaître les quatre soldats manquants : il faut ensuite compléter la troupe."
+            ],
+            "illustration": {
+              "path": "units/militia-thumbnail.png",
+              "caption": "Illustration de miliciens ; les effectifs de l’exemple sont donnés dans le texte."
+            }
+          }
         },
         {
           "title": "Autorité nécessaire",
@@ -322,8 +556,57 @@
         {
           "title": "Emplacements de bagages",
           "paragraphs": [
-            "Les ressources empilables utilisent leurs tailles de lot. Objets, personnages transportés et lots de butin occupent les places prévues par leur définition. La capacité standard augmente avec le grade du héros : 8, 10, 12, 14 puis 16 emplacements.",
-            "Avoir assez d’or ne suffit pas si les bagages sont pleins. Il peut être nécessaire de déposer, livrer ou échanger avant une nouvelle récupération."
+            "Les bagages transportent les lots, objets et personnages nécessaires à l’aventure."
+          ],
+          "table": {
+            "caption": "Capacité standard de bagages",
+            "columns": ["Grade du héros", "Emplacements"],
+            "rows": [
+              {
+                "label": "Capitaine",
+                "values": [8],
+                "illustration": {
+                  "path": "equipment/round-shield.png",
+                  "caption": "Un bouclier transporté illustre un objet de bagage ; il n’augmente pas la capacité du sac."
+                }
+              },
+              {
+                "label": "Banneret",
+                "values": [10],
+                "illustration": {
+                  "path": "equipment/round-shield.png",
+                  "caption": "Un bouclier transporté illustre un objet de bagage ; il n’augmente pas la capacité du sac."
+                }
+              },
+              {
+                "label": "Commandant",
+                "values": [12],
+                "illustration": {
+                  "path": "equipment/round-shield.png",
+                  "caption": "Un bouclier transporté illustre un objet de bagage ; il n’augmente pas la capacité du sac."
+                }
+              },
+              {
+                "label": "Seigneur",
+                "values": [14],
+                "illustration": {
+                  "path": "equipment/round-shield.png",
+                  "caption": "Un bouclier transporté illustre un objet de bagage ; il n’augmente pas la capacité du sac."
+                }
+              },
+              {
+                "label": "Maréchal",
+                "values": [16],
+                "illustration": {
+                  "path": "equipment/round-shield.png",
+                  "caption": "Un bouclier transporté illustre un objet de bagage ; il n’augmente pas la capacité du sac."
+                }
+              }
+            ]
+          },
+          "explanation": [
+            "Les ressources empilables occupent des places selon leur taille de lot. Un objet porté et un objet transporté ne sont pas rangés de la même façon. Les valeurs du tableau ne donnent pas un nombre universel d’objets : un lot peut contenir plusieurs unités.",
+            "Avoir assez d’or ne suffit pas si les bagages sont pleins. Déposer, livrer ou échanger peut libérer de la place avant une récupération."
           ]
         },
         {
@@ -463,9 +746,60 @@
         {
           "title": "Impôts",
           "paragraphs": [
-            "Les villages, villes et capitales actifs et peuplés accumulent une réserve fiscale. Son plafond vaut la population plus deux fois la somme des niveaux des bâtiments économiques ; le revenu par cycle vaut 1 % du plafond.",
-            "Exemple : 20 habitants et une ferme niveau 2 donnent un plafond de 24 or et 0,24 or par cycle. Une réserve pleine ne continue pas à grossir. Le contrôleur collecte sur place le montant entier ; les fractions restent en réserve. En expert, collecter diminue le contentement selon le montant."
-          ]
+            "Les lieux imposables accumulent une réserve d’or au rythme des cycles de production."
+          ],
+          "table": {
+            "caption": "Fonctionnement des impôts",
+            "columns": ["Élément", "Valeur ou règle"],
+            "rows": [
+              {
+                "label": "Population",
+                "values": ["1 habitant ajoute 1 or au plafond"],
+                "illustration": {
+                  "path": "markers/village.png",
+                  "caption": "Population"
+                }
+              },
+              {
+                "label": "Bâtiment économique",
+                "values": ["Chaque niveau ajoute 2 or au plafond"],
+                "illustration": {
+                  "path": "improvements/farm.png",
+                  "caption": "Bâtiment économique"
+                }
+              },
+              {
+                "label": "Revenu",
+                "values": ["1 % du plafond par cycle"],
+                "illustration": {
+                  "path": "markers/capital.png",
+                  "caption": "Revenu"
+                }
+              },
+              {
+                "label": "Collecte",
+                "values": ["Montant entier disponible ; fractions conservées"],
+                "illustration": {
+                  "path": "improvements/trading-post.png",
+                  "caption": "Collecte"
+                }
+              }
+            ]
+          },
+          "explanation": [
+            "Le plafond est la population plus deux fois la somme des niveaux des bâtiments économiques. Une réserve pleine cesse de croître. Le contrôleur collecte sur place ; en expert, une collecte réussie réduit le contentement selon le montant."
+          ],
+          "example": {
+            "title": "Exemple : un village et sa ferme",
+            "paragraphs": [
+              "Avec 20 habitants et une ferme niveau 2, le plafond est 20 + 2 × 2 = 24 or. Le revenu est de 0,24 or par cycle.",
+              "Dans cet exemple à situation constante, dix cycles donnent 2,4 or : une collecte retire 2 or et laisse 0,4 or en réserve."
+            ],
+            "illustration": {
+              "path": "improvements/farm.png",
+              "caption": "La ferme illustre les deux niveaux économiques de l’exemple, sans ajouter d’autre bâtiment."
+            }
+          }
         },
         {
           "title": "Population et spécialistes",
@@ -634,7 +968,48 @@
         {
           "title": "Ordres et résolution",
           "paragraphs": [
-            "Le budget vaut le Commandement final arrondi à l’entier inférieur, avec un minimum de 2 et un maximum de 5. Déployer, déplacer, attaquer, défendre, rallier ou charger coûte un ordre ; une carte reçoit au plus un ordre par tour.",
+            "Chaque tour dispose d’un budget d’ordres lié au Commandement final du héros."
+          ],
+          "table": {
+            "caption": "Budget d’ordres tactiques",
+            "columns": ["Commandement final entier", "Ordres par tour"],
+            "rows": [
+              {
+                "label": "2 ou moins",
+                "values": [2],
+                "illustration": {
+                  "path": "units/heavy-cavalry-thumbnail.png",
+                  "caption": "Une carte de troupe illustre les ordres ; le budget dépend du héros, pas de la cavalerie."
+                }
+              },
+              {
+                "label": "3",
+                "values": [3],
+                "illustration": {
+                  "path": "units/heavy-cavalry-thumbnail.png",
+                  "caption": "Une carte de troupe illustre les ordres ; le budget dépend du héros, pas de la cavalerie."
+                }
+              },
+              {
+                "label": "4",
+                "values": [4],
+                "illustration": {
+                  "path": "units/heavy-cavalry-thumbnail.png",
+                  "caption": "Une carte de troupe illustre les ordres ; le budget dépend du héros, pas de la cavalerie."
+                }
+              },
+              {
+                "label": "5 ou plus",
+                "values": [5],
+                "illustration": {
+                  "path": "units/heavy-cavalry-thumbnail.png",
+                  "caption": "Une carte de troupe illustre les ordres ; le budget dépend du héros, pas de la cavalerie."
+                }
+              }
+            ]
+          },
+          "explanation": [
+            "Le Commandement final est arrondi à l’entier inférieur, puis borné entre 2 et 5 ordres. Déployer, déplacer, attaquer, défendre, rallier ou charger coûte un ordre ; une carte reçoit au plus un ordre par tour.",
             "Les deux camps résolvent leurs intentions selon leurs priorités. Les mouvements précèdent les attaques de la même priorité ; les dégâts sont calculés avant leur application simultanée. Une carte sans ordre défend sur place."
           ]
         },
@@ -730,9 +1105,46 @@
         {
           "title": "Revenir après zéro PV",
           "paragraphs": [
-            "Un héros fantôme doit rejoindre une base reconnue ou une chapelle accessible prévue pour sa résurrection. Une contrainte du scénario, notamment la captivité, peut empêcher ce retour.",
-            "Le retour standard rend 50 % des PV maximum ; une chapelle de niveau 2 permet 75 %. Seule la validation officielle rend le héros actif ; ouvrir sa fiche ne le ressuscite pas."
-          ]
+            "Un héros fantôme doit rejoindre une base reconnue ou une chapelle accessible pour revenir en jeu."
+          ],
+          "table": {
+            "caption": "PV rendus lors du retour du héros",
+            "columns": ["Situation", "PV rendus", "Conditions principales"],
+            "rows": [
+              {
+                "label": "Retour standard",
+                "values": [
+                  "50 % du maximum",
+                  "Base reconnue ou chapelle autorisée"
+                ],
+                "illustration": {
+                  "path": "improvements/chapel.png",
+                  "caption": "Une chapelle permet le retour selon ses conditions."
+                }
+              },
+              {
+                "label": "Chapelle niveau 2",
+                "values": ["75 % du maximum", "Présence et accès validés"],
+                "illustration": {
+                  "path": "improvements/chapel.png",
+                  "caption": "Chapelle : le niveau est indiqué dans le tableau."
+                }
+              }
+            ]
+          },
+          "explanation": [
+            "Le pourcentage s’applique aux PV maximum du héros. Une contrainte de scénario, notamment une captivité, peut empêcher le retour. Ouvrir une fiche ou voir une animation ne constitue pas une résurrection."
+          ],
+          "example": {
+            "title": "Exemple : un héros avec 20 PV maximum",
+            "paragraphs": [
+              "Le retour standard rend 10 PV. Dans une chapelle de niveau 2 autorisée, il rend 15 PV. Le héros ne revient donc pas automatiquement en pleine santé."
+            ],
+            "illustration": {
+              "path": "improvements/chapel.png",
+              "caption": "Illustration de chapelle pour l’exemple de retour en jeu."
+            }
+          }
         }
       ],
       "references": [],

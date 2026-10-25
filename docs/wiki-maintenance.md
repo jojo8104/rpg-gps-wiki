@@ -23,6 +23,15 @@ expliquer leur effet ou leur absence d’effet sur les règles dans la rubrique 
 
 ## Articles de référence et illustrations
 
+Pour présenter un concept chiffré, préférer : courte introduction, tableau de
+statistiques illustré, puis explication des valeurs et de leurs limites. Un exemple
+illustré peut conclure le concept ou la page. Dans un `topic`, `table` contient
+`caption`, `columns` et `rows` ; chaque ligne possède `label`, `values` et une
+`illustration` facultative (`path`, `caption`). `explanation` contient les paragraphes
+après le tableau. `example` contient un `title`, des `paragraphs` et une illustration
+facultative. Un `example` sur l’article apparaît après ses concepts.
+Ces données servent à expliquer des règles vérifiées, jamais à simuler une action.
+
 Le parcours principal est un guide de règles par thème, destiné aux joueurs.
 Dans `docs/wiki-content.json`, les articles `audience: "players"` décrivent les
 actions possibles, leurs conditions, leurs conséquences et des exemples utiles.
