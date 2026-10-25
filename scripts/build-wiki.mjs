@@ -17,6 +17,14 @@ export async function buildWiki({
     json("docs/wiki-articles.json"),
   ]);
   const guides = content.sections;
+  const audiences = {
+    players: "Règles du jeu",
+    designers: "Création de scénarios",
+    administrators: "Administration et maintenance",
+    development: "Présentation et notes techniques",
+    planned: "Idées et fonctionnalités prévues",
+    historical: "Systèmes historiques",
+  };
   const documents = new Map();
   const documentId = (file) => `article-${file.replace(/\.md$/, "")}`;
   const queue = [
@@ -99,7 +107,7 @@ export async function buildWiki({
       "Illustration d’accueil du jeu RPG GPS.",
     ],
     "heros-armee": [
-      "portraits/hero-wanderer.png",
+      "portraits/hero-warrior-male-anime-v2.png",
       "Portrait d’aventurier utilisé pour le Guerrier.",
     ],
     lieux: [
@@ -114,6 +122,26 @@ export async function buildWiki({
       "units/heavy-cavalry-thumbnail.png",
       "Cavalerie lourde : illustration d’une unité du catalogue.",
     ],
+    exploration: [
+      "markers/quest.png",
+      "Un repère à découvrir ou à visiter dans le monde.",
+    ],
+    armee: [
+      "units/spearman-thumbnail.png",
+      "Une troupe de lanciers : les soldats, le grade et l’autorité sont des notions distinctes.",
+    ],
+    pouvoirs: [
+      "portraits/hero-mage-female-anime-v2.png",
+      "Le Mage dispose de pouvoirs de renseignement et d’interaction.",
+    ],
+    equipement: [
+      "equipment/iron-sword.png",
+      "L’épée de fer possède les effets de sa fiche d’équipement.",
+    ],
+    economie: [
+      "improvements/farm.png",
+      "La ferme contribue à la production et à la croissance selon son niveau.",
+    ],
   };
   const articles = [];
   const ids = new Set();
@@ -121,6 +149,9 @@ export async function buildWiki({
     if (!/^[a-z][a-z0-9-]*$/.test(article.id) || ids.has(article.id))
       throw new Error(`Identifiant invalide ou dupliqué : ${article.id}`);
     ids.add(article.id);
+    article.audience ??= "players";
+    if (!audiences[article.audience])
+      throw new Error(`Public inconnu : ${article.audience}`);
     articles.push(article);
   }
   const articleLinks = (items) =>
@@ -128,11 +159,30 @@ export async function buildWiki({
   for (const guide of guides) {
     const related = (guide.references ?? []).map((r) => documents.get(r.file));
     const art = guideArt[guide.id];
+    const audience = guide.audience ?? "players";
+    const topics = guide.topics ?? [];
+    const topicIds = topics.map((topic) => `theme-${slug(topic.title)}`);
+    if (new Set(topicIds).size !== topics.length)
+      throw new Error(`Rubriques dupliquées : ${guide.id}`);
+    const topicBody = topics
+      .map(
+        (topic, i) =>
+          `<section class="rule-topic" id="${topicIds[i]}"><h2>${esc(topic.title)}</h2>${topic.paragraphs.map((p) => `<p>${esc(p)}</p>`).join("")}</section>`,
+      )
+      .join("");
+    const toc = topics.length
+      ? `<details class="article-toc" open><summary>Les règles de ce thème</summary><ul>${topics.map((topic, i) => `<li><a href="#${topicIds[i]}">${esc(topic.title)}</a></li>`).join("")}</ul></details>`
+      : "";
+    const playerReferences = related.filter(
+      (doc) => doc.audience === "players",
+    );
+    const otherReferences = related.filter((doc) => doc.audience !== "players");
     add({
       ...guide,
-      category: "Guide",
+      audience,
+      category: audiences[audience],
       summary: guide.summary ?? guide.paragraphs[0],
-      body: `${guide.summary ? `<p class="lead">${esc(guide.summary)}</p>` : ""}${art ? await image(...art, "guide-art") : ""}${guide.paragraphs.map((p) => `<p>${esc(p)}</p>`).join("")}${related.length ? `<h2>Pour approfondir</h2>${articleLinks(related)}` : ""}`,
+      body: `${guide.summary ? `<p class="lead">${esc(guide.summary)}</p>` : ""}${art ? await image(...art, "guide-art") : ""}${toc}${guide.paragraphs.map((p) => `<p>${esc(p)}</p>`).join("")}${topicBody}${playerReferences.length ? `<h2>Règles détaillées et cas particuliers</h2>${articleLinks(playerReferences)}` : ""}${guide.seeAlso?.length ? `<h2>Thèmes liés</h2>${articleLinks(guide.seeAlso.map((id) => ({ id, title: guides.find((g) => g.id === id)?.title ?? { classes: "Classes de héros", unites: "Catalogue des unités" }[id] ?? id })))}` : ""}${otherReferences.length ? `<details class="article-toc"><summary>Conception, présentation et autres références</summary>${articleLinks(otherReferences)}</details>` : ""}`,
     });
   }
   for (const doc of documents.values()) {
@@ -161,6 +211,7 @@ export async function buildWiki({
       title: doc.title,
       summary: doc.summary,
       category: doc.status ?? "Règles et fonctionnement",
+      audience: doc.audience ?? "development",
       sourceFile: doc.file,
       body: `<p class="lead">${esc(doc.summary)}</p><section class="explanation"><h2>Comprendre ce que cela implique</h2>${doc.explanation.map((p) => `<p>${esc(p)}</p>`).join("")}</section>${illustrations.length ? `<div class="illustrations">${illustrations.join("")}</div>` : ""}${toc.length ? `<details class="article-toc"><summary>Dans cet article</summary><ul>${toc.map((h) => `<li><a href="#${h.id}">${esc(h.title)}</a></li>`).join("")}</ul></details>` : ""}<h2>Détails de référence</h2><p class="source-note">Texte de référence mis en forme et conservé dans l’historique de cet article. Les paragraphes datés peuvent décrire une évolution ou une étape antérieure.</p><div class="reference-body">${rendered.html}</div>${parents.length ? `<h2>Revenir au guide</h2>${articleLinks(parents)}` : ""}`,
     });
@@ -168,9 +219,9 @@ export async function buildWiki({
   const classCards = await Promise.all(
     classes.map(async (hero) => {
       const portrait = {
-        warrior: "hero-wanderer.png",
-        ranger: "hero-ranger.png",
-        mage: "hero-mage.png",
+        warrior: "hero-warrior-male-anime-v2.png",
+        ranger: "hero-ranger-female-anime-v2.png",
+        mage: "hero-mage-female-anime-v2.png",
       }[hero.id];
       return `<div class="catalog-card">${portrait ? await image(`portraits/${portrait}`, `Portrait : ${hero.name}`, "portrait") : ""}<h2>${esc(hero.name)}</h2><p>${esc(hero.advantage)}</p><dl>${Object.entries(
         {
@@ -209,7 +260,7 @@ export async function buildWiki({
       const art = supported.includes(u.id)
         ? await image(`units/${u.id}-thumbnail.png`, u.name, "unit-thumbnail")
         : "";
-      return `<tr><th scope="row">${art}${esc(u.name)}</th>${[u.faction, u.maxQuantity, u.authorityCost, u.stats.attack, u.stats.defense, u.stats.healthPerSoldier, u.stats.speed, u.stats.range].map((v) => `<td>${esc(v)}</td>`).join("")}</tr>`;
+      return `<tr><th scope="row">${art}${esc(u.name)}</th>${[u.faction, u.authorityCost, u.stats.attack, u.stats.defense, u.stats.healthPerSoldier, u.stats.speed, u.stats.range].map((v) => `<td>${esc(v)}</td>`).join("")}</tr>`;
     }),
   );
   add({
@@ -218,7 +269,7 @@ export async function buildWiki({
     category: "Catalogue",
     summary:
       "Comparer les effectifs maximaux, l’autorité et les statistiques de base des unités.",
-    body: `<p class="lead">Les valeurs du catalogue décrivent un type d’unité, avant les bonus du héros, du terrain et de la bataille.</p><p>L’effectif maximal concerne une unité ; le coût d’autorité sert à composer l’armée. Une illustration ne révèle pas l’effectif actuel d’une troupe.</p><div class="table-scroll" tabindex="0" role="region" aria-label="Catalogue des unités"><table><caption>Statistiques de base des types d’unités</caption><thead><tr>${["Unité", "Faction", "Effectif max.", "Coût d’autorité", "Attaque", "Défense", "PV / soldat", "Vitesse", "Portée"].map((s) => `<th scope="col">${s}</th>`).join("")}</tr></thead><tbody>${unitRows.join("")}</tbody></table></div>`,
+    body: `<p class="lead">Les valeurs du catalogue décrivent un type d’unité, avant les bonus du héros, du terrain et de la bataille.</p><p>L’effectif maximal dépend du grade de la troupe : Soldat 6, Caporal 10, Sergent 14, Adjudant 18, Lieutenant 24. Le coût d’autorité ci-dessous concerne le type ; le coût du grade s’y ajoute. <a href="armee.html">Comprendre recrutement, grades et autorité</a>.</p><div class="table-scroll" tabindex="0" role="region" aria-label="Catalogue des unités"><table><caption>Statistiques de base des types d’unités</caption><thead><tr>${["Unité", "Faction", "Autorité du type", "Attaque", "Défense", "PV / soldat", "Vitesse", "Portée"].map((s) => `<th scope="col">${s}</th>`).join("")}</tr></thead><tbody>${unitRows.join("")}</tbody></table></div>`,
   });
   const history = await versionArticles({
     root,
@@ -233,12 +284,20 @@ export async function buildWiki({
     })),
   });
   const navigation = [
-    ...guides.map((g) => ({ id: g.id, title: g.title })),
+    ...guides
+      .filter((g) => (g.audience ?? "players") === "players")
+      .map((g) => ({ id: g.id, title: g.title })),
     { id: "classes", title: "Classes de héros" },
     { id: "unites", title: "Unités" },
   ];
+  const secondaryNavigation = `<details class="secondary-nav"><summary>Création et autres rubriques</summary>${guides
+    .filter((g) => g.audience && g.audience !== "players")
+    .map((g) => `<a href="${g.id}.html">${esc(g.title)}</a>`)
+    .join(
+      "",
+    )}<a href="article-idees-et-todo.html">Idées et todo list</a><a href="article-wiki-maintenance.html">Maintenir le wiki</a></details>`;
   function shell(title, main, active) {
-    return `<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="${esc(title)} — Wiki RPG GPS"><title>${esc(title)} — Wiki RPG GPS</title><link rel="stylesheet" href="wiki.css"></head><body><a class="skip" href="#contenu">Aller au contenu</a><header class="site-header"><a class="brand" href="index.html">RPG GPS <span>Le wiki</span></a><a href="https://jojo8104.github.io/rpg-gps/app/">Ouvrir le jeu ↗</a></header><div class="layout"><nav aria-label="Navigation du wiki"><a href="index.html"${active ? "" : ' aria-current="page"'}>Tous les articles</a>${navigation.map((item) => `<a href="${item.id}.html"${active === item.id ? ' aria-current="page"' : ""}>${esc(item.title)}</a>`).join("")}<a href="article-wiki-maintenance.html">Maintenir le wiki</a></nav><main id="contenu">${main}</main></div><footer>RPG GPS · Guide du prototype · Les règles prévues et les systèmes historiques sont signalés dans leurs articles.</footer></body></html>\n`;
+    return `<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="${esc(title)} — Wiki RPG GPS"><title>${esc(title)} — Wiki RPG GPS</title><link rel="stylesheet" href="wiki.css"></head><body><a class="skip" href="#contenu">Aller au contenu</a><header class="site-header"><a class="brand" href="index.html">RPG GPS <span>Le wiki</span></a><a href="https://jojo8104.github.io/rpg-gps/app/">Ouvrir le jeu ↗</a></header><div class="layout"><nav aria-label="Navigation du wiki"><a href="index.html"${active ? "" : ' aria-current="page"'}>Règles par thème</a>${navigation.map((item) => `<a href="${item.id}.html"${active === item.id ? ' aria-current="page"' : ""}>${esc(item.title)}</a>`).join("")}${secondaryNavigation}</nav><main id="contenu">${main}</main></div><footer>RPG GPS · Guide du prototype · Les règles prévues et les systèmes historiques sont signalés dans leurs articles.</footer></body></html>\n`;
   }
   for (const article of articles) {
     await writeFile(
@@ -251,16 +310,52 @@ export async function buildWiki({
     );
   }
   const card = (a) =>
-    `<div class="index-card" id="${a.id}"><p class="eyebrow">${esc(a.category)}</p><h3><a href="${a.id}.html">${esc(a.title)}</a></h3><p>${esc(a.summary.length > 210 ? a.summary.slice(0, 207) + "…" : a.summary)}</p></div>`;
+    `<div class="index-card" id="${a.id}"><p class="eyebrow">${esc(a.category)}</p><h3><a href="${a.id}.html">${esc(a.title)}</a></h3><p>${esc(a.summary.length > 210 ? a.summary.slice(0, 207) + "…" : a.summary)}</p>${a.topics?.length ? `<ul class="theme-contents">${a.topics.map((topic) => `<li><a href="${a.id}.html#theme-${slug(topic.title)}">${esc(topic.title)}</a></li>`).join("")}</ul>` : ""}</div>`;
   const guideArticles = articles.filter(
-    (a) => !a.sourceFile && !a.id.startsWith("article-"),
+    (a) =>
+      !a.sourceFile && a.category !== "Catalogue" && a.audience === "players",
   );
   const referenceArticles = articles.filter((a) => a.id.startsWith("article-"));
+  const secondaryArticles = articles.filter((a) => a.audience !== "players");
+  const secondaryGroups = Object.entries(audiences)
+    .filter(([id]) => id !== "players")
+    .map(([id, label]) => {
+      const selected = secondaryArticles.filter((a) => a.audience === id);
+      return selected.length
+        ? `<details class="reference-group"><summary>${esc(label)} (${selected.length})</summary><div class="cards index-cards">${selected.map(card).join("")}</div></details>`
+        : "";
+    })
+    .join("");
+  const detailedRules = referenceArticles.filter(
+    (a) => a.audience === "players",
+  );
+  const groupedRules = new Map();
+  for (const article of detailedRules) {
+    const parent = guides.find(
+      (g) =>
+        (g.audience ?? "players") === "players" &&
+        g.references?.some((r) => r.file === article.sourceFile),
+    );
+    const label = parent?.title ?? "Autres règles";
+    if (!groupedRules.has(label)) groupedRules.set(label, []);
+    groupedRules.get(label).push(article);
+  }
+  const referenceGroups = [...groupedRules]
+    .map(
+      ([label, items]) =>
+        `<details class="reference-group"><summary>${esc(label)} : règles détaillées</summary><div class="cards index-cards">${items.map(card).join("")}</div></details>`,
+    )
+    .join("");
   await writeFile(
     new URL("wiki/index.html", root),
     shell(
       content.title,
-      `<p class="eyebrow">Explorer · Comprendre · Retrouver</p><h1>${esc(content.title)}</h1><p class="lead">${esc(content.intro)}</p><p>Un sujet, une page. Les articles expliquent les règles, leurs conséquences et les fonctionnalités encore prévues. Leur historique se trouve en bas de page.</p><h2>Le guide du jeu</h2><div class="cards index-cards">${guideArticles.map(card).join("")}</div><h2>Règles, outils et fonctionnement</h2><div class="cards index-cards">${referenceArticles.map(card).join("")}</div>`,
+      `<p class="eyebrow">Apprendre à jouer · Comprendre les règles</p><h1>${esc(content.title)}</h1><p class="lead">${esc(content.intro)}</p><p>Choisissez un thème : chaque page explique ce que vous pouvez faire, ses conditions et ses conséquences. Les sous-rubriques donnent accès aux différentes fonctionnalités. L’historique reste disponible en bas de chaque article.</p><h2>Les règles par thème</h2><div class="cards index-cards">${guideArticles.map(card).join("")}</div><h2>Catalogues des héros et unités</h2><div class="cards index-cards">${articles
+        .filter((a) => a.category === "Catalogue")
+        .map(card)
+        .join(
+          "",
+        )}</div><h2>Approfondir une règle</h2>${referenceGroups}<h2>Création, outils et projets</h2><p>Ces rubriques complètent le guide. Les idées et systèmes historiques ne sont pas des fonctionnalités disponibles dans toutes les parties.</p>${secondaryGroups}`,
     ),
   );
   await writeFile(
@@ -271,6 +366,12 @@ export async function buildWiki({
         media: [...imageManifest].sort(),
         assets,
         documents: [...documents.keys()].sort(),
+        articles: articles.map((a) => ({
+          id: a.id,
+          audience: a.audience,
+          theme: guides.some((g) => g.id === a.id) && a.audience === "players",
+          topics: (a.topics ?? []).map((topic) => topic.title),
+        })),
       },
       null,
       2,

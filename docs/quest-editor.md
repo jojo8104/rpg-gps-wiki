@@ -1,5 +1,12 @@
 # Atelier web de quêtes
 
+La vue des ressources accepte un hôte navigateur injecté pour la liaison avec
+l’éditeur de portraits des PNJ. Les tests Node fournissent un hôte simulé sans
+variable globale `window` ; dans le navigateur, la fenêtre habituelle reste
+utilisée par défaut. Les tests des modèles de groupes restent actifs et vérifient
+que leur sélection n’ouvre pas l’éditeur de portraits. Cette correction technique
+ne change ni les projets exportés, ni les règles, ni les validations serveur.
+
 L’atelier est disponible dans le serveur du jeu à `/editor/`. Lancer `npm start`
 depuis le dossier du projet puis ouvrir `http://localhost:3000/editor/` (adapter
 le port à `RPG_GPS_PORT`). Cette application PC en HTML, CSS et modules JavaScript
@@ -353,3 +360,23 @@ Dans Fiche de quête, choisir le mode, les effectifs et l’admission en cours. 
 Dans Événements stratégiques, créer le modèle, nommer les trois stratégies et régler leur préparation en secondes. Les tableaux structurés permettent de renseigner défis (référence questId/actionId), coût strategyCost et prérequis requirements : class, unit, authority, command, resource, equipment, improvement, avec id et minimum. Les positions référencent les lieux logiques du monde. Les phases décrivent informations, ordres et fenêtres ; leur contenu reste une spécification narrative, sans interprétation serveur à ce stade.
 
 Utiliser comme bloc ajoute une occurrence dans Scénario & quêtes : choisir la quête précédente et les quêtes suivantes selon les issues. Une source vide représente le début ; une sortie vide termine la branche. Les blocs sont des références de conception, pas des transitions exécutables. Les votes, crédits, déplacements des messagers, présence physique, contributions, timing et récompenses nécessitent leur moteur serveur avant lancement.
+
+## PNJ personnalisés de quête (25 octobre 2026)
+
+Dans **PNJ, GA & objets**, ajouter ou ouvrir une fiche PNJ puis cliquer sur
+**Ouvrir l’éditeur de PNJ**. L’éditeur de personnages s’ouvre dans un onglet.
+**Enregistrer ce PNJ dans la quête** conserve ses pièces, couleurs, proportions,
+réglages de calques et cadrage dans cette fiche du projet. Rouvrir le personnage
+reprend ces réglages. Fermer sans enregistrer laisse la fiche inchangée.
+Le brouillon autonome de l’éditeur de portraits ne remplace pas celui d’un PNJ.
+
+Renseigner le lieu et le dialogue associé, en utilisant l’identifiant du PNJ
+comme interlocuteur (`speakerId` et `dialogue.qui`). Tous les dialogues de ce
+personnage dans le paquet utilisent son portrait personnalisé. Celui-ci est
+prioritaire sur son illustration importée. Les PNJ restent propres au projet ;
+les projets d’un scénario composé partagent leur catalogue de personnages.
+Enregistrer le projet JSON ou installer avec **Enregistrer dans le jeu** conserve
+les personnages ; l’export inclut aussi leurs réglages dans `npcs.json`.
+Après installation et redémarrage du serveur, les conversations utilisent les
+mêmes calques et réglages que l’aperçu. Cela ne crée pas de combattant sur la carte
+et ne change aucune règle de progression, de combat ou de position.

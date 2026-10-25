@@ -414,3 +414,54 @@ footer {
     min-width: 0;
   }
 }
+/* Navigation du guide de règles et index thématique. */
+.theme-contents {
+  padding-left: 1.15rem;
+  margin: 1rem 0 0;
+  font-size: 0.85rem;
+}
+.theme-contents li {
+  margin: 0.4rem 0;
+}
+.rule-topic {
+  clear: both;
+  margin-bottom: 2rem;
+  scroll-margin-top: 1.5rem;
+}
+.rule-topic h2 {
+  border-bottom: 1px solid #36434b;
+  padding-bottom: 0.5rem;
+}
+.secondary-nav {
+  margin-top: 1rem;
+  border-top: 1px solid #36434b;
+  padding-top: 0.75rem;
+}
+.secondary-nav summary {
+  cursor: pointer;
+  color: #b4c4cb;
+  padding: 0.5rem;
+}
+.secondary-nav a {
+  display: block;
+}
+.reference-group {
+  border: 1px solid #36434b;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+.reference-group > summary {
+  cursor: pointer;
+  color: #b9dca6;
+  font-weight: 600;
+}
+.reference-group[open] > .cards {
+  margin-top: 1rem;
+}
+@media (max-width: 760px) {
+  .secondary-nav {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+}

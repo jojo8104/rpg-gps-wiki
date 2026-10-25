@@ -23,6 +23,28 @@ expliquer leur effet ou leur absence d’effet sur les règles dans la rubrique 
 
 ## Articles de référence et illustrations
 
+Le parcours principal est un guide de règles par thème, destiné aux joueurs.
+Dans `docs/wiki-content.json`, les articles `audience: "players"` décrivent les
+actions possibles, leurs conditions, leurs conséquences et des exemples utiles.
+Leurs `topics` contiennent un `title` et des `paragraphs` ; `seeAlso` relie les
+autres thèmes ou catalogues. Conserver les identifiants des pages existantes.
+Ne pas ajouter de notes de fixture, de compilation ou de retouches graphiques
+dans ces pages : les évolutions restent consultables dans l’historique et les
+articles de référence dédiés.
+
+L’accueil présente les thèmes et leurs fonctionnalités, puis les catalogues.
+Les règles détaillées sont regroupées par thème. Les publics secondaires sont
+`designers`, `administrators`, `development`, `planned` et `historical` ; ces
+rubriques sont séparées du guide et repliées par défaut. Le champ `audience`
+de `docs/wiki-articles.json` classe les documents de référence de la même façon.
+Le champ `status` continue de préciser les disponibilités particulières.
+
+Vérifier les règles contre le moteur avant de donner des chiffres. En particulier,
+l’effectif maximal d’une troupe vient de son grade (`rank-system.js`), et non du
+champ historique `maxQuantity` du catalogue des types. Le coût d’autorité du type
+et celui du grade s’additionnent. Ne pas mélanger ces valeurs avec le Commandement
+du héros ni avec la limite du nombre de troupes.
+
 Les liens de lecture vont vers des articles HTML, jamais vers le Markdown brut.
 Le rendu prend en charge les titres, paragraphes, listes, citations, tableaux,
 exemples de code et liens entre documents. Le texte de référence est présenté

@@ -18,7 +18,7 @@ Après la page de titre, le menu propose quatre choix avant la sélection du jou
 - **Rejoindre une partie** : ouverture du formulaire de code après le choix du joueur. Le serveur valide l’inscription.
 - **Partie test** : préparation existante sur carte fictive.
 
-Le retour depuis le choix du joueur ou le formulaire de connexion ramène au menu des aventures. Le retour depuis ce menu ramène à la page de titre. La reprise enregistrée reste disponible depuis l’accueil.
+Le retour depuis le choix du joueur ou le formulaire de connexion ramène au menu des aventures. Le retour depuis ce menu ramène à la page de titre. L’accueil distingue « Reprendre la partie en cours » (reconnexion avec le jeton du navigateur) et « Charger une partie » (catalogue des sauvegardes serveur).
 
 Le retour au menu masque aussi le pied de la salle et retire la présentation de
 l’éditeur de terrain. Les tests des quatre parcours simulent les classes du DOM
@@ -111,3 +111,15 @@ Le menu Sauvegardes est accessible à l’organisateur dans le lobby, y compris 
 La création, le test et la connexion au lobby utilisent le même contenu de sélection de classe : titre, description, portraits, forces et caractéristiques, avec une légende accessible commune. Le sélecteur affiche un chargement tant que le catalogue n’est pas disponible ; la liste déroulante historique n’est plus présentée comme une interface alternative. L’arrivée par Rejoindre cible explicitement la page des joueurs et de leur personnage.
 
 Une classe déjà confirmée par le serveur est conservée lors du rafraîchissement du catalogue. Le lobby ne présélectionne pas une classe à la place d’un joueur et le bouton de disponibilité reste désactivé pendant le chargement des fiches. Les verrouillages d’une partie commencée ou d’une sauvegarde reprise et les rôles organisateurs sans héros restent appliqués. Ces ajustements de présentation ne changent ni les statistiques ni les validations serveur.
+
+## Charger une partie depuis l’accueil
+
+Correction du 24 octobre 2026 : après chargement, le salon affiche directement les joueurs présents et les héros attendus. La reprise ne repasse pas par les validations locales de création (terrain, réglages et préparation), même si la sauvegarde contient une préparation activée. Cela évite un renvoi vers une étape masquée. Les confirmations de disponibilité et les validations de démarrage restent contrôlées par le serveur ; aucune règle du jeu ne change.
+
+« Reprendre la partie en cours » reconnecte la session courante et ne représente pas la bibliothèque des sauvegardes. Ce bouton reste conditionné à la présence d’un jeton local.
+
+« Charger une partie » est disponible même sans session enregistrée. Le panneau présente toutes les sauvegardes du serveur, avec leur nom, date, compte organisateur et nombre de joueurs. La consultation ne crée aucun salon et ne charge aucun monde de jeu. Le choix Charger sélectionne explicitement le compte organisateur indiqué, puis demande au serveur de préparer la reprise. Un compte occupé sur un autre appareil est refusé. Une sauvegarde dont le compte organisateur a disparu reste visible mais ne peut pas être chargée par ce parcours.
+
+Le serveur vérifie le propriétaire et réutilise le chargement de sauvegarde existant. Le salon est créé seulement au choix d’une sauvegarde, puis le héros et les places enregistrés sont rétablis ; les autres joueurs rejoignent et chacun se déclare prêt avant le démarrage. Les statistiques, ressources, quêtes et combats proviennent toujours du serveur. La sauvegarde source est conservée après chargement. La reprise préparée est elle-même persistée.
+
+Les sauvegardes restent dans server-state.json, sous RPG_GPS_DATA_DIR (par défaut /var/lib/rpg-gps). Le Dashboard affiche leur catalogue dans l’onglet Sauvegardes et permet de supprimer une sauvegarde après confirmation. Supprimer la source ne supprime pas une partie déjà chargée, qui possède sa propre copie, ni les comptes joueurs. Ces changements concernent l’accès et la gestion des sauvegardes, sans modifier les règles du moteur.

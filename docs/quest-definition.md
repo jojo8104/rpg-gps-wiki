@@ -234,3 +234,7 @@ Ce changement de présentation ne modifie aucune règle ni sauvegarde de quête.
 ## Contrat de coopération en conception — 20 octobre 2026
 
 Le champ optionnel cooperation de la quête définit mode (solo/open/leader/together), minimumPlayers, maximumPlayers, invitation (ga-messenger) et joinInProgress (allowed/closed). Il est conservé par Quest et sa validation impose des effectifs cohérents. Le champ cooperation.type des actions accepte simultaneous, roles, relay et contribution et nécessite une quête multijoueur. Ces données décrivent une intention de conception ; leur exécution serveur reste à développer, sans modification de la progression ni des récompenses actuelles. Voir quest-editor.md pour les événements stratégiques et leurs blocs.
+
+## Présentation du journal
+
+Les quêtes sont présentées dans des blocs compacts repliés au départ, avec leur titre et leur statut ou catégorie. Un bouton permet de déplier les objectifs, la progression, le bilan et les actions disponibles. Le choix ouvert ou fermé est conservé pendant les rafraîchissements du journal. Cette présentation concerne les missions du moteur, de campagne, annexes et d’équipe ; elle ne modifie ni les objectifs ni les commandes validées par le serveur.
