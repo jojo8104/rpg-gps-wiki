@@ -1699,6 +1699,20 @@
       "note": "Refonte du guide joueur par thèmes : règles, conditions, exemples et séparation des outils et notes de développement",
       "hash": "2575edda4fdfd3377d0598ccd6bec83e0f34377dadd0e33e82d1e462bacaab74",
       "file": "archives/atelier-quetes/v19.html"
+    },
+    {
+      "version": 20,
+      "date": "2026-10-25T18:33:30.351Z",
+      "note": "Schémas de scénario, proposition de quête, menus de références, panneau réglable et action Modifier",
+      "hash": "78378a6fc05d2c0944136b7a88d5a9c610ba91bb7c8a65e4638428b2e32f949b",
+      "file": "archives/atelier-quetes/v20.html"
+    },
+    {
+      "version": 21,
+      "date": "2026-10-25T18:41:05.226Z",
+      "note": "Illustrations des contrôles de Modifier et schéma du scénario",
+      "hash": "6acc80ebc484d4707b7c8fa2cf20433fb3e20083b37072d58a5d5dbf7251c9e5",
+      "file": "archives/atelier-quetes/v21.html"
     }
   ],
   "article-startup-menu": [
@@ -1775,6 +1789,27 @@
       "note": "Refonte du guide joueur par thèmes : règles, conditions, exemples et séparation des outils et notes de développement",
       "hash": "0cfd4a7d8bfbe8d2e7d610c65a2c5b697ef0a74dae992032439d845e62a60013",
       "file": "archives/article-hero-items/v2.html"
+    },
+    {
+      "version": 3,
+      "date": "2026-10-28T04:10:07.138Z",
+      "note": "Raccordement des PNJ, rumeurs fiables et decouvertes sans exploitation automatique",
+      "hash": "f83d16213805694089190da3b8ea34276493cf52687e89c59fa206e673aa8e07",
+      "file": "archives/article-hero-items/v3.html"
+    },
+    {
+      "version": 4,
+      "date": "2026-10-28T04:14:20.328Z",
+      "note": "Clarification des regles disponibles de prospection, rumeurs et specialistes",
+      "hash": "c1e877b9a8b3ec187f2004cf9e9b6e78f00e74790f9343d01f553a39f2edd556",
+      "file": "archives/article-hero-items/v4.html"
+    },
+    {
+      "version": 5,
+      "date": "2026-10-29T17:03:46.421Z",
+      "note": "Rumeurs payantes, messages de recherche et documents hors capacite des bagages",
+      "hash": "93cf2929aaf3466b38c7b23456dcff7b22a2356f26b3d2943148cc1032ff2781",
+      "file": "archives/article-hero-items/v5.html"
     }
   ],
   "article-hero-progression-display": [
@@ -1943,6 +1978,13 @@
       "note": "Guide des règles par thème complété : bâtiments, formations, courrier, surveillance et restrictions du marché",
       "hash": "1505d06c704b5ffc44578bbab10f0e340b92b267e19e75b1e927d10ce10ffa70",
       "file": "archives/article-location-improvements/v5.html"
+    },
+    {
+      "version": 6,
+      "date": "2026-11-01T02:50:03.670Z",
+      "note": "Fondation des camps sur place ou par expedition et evolutions selon le terrain",
+      "hash": "409f06bc806f703d6dee36610e53b080c8bc280b38e017527384733f2f133c32",
+      "file": "archives/article-location-improvements/v6.html"
     }
   ],
   "article-location-taxes": [
@@ -2078,6 +2120,13 @@
       "note": "Refonte du guide joueur par thèmes : règles, conditions, exemples et séparation des outils et notes de développement",
       "hash": "652d8b4e7aa1e89604d05e07250dd8cb978e664c617547261c48c1d50a97bde3",
       "file": "archives/article-quest-definition/v3.html"
+    },
+    {
+      "version": 4,
+      "date": "2026-10-25T18:33:30.351Z",
+      "note": "Schémas de scénario, proposition de quête, menus de références, panneau réglable et action Modifier",
+      "hash": "72ac75ec38daf452d45be355dfbe15a9a0050783bbc39bbf9259b0b28b7e1d8f",
+      "file": "archives/article-quest-definition/v4.html"
     }
   ],
   "article-missing-prospectors": [
@@ -2126,6 +2175,13 @@
       "note": "Injection de l’hôte navigateur dans la vue des ressources pour tester les modèles de groupes sans window global",
       "hash": "9a3f6b6f7662c534acda05e2c7904e546c546b2fb3122b6370a367c9af0315e7",
       "file": "archives/article-quest-editor/v3.html"
+    },
+    {
+      "version": 4,
+      "date": "2026-10-25T18:33:30.351Z",
+      "note": "Schémas de scénario, proposition de quête, menus de références, panneau réglable et action Modifier",
+      "hash": "13f178a8d277f6caac1d33eb4dad0962baf7272279449780acf87e74a1d483e6",
+      "file": "archives/article-quest-editor/v4.html"
     }
   ],
   "article-battle-tactics": [
@@ -2379,6 +2435,132 @@
       "note": "Refonte du guide joueur par thèmes : règles, conditions, exemples et séparation des outils et notes de développement",
       "hash": "940e7dae0faf638847be49cc2b008821e8ee34c4f3c90b1dff3799c090902497",
       "file": "archives/article-idees-et-todo/v2.html"
+    },
+    {
+      "version": 3,
+      "date": "2026-10-25T21:52:39.965Z",
+      "note": "Specification des ressources cachees par cellule et des campements specialises",
+      "hash": "11cc143197d2b13472a1827f7e9f173ee50a1147c7e2f4b8ad1313bee7c68145",
+      "file": "archives/article-idees-et-todo/v3.html"
+    },
+    {
+      "version": 4,
+      "date": "2026-10-25T22:26:17.331Z",
+      "note": "Decouvertes dans le lieu principal et parchemins a effet exclusif",
+      "hash": "3f23974eb2c94d30d414a5fd5cc25c2e2e86831d0158d2098281447798ad603c",
+      "file": "archives/article-idees-et-todo/v4.html"
+    },
+    {
+      "version": 5,
+      "date": "2026-10-25T22:32:12.740Z",
+      "note": "Disparition des tresors pour tous et preparation des expeditions selon les competences",
+      "hash": "32915eff3b6327585ed9ddf94715553ddbc7065837fc991ddaa9b1ed9dc01c7c",
+      "file": "archives/article-idees-et-todo/v5.html"
+    },
+    {
+      "version": 6,
+      "date": "2026-10-25T22:55:58.536Z",
+      "note": "Scores expedition et puissance, recompenses et preparation des lieux exceptionnels",
+      "hash": "0b1ef27c9e837b2584c4a0987cbe9c244f4bc0888adca7519470ade486ed0f85",
+      "file": "archives/article-idees-et-todo/v6.html"
+    },
+    {
+      "version": 7,
+      "date": "2026-10-26T07:46:41.170Z",
+      "note": "Compatibilite des evolutions des camps et cloture partagee des decouvertes exceptionnelles",
+      "hash": "74d2f67c27071a280a98673a189102c879d5f06b2f3d21d6a433dd17ebd4b24c",
+      "file": "archives/article-idees-et-todo/v7.html"
+    },
+    {
+      "version": 8,
+      "date": "2026-10-26T08:13:07.080Z",
+      "note": "Cartes de localisation generees en fragments, designations des lieux et rumeurs a 5 or",
+      "hash": "5fb88d992229211467044732bc3801d9a9ffeee72efa8f7e5de9c505600dbe88",
+      "file": "archives/article-idees-et-todo/v8.html"
+    },
+    {
+      "version": 9,
+      "date": "2026-10-26T08:29:22.938Z",
+      "note": "Recherche active par jauge et dialogues, verification de compatibilite des indices",
+      "hash": "21e35c01c35ab763116ce445b865f075c1876000cc094de79cd7cb8542ae3ff2",
+      "file": "archives/article-idees-et-todo/v9.html"
+    },
+    {
+      "version": 10,
+      "date": "2026-10-26T13:21:31.130Z",
+      "note": "Dialogue a bonus expedition, indices reutilisables et recharge immediate de recherche",
+      "hash": "1a6740fa9ca06c8722b883dd20dbf2d3ebdb69d40f4c2b6875aac2ee0413b8d5",
+      "file": "archives/article-idees-et-todo/v10.html"
+    },
+    {
+      "version": 11,
+      "date": "2026-10-26T13:48:53.898Z",
+      "note": "Degats et variations de moral apres chaque tentative de donjon",
+      "hash": "081f8919c208938dfd538f71634c10c9edf7d2be12377f7ae847fde9a2197c2a",
+      "file": "archives/article-idees-et-todo/v11.html"
+    },
+    {
+      "version": 12,
+      "date": "2026-10-26T22:30:48.889Z",
+      "note": "Validation des repartitions, disparition a 25 pour cent, archives et proposition de scores",
+      "hash": "a8a0b4c80743e47c2255600c7cbce71170699410929e74b185282b9cb1915c85",
+      "file": "archives/article-idees-et-todo/v12.html"
+    },
+    {
+      "version": 13,
+      "date": "2026-10-26T22:42:16.046Z",
+      "note": "Validation du bareme expedition et de la formule de reussite des donjons",
+      "hash": "ddfcb524d14deed7313f6dca2a0b44c4d47667ec7df3372787ad2ef110b9dcff",
+      "file": "archives/article-idees-et-todo/v13.html"
+    },
+    {
+      "version": 14,
+      "date": "2026-10-26T22:53:16.868Z",
+      "note": "Socle persistant versionne de l exploration, reprise et confidentialite serveur",
+      "hash": "055209cda6284c2f3d9fc7cb27e5534173251ceec9ea71166557bcf789b06c84",
+      "file": "archives/article-idees-et-todo/v14.html"
+    },
+    {
+      "version": 15,
+      "date": "2026-10-28T01:01:48.006Z",
+      "note": "Generation serveur du terrain au lancement, influence des lieux et sites exceptionnels rattaches",
+      "hash": "733122cefbf6620966c606cfec567234563f37ec43d06ce43e32a21793dfcc75",
+      "file": "archives/article-idees-et-todo/v15.html"
+    },
+    {
+      "version": 16,
+      "date": "2026-10-28T01:47:26.710Z",
+      "note": "Vue exploration par joueur, indices autorises et protection des secrets dans les envois reseau",
+      "hash": "9e28c87d6b850810206e8bee4a71c6f6f72a06c4be4682e39af8e34c085f5d16",
+      "file": "archives/article-idees-et-todo/v16.html"
+    },
+    {
+      "version": 17,
+      "date": "2026-10-28T03:24:10.094Z",
+      "note": "Suppression des faux indices et annonce mondiale cinq minutes apres une disparition",
+      "hash": "2168ecffd63ec4c1f066df197fc44af03f36fcc53b66196d3769a54448b99722",
+      "file": "archives/article-idees-et-todo/v17.html"
+    },
+    {
+      "version": 18,
+      "date": "2026-10-28T04:10:07.138Z",
+      "note": "Raccordement des PNJ, rumeurs fiables et decouvertes sans exploitation automatique",
+      "hash": "2b2c92b999df04db0375fa3fd7824dc7c0df4adf76ac078ca5c8c46edfa11e4d",
+      "file": "archives/article-idees-et-todo/v18.html"
+    },
+    {
+      "version": 19,
+      "date": "2026-10-29T17:03:46.421Z",
+      "note": "Rumeurs payantes, messages de recherche et documents hors capacite des bagages",
+      "hash": "a2172dd395c1bf76baf6bf11deafed1f60481eb6bb15a0c4589425b62e2ed49c",
+      "file": "archives/article-idees-et-todo/v19.html"
+    },
+    {
+      "version": 20,
+      "date": "2026-10-30T05:03:43.924Z",
+      "note": "Recherche exterieure : jauge validee, consommation serveur et discretion pendant 60 secondes",
+      "hash": "71e1ecb8715b7a169275e86a3aa406f65047914fb116d0b595b1d6408b30af4b",
+      "file": "archives/article-idees-et-todo/v20.html"
     }
   ],
   "article-play-area-map": [
@@ -2642,6 +2824,13 @@
       "note": "Refonte du guide joueur par thèmes : règles, conditions, exemples et séparation des outils et notes de développement",
       "hash": "b4a520a5dd40a014315f7dda35bcbed5f9642fa5d23a66ce85cff85d477522b5",
       "file": "archives/article-modular-portraits/v23.html"
+    },
+    {
+      "version": 24,
+      "date": "2026-10-25T20:36:49.125Z",
+      "note": "Portraits : accessoires cumulables, barbes à 100 % et déplacements élargis",
+      "hash": "d941864e47e01260fc66bb6f2cbaa158440ae31d0bdcf0a52b8b67dabc7049d5",
+      "file": "archives/article-modular-portraits/v24.html"
     }
   ],
   "article-battlefield-generation": [
@@ -2674,6 +2863,111 @@
       "note": "Refonte du guide joueur par thèmes : règles, conditions, exemples et séparation des outils et notes de développement",
       "hash": "3155a82f42724c36bef7302e478dd8df3296d4a2aa583a830be7661ad114a9d2",
       "file": "archives/exploration/v1.html"
+    },
+    {
+      "version": 2,
+      "date": "2026-10-28T03:10:51.582Z",
+      "note": "Cartes de localisation verifiees et cycle de vie des items indices : sources, pertes, ventes et archives",
+      "hash": "9370de485cdf09b3fbf7fc532c3eda163042e41db2a38654d8c46b4afa2e58b2",
+      "file": "archives/exploration/v2.html"
+    },
+    {
+      "version": 3,
+      "date": "2026-10-28T03:24:10.094Z",
+      "note": "Suppression des faux indices et annonce mondiale cinq minutes apres une disparition",
+      "hash": "9b059b908c3869ad2e73f0b72060a8bf987ea203754d441378097b2f8777b0be",
+      "file": "archives/exploration/v3.html"
+    },
+    {
+      "version": 4,
+      "date": "2026-10-28T04:10:07.138Z",
+      "note": "Raccordement des PNJ, rumeurs fiables et decouvertes sans exploitation automatique",
+      "hash": "8ecf34dbcd1e8400f180291d852fc65ec832b5146c2bda3ff4d5c8e017e54c90",
+      "file": "archives/exploration/v4.html"
+    },
+    {
+      "version": 5,
+      "date": "2026-10-28T05:48:53.032Z",
+      "note": "Chances de decouverte augmentees : metiers 50 pour cent et generalistes 20 pour cent",
+      "hash": "5bca23a58022a9ffc9ce27e623b55abd9eaf3f7299b22530b3be482f6834c13d",
+      "file": "archives/exploration/v5.html"
+    },
+    {
+      "version": 6,
+      "date": "2026-10-29T17:03:46.421Z",
+      "note": "Rumeurs payantes, messages de recherche et documents hors capacite des bagages",
+      "hash": "e3a5f4c4c6d3dfa1c6bea7ff050cea68fcc203657260de9b0b802b16bcc69292",
+      "file": "archives/exploration/v6.html"
+    },
+    {
+      "version": 7,
+      "date": "2026-10-29T17:05:45.014Z",
+      "note": "Alignement du guide joueur : ecoute payante et documents sans encombrement",
+      "hash": "eab683b823f110b58db1a9966379e60c7e04a607600cb87f960265c5947d6fb5",
+      "file": "archives/exploration/v7.html"
+    },
+    {
+      "version": 8,
+      "date": "2026-10-30T05:03:43.924Z",
+      "note": "Recherche exterieure : jauge validee, consommation serveur et discretion pendant 60 secondes",
+      "hash": "c0d755f3dbf8356765c22712391384a070b7a32bd4a1ca7c1ed1b98ff80b1d30",
+      "file": "archives/exploration/v8.html"
+    },
+    {
+      "version": 9,
+      "date": "2026-10-31T23:11:04.814Z",
+      "note": "Sites exceptionnels uniquement hors de l influence des lieux normaux",
+      "hash": "4f0ab8a1a00ad57a53d77225ccf88228d9f615c8bce19c1a6d88413a3351de20",
+      "file": "archives/exploration/v9.html"
+    },
+    {
+      "version": 10,
+      "date": "2026-10-31T23:11:56.314Z",
+      "note": "Sites exceptionnels uniquement hors de l influence des lieux normaux",
+      "hash": "7a3c1a6ad5ea39a2655652e7f210afcba4bbcea9a04e30d8bdb3b2482759c332",
+      "file": "archives/exploration/v10.html"
+    },
+    {
+      "version": 11,
+      "date": "2026-10-31T23:21:39.715Z",
+      "note": "Preparation et depart des expeditions exceptionnelles avec score serveur commun",
+      "hash": "6e108c91ad6c4b6ab7fe822ae437178816fa478650a9d52b2c4d35e83c8390cc",
+      "file": "archives/exploration/v11.html"
+    },
+    {
+      "version": 12,
+      "date": "2026-10-31T23:36:52.573Z",
+      "note": "Resolution des sites exceptionnels : butin, puissance, degats, moral et retour",
+      "hash": "132c3a72919ba19d252ffc6da28062735334f5074e13d6867055b63387035402",
+      "file": "archives/exploration/v12.html"
+    },
+    {
+      "version": 13,
+      "date": "2026-11-01T01:59:06.955Z",
+      "note": "Cloture partagee des sites : missions concurrentes, indices et archives",
+      "hash": "0c32dba63f3fa7b11ebd7513f46cb47f8aaa83786f4a86abcfd205706d8f6730",
+      "file": "archives/exploration/v13.html"
+    },
+    {
+      "version": 14,
+      "date": "2026-11-01T02:03:15.869Z",
+      "note": "Annonce immediate pour tous apres victoire sur un site exceptionnel",
+      "hash": "3ffbf3bd4c46dc1a1e47e814f4175520f216ce06abc5a9f3c6165311e37a9a55",
+      "file": "archives/exploration/v14.html"
+    },
+    {
+      "version": 15,
+      "date": "2026-11-01T02:50:03.670Z",
+      "note": "Fondation des camps sur place ou par expedition et evolutions selon le terrain",
+      "hash": "d7f6430f8138ba9062ca1e9df3ffd14d101e092a0a7b72d64fbb3ec232300eb0",
+      "file": "archives/exploration/v15.html"
+    },
+    {
+      "version": 16,
+      "date": "2026-11-01T06:39:25.721Z",
+      "note": "Carte des découvertes, fiches de préparation et validation du parcours",
+      "hash": "5214572245000ec3ec8e436f50122db8f9ddd954f316495eaf61bb94cc2c6258",
+      "file": "archives/exploration/v16.html"
     }
   ],
   "pouvoirs": [
@@ -2745,6 +3039,13 @@
       "note": "Tableaux de statistiques illustrés, introductions courtes, explications de lecture et exemples illustrés",
       "hash": "e028d80025dfc04df8a1fcd554b73411068c158f3ac8352e6260c8503cbe02e1",
       "file": "archives/economie/v3.html"
+    },
+    {
+      "version": 4,
+      "date": "2026-10-28T04:14:20.328Z",
+      "note": "Clarification des regles disponibles de prospection, rumeurs et specialistes",
+      "hash": "8bc58c30e9b345ddb92732f28c829e3d8b02124b5aa18b7f401aa8e65f64e759",
+      "file": "archives/economie/v4.html"
     }
   ],
   "cooperation": [
@@ -2786,6 +3087,906 @@
       "note": "Refonte du guide joueur par thèmes : règles, conditions, exemples et séparation des outils et notes de développement",
       "hash": "c7b405b8a51bf009f2de33ab17250cc1340e6d36744eb754ff73899662bd3754",
       "file": "archives/butin/v1.html"
+    }
+  ],
+  "portrait-tools": [
+    {
+      "version": 1,
+      "date": "2026-10-25T20:36:49.125Z",
+      "note": "Portraits : accessoires cumulables, barbes à 100 % et déplacements élargis",
+      "hash": "0fc906d95bf84ec845be4e153e211862a62419778729804a6868d211e050a683",
+      "file": "archives/portrait-tools/v1.html"
+    }
+  ],
+  "ressources-cachees": [
+    {
+      "version": 1,
+      "date": "2026-10-25T21:52:39.965Z",
+      "note": "Specification des ressources cachees par cellule et des campements specialises",
+      "hash": "ae54a613261a31032581152b3476baf4b0fa9ca6b3c6f897038a220b8e52552c",
+      "file": "archives/ressources-cachees/v1.html"
+    },
+    {
+      "version": 2,
+      "date": "2026-10-25T21:58:30.581Z",
+      "note": "Ajout des cinq marqueurs de ressources naturelles decouvertes",
+      "hash": "7eb19b684d48818d9613d235243cdc4f96f8dde9c1f340d7f3391eb3a034a14f",
+      "file": "archives/ressources-cachees/v2.html"
+    },
+    {
+      "version": 3,
+      "date": "2026-10-25T22:26:17.331Z",
+      "note": "Decouvertes dans le lieu principal et parchemins a effet exclusif",
+      "hash": "afe5c004a538951787da3dc8c3d5caf97ae965e424ada88d8459f061fdda48a9",
+      "file": "archives/ressources-cachees/v3.html"
+    },
+    {
+      "version": 4,
+      "date": "2026-10-25T22:32:12.740Z",
+      "note": "Disparition des tresors pour tous et preparation des expeditions selon les competences",
+      "hash": "4a654a34a75b7b46e194364e6cf92142027ed08dca1262e3ba46242b83d37bea",
+      "file": "archives/ressources-cachees/v4.html"
+    },
+    {
+      "version": 5,
+      "date": "2026-10-25T22:55:58.536Z",
+      "note": "Scores expedition et puissance, recompenses et preparation des lieux exceptionnels",
+      "hash": "51e60cf680405f761758510b3795954db2e1ce360a29a132e861d6c81d017430",
+      "file": "archives/ressources-cachees/v5.html"
+    },
+    {
+      "version": 6,
+      "date": "2026-10-26T07:46:41.170Z",
+      "note": "Compatibilite des evolutions des camps et cloture partagee des decouvertes exceptionnelles",
+      "hash": "cb6b01e77b7e8ad61947fadaef5e064aa4281bb50cff0084c5843f87e379e3d9",
+      "file": "archives/ressources-cachees/v6.html"
+    },
+    {
+      "version": 7,
+      "date": "2026-10-26T08:13:07.080Z",
+      "note": "Cartes de localisation generees en fragments, designations des lieux et rumeurs a 5 or",
+      "hash": "b0beb36fb25b743c0ab3bcb4278248ba5930fda7eb716692515017b094e34ec1",
+      "file": "archives/ressources-cachees/v7.html"
+    },
+    {
+      "version": 8,
+      "date": "2026-10-26T08:29:22.938Z",
+      "note": "Recherche active par jauge et dialogues, verification de compatibilite des indices",
+      "hash": "1e48aa7b8e145f71945fa08f0c0be84a385f75c5b24433f33696dd5f242ade3c",
+      "file": "archives/ressources-cachees/v8.html"
+    },
+    {
+      "version": 9,
+      "date": "2026-10-26T13:21:31.130Z",
+      "note": "Dialogue a bonus expedition, indices reutilisables et recharge immediate de recherche",
+      "hash": "e243d823a125348d3de9ec7ca6e30d06c8e883bbb6e1d0561201e4ea30e0ede7",
+      "file": "archives/ressources-cachees/v9.html"
+    },
+    {
+      "version": 10,
+      "date": "2026-10-26T13:48:53.898Z",
+      "note": "Degats et variations de moral apres chaque tentative de donjon",
+      "hash": "8e0ad3360a208380967ad26de5135d3a3fae54b0f038e86bc255d2d1d3732a48",
+      "file": "archives/ressources-cachees/v10.html"
+    },
+    {
+      "version": 11,
+      "date": "2026-10-26T22:30:48.889Z",
+      "note": "Validation des repartitions, disparition a 25 pour cent, archives et proposition de scores",
+      "hash": "9adfd75f40bf46ae7041d9482a71e04c6a65677cb017c2f0cb7ef9f9b8191745",
+      "file": "archives/ressources-cachees/v11.html"
+    },
+    {
+      "version": 12,
+      "date": "2026-10-26T22:42:16.046Z",
+      "note": "Validation du bareme expedition et de la formule de reussite des donjons",
+      "hash": "efaf44d7a34275067da940ab2e8732a8a5e7c0304335fb99125bea6d80edc119",
+      "file": "archives/ressources-cachees/v12.html"
+    },
+    {
+      "version": 13,
+      "date": "2026-10-28T03:24:10.094Z",
+      "note": "Suppression des faux indices et annonce mondiale cinq minutes apres une disparition",
+      "hash": "cc31cb71051cc354d50ac6474f65cc17873349a968f2f4c10dab3ff5710faf8d",
+      "file": "archives/ressources-cachees/v13.html"
+    },
+    {
+      "version": 14,
+      "date": "2026-10-28T07:18:36.764Z",
+      "note": "Distinction entre bruit des tavernes et fiabilite des objets indices",
+      "hash": "21ded1358e80354c5a7b0fb11e64ee62f4c568da45377facd8eafe76c69f070c",
+      "file": "archives/ressources-cachees/v14.html"
+    },
+    {
+      "version": 15,
+      "date": "2026-10-29T17:03:46.421Z",
+      "note": "Rumeurs payantes, messages de recherche et documents hors capacite des bagages",
+      "hash": "020d437ace6ca7ec983218e946fe97bb0f659a54cfc845949551e0ad53229752",
+      "file": "archives/ressources-cachees/v15.html"
+    },
+    {
+      "version": 16,
+      "date": "2026-10-29T17:05:45.014Z",
+      "note": "Alignement du guide joueur : ecoute payante et documents sans encombrement",
+      "hash": "ca4dd165d57e075f53b989095276ba4dbf53c2c3fce31c593b4eac408a23d5b6",
+      "file": "archives/ressources-cachees/v16.html"
+    },
+    {
+      "version": 17,
+      "date": "2026-10-30T05:03:43.924Z",
+      "note": "Recherche exterieure : jauge validee, consommation serveur et discretion pendant 60 secondes",
+      "hash": "98e83aaa1c56482fba77505183b82409dc909fad31ecb14dc4d910d23a5a1e5a",
+      "file": "archives/ressources-cachees/v17.html"
+    },
+    {
+      "version": 18,
+      "date": "2026-10-31T23:11:04.814Z",
+      "note": "Sites exceptionnels uniquement hors de l influence des lieux normaux",
+      "hash": "53f74d579ed1cf79cda27d52ca7dfc7dfc6c2f8278522a9092bcd0c4f1e3fccb",
+      "file": "archives/ressources-cachees/v18.html"
+    },
+    {
+      "version": 19,
+      "date": "2026-10-31T23:11:56.314Z",
+      "note": "Sites exceptionnels uniquement hors de l influence des lieux normaux",
+      "hash": "bfff1714cc66b9b52421b5bd525f5f8dcb0cd433eb60f367cfc550e6e2c6d63c",
+      "file": "archives/ressources-cachees/v19.html"
+    }
+  ],
+  "article-hidden-resource-cells": [
+    {
+      "version": 1,
+      "date": "2026-10-25T21:52:39.965Z",
+      "note": "Specification des ressources cachees par cellule et des campements specialises",
+      "hash": "e3c9876253b6f7d05c8d37169b460ace7bf050ad3752a26dafe66be472191a30",
+      "file": "archives/article-hidden-resource-cells/v1.html"
+    },
+    {
+      "version": 2,
+      "date": "2026-10-25T21:58:30.581Z",
+      "note": "Ajout des cinq marqueurs de ressources naturelles decouvertes",
+      "hash": "5893816ab43e6ac051bacb608369c06ea5722bfa20d7f930cbc241c311edcb49",
+      "file": "archives/article-hidden-resource-cells/v2.html"
+    },
+    {
+      "version": 3,
+      "date": "2026-10-25T22:26:17.331Z",
+      "note": "Decouvertes dans le lieu principal et parchemins a effet exclusif",
+      "hash": "a3b74c41aaf9a484df1d8fcf91bdf8e2e3643b34ccd89dcc0c6e5957d7a32991",
+      "file": "archives/article-hidden-resource-cells/v3.html"
+    },
+    {
+      "version": 4,
+      "date": "2026-10-25T22:32:12.740Z",
+      "note": "Disparition des tresors pour tous et preparation des expeditions selon les competences",
+      "hash": "479be5ebf62d60dae8b8989fa6217b6ac17841c455ba791b77571b88c8aa918a",
+      "file": "archives/article-hidden-resource-cells/v4.html"
+    },
+    {
+      "version": 5,
+      "date": "2026-10-25T22:55:58.536Z",
+      "note": "Scores expedition et puissance, recompenses et preparation des lieux exceptionnels",
+      "hash": "823ab349fa63f2edd71dcda0ca0798e601c426e3cb499902b25b9e7da41e1dc2",
+      "file": "archives/article-hidden-resource-cells/v5.html"
+    },
+    {
+      "version": 6,
+      "date": "2026-10-26T07:46:41.170Z",
+      "note": "Compatibilite des evolutions des camps et cloture partagee des decouvertes exceptionnelles",
+      "hash": "9ce9a0a4d9c46a8afa7aa6fc1887985181ca76b4ed3d704591e99ded45904559",
+      "file": "archives/article-hidden-resource-cells/v6.html"
+    },
+    {
+      "version": 7,
+      "date": "2026-10-26T08:13:07.080Z",
+      "note": "Cartes de localisation generees en fragments, designations des lieux et rumeurs a 5 or",
+      "hash": "9d358ca97246f01be4ba850ba098c309a48f7f5b00a1ccc3633281269fdc0bc3",
+      "file": "archives/article-hidden-resource-cells/v7.html"
+    },
+    {
+      "version": 8,
+      "date": "2026-10-26T08:29:22.938Z",
+      "note": "Recherche active par jauge et dialogues, verification de compatibilite des indices",
+      "hash": "71fe9883374d6844f8807051d4325d1382064d512dfcb9b2cc2a9ea986bff782",
+      "file": "archives/article-hidden-resource-cells/v8.html"
+    },
+    {
+      "version": 9,
+      "date": "2026-10-26T13:21:31.130Z",
+      "note": "Dialogue a bonus expedition, indices reutilisables et recharge immediate de recherche",
+      "hash": "15f137a6714e01038b37dfb1d4650a9456614a82281b88a9464a84f5555044e5",
+      "file": "archives/article-hidden-resource-cells/v9.html"
+    },
+    {
+      "version": 10,
+      "date": "2026-10-26T13:21:51.606Z",
+      "note": "Dialogue a bonus expedition, indices reutilisables et recharge immediate de recherche",
+      "hash": "3e861ca0c5248fdbc4fd143f40615e898503a100cb99087e516c6ae8e7ac9fac",
+      "file": "archives/article-hidden-resource-cells/v10.html"
+    },
+    {
+      "version": 11,
+      "date": "2026-10-26T13:48:53.898Z",
+      "note": "Degats et variations de moral apres chaque tentative de donjon",
+      "hash": "a6517b2ed5359ab10316de78bc7b283e8596b2930a018ae7ff3a497ba5b8644e",
+      "file": "archives/article-hidden-resource-cells/v11.html"
+    },
+    {
+      "version": 12,
+      "date": "2026-10-26T22:30:48.889Z",
+      "note": "Validation des repartitions, disparition a 25 pour cent, archives et proposition de scores",
+      "hash": "ff48683bd5c0664c3f507f9e9583bdf71268dcd9cd656bf7d50e4328289c2449",
+      "file": "archives/article-hidden-resource-cells/v12.html"
+    },
+    {
+      "version": 13,
+      "date": "2026-10-26T22:42:16.046Z",
+      "note": "Validation du bareme expedition et de la formule de reussite des donjons",
+      "hash": "5f409ba8812208f211a19953aa8f5352011e44808c349d2991d350790c711413",
+      "file": "archives/article-hidden-resource-cells/v13.html"
+    },
+    {
+      "version": 14,
+      "date": "2026-10-26T22:53:16.868Z",
+      "note": "Socle persistant versionne de l exploration, reprise et confidentialite serveur",
+      "hash": "56c273278521e1c852ab0f2bac0c16aa99aacf1c81e037b8ea7bee6b2dc30e23",
+      "file": "archives/article-hidden-resource-cells/v14.html"
+    },
+    {
+      "version": 15,
+      "date": "2026-10-28T01:01:48.006Z",
+      "note": "Generation serveur du terrain au lancement, influence des lieux et sites exceptionnels rattaches",
+      "hash": "9b25e2bbd209e4109888f1fcafa8b73803254c244c34c94224c54a773945c8d9",
+      "file": "archives/article-hidden-resource-cells/v15.html"
+    },
+    {
+      "version": 16,
+      "date": "2026-10-28T01:47:26.710Z",
+      "note": "Vue exploration par joueur, indices autorises et protection des secrets dans les envois reseau",
+      "hash": "e56dcbdd7bab0ce5d3b4aab158043ca30e382ba2b13cabeec16cecb6b34a1b3d",
+      "file": "archives/article-hidden-resource-cells/v16.html"
+    },
+    {
+      "version": 17,
+      "date": "2026-10-28T03:10:51.582Z",
+      "note": "Cartes de localisation verifiees et cycle de vie des items indices : sources, pertes, ventes et archives",
+      "hash": "c30eaa8affb45cd8334b44ddf1e11e8e004eac216ff64c3bfcd75e04241f6a90",
+      "file": "archives/article-hidden-resource-cells/v17.html"
+    },
+    {
+      "version": 18,
+      "date": "2026-10-28T03:24:10.094Z",
+      "note": "Suppression des faux indices et annonce mondiale cinq minutes apres une disparition",
+      "hash": "ec19a2db63308e66c648bd14965acdb90952e5d716edade8fc6f7fdba98a059a",
+      "file": "archives/article-hidden-resource-cells/v18.html"
+    },
+    {
+      "version": 19,
+      "date": "2026-10-28T04:10:07.138Z",
+      "note": "Raccordement des PNJ, rumeurs fiables et decouvertes sans exploitation automatique",
+      "hash": "89846b47e830fc2f062925399236acc9667d7e1e4a2c1813fabb9641f5aa1217",
+      "file": "archives/article-hidden-resource-cells/v19.html"
+    },
+    {
+      "version": 20,
+      "date": "2026-10-28T04:14:20.328Z",
+      "note": "Clarification des regles disponibles de prospection, rumeurs et specialistes",
+      "hash": "b22de4d7cadcfab0d3c01d8b6e9602d262bfae36f25c5626a8999d16b7c151b1",
+      "file": "archives/article-hidden-resource-cells/v20.html"
+    },
+    {
+      "version": 21,
+      "date": "2026-10-28T05:48:53.032Z",
+      "note": "Chances de decouverte augmentees : metiers 50 pour cent et generalistes 20 pour cent",
+      "hash": "af04285942b161805c625e14fd1a42e70d69e68cf5d81d0120fbbbe6ebede79d",
+      "file": "archives/article-hidden-resource-cells/v21.html"
+    },
+    {
+      "version": 22,
+      "date": "2026-10-28T07:18:36.764Z",
+      "note": "Distinction entre bruit des tavernes et fiabilite des objets indices",
+      "hash": "8646934b5011b21163399efed0c37cfd1366a7bf46fafef4aa8355a03bcbc74c",
+      "file": "archives/article-hidden-resource-cells/v22.html"
+    },
+    {
+      "version": 23,
+      "date": "2026-10-29T17:03:46.421Z",
+      "note": "Rumeurs payantes, messages de recherche et documents hors capacite des bagages",
+      "hash": "b465fc7f6c5eb0a7703814290085e61d5c5fa535d6aaad6efac9f18e4584c664",
+      "file": "archives/article-hidden-resource-cells/v23.html"
+    },
+    {
+      "version": 24,
+      "date": "2026-10-30T05:03:43.924Z",
+      "note": "Recherche exterieure : jauge validee, consommation serveur et discretion pendant 60 secondes",
+      "hash": "7d5e842a6e750bba9b75bce0be4522657565ead4e2f006ee57edba1fff8b2da1",
+      "file": "archives/article-hidden-resource-cells/v24.html"
+    },
+    {
+      "version": 25,
+      "date": "2026-10-31T23:11:04.814Z",
+      "note": "Sites exceptionnels uniquement hors de l influence des lieux normaux",
+      "hash": "dcff5445b477b4b9d59f8f0ee950746b79c12441d300ebdc3513ec60441023a5",
+      "file": "archives/article-hidden-resource-cells/v25.html"
+    },
+    {
+      "version": 26,
+      "date": "2026-10-31T23:21:39.715Z",
+      "note": "Preparation et depart des expeditions exceptionnelles avec score serveur commun",
+      "hash": "6fb9d008b02cccca660bafa550c01361f5f1ac5074ca065674b55432de3c670b",
+      "file": "archives/article-hidden-resource-cells/v26.html"
+    },
+    {
+      "version": 27,
+      "date": "2026-10-31T23:36:52.573Z",
+      "note": "Resolution des sites exceptionnels : butin, puissance, degats, moral et retour",
+      "hash": "b7fe84d406c9de502547a45280354400be4ae058ff580030c8f4c96df9f4ca6f",
+      "file": "archives/article-hidden-resource-cells/v27.html"
+    },
+    {
+      "version": 28,
+      "date": "2026-11-01T01:59:06.955Z",
+      "note": "Cloture partagee des sites : missions concurrentes, indices et archives",
+      "hash": "27773165fe54b3f2a767be9bb0af50458e1d2dca2ef046a9a94d96678f94e40c",
+      "file": "archives/article-hidden-resource-cells/v28.html"
+    },
+    {
+      "version": 29,
+      "date": "2026-11-01T02:50:03.670Z",
+      "note": "Fondation des camps sur place ou par expedition et evolutions selon le terrain",
+      "hash": "ed29cf9387eb3cb1d9029f84913f184781df8220ccc5eea6aad81b00cbbc8d0e",
+      "file": "archives/article-hidden-resource-cells/v29.html"
+    },
+    {
+      "version": 30,
+      "date": "2026-11-01T06:39:25.721Z",
+      "note": "Carte des découvertes, fiches de préparation et validation du parcours",
+      "hash": "c75b5a073f852d9d6430f75244f93ba3801ffe9adc1392159c8d60f6700b29ee",
+      "file": "archives/article-hidden-resource-cells/v30.html"
+    }
+  ],
+  "exploration-persistence": [
+    {
+      "version": 1,
+      "date": "2026-10-26T22:53:16.868Z",
+      "note": "Socle persistant versionne de l exploration, reprise et confidentialite serveur",
+      "hash": "f8f5f9642a20e203a80ec4c8b2d39e1fa0ebf2508769faf9ed309509cb4fbd5c",
+      "file": "archives/exploration-persistence/v1.html"
+    },
+    {
+      "version": 2,
+      "date": "2026-10-28T01:01:48.006Z",
+      "note": "Generation serveur du terrain au lancement, influence des lieux et sites exceptionnels rattaches",
+      "hash": "be4b6499b81e0b25312355b0f0f7b2eaa8b28f6f6d46648ce8713e11864d4fd8",
+      "file": "archives/exploration-persistence/v2.html"
+    },
+    {
+      "version": 3,
+      "date": "2026-10-28T01:47:26.710Z",
+      "note": "Vue exploration par joueur, indices autorises et protection des secrets dans les envois reseau",
+      "hash": "5783c03f859cd55254d183fde38955f53eb34635e0e0407b1dec6de7453697a2",
+      "file": "archives/exploration-persistence/v3.html"
+    },
+    {
+      "version": 4,
+      "date": "2026-10-28T03:10:51.582Z",
+      "note": "Cartes de localisation verifiees et cycle de vie des items indices : sources, pertes, ventes et archives",
+      "hash": "d245a6271a8d33c4dd8631c2e3150de34c8c6f7962bc86631486f0c618d2024b",
+      "file": "archives/exploration-persistence/v4.html"
+    },
+    {
+      "version": 5,
+      "date": "2026-10-28T03:24:10.094Z",
+      "note": "Suppression des faux indices et annonce mondiale cinq minutes apres une disparition",
+      "hash": "7d64b3c00858a4d501444502586b23363f0fe265e0a60a83345d0f5768053515",
+      "file": "archives/exploration-persistence/v5.html"
+    },
+    {
+      "version": 6,
+      "date": "2026-10-28T04:10:07.138Z",
+      "note": "Raccordement des PNJ, rumeurs fiables et decouvertes sans exploitation automatique",
+      "hash": "e000a5dae58fac17837153e7021aac97ffd9eac02c10b4bed95afaea0354ad75",
+      "file": "archives/exploration-persistence/v6.html"
+    },
+    {
+      "version": 7,
+      "date": "2026-10-31T23:11:56.314Z",
+      "note": "Sites exceptionnels uniquement hors de l influence des lieux normaux",
+      "hash": "468432e9ad6be4b5c8a9f95e247d007e4dc9a60f402e909a5239d78c8022185e",
+      "file": "archives/exploration-persistence/v7.html"
+    }
+  ],
+  "article-exploration-persistence": [
+    {
+      "version": 1,
+      "date": "2026-10-26T22:53:16.868Z",
+      "note": "Socle persistant versionne de l exploration, reprise et confidentialite serveur",
+      "hash": "d1bf54e07ae3a78423ef5f675f60e1a4c72925952d8ccec71366f2ef4beef40f",
+      "file": "archives/article-exploration-persistence/v1.html"
+    },
+    {
+      "version": 2,
+      "date": "2026-10-28T01:01:48.006Z",
+      "note": "Generation serveur du terrain au lancement, influence des lieux et sites exceptionnels rattaches",
+      "hash": "2bbf7cd728ce946fccf10445d55a9450007292d49052bb38785c84315101d1f6",
+      "file": "archives/article-exploration-persistence/v2.html"
+    },
+    {
+      "version": 3,
+      "date": "2026-10-28T01:47:26.710Z",
+      "note": "Vue exploration par joueur, indices autorises et protection des secrets dans les envois reseau",
+      "hash": "74f2a5853f71f0ca91adf0c40c54c13400d3ce9f58cb36990b7d7d13436e832a",
+      "file": "archives/article-exploration-persistence/v3.html"
+    },
+    {
+      "version": 4,
+      "date": "2026-10-28T03:10:51.582Z",
+      "note": "Cartes de localisation verifiees et cycle de vie des items indices : sources, pertes, ventes et archives",
+      "hash": "c7d13f9f975e3e2f6fdbaafb6b483bd843741301579dd9c4a72f05f75020f711",
+      "file": "archives/article-exploration-persistence/v4.html"
+    },
+    {
+      "version": 5,
+      "date": "2026-10-28T03:24:10.094Z",
+      "note": "Suppression des faux indices et annonce mondiale cinq minutes apres une disparition",
+      "hash": "6cb827a167710e17a94b1a1d43157bde83afb2fa53f1191c4779fb929f66a432",
+      "file": "archives/article-exploration-persistence/v5.html"
+    },
+    {
+      "version": 6,
+      "date": "2026-10-28T04:10:07.138Z",
+      "note": "Raccordement des PNJ, rumeurs fiables et decouvertes sans exploitation automatique",
+      "hash": "da9bdc072494306c5e77b6cd795da5e2553374f02f8c3a4593e2a89ff996fe20",
+      "file": "archives/article-exploration-persistence/v6.html"
+    },
+    {
+      "version": 7,
+      "date": "2026-10-29T17:03:46.421Z",
+      "note": "Rumeurs payantes, messages de recherche et documents hors capacite des bagages",
+      "hash": "58947f06bb4d61422c657bbf60ac13f68481fa07892ef79916b0a4bdd51a9b89",
+      "file": "archives/article-exploration-persistence/v7.html"
+    },
+    {
+      "version": 8,
+      "date": "2026-10-30T05:03:43.924Z",
+      "note": "Recherche exterieure : jauge validee, consommation serveur et discretion pendant 60 secondes",
+      "hash": "35b19d464f59a97e7c9b0d55dbf58c513b1f4bf47b6af2d5af7012ae1c06d2fc",
+      "file": "archives/article-exploration-persistence/v8.html"
+    },
+    {
+      "version": 9,
+      "date": "2026-10-31T23:11:04.814Z",
+      "note": "Sites exceptionnels uniquement hors de l influence des lieux normaux",
+      "hash": "6811a07b3d3fdf9afaab9679d77de7cf7f4be61e4b3e9f92646d078e5ecd815f",
+      "file": "archives/article-exploration-persistence/v9.html"
+    },
+    {
+      "version": 10,
+      "date": "2026-10-31T23:21:39.715Z",
+      "note": "Preparation et depart des expeditions exceptionnelles avec score serveur commun",
+      "hash": "6b3c2f62260fbc24cd787c51d85b7378c53e56c25fec3942763f1cdc5babed97",
+      "file": "archives/article-exploration-persistence/v10.html"
+    },
+    {
+      "version": 11,
+      "date": "2026-10-31T23:36:52.573Z",
+      "note": "Resolution des sites exceptionnels : butin, puissance, degats, moral et retour",
+      "hash": "ecdf41654e73ff946f14f8bd38c5d97f4f9457d06b6cd310d7e92a1f64ba68fa",
+      "file": "archives/article-exploration-persistence/v11.html"
+    },
+    {
+      "version": 12,
+      "date": "2026-11-01T01:59:06.955Z",
+      "note": "Cloture partagee des sites : missions concurrentes, indices et archives",
+      "hash": "dfb000d317e7f51ee1f346a9cfad60b0576ae823f1be397a957b2fbc5d8cfa93",
+      "file": "archives/article-exploration-persistence/v12.html"
+    },
+    {
+      "version": 13,
+      "date": "2026-11-01T02:50:03.670Z",
+      "note": "Fondation des camps sur place ou par expedition et evolutions selon le terrain",
+      "hash": "5eec5851ef2c19c97f3ca6cdbad8b7ffb47d5dc7dabd35765b4d524c3ddb4ed5",
+      "file": "archives/article-exploration-persistence/v13.html"
+    }
+  ],
+  "article-exploration-generation": [
+    {
+      "version": 1,
+      "date": "2026-10-28T01:01:48.006Z",
+      "note": "Generation serveur du terrain au lancement, influence des lieux et sites exceptionnels rattaches",
+      "hash": "b7d3af24825c9a785de9df0384716b35e8243698b86ef6f3b1549e8b9fee57a4",
+      "file": "archives/article-exploration-generation/v1.html"
+    },
+    {
+      "version": 2,
+      "date": "2026-10-28T01:47:26.710Z",
+      "note": "Vue exploration par joueur, indices autorises et protection des secrets dans les envois reseau",
+      "hash": "78236986928804cb23f56d6519a741b1e6c01d503bdb52bff1f0a76a0ba7677e",
+      "file": "archives/article-exploration-generation/v2.html"
+    },
+    {
+      "version": 3,
+      "date": "2026-10-28T03:10:51.582Z",
+      "note": "Cartes de localisation verifiees et cycle de vie des items indices : sources, pertes, ventes et archives",
+      "hash": "cd1fa1ca8dde3335d7062b8c7cbcba22da3d0a8d828ef4f96215191e6fc5987e",
+      "file": "archives/article-exploration-generation/v3.html"
+    },
+    {
+      "version": 4,
+      "date": "2026-10-28T04:10:07.138Z",
+      "note": "Raccordement des PNJ, rumeurs fiables et decouvertes sans exploitation automatique",
+      "hash": "4d5f640fa7a74adcbd5a7fe5aa886f564656223a34ddf37754bb96accb90dff4",
+      "file": "archives/article-exploration-generation/v4.html"
+    },
+    {
+      "version": 5,
+      "date": "2026-10-28T04:14:20.328Z",
+      "note": "Clarification des regles disponibles de prospection, rumeurs et specialistes",
+      "hash": "25f797e8b19b3f82b11a8a358a63d816be19eeb2e77c80dafa89b4539ffd29b5",
+      "file": "archives/article-exploration-generation/v5.html"
+    },
+    {
+      "version": 6,
+      "date": "2026-10-31T23:11:04.814Z",
+      "note": "Sites exceptionnels uniquement hors de l influence des lieux normaux",
+      "hash": "e7b6dd6d77611ce9ba37f03137e1627f5bf67dda1b57d92528c100bf130bc4e0",
+      "file": "archives/article-exploration-generation/v6.html"
+    },
+    {
+      "version": 7,
+      "date": "2026-10-31T23:36:52.573Z",
+      "note": "Resolution des sites exceptionnels : butin, puissance, degats, moral et retour",
+      "hash": "3c2fb309cf24aaa0bf61291d9fe05066cb7cbcd70443d3c08ca35ee47630423f",
+      "file": "archives/article-exploration-generation/v7.html"
+    },
+    {
+      "version": 8,
+      "date": "2026-11-01T02:50:03.670Z",
+      "note": "Fondation des camps sur place ou par expedition et evolutions selon le terrain",
+      "hash": "3979d1335393704480592f21bbebd41092b1142f380245b8dcab556826df6674",
+      "file": "archives/article-exploration-generation/v8.html"
+    }
+  ],
+  "article-exploration-privacy": [
+    {
+      "version": 1,
+      "date": "2026-10-28T01:47:26.710Z",
+      "note": "Vue exploration par joueur, indices autorises et protection des secrets dans les envois reseau",
+      "hash": "c9617d33e63822c928fb95dc7a9a464cc767df159202de112657c857e1a8a48c",
+      "file": "archives/article-exploration-privacy/v1.html"
+    },
+    {
+      "version": 2,
+      "date": "2026-10-28T03:10:51.582Z",
+      "note": "Cartes de localisation verifiees et cycle de vie des items indices : sources, pertes, ventes et archives",
+      "hash": "a974a4783676edf31523ed46e25612c1a0c670abb551d8389df46056037c3533",
+      "file": "archives/article-exploration-privacy/v2.html"
+    },
+    {
+      "version": 3,
+      "date": "2026-10-28T03:24:10.094Z",
+      "note": "Suppression des faux indices et annonce mondiale cinq minutes apres une disparition",
+      "hash": "512d1c49867c1e28bb17b3532381e7d858d5acb0344a6f33980f3acabd9266f3",
+      "file": "archives/article-exploration-privacy/v3.html"
+    },
+    {
+      "version": 4,
+      "date": "2026-10-28T04:10:07.138Z",
+      "note": "Raccordement des PNJ, rumeurs fiables et decouvertes sans exploitation automatique",
+      "hash": "78239a0881355f3d66d8a826c3872c2188fc1b74b57fc64401d8d7fd9046aa00",
+      "file": "archives/article-exploration-privacy/v4.html"
+    },
+    {
+      "version": 5,
+      "date": "2026-10-29T17:03:46.421Z",
+      "note": "Rumeurs payantes, messages de recherche et documents hors capacite des bagages",
+      "hash": "73b06577004cc8f336972865db1a8fe395b68880fdc46f896cdd2629f74fd311",
+      "file": "archives/article-exploration-privacy/v5.html"
+    },
+    {
+      "version": 6,
+      "date": "2026-10-30T05:03:43.924Z",
+      "note": "Recherche exterieure : jauge validee, consommation serveur et discretion pendant 60 secondes",
+      "hash": "eadaae4a291c18ff89887975819bb233a9a5275714f8375bf44cfbde42070a91",
+      "file": "archives/article-exploration-privacy/v6.html"
+    },
+    {
+      "version": 7,
+      "date": "2026-10-31T23:11:04.814Z",
+      "note": "Sites exceptionnels uniquement hors de l influence des lieux normaux",
+      "hash": "d94f94d5c419fe1751d3b441d54e1f357a71274b9546548ca3f6f372fb640a80",
+      "file": "archives/article-exploration-privacy/v7.html"
+    },
+    {
+      "version": 8,
+      "date": "2026-10-31T23:11:56.314Z",
+      "note": "Sites exceptionnels uniquement hors de l influence des lieux normaux",
+      "hash": "44a8fa87c03750811200cdcc851765da199a62b7053cefbd5902467c61fa03c9",
+      "file": "archives/article-exploration-privacy/v8.html"
+    },
+    {
+      "version": 9,
+      "date": "2026-10-31T23:21:39.715Z",
+      "note": "Preparation et depart des expeditions exceptionnelles avec score serveur commun",
+      "hash": "34991c590f8e7f815f90c417a4d7f1cc353716d13ff3778aa25843ec055d7d53",
+      "file": "archives/article-exploration-privacy/v9.html"
+    },
+    {
+      "version": 10,
+      "date": "2026-10-31T23:36:52.573Z",
+      "note": "Resolution des sites exceptionnels : butin, puissance, degats, moral et retour",
+      "hash": "b160e7b16941c5c521254501a49214e5208bc98f1e53b910902848cff7f77e5f",
+      "file": "archives/article-exploration-privacy/v10.html"
+    },
+    {
+      "version": 11,
+      "date": "2026-10-31T23:42:02.889Z",
+      "note": "Resolution des sites exceptionnels et verification de la confidentialite",
+      "hash": "0986997c43e17390a2262305d5dca1b270d29b0d9e8cefbcbbfcc7a0370711cc",
+      "file": "archives/article-exploration-privacy/v11.html"
+    },
+    {
+      "version": 12,
+      "date": "2026-11-01T01:59:06.955Z",
+      "note": "Cloture partagee des sites : missions concurrentes, indices et archives",
+      "hash": "5c30272d5c362a90281eb6935487803abba16266e1c9768ae80335206d558fcf",
+      "file": "archives/article-exploration-privacy/v12.html"
+    },
+    {
+      "version": 13,
+      "date": "2026-11-01T02:50:03.670Z",
+      "note": "Fondation des camps sur place ou par expedition et evolutions selon le terrain",
+      "hash": "b90f23fa51226a909c02dac01c384a99cc96058c1618de212839dc4d0f88d52c",
+      "file": "archives/article-exploration-privacy/v13.html"
+    },
+    {
+      "version": 14,
+      "date": "2026-11-01T02:53:51.974Z",
+      "note": "Camps : fondation, terrain et confidentialite du gisement",
+      "hash": "2cbff6c517f1f6a350f9c311ea73c2a1143be29b007c9d9de2d465f56a2403ee",
+      "file": "archives/article-exploration-privacy/v14.html"
+    },
+    {
+      "version": 15,
+      "date": "2026-11-01T06:39:25.721Z",
+      "note": "Carte des découvertes, fiches de préparation et validation du parcours",
+      "hash": "e0e2e813faf27ab1efe3c7f4bb11d312f3dbb728f46be8b05392fff85f5fcdc8",
+      "file": "archives/article-exploration-privacy/v15.html"
+    }
+  ],
+  "article-exploration-clues": [
+    {
+      "version": 1,
+      "date": "2026-10-28T03:10:51.582Z",
+      "note": "Cartes de localisation verifiees et cycle de vie des items indices : sources, pertes, ventes et archives",
+      "hash": "0128c08f717eed78923f3cba721145f171c4967ee3604edf53c4a7f1182c051c",
+      "file": "archives/article-exploration-clues/v1.html"
+    },
+    {
+      "version": 2,
+      "date": "2026-10-28T03:24:10.094Z",
+      "note": "Suppression des faux indices et annonce mondiale cinq minutes apres une disparition",
+      "hash": "2c0dd702bc1585b156d3e4be158ce9dd03ffa52e0acd410dee84c29219e593b1",
+      "file": "archives/article-exploration-clues/v2.html"
+    },
+    {
+      "version": 3,
+      "date": "2026-10-28T04:10:07.138Z",
+      "note": "Raccordement des PNJ, rumeurs fiables et decouvertes sans exploitation automatique",
+      "hash": "25d9af1e071cf01fe2635b0a4c43a3a327dbe11bef06159cd21db94992c3fda3",
+      "file": "archives/article-exploration-clues/v3.html"
+    },
+    {
+      "version": 4,
+      "date": "2026-10-28T07:18:36.764Z",
+      "note": "Distinction entre bruit des tavernes et fiabilite des objets indices",
+      "hash": "4a3423db0f70e360ac98f28180c03d36fc26305ef43d201e65b8d090f0b7303e",
+      "file": "archives/article-exploration-clues/v4.html"
+    },
+    {
+      "version": 5,
+      "date": "2026-10-29T17:03:46.421Z",
+      "note": "Rumeurs payantes, messages de recherche et documents hors capacite des bagages",
+      "hash": "7d9f39b13f83c536df0d4355ca6ef4082350cbb9b6de3646b0f4a45777ecdae6",
+      "file": "archives/article-exploration-clues/v5.html"
+    },
+    {
+      "version": 6,
+      "date": "2026-10-30T05:03:43.924Z",
+      "note": "Recherche exterieure : jauge validee, consommation serveur et discretion pendant 60 secondes",
+      "hash": "1427ff9b426c6adbbe409b733098121910347bb7b75f99cf45a7db664b8c93ec",
+      "file": "archives/article-exploration-clues/v6.html"
+    },
+    {
+      "version": 7,
+      "date": "2026-10-31T23:11:04.814Z",
+      "note": "Sites exceptionnels uniquement hors de l influence des lieux normaux",
+      "hash": "ae31f9d13e11e1e78435e2188079374e7680312e438d84a63056c2b1c8751352",
+      "file": "archives/article-exploration-clues/v7.html"
+    },
+    {
+      "version": 8,
+      "date": "2026-10-31T23:11:56.314Z",
+      "note": "Sites exceptionnels uniquement hors de l influence des lieux normaux",
+      "hash": "a10bf9f0b943f63ba34f5f96aaf42473516073ceb82b876862afbb930af65bc5",
+      "file": "archives/article-exploration-clues/v8.html"
+    },
+    {
+      "version": 9,
+      "date": "2026-11-01T01:59:06.955Z",
+      "note": "Cloture partagee des sites : missions concurrentes, indices et archives",
+      "hash": "c4c3e26a114361a23814095f830c2dfa1cc060b9c77d56044aa49104ca87a440",
+      "file": "archives/article-exploration-clues/v9.html"
+    }
+  ],
+  "article-exploration-rumors-and-discovery": [
+    {
+      "version": 1,
+      "date": "2026-10-28T04:10:07.138Z",
+      "note": "Raccordement des PNJ, rumeurs fiables et decouvertes sans exploitation automatique",
+      "hash": "9a84ce8cc8ac2fcc2ad3c647811a382989ce76c8d73102928d0aa25bdf79eec1",
+      "file": "archives/article-exploration-rumors-and-discovery/v1.html"
+    },
+    {
+      "version": 2,
+      "date": "2026-10-28T05:48:53.032Z",
+      "note": "Chances de decouverte augmentees : metiers 50 pour cent et generalistes 20 pour cent",
+      "hash": "f6783840f2d08a24abdd078a73e72fc7ce6513869a3fd328d5f67f7e13cd58c0",
+      "file": "archives/article-exploration-rumors-and-discovery/v2.html"
+    },
+    {
+      "version": 3,
+      "date": "2026-10-28T07:18:36.764Z",
+      "note": "Distinction entre bruit des tavernes et fiabilite des objets indices",
+      "hash": "5396fe854ee1ee98ade17da72759d8daa3b2f2f72e7ec93fcd1f4e4352edd707",
+      "file": "archives/article-exploration-rumors-and-discovery/v3.html"
+    },
+    {
+      "version": 4,
+      "date": "2026-10-29T17:03:46.421Z",
+      "note": "Rumeurs payantes, messages de recherche et documents hors capacite des bagages",
+      "hash": "4c7c38ab4d1cbe12f6ee5b4e7eac61b75ad30f1a7b9caafa82187b65b8a6a257",
+      "file": "archives/article-exploration-rumors-and-discovery/v4.html"
+    },
+    {
+      "version": 5,
+      "date": "2026-10-30T05:03:43.924Z",
+      "note": "Recherche exterieure : jauge validee, consommation serveur et discretion pendant 60 secondes",
+      "hash": "028f8d5d8ebec355035bf1a4f49a85fb14922a33a2241d92e5e1fd870009e9be",
+      "file": "archives/article-exploration-rumors-and-discovery/v5.html"
+    },
+    {
+      "version": 6,
+      "date": "2026-10-31T23:11:04.814Z",
+      "note": "Sites exceptionnels uniquement hors de l influence des lieux normaux",
+      "hash": "68018c12c901ff14b327f441946ba43488c96163210e1fd4192bf4c7c6995343",
+      "file": "archives/article-exploration-rumors-and-discovery/v6.html"
+    },
+    {
+      "version": 7,
+      "date": "2026-11-01T02:50:03.670Z",
+      "note": "Fondation des camps sur place ou par expedition et evolutions selon le terrain",
+      "hash": "b5a5b612f05dc53bf6c8d26b65c0823fc614296bdbe275fcab02a4ccf5a23fbb",
+      "file": "archives/article-exploration-rumors-and-discovery/v7.html"
+    }
+  ],
+  "article-tavern-rumors-and-documents": [
+    {
+      "version": 1,
+      "date": "2026-10-29T17:03:46.421Z",
+      "note": "Rumeurs payantes, messages de recherche et documents hors capacite des bagages",
+      "hash": "91c19e8168c10b647def3ff26253f6e84c17825acd651050cab008bf50eb6f32",
+      "file": "archives/article-tavern-rumors-and-documents/v1.html"
+    }
+  ],
+  "article-exploration-search": [
+    {
+      "version": 1,
+      "date": "2026-10-30T05:03:43.924Z",
+      "note": "Recherche exterieure : jauge validee, consommation serveur et discretion pendant 60 secondes",
+      "hash": "0e8d3e57b71c63d4a9583eeef128339cac2f48695bc3c351ee7c661c0a49b4f1",
+      "file": "archives/article-exploration-search/v1.html"
+    },
+    {
+      "version": 2,
+      "date": "2026-10-31T23:11:04.814Z",
+      "note": "Sites exceptionnels uniquement hors de l influence des lieux normaux",
+      "hash": "76323e97ad7f34278d997f28df4d6bca4bc27f4f6dcf16de430b1c849e174d95",
+      "file": "archives/article-exploration-search/v2.html"
+    },
+    {
+      "version": 3,
+      "date": "2026-10-31T23:21:39.715Z",
+      "note": "Preparation et depart des expeditions exceptionnelles avec score serveur commun",
+      "hash": "28b7fcb18e6f4c7b109c63b9762b460a75108b17f8cc0b4a11a1bdd905feaab8",
+      "file": "archives/article-exploration-search/v3.html"
+    },
+    {
+      "version": 4,
+      "date": "2026-10-31T23:36:52.573Z",
+      "note": "Resolution des sites exceptionnels : butin, puissance, degats, moral et retour",
+      "hash": "9319148c4f88afc70113f0de76825a6c085b9b5dfa6a1271a8d20bdec809517a",
+      "file": "archives/article-exploration-search/v4.html"
+    }
+  ],
+  "article-exceptional-expeditions": [
+    {
+      "version": 1,
+      "date": "2026-10-31T23:21:39.715Z",
+      "note": "Preparation et depart des expeditions exceptionnelles avec score serveur commun",
+      "hash": "342220a1377043a963532964f7fae9fee344bc354343fe70a27e2627b814c388",
+      "file": "archives/article-exceptional-expeditions/v1.html"
+    },
+    {
+      "version": 2,
+      "date": "2026-10-31T23:36:52.573Z",
+      "note": "Resolution des sites exceptionnels : butin, puissance, degats, moral et retour",
+      "hash": "d87ceaca43d826c9d6b7f10c50bebd4effa12e4f27f1169640b56ae965faef52",
+      "file": "archives/article-exceptional-expeditions/v2.html"
+    },
+    {
+      "version": 3,
+      "date": "2026-11-01T01:59:06.955Z",
+      "note": "Cloture partagee des sites : missions concurrentes, indices et archives",
+      "hash": "0194af5b8562c5df76b2e50e5eff2c714bdd5b295cfc3a9e6ff59d3684c49487",
+      "file": "archives/article-exceptional-expeditions/v3.html"
+    }
+  ],
+  "article-exceptional-site-resolution": [
+    {
+      "version": 1,
+      "date": "2026-10-31T23:36:52.573Z",
+      "note": "Resolution des sites exceptionnels : butin, puissance, degats, moral et retour",
+      "hash": "a183bcb6162b861c6e25e5bb0761f4c2a79f50f42c797f040804cf751fe59009",
+      "file": "archives/article-exceptional-site-resolution/v1.html"
+    },
+    {
+      "version": 2,
+      "date": "2026-11-01T01:59:06.955Z",
+      "note": "Cloture partagee des sites : missions concurrentes, indices et archives",
+      "hash": "46c5dfd13ce2d142681e8f8046cd75c761f1cf845e0c7b0279a6508a81bfec56",
+      "file": "archives/article-exceptional-site-resolution/v2.html"
+    },
+    {
+      "version": 3,
+      "date": "2026-11-01T02:03:15.869Z",
+      "note": "Annonce immediate pour tous apres victoire sur un site exceptionnel",
+      "hash": "cc02a12a961542ad4c25ae140fb7ce78d0318856db0546e4780b981342ed7afa",
+      "file": "archives/article-exceptional-site-resolution/v3.html"
+    }
+  ],
+  "article-exceptional-site-closure": [
+    {
+      "version": 1,
+      "date": "2026-11-01T01:59:06.955Z",
+      "note": "Cloture partagee des sites : missions concurrentes, indices et archives",
+      "hash": "7362ed5ec62230660e3737eafe68e17d8deb3679f4fc7267ee5ec99ff9c65bc7",
+      "file": "archives/article-exceptional-site-closure/v1.html"
+    },
+    {
+      "version": 2,
+      "date": "2026-11-01T02:03:15.869Z",
+      "note": "Annonce immediate pour tous apres victoire sur un site exceptionnel",
+      "hash": "a8d1d99e9ec7b642e5894419dd627fe656dcfad84949e8d043d97bfc24f8769b",
+      "file": "archives/article-exceptional-site-closure/v2.html"
+    }
+  ],
+  "article-camp-foundation-and-terrain": [
+    {
+      "version": 1,
+      "date": "2026-11-01T02:50:03.670Z",
+      "note": "Fondation des camps sur place ou par expedition et evolutions selon le terrain",
+      "hash": "b29f222a9785d4c467687cf172d7df45bf2bcd850fdcb999a77cd3ec966ba7c3",
+      "file": "archives/article-camp-foundation-and-terrain/v1.html"
+    }
+  ],
+  "article-exploration-map-and-sheets": [
+    {
+      "version": 1,
+      "date": "2026-11-01T06:39:25.721Z",
+      "note": "Carte des découvertes, fiches de préparation et validation du parcours",
+      "hash": "19e8878c4a55f64127038cdc01643b0a8ded482898c8d14311f4791a7764742d",
+      "file": "archives/article-exploration-map-and-sheets/v1.html"
     }
   ]
 }

@@ -270,7 +270,8 @@
     "summary": "Le serveur suit les actions, les branches et les preuves de résolution d’une quête.",
     "explanation": [
       "Une dépendance indique ce qui doit être terminé avant une action. Un lien conditionnel choisit un chemin à partir de la sortie officielle d’une action. Ces mécanismes permettent de proposer des choix sans laisser le navigateur décider librement d’une réussite.",
-      "Une action écartée n’est pas une action accomplie : son état skipped permet de fermer une branche devenue impossible. Pour un combat à plusieurs sorties, une défaite reconnue peut être une résolution ; les récompenses réservées à la victoire doivent donc être explicitement filtrées."
+      "Une action écartée n’est pas une action accomplie : son état skipped permet de fermer une branche devenue impossible. Pour un combat à plusieurs sorties, une défaite reconnue peut être une résolution ; les récompenses réservées à la victoire doivent donc être explicitement filtrées.",
+      "25 octobre 2026 : le scénario affiche un schéma de quêtes déplaçables et reliables par Réussite, Échec ou Abandon, avec plusieurs départs ou des quêtes indépendantes. Chaque quête affiche Proposition de quête pour ouvrir sa fiche et ses conditions d’accès facultatives ; les traits vers les racines sont une aide visuelle sans action fictive exportée. Les références connues se choisissent par noms dans des menus, et le panneau de droite est redimensionnable. Modifier est une nouvelle action serveur automatique, appliquée une fois au déblocage. Elle propose ressources, objets non équipés du catalogue actif, XP et statistiques de base du héros ; genre du portrait pour son apparence ; images des lieux et GA ; retrait d’un GA pour l’existence. Les aptitudes, la capacité des bagages, la propriété des lieux et la suppression des héros ou lieux restent à développer."
     ],
     "images": [
       {
@@ -309,7 +310,8 @@
     "explanation": [
       "La liaison de la vue des ressources avec l’éditeur de portraits accepte un hôte navigateur injecté. Les tests Node utilisent un hôte simulé sans window global ; le navigateur conserve sa fenêtre par défaut. Cette correction permet de tester les modèles de groupes indépendamment des portraits, sans changer les projets ni les règles serveur.",
       "Les positions des blocs organisent le schéma ; les dépendances, sorties et conditions définissent la progression. Déplacer un bloc ne change donc pas le déroulement officiel d’une quête.",
-      "Les modes coopératifs et événements stratégiques récents restent des données de conception tant que leur moteur serveur n’est pas raccordé. Le refus d’installation de ces projets protège cette distinction : un panneau éditable n’est pas la preuve que son comportement est jouable."
+      "Les modes coopératifs et événements stratégiques récents restent des données de conception tant que leur moteur serveur n’est pas raccordé. Le refus d’installation de ces projets protège cette distinction : un panneau éditable n’est pas la preuve que son comportement est jouable.",
+      "25 octobre 2026 : le scénario affiche un schéma de quêtes déplaçables et reliables par Réussite, Échec ou Abandon, avec plusieurs départs ou des quêtes indépendantes. Chaque quête affiche Proposition de quête pour ouvrir sa fiche et ses conditions d’accès facultatives ; les traits vers les racines sont une aide visuelle sans action fictive exportée. Les références connues se choisissent par noms dans des menus, et le panneau de droite est redimensionnable. Modifier est une nouvelle action serveur automatique, appliquée une fois au déblocage. Elle propose ressources, objets non équipés du catalogue actif, XP et statistiques de base du héros ; genre du portrait pour son apparence ; images des lieux et GA ; retrait d’un GA pour l’existence. Les aptitudes, la capacité des bagages, la propriété des lieux et la suppression des héros ou lieux restent à développer."
     ],
     "status": "Conception",
     "audience": "designers"
@@ -529,7 +531,8 @@
       "25 octobre 2026 — Vérification des PNG v12 : la translation des casques conserve exactement la transparence et tolère uniquement l’arrondi RGB de 1 sur 255 dû au réenregistrement. Le diagnostic des tests reste borné pour éviter un épuisement mémoire. Le calque arrière de la tenue barbare féminine est explicitement vérifié comme entièrement transparent ; les autres pièces restent contrôlées. Aucun PNG ni règle du jeu ne change.",
       "25 octobre 2026 — Le maréchal Aldren est désormais composé avec les mêmes calques que les PNJ, selon une identité fixe : armure sombre aux insignes dorés, cape bleu nuit et coupe courte uniques, visage carré, cheveux et barbe gris, rides et carrure à 115 %. Le bouton Charger le maréchal Aldren de l’éditeur permet de le retoucher. Les références historiques de son portrait affichent cette composition dans les dialogues, y compris les conversations de scénario ; l’ancienne illustration reste archivée. Aucun changement de quête, de statistique ou de règle serveur.",
       "25 octobre 2026 — Tenues et accessoires barbares : une tenue en cuir et fourrure est disponible pour chaque genre, avec bras visibles et corps/col arrière associés. La longue barbe masculine est un accessoire séparé, avec sept couleurs et une opacité réglable ; elle peut être portée avec les autres vêtements. Le sommet des cheveux est masqué sous les casques pour éviter les mèches qui traversent la coque. Aucun changement des règles du jeu.",
-      "25 octobre 2026 — Aldren : la coupe courte est redessinée strictement de face, avec tempes et volumes équilibrés, pour correspondre au visage frontal. Un décor de salle du maréchal au château est ajouté : voûtes de pierre, fenêtres, bannières bleu et or, cartes et bureau de commandement. Cette salle est le décor fixe d’Aldren et reste sélectionnable dans l’éditeur. La coupe précédente et les illustrations précédentes sont conservées. Aucun effet sur les règles, les statistiques ou les quêtes."
+      "25 octobre 2026 — Aldren : la coupe courte est redessinée strictement de face, avec tempes et volumes équilibrés, pour correspondre au visage frontal. Un décor de salle du maréchal au château est ajouté : voûtes de pierre, fenêtres, bannières bleu et or, cartes et bureau de commandement. Cette salle est le décor fixe d’Aldren et reste sélectionnable dans l’éditeur. La coupe précédente et les illustrations précédentes sont conservées. Aucun effet sur les règles, les statistiques ou les quêtes.",
+      "25 octobre 2026 — Les portraits permettent de cumuler plusieurs accessoires de la même bibliothèque : barbe, cicatrice, bijoux et pendentif. La barbe a désormais une opacité fixe de 100 %, y compris après import d’un ancien réglage ; les autres accessoires gardent leurs réglages. Dans l’éditeur, le déplacement global du personnage est autorisé de −150 % à +150 % horizontalement et verticalement. Le cadrage du dialogue reste fixe. Ces règles de présentation ne modifient aucune caractéristique ni action du jeu."
     ],
     "images": [
       {
@@ -613,5 +616,173 @@
       }
     ],
     "audience": "development"
+  },
+  "hidden-resource-cells.md": {
+    "summary": "Conception des ressources cachées, campements, trésors, artefacts, donjons et parchemins d’indices.",
+    "explanation": [
+      "La découverte doit précéder une installation volontaire, puis l’évolution du campement selon la ressource. L’influence des lieux existants neutralise les contenus concernés.",
+      "Cette conception est prévue : le moteur actuel de prospection crée directement un lieu producteur. Les paramètres non décidés sont identifiés sans valeurs inventées.",
+      "Les découvertes exceptionnelles sous influence restent dans le lieu principal, sans marqueur ni interaction superposés. Les parchemins indiquent un lieu ou aident à rechercher sur place, exclusivement ; leur vente ou leur perte peut faire disparaître la découverte exceptionnelle selon des modalités encore à définir.",
+      "La disparition d’une découverte exceptionnelle concerne tous les joueurs de la partie. Les expéditions vers les trésors et donjons sont préparées : la compétence du groupe augmente la chance de revenir avec du butin. Les formules et les conséquences détaillées restent à définir.",
+      "Artefact : score d’expédition et un item puissant. Trésor : score d’expédition, or important et items. Donjon : puissance et expédition, or, item et XP. La préparation engage PNJ, volontaires, montures, matériel et ressources ; le héros peut transporter les moyens ou envoyer une mission depuis la tente de prospection après découverte. Les formules restent à définir.",
+      "La ressource du terrain limite les évolutions du camp : rien vers fort, bois vers camp de bûcheron, pierre vers carrière, terre fertile vers village ou ville, fer vers mine de fer et or vers mine d’or. Le camp est autorisé dans tous les cas. Une découverte exceptionnelle remportée par un joueur ou déclarée disparue perd son statut pour tous.",
+      "Les indices de localisation sont des cartes au trésor lisibles, générées automatiquement au début de la partie en séries de une à trois cartes selon la position et la valeur du site. Un nom, une anagramme, un ancien nom ou une légende peut désigner un lieu existant. Les PNJ peuvent expliquer ces désignations ; écouter une rumeur coûte 5 pièces d’or. Un module serveur commun pour les cartes et les informations de PNJ est recommandé, avec diffusion par dialogues et banque de rumeurs.",
+      "Les choix du dialogue donnent un bonus final au score d’expédition. Un exemple complet à six issues illustre cette préparation avec des valeurs proposées, non validées. Donjons, trésors et artefacts suivent le même processus de recherche. Les indices restent des items réutilisables, revendables pour archives lorsqu’ils deviennent obsolètes. L’utilisation de la recherche déclenche immédiatement une minute de recharge et réduit la discrétion de 50 % pendant une minute ; les ressources ne sont consommées qu’à la validation.",
+      "Toute tentative dans un donjon, réussie ou échouée, inflige des dégâts et modifie le moral du héros participant et des troupes engagées selon le résultat. Les valeurs, durées et pertes possibles restent à définir. Un héros qui ne participe pas à une expédition envoyée reste hors de ces conséquences.",
+      "Les répartitions naturelles et exceptionnelles sont validées, ainsi que le risque de disparition de 25 % et les archives à 5–10 or. Le bonus narratif dépend de la narration. Le barème plafonné d’expédition et sa formule de réussite sont désormais validés en conception. Le barème distinct de la jauge de recherche reste proposé, non validé.",
+      "Le socle persistant est désormais implémenté et documenté séparément : données versionnées, sauvegarde/reprise et confidentialité du bloc serveur. La génération est désormais raccordée au lancement neuf ; les interactions restent à implémenter. Le chargement d’une sauvegarde ne génère aucune ressource ni récompense supplémentaire.",
+      "La protection des connaissances est raccordée aux envois réseau : chaque joueur reçoit seulement ses découvertes, indices détenus et missions propres. Les destinations internes, fragments manquants et tirages restent côté serveur."
+    ],
+    "status": "Implémentation progressive — persistance et génération disponibles au 28 octobre 2026",
+    "audience": "planned",
+    "images": [
+      {
+        "path": "markers/map/resource-stone.png",
+        "caption": "Pierre : affleurement naturel, avant installation."
+      },
+      {
+        "path": "markers/map/resource-wood.png",
+        "caption": "Bois : arbres, sans campement de bûcherons."
+      },
+      {
+        "path": "markers/map/resource-iron.png",
+        "caption": "Fer : minerai sombre avec des veines de couleur rouille."
+      },
+      {
+        "path": "markers/map/resource-gold.png",
+        "caption": "Or : roche aurifère, sans mine construite."
+      },
+      {
+        "path": "markers/map/resource-fertile-land.png",
+        "caption": "Terre fertile : sol sombre et végétation, avant installation agricole."
+      }
+    ]
+  },
+  "exploration-persistence.md": {
+    "summary": "Socle technique des données d’exploration : instantanés versionnés, références et protection des informations cachées.",
+    "explanation": [
+      "Le format version 1 est raccordé à Game et aux sauvegardes serveur, y compris aux reprises depuis le disque et aux sauvegardes manuelles. Une ancienne partie reçoit un état vide sans génération ni récompense ajoutée.",
+      "Les modèles contrôlent la cohérence des liens et la sérialisation. Le bloc privé est exclu des projections joueur et ignoré lors de l’initialisation depuis le navigateur. La génération du terrain neuf est désormais raccordée au lancement serveur ; les commandes de dépense et de résolution des missions restent à implémenter.",
+      "Une vue publique distincte est maintenant fabriquée par joueur, avec droits individuels, identifiants opaques et résultats publiés seulement à leur échéance officielle. Le modèle privé reste réservé aux sauvegardes serveur."
+    ],
+    "audience": "development",
+    "status": "Persistance et génération au lancement implémentées ; interactions encore prévues",
+    "images": []
+  },
+  "exploration-generation.md": {
+    "summary": "Génération serveur des ressources et sites exceptionnels au lancement, sur la grille commune à la heatmap.",
+    "explanation": [
+      "Les répartitions validées alimentent deux tirages indépendants par cellule. Les exclusions sont respectées et les ressources sous emprise des lieux sont neutralisées ; les sites exceptionnels sont rattachés à un seul lieu principal sans interaction superposée.",
+      "Une graine privée et le terrain sont sauvegardés. Les reprises conservent le tirage ; les anciens mondes ne sont pas remplis rétroactivement. Le bloc reste privé et les interactions de découverte et récupération ne sont pas encore raccordées."
+    ],
+    "audience": "development",
+    "status": "Génération au lancement implémentée le 28 octobre 2026",
+    "images": [
+      {
+        "path": "markers/map/resource-stone.png",
+        "caption": "Marqueur de pierre disponible pour le futur affichage des ressources découvertes ; la génération reste cachée."
+      }
+    ]
+  },
+  "exploration-privacy.md": {
+    "summary": "Projection serveur des seules connaissances autorisées : fragments lisibles, droits de détention et secrets conservés côté serveur.",
+    "explanation": [
+      "La vue publique est calculée séparément pour chaque destinataire, sans exposer le terrain complet, les cibles internes des indices, les tirages. Les identifiants publics ne révèlent pas les cellules et les résultats futurs restent privés.",
+      "Les snapshots complets, deltas, événements et accusés passent par les mêmes protections. La vue est conservée côté client pour les interfaces ; elle ne remplace pas les sauvegardes officielles. Les interactions qui produiront ces connaissances restent à raccorder."
+    ],
+    "audience": "development",
+    "status": "Projection des connaissances implémentée le 28 octobre 2026",
+    "images": []
+  },
+  "exploration-clues.md": {
+    "summary": "Lire les cartes complémentaires, obtenir et conserver les parchemins, comprendre pertes, ventes et archives.",
+    "explanation": [
+      "La carte indique où aller ; le parchemin de recherche aide seulement à chercher sur place. Les fragments se complètent sans être consommés.",
+      "Les stocks sont finis et validés par le serveur. Une disparition après perte ou vente concerne tous les joueurs, alors que les objets obsolètes restent archivables. La recherche et les expéditions seront raccordées dans les étapes suivantes."
+    ],
+    "images": [],
+    "audience": "players"
+  },
+  "exploration-rumors-and-discovery.md": {
+    "summary": "Comprendre les cartes avec les PNJ et révéler les gisements sans créer automatiquement une exploitation.",
+    "explanation": [
+      "Les explications des cartes sont gratuites et mémorisées. L’écoute payante à 5 or peut donner un message de recherche fiable ou une conversation sans importance.",
+      "La prospection révèle les ressources et les sites extérieurs traversés. Les métiers transportés ont leurs chances propres, avec un essai mémorisé par joueur, cellule et spécialité. Les documents sont hors capacité de bagage."
+    ],
+    "images": [],
+    "audience": "players"
+  },
+  "tavern-rumors-and-documents.md": {
+    "summary": "Payer une écoute en taverne, recevoir un message de recherche ou une rumeur d’ambiance, et conserver ses documents sans encombrement.",
+    "explanation": [
+      "Une écoute validée coûte 5 or dans les deux cas. Le réglage initial est de 25 % de message utile si le stock le permet. Les autres conversations ne remettent aucun faux papier.",
+      "Les messages, papiers, parchemins et cartes sont des items hors capacité des bagages. Le serveur enregistre le résultat et empêche un second débit au rejeu ; les objets restent consultables, perdables et archivables selon leurs règles."
+    ],
+    "images": [],
+    "audience": "players"
+  },
+  "exploration-search.md": {
+    "summary": "Préparer une recherche extérieure, gérer la recharge et la discrétion, puis valider les ressources pour découvrir un site exceptionnel.",
+    "explanation": [
+      "L’ouverture déclenche immédiatement les deux échéances de 60 secondes, même si le joueur ferme ou annule. Les ressources sont dépensées uniquement à la validation, tandis que les papiers et spécialistes sont conservés.",
+      "Le barème de jauge est validé ; une jauge complète donne 90 % si la case et les indices correspondent au site actif. Le serveur calcule et vérifie les actions, conserve les résultats sans les rejouer et ne révèle aucun site caché par la prévisualisation."
+    ],
+    "images": [],
+    "audience": "players"
+  },
+  "exceptional-expeditions.md": {
+    "summary": "Sélectionner les moyens réels, calculer le score et partir avec le héros ou depuis un poste de prospection.",
+    "explanation": [
+      "Les deux départs utilisent le même barème et une validation serveur. Les soldats sont comptés individuellement et les spécialités une seule fois.",
+      "La préparation ne dépense rien ; le groupe envoyé retire réellement ses moyens du poste. Le trajet et les sauvegardes sont disponibles, mais la résolution et les récompenses restent à raccorder."
+    ],
+    "images": [],
+    "audience": "players"
+  },
+  "exceptional-site-resolution.md": {
+    "summary": "Tenter un site exceptionnel, recevoir son butin et gérer les dégâts, le moral et le retour d’un donjon.",
+    "explanation": [
+      "Le serveur compare les scores à la difficulté et effectue un seul tirage. Le site remporté est fermé pour tous ; un échec le laisse disponible.",
+      "Les dégâts et le moral des donjons touchent seulement les participants. Le butin et les provisions du retour sont conservés si la capacité des bagages ou du stock est insuffisante."
+    ],
+    "images": [],
+    "audience": "players"
+  },
+  "exceptional-site-closure.md": {
+    "summary": "Comprendre la fermeture d’un site pour tous, le rappel des missions et la vente des indices aux archives.",
+    "explanation": [
+      "La première victoire ou disparition fixe définitivement l’issue. Les préparations sont annulées et les groupes concurrents rappelés sans nouvelle tentative.",
+      "Le vainqueur conserve son butin ; les documents périmés restent des items et sont archivables pour 5, 7 ou 10 or sans risque ni double paiement. Les reprises conservent ces décisions."
+    ],
+    "images": [],
+    "audience": "players"
+  },
+  "camp-foundation-and-terrain.md": {
+    "summary": "Fonder un camp sur une case connue, envoyer les matériaux et respecter les évolutions autorisées par son terrain.",
+    "explanation": [
+      "La fondation et l’évolution sont validées côté serveur. Les coûts sont retirés des bagages sur place ou du poste lors d’un envoi ; une seule fondation peut occuper une cellule.",
+      "Le camp conserve son gisement, attend des habitants et ne produit naturellement qu’après spécialisation. Les lieux des scénarios gardent leur progression historique."
+    ],
+    "images": [
+      {
+        "path": "markers/map/resource-iron.png",
+        "caption": "Marqueur existant de fer : la ressource découverte autorise une mine de fer après développement du camp."
+      }
+    ],
+    "audience": "players"
+  },
+  "exploration-map-and-sheets.md": {
+    "summary": "Lire les gisements et sites découverts sur la carte, ouvrir les préparations et consulter les résultats et archives.",
+    "explanation": [
+      "Les cinq marqueurs utilisent exclusivement les positions des ressources connues transmises par le serveur. Un camp remplace son gisement sur la carte.",
+      "Les sites actifs ouvrent les préparations ; les résultats et documents restent accessibles après clôture sans révéler les secrets d’un autre joueur."
+    ],
+    "images": [
+      {
+        "path": "markers/map/resource-wood.png",
+        "caption": "Marqueur de bois utilisé sur la carte après découverte du gisement."
+      }
+    ],
+    "audience": "players"
   }
 }

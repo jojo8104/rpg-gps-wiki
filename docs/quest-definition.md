@@ -238,3 +238,36 @@ Le champ optionnel cooperation de la quête définit mode (solo/open/leader/toge
 ## Présentation du journal
 
 Les quêtes sont présentées dans des blocs compacts repliés au départ, avec leur titre et leur statut ou catégorie. Un bouton permet de déplier les objectifs, la progression, le bilan et les actions disponibles. Le choix ouvert ou fermé est conservé pendant les rafraîchissements du journal. Cette présentation concerne les missions du moteur, de campagne, annexes et d’équipe ; elle ne modifie ni les objectifs ni les commandes validées par le serveur.
+
+## Schémas, proposition et action Modifier — 25 octobre 2026
+
+25 octobre 2026 : le scénario affiche un schéma de quêtes déplaçables et reliables par Réussite, Échec ou Abandon, avec plusieurs départs ou des quêtes indépendantes. Chaque quête affiche Proposition de quête pour ouvrir sa fiche et ses conditions d’accès facultatives ; les traits vers les racines sont une aide visuelle sans action fictive exportée. Les références connues se choisissent par noms dans des menus, et le panneau de droite est redimensionnable. Modifier est une nouvelle action serveur automatique, appliquée une fois au déblocage. Elle propose ressources, objets non équipés du catalogue actif, XP et statistiques de base du héros ; genre du portrait pour son apparence ; images des lieux et GA ; retrait d’un GA pour l’existence. Les aptitudes, la capacité des bagages, la propriété des lieux et la suppression des héros ou lieux restent à développer.
+
+| Cible | Propriété | Opération et limite |
+| --- | --- | --- |
+| Héros acteur | Ressource | Ajouter ou retirer au plus le disponible |
+| Héros acteur | Objet transporté | Donner ou retirer des objets non équipés du catalogue actif |
+| Héros acteur | XP | Accorder un entier positif |
+| Héros acteur | Statistique de base | Variation conservant des valeurs valides |
+| Héros acteur | Apparence | Genre du portrait masculin ou féminin |
+| Lieu ou GA | Apparence | Icône et illustration du projet |
+| GA | Existence | Retirer ; utiliser une création pour le faire apparaître |
+
+Le sac reste soumis à sa capacité. Modifier est exécuté par le serveur lorsque
+son bloc devient actif et ne se répète pas après accomplissement. Les montants
+proviennent du scénario et ne sont pas transmis par le joueur. Une erreur de
+modification reste transactionnelle. Le bloc Proposition de quête ne crée aucune
+action supplémentaire ni condition obligatoire : il ouvre les données existantes.
+
+Dans Scénario & quêtes, cliquer une sortie puis une entrée crée un enchaînement.
+Les transitions publient la suite sans l’accepter pour le joueur. Une quête sans
+lien doit être cochée Départ pour être accessible dès le lancement. Les positions
+des blocs sont conservées dans les données d’édition. Les références importées
+inconnues restent visibles dans les menus et sont contrôlées à la validation.
+La bordure gauche du panneau de propriétés se glisse ; les flèches du clavier
+la règlent également. Les noms et nouveaux identifiants restent des champs libres.
+
+Exemple : une convocation acceptée mène à Parler → Accepter / Refuser. Accepter
+termine en réussite et publie la vraie mission suivante ; Refuser mène à Modifier
+→ Héros → Ressource → gold → Retirer → 20 puis à une fin d’échec. Le refus natif
+d’une offre avant acceptation n’est pas encore disponible.

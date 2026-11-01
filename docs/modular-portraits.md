@@ -335,3 +335,18 @@ La tenue barbare utilise `clothing-10`, `clothingBack-10`, `body-10` ; la longue
 25 octobre 2026 — Aldren : la coupe courte est redessinée strictement de face, avec tempes et volumes équilibrés, pour correspondre au visage frontal. Un décor de salle du maréchal au château est ajouté : voûtes de pierre, fenêtres, bannières bleu et or, cartes et bureau de commandement. Cette salle est le décor fixe d’Aldren et reste sélectionnable dans l’éditeur. La coupe précédente et les illustrations précédentes sont conservées. Aucun effet sur les règles, les statistiques ou les quêtes.
 
 La référence sérialisée `male-hair-8` résout désormais le fichier `male/hair-8-front.png` ; le fichier antérieur reste archivé. Le nouveau décor `marshal-room` suit le format RGBA de 512 × 640 des autres fonds. Le bouton de préréglage charge le descripteur actualisé ; un ancien brouillon conserve son décor personnalisé jusqu’à sa modification ou au rechargement du préréglage. Sources et prompts sont conservés avec les calques v12.
+
+
+## Règles actuelles des accessoires et du cadrage — 25 octobre 2026
+
+Les portraits permettent de cumuler plusieurs accessoires de la même bibliothèque : barbe, cicatrice, bijoux et pendentif. La barbe a désormais une opacité fixe de 100 %, y compris après import d’un ancien réglage ; les autres accessoires gardent leurs réglages. Dans l’éditeur, le déplacement global du personnage est autorisé de −150 % à +150 % horizontalement et verticalement. Le cadrage du dialogue reste fixe. Ces règles de présentation ne modifient aucune caractéristique ni action du jeu.
+
+| Réglage | Valeur actuelle |
+| --- | --- |
+| Accessoires | Sélection cumulable par cases à cocher, dans la bibliothèque du genre |
+| Opacité de barbe | 100 %, fixe |
+| Déplacement horizontal du personnage | −150 à +150 % |
+| Déplacement vertical du personnage | −150 à +150 % |
+| Taille du personnage | 60 à 140 %, inchangé |
+
+L’accessoire principal historique reste importable ; les autres références sont sérialisées dans `additionalAccessories`. Les doublons et références d’une autre bibliothèque sont refusés. Les pendentifs suivent le bloc corps ; les autres accessoires suivent la tête. Le réglage d’opacité du groupe Accessoires agit uniquement sur les pièces qui ne sont pas des barbes ; les cases de visibilité restent disponibles. Ces règles remplacent les anciennes notes de variation d’opacité de barbe, conservées dans l’historique. Les déplacements portent sur l’image du personnage, sans modifier le GPS ou une position de jeu.
