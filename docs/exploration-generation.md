@@ -4,22 +4,29 @@ Disponible côté serveur depuis le 28 octobre 2026. Chaque nouvelle partie reç
 un terrain caché de ressources naturelles et de sites exceptionnels, enregistré
 dans son état d’exploration. Les cartes et items d’indices sont désormais générés
 au même lancement (voir l’article Cartes de localisation et parchemins de recherche).
-La recherche, les installations
-et les expéditions de récupération restent à raccorder à ces données.
+La recherche, les installations et les expéditions de récupération utilisent ces données officielles.
 
-| Contenu naturel | Probabilité avant influence |
+## Blocs fixes et quotas — 2 novembre 2026
+
+Les nouvelles cartes utilisent des [blocs fixes de 3 × 3 cases](terrain-blocks.md), sans chevauchement. Seule la case centrale porte la ressource ou le site exceptionnel. Chaque bloc complet hors influence et hors zones interdites est admissible ; les cases de bordure qui ne forment pas un carré complet restent vides et non constructibles.
+
+Le serveur réserve au moins la moitié des blocs admissibles au vide, puis répartit le quota occupé selon les poids suivants, avec un minimum d’un exemplaire de chaque contenu non vide.
+
+| Contenu | Poids cible avant arrondis et minimums |
 | --- | --- |
-| Rien | 45 % |
-| Bois | 20 % |
-| Pierre | 15 % |
-| Terre fertile | 12 % |
-| Fer | 6 % |
-| Or | 2 % |
+| Vide | 50 % au minimum |
+| Bois | 16 % |
+| Pierre | 12 % |
+| Terre fertile | 9,6 % |
+| Fer | 4,8 % |
+| Or | 1,6 % |
+| Trésor | 3 % |
+| Artefact | 2 % |
+| Donjon | 1 % |
 
-Un second tirage indépendant détermine le contenu exceptionnel : aucune découverte
-94 %, trésor 3 %, artefact 2 %, donjon 1 %. Ces pourcentages sont des probabilités
-par cellule, pas des quotas garantis pour chaque partie. Une petite aire peut
-ne contenir aucun site exceptionnel. Une cellule sans ressource peut en contenir un.
+Ces poids ne sont pas des probabilités de découverte. Les quotas entiers et les minimums peuvent modifier les proportions, surtout sur un petit terrain. Avec les deux options activées, il faut au moins 16 blocs complets admissibles : en dessous de ce seuil, la carte est créée avec les blocs vides, sans ressources naturelles ni sites exceptionnels supplémentaires. Les lieux prévus par le scénario sont conservés et le minimum par type ne s’applique pas. L’algorithme sauvegardé est `exploration-v4-fixed-blocks` et les anciennes parties ne sont pas régénérées.
+
+Les blocs de même ressource qui partagent un côté fusionnent transitivement en une zone constructible, limitée à un camp. Une diagonale seule ne fusionne pas les blocs. Les neuf cases d’un bloc découvert sont connues et peuvent être proposées à l’installation selon les contrôles serveur. Les extensions inconnues ne sont pas révélées.
 
 ## Grille commune à la heatmap
 
@@ -60,7 +67,7 @@ le lancement et l’installation de nouveaux camps restent à raccorder.
 `exploration-generation.js` contient la génération sans effet sur les autres
 objets de la partie. `server/lobby/initialize-exploration.js` lui fournit une
 graine privée aléatoire indépendante de la graine publique du lobby. Le format
-enregistre cette graine, la date, l’algorithme `exploration-v2-exterior-only`, le contour de
+enregistre cette graine, la date, l’algorithme `exploration-v4-fixed-blocks`, le contour de
 la play area, les répartitions et la politique d’emprise.
 
 `LobbyService` l’appelle pour les nouvelles parties construites par le serveur,
@@ -113,3 +120,7 @@ La [résolution des sites exceptionnels](exceptional-site-resolution.md) est dis
 ## Fondation et terrain — 1er novembre 2026
 
 La [fondation des camps et leurs évolutions selon le terrain](camp-foundation-and-terrain.md) est disponible sur place ou par expédition depuis un poste de prospection. Les positions, coûts, disponibilités et évolutions sont validés par le serveur. La prospection révèle aussi les cases vides. Le camp conserve son gisement d’origine ; son influence neutralise les cellules voisines et ferme les sites exceptionnels encore actifs couverts, sans attribuer leur butin. Les lieux historiques conservent leurs règles. Les possibilités des nouveaux camps sont transmises comme état officiel, sans nouveau calcul de règles dans l’interface.
+
+## Options de partie — 3 novembre 2026
+
+Deux options de partie indépendantes, cochées par défaut, contrôlent les contenus supplémentaires : Ressources naturelles (bois, pierre, terre fertile, fer, or) et Trésors et sites exceptionnels (trésors, artefacts, donjons). L’organisateur les choisit avant le lancement ; les mêmes réglages existent pour le test sur carte fictive. Les lieux du scénario sont conservés. Le serveur génère uniquement les catégories activées, avec au moins 50 % de blocs vides et un exemplaire de chaque type activé si la place le permet. Il faut 16 blocs admissibles avec les deux options, 10 avec les ressources seules, 6 avec les sites seuls. Sous le seuil applicable, aucun contenu supplémentaire n’est généré. Si les deux options sont désactivées, tous les blocs restent vides. Une reprise conserve le terrain sauvegardé sans nouveau tirage.

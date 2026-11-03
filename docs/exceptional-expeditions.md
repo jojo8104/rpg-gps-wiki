@@ -18,7 +18,7 @@ L’interface ne propose que les PNJ, montures, outils, ressources et troupes di
 
 Le réglage initial considère le cartographe et l’aventurier comme pertinents pour les sites exceptionnels. Les autres spécialistes et personnages utiles du catalogue donnent +2 chacun, une fois par type de PNJ. Le serveur peut définir une liste de spécialités pertinentes propre à chaque site. Le navigateur ne peut pas modifier cette liste ni ajouter un bonus narratif. Aucun nouveau bonus de dialogue n’est créé par cette étape.
 
-« Actualiser le score » enregistre la préparation sans retirer de moyens. Le départ utilise cette préparation enregistrée ; après une modification du formulaire, actualisez le score avant de confirmer. Le serveur vérifie de nouveau les disponibilités au départ. Une préparation peut être annulée sans dépense.
+Chaque modification des moyens enregistre automatiquement la préparation sans retirer de moyens. Le départ utilise cette préparation enregistrée et reste indisponible pendant son actualisation. Le serveur vérifie de nouveau les disponibilités au départ. Une préparation peut être annulée sans dépense.
 
 ## Avec le héros
 
@@ -53,3 +53,7 @@ Deux spécialistes pertinents (+20), huit volontaires (+16), trois chevaux (+6),
 ## Clôture partagée — 1er novembre 2026
 
 La [clôture partagée et les archives](exceptional-site-closure.md) sont centralisées côté serveur. La première victoire ou disparition est conservée ; les préparations concurrentes sont annulées immédiatement et les groupes en trajet rappelés. Les combats en cours restent en place jusqu’à leur issue. Les indices périmés restent archivables sans nouveau risque ni double paiement. La reprise réconcilie les anciens états sans rejouer de récompense ou de tirage.
+
+## Préparation mobile — 3 novembre 2026
+
+Le bouton Trésor rejoint les aptitudes de la carte, avec une icône et son délai de recharge. Les recherches et expéditions proposent des boutons −, + et Max pour les quantités, ainsi que des sélections tactiles pour les indices et spécialistes. Chaque modification actualise automatiquement la préparation auprès du serveur. Pendant cet envoi, le pourcentage précédent est masqué et la validation ou le départ reste indisponible. Les scores et probabilités affichés proviennent uniquement de la réponse officielle. Les longs textes explicatifs restent dans ce guide ; les écrans conservent les états, délais, coûts utiles, erreurs et résultats. Aucun barème, coût, quota ou tirage n’est changé.

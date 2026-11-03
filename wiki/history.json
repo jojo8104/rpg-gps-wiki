@@ -391,6 +391,13 @@
       "note": "Guide des règles par thème complété : bâtiments, formations, courrier, surveillance et restrictions du marché",
       "hash": "5a2fc0391a14ce6129cdbcaa225d5e991f23fe384b5d78c1c31da9d1c6440042",
       "file": "archives/premiers-pas/v56.html"
+    },
+    {
+      "version": 57,
+      "date": "2026-11-03T10:32:23.181Z",
+      "note": "Options de partie : ressources et trésors/sites exceptionnels activés par défaut, génération validée par le serveur",
+      "hash": "0af273e89e2d0162a2f59341c0426c190f399268013c43ba503e6671724b1436",
+      "file": "archives/premiers-pas/v57.html"
     }
   ],
   "heros-armee": [
@@ -913,6 +920,13 @@
       "note": "Guide des règles par thème complété : bâtiments, formations, courrier, surveillance et restrictions du marché",
       "hash": "676d5bf06959431d9fb8ab5afdc6710066c5d7d4851ee865d9725bd18d790d43",
       "file": "archives/lieux/v49.html"
+    },
+    {
+      "version": 50,
+      "date": "2026-11-03T13:18:27.919Z",
+      "note": "Nouvel article PNJ : rôles, catalogue de taverne illustré, recrutement, rotation, rumeurs et exemple d’installation",
+      "hash": "512d302059e69e6ce001416b9fba41fadfe3b3e5e620a822b75cebdbd479e6fe",
+      "file": "archives/lieux/v50.html"
     }
   ],
   "quetes": [
@@ -1118,6 +1132,13 @@
       "note": "Refonte du guide joueur par thèmes : règles, conditions, exemples et séparation des outils et notes de développement",
       "hash": "da140d96a98ef1fbb2deb406c942a5f268f04bc6b0bb57fd5cfbb789d0191493",
       "file": "archives/quetes/v29.html"
+    },
+    {
+      "version": 30,
+      "date": "2026-11-03T13:18:27.919Z",
+      "note": "Nouvel article PNJ : rôles, catalogue de taverne illustré, recrutement, rotation, rumeurs et exemple d’installation",
+      "hash": "57f4accbb7c18bf7004f37c480eb90ec327ea57cb9fd5c84435e5ba8a158f1c0",
+      "file": "archives/quetes/v30.html"
     }
   ],
   "combats": [
@@ -1371,6 +1392,20 @@
       "note": "Refonte du guide joueur par thèmes : règles, conditions, exemples et séparation des outils et notes de développement",
       "hash": "6ec17b01f11e13671936aa2e255b5ffbae2203d3fb4d83550c0675cff9eb6c1e",
       "file": "archives/dashboard-monitoring/v15.html"
+    },
+    {
+      "version": 16,
+      "date": "2026-11-02T06:45:51.916Z",
+      "note": "Affichage administrateur des ressources et sites exceptionnels sur la carte du Dashboard",
+      "hash": "6692911ad2c9ed92e70fc0ce5e46734e92bb390685740a35a4a62fc3f2a8a55c",
+      "file": "archives/dashboard-monitoring/v16.html"
+    },
+    {
+      "version": 17,
+      "date": "2026-11-02T18:39:17.149Z",
+      "note": "Blocs fixes 3x3, quotas de vide et diversité, fusion des ressources et camp unique par zone",
+      "hash": "eac9bb497f59315cc47398fe3b5d95ccc641681224cd411624afbe1dffdbc9fc",
+      "file": "archives/dashboard-monitoring/v17.html"
     }
   ],
   "concevoir-quetes": [
@@ -1773,6 +1808,13 @@
       "note": "Refonte du guide joueur par thèmes : règles, conditions, exemples et séparation des outils et notes de développement",
       "hash": "251e8a9bf9c50d803209e013e54c5b0e47feafc2a9dbcda420169f222d33684a",
       "file": "archives/article-party-preparation/v3.html"
+    },
+    {
+      "version": 4,
+      "date": "2026-11-03T10:32:23.181Z",
+      "note": "Options de partie : ressources et trésors/sites exceptionnels activés par défaut, génération validée par le serveur",
+      "hash": "a366ef8d84aa504e98a0d1ee0102be92c77576e241f520a58e5a63e14f9d97ae",
+      "file": "archives/article-party-preparation/v4.html"
     }
   ],
   "article-hero-items": [
@@ -1810,6 +1852,27 @@
       "note": "Rumeurs payantes, messages de recherche et documents hors capacite des bagages",
       "hash": "93cf2929aaf3466b38c7b23456dcff7b22a2356f26b3d2943148cc1032ff2781",
       "file": "archives/article-hero-items/v5.html"
+    },
+    {
+      "version": 6,
+      "date": "2026-11-03T09:06:43.582Z",
+      "note": "Complément des pièces rares par classe et nouvel emplacement Jambes",
+      "hash": "543605f1b37afa716d0dfe5047f135b5051bf89632d4645d2cedd5092018813c",
+      "file": "archives/article-hero-items/v6.html"
+    },
+    {
+      "version": 7,
+      "date": "2026-11-03T09:24:35.072Z",
+      "note": "Simplification : jambes et pieds utilisent le même emplacement, huit emplacements conservés",
+      "hash": "c86dfe4c0558b7633a7c142e2b1973f702007ec9a77ec7aab49e239ed87a96ab",
+      "file": "archives/article-hero-items/v7.html"
+    },
+    {
+      "version": 8,
+      "date": "2026-11-03T10:05:15.403Z",
+      "note": "Ajout du catalogue illustré des objets : équipements, reliques royales et objets de scénario",
+      "hash": "819ca2cdb23bca69f09d331b4c4bb0cd0965243c923cab80d491484d0f33367f",
+      "file": "archives/article-hero-items/v8.html"
     }
   ],
   "article-hero-progression-display": [
@@ -1985,6 +2048,13 @@
       "note": "Fondation des camps sur place ou par expedition et evolutions selon le terrain",
       "hash": "409f06bc806f703d6dee36610e53b080c8bc280b38e017527384733f2f133c32",
       "file": "archives/article-location-improvements/v6.html"
+    },
+    {
+      "version": 7,
+      "date": "2026-11-03T13:18:27.919Z",
+      "note": "Nouvel article PNJ : rôles, catalogue de taverne illustré, recrutement, rotation, rumeurs et exemple d’installation",
+      "hash": "144805a93ad3a02d8598455120bc8a502f9df023cce5d868d5f219b21b6d3e58",
+      "file": "archives/article-location-improvements/v7.html"
     }
   ],
   "article-location-taxes": [
@@ -2127,6 +2197,13 @@
       "note": "Schémas de scénario, proposition de quête, menus de références, panneau réglable et action Modifier",
       "hash": "72ac75ec38daf452d45be355dfbe15a9a0050783bbc39bbf9259b0b28b7e1d8f",
       "file": "archives/article-quest-definition/v4.html"
+    },
+    {
+      "version": 5,
+      "date": "2026-11-02T02:13:15.293Z",
+      "note": "Rumeurs narratives uniques, suppression des explications et achats directs, récompenses d’indices",
+      "hash": "6eef63b47253ff797686852641e34b9efbc89b78a7e297e5afadaef2b4c8ea92",
+      "file": "archives/article-quest-definition/v5.html"
     }
   ],
   "article-missing-prospectors": [
@@ -2341,6 +2418,20 @@
       "note": "PNJ visibles dans les fiches de lieux du Dashboard, supervision en lecture seule",
       "hash": "abeec584ec98e8621d4c39692c7d54ddc96ebe8bb1370d28392a29959048fb94",
       "file": "archives/article-dashboard-monitoring/v9.html"
+    },
+    {
+      "version": 10,
+      "date": "2026-11-02T06:45:51.916Z",
+      "note": "Affichage administrateur des ressources et sites exceptionnels sur la carte du Dashboard",
+      "hash": "553e1cffcdc1abd8baaf0cbac989a9b077118c42f7e5c9d03040341a50e18881",
+      "file": "archives/article-dashboard-monitoring/v10.html"
+    },
+    {
+      "version": 11,
+      "date": "2026-11-02T18:39:17.149Z",
+      "note": "Blocs fixes 3x3, quotas de vide et diversité, fusion des ressources et camp unique par zone",
+      "hash": "90b18eb332c2721e728347162b7a2bb9c3ef86cac2bc53703fecd547953414ad",
+      "file": "archives/article-dashboard-monitoring/v11.html"
     }
   ],
   "article-powershell-server-guide": [
@@ -2831,6 +2922,13 @@
       "note": "Portraits : accessoires cumulables, barbes à 100 % et déplacements élargis",
       "hash": "d941864e47e01260fc66bb6f2cbaa158440ae31d0bdcf0a52b8b67dabc7049d5",
       "file": "archives/article-modular-portraits/v24.html"
+    },
+    {
+      "version": 25,
+      "date": "2026-11-03T13:18:27.919Z",
+      "note": "Nouvel article PNJ : rôles, catalogue de taverne illustré, recrutement, rotation, rumeurs et exemple d’installation",
+      "hash": "113600a9a587886ddc621bba28fd7d6d26aa3fbcd8432a104830100fe3c06618",
+      "file": "archives/article-modular-portraits/v25.html"
     }
   ],
   "article-battlefield-generation": [
@@ -2968,6 +3066,41 @@
       "note": "Carte des découvertes, fiches de préparation et validation du parcours",
       "hash": "5214572245000ec3ec8e436f50122db8f9ddd954f316495eaf61bb94cc2c6258",
       "file": "archives/exploration/v16.html"
+    },
+    {
+      "version": 17,
+      "date": "2026-11-02T02:13:15.293Z",
+      "note": "Rumeurs narratives uniques, suppression des explications et achats directs, récompenses d’indices",
+      "hash": "b4dbfc8458a728ebd764de6b4038f9bae74a39e466ba95556f7fa7cb11092848",
+      "file": "archives/exploration/v17.html"
+    },
+    {
+      "version": 18,
+      "date": "2026-11-02T18:39:17.149Z",
+      "note": "Blocs fixes 3x3, quotas de vide et diversité, fusion des ressources et camp unique par zone",
+      "hash": "d390697edc4111a29ed2d8d72b077c04ba4e1293bcd7e1ed9c2075f7cae9a192",
+      "file": "archives/exploration/v18.html"
+    },
+    {
+      "version": 19,
+      "date": "2026-11-03T10:09:04.577Z",
+      "note": "Petits terrains : création sans ressources ni sites exceptionnels supplémentaires sous 16 blocs admissibles",
+      "hash": "bbe25450e5269a129f4e8d7e559c5b6a92de25eb73d955a12c4fdb34a03641a5",
+      "file": "archives/exploration/v19.html"
+    },
+    {
+      "version": 20,
+      "date": "2026-11-03T10:32:23.181Z",
+      "note": "Options de partie : ressources et trésors/sites exceptionnels activés par défaut, génération validée par le serveur",
+      "hash": "f16528ca8b8f059231ea92e3e621892bf9bff25547dc50de0fc368a5cca34934",
+      "file": "archives/exploration/v20.html"
+    },
+    {
+      "version": 21,
+      "date": "2026-11-03T10:42:19.892Z",
+      "note": "Préparation mobile : bouton Trésor dans les aptitudes, quantités tactiles et jauges actualisées automatiquement par le serveur",
+      "hash": "3671efaea7b3c23995dbad049c6578e7280a50d6f6f38945e1a9ade8c1189d5e",
+      "file": "archives/exploration/v21.html"
     }
   ],
   "pouvoirs": [
@@ -3016,6 +3149,27 @@
       "note": "Tableaux de statistiques illustrés, introductions courtes, explications de lecture et exemples illustrés",
       "hash": "1cf7a01ac30ef831067cfcde60e1909d8817cc350ca6957e14eaeef5541f5c62",
       "file": "archives/equipement/v2.html"
+    },
+    {
+      "version": 3,
+      "date": "2026-11-03T09:06:43.582Z",
+      "note": "Complément des pièces rares par classe et nouvel emplacement Jambes",
+      "hash": "481d7a27aefcc562f566f4d9283eb9cb6a03eee0fec954018602ed861dd95513",
+      "file": "archives/equipement/v3.html"
+    },
+    {
+      "version": 4,
+      "date": "2026-11-03T09:24:35.072Z",
+      "note": "Simplification : jambes et pieds utilisent le même emplacement, huit emplacements conservés",
+      "hash": "9f3e00a15baddc07ba1b6b540cd99730b5e0ddd4a4eb6b6501a2d942301a9fb0",
+      "file": "archives/equipement/v4.html"
+    },
+    {
+      "version": 5,
+      "date": "2026-11-03T10:05:15.403Z",
+      "note": "Ajout du catalogue illustré des objets : équipements, reliques royales et objets de scénario",
+      "hash": "2c2f9747f5ecb2c25c7d2d636a7ec032c9bb2f5fc77be314d40d375acdd8eea2",
+      "file": "archives/equipement/v5.html"
     }
   ],
   "economie": [
@@ -3046,6 +3200,20 @@
       "note": "Clarification des regles disponibles de prospection, rumeurs et specialistes",
       "hash": "8bc58c30e9b345ddb92732f28c829e3d8b02124b5aa18b7f401aa8e65f64e759",
       "file": "archives/economie/v4.html"
+    },
+    {
+      "version": 5,
+      "date": "2026-11-03T13:09:39.275Z",
+      "note": "Spécification prévue du commerce des lieux, de la corruption et des marchés noirs",
+      "hash": "8da0275924b6fa5a128abb22150e169f5824c9cc73d3b79902883905be1e33d0",
+      "file": "archives/economie/v5.html"
+    },
+    {
+      "version": 6,
+      "date": "2026-11-03T13:18:27.919Z",
+      "note": "Nouvel article PNJ : rôles, catalogue de taverne illustré, recrutement, rotation, rumeurs et exemple d’installation",
+      "hash": "8ef3c37471c0d83912bf96e78168c58df6433684c30face9251a45042880876c",
+      "file": "archives/economie/v6.html"
     }
   ],
   "cooperation": [
@@ -3231,6 +3399,48 @@
       "note": "Sites exceptionnels uniquement hors de l influence des lieux normaux",
       "hash": "bfff1714cc66b9b52421b5bd525f5f8dcb0cd433eb60f367cfc550e6e2c6d63c",
       "file": "archives/ressources-cachees/v19.html"
+    },
+    {
+      "version": 20,
+      "date": "2026-11-02T01:26:26.717Z",
+      "note": "Contenu unique par case et huit voisines vides autour des ressources",
+      "hash": "ac561a25683bec4f30c0170ba133040a7dd7b47e637a9fd6c4164c310e6b5940",
+      "file": "archives/ressources-cachees/v20.html"
+    },
+    {
+      "version": 21,
+      "date": "2026-11-02T02:13:15.293Z",
+      "note": "Rumeurs narratives uniques, suppression des explications et achats directs, récompenses d’indices",
+      "hash": "8c36c4880cbeef44cf4184c07d64066d4788193bfa917e0b3cc76054f317f63a",
+      "file": "archives/ressources-cachees/v21.html"
+    },
+    {
+      "version": 22,
+      "date": "2026-11-02T18:39:17.149Z",
+      "note": "Blocs fixes 3x3, quotas de vide et diversité, fusion des ressources et camp unique par zone",
+      "hash": "57f27cfc4c87337c5bd947c5a29431705146abe4003ed7b486d2154f43e520ef",
+      "file": "archives/ressources-cachees/v22.html"
+    },
+    {
+      "version": 23,
+      "date": "2026-11-03T10:09:04.577Z",
+      "note": "Petits terrains : création sans ressources ni sites exceptionnels supplémentaires sous 16 blocs admissibles",
+      "hash": "d8c077557f2394027ce1c002477ea20bf67c7850088f1d3b6fbe965ca15ae519",
+      "file": "archives/ressources-cachees/v23.html"
+    },
+    {
+      "version": 24,
+      "date": "2026-11-03T10:32:23.181Z",
+      "note": "Options de partie : ressources et trésors/sites exceptionnels activés par défaut, génération validée par le serveur",
+      "hash": "6920265fad94760660a16942cfc6ca445b4e6756ed4d39e2d9b71afc794d667c",
+      "file": "archives/ressources-cachees/v24.html"
+    },
+    {
+      "version": 25,
+      "date": "2026-11-03T10:42:19.892Z",
+      "note": "Préparation mobile : bouton Trésor dans les aptitudes, quantités tactiles et jauges actualisées automatiquement par le serveur",
+      "hash": "afcd061da30f8ae1c28e006210223a95cc381222d9fb1a9d715fc501378d45e2",
+      "file": "archives/ressources-cachees/v25.html"
     }
   ],
   "article-hidden-resource-cells": [
@@ -3443,6 +3653,27 @@
       "note": "Carte des découvertes, fiches de préparation et validation du parcours",
       "hash": "c75b5a073f852d9d6430f75244f93ba3801ffe9adc1392159c8d60f6700b29ee",
       "file": "archives/article-hidden-resource-cells/v30.html"
+    },
+    {
+      "version": 31,
+      "date": "2026-11-02T01:26:26.717Z",
+      "note": "Contenu unique par case et huit voisines vides autour des ressources",
+      "hash": "0e25459801e409428c6c3774dd3ffdad531cae88f1d3194aca9299ac9fb230b6",
+      "file": "archives/article-hidden-resource-cells/v31.html"
+    },
+    {
+      "version": 32,
+      "date": "2026-11-02T02:13:15.293Z",
+      "note": "Rumeurs narratives uniques, suppression des explications et achats directs, récompenses d’indices",
+      "hash": "d18557a6aec6ec425f814bb7ec6ded1174ca31e1921374fba4a1b455c033aeb6",
+      "file": "archives/article-hidden-resource-cells/v32.html"
+    },
+    {
+      "version": 33,
+      "date": "2026-11-02T18:39:17.149Z",
+      "note": "Blocs fixes 3x3, quotas de vide et diversité, fusion des ressources et camp unique par zone",
+      "hash": "f73708abfeed77be0b62c2420285727228cc60eb59ec336c94fe6dd27c5628a4",
+      "file": "archives/article-hidden-resource-cells/v33.html"
     }
   ],
   "exploration-persistence": [
@@ -3494,6 +3725,41 @@
       "note": "Sites exceptionnels uniquement hors de l influence des lieux normaux",
       "hash": "468432e9ad6be4b5c8a9f95e247d007e4dc9a60f402e909a5239d78c8022185e",
       "file": "archives/exploration-persistence/v7.html"
+    },
+    {
+      "version": 8,
+      "date": "2026-11-02T01:26:26.717Z",
+      "note": "Contenu unique par case et huit voisines vides autour des ressources",
+      "hash": "0293a60917f14440a811911efe1729b82deb81a140c58b4acdc1f4ca629986b4",
+      "file": "archives/exploration-persistence/v8.html"
+    },
+    {
+      "version": 9,
+      "date": "2026-11-02T16:39:59.097Z",
+      "note": "Actualisation des tests de génération par blocs et des offres de rumeur à la Forge, sans modification des règles",
+      "hash": "d4b13e3189aae5f2339a9d28c4d2f14c0a0b31deb23133c45e09ef163f872cfa",
+      "file": "archives/exploration-persistence/v9.html"
+    },
+    {
+      "version": 10,
+      "date": "2026-11-02T18:39:17.149Z",
+      "note": "Blocs fixes 3x3, quotas de vide et diversité, fusion des ressources et camp unique par zone",
+      "hash": "7bed57f4515349d74e0c6c3aabcca1643e91254b1fc99bd0edaf27d4926c65f6",
+      "file": "archives/exploration-persistence/v10.html"
+    },
+    {
+      "version": 11,
+      "date": "2026-11-03T10:09:04.577Z",
+      "note": "Petits terrains : création sans ressources ni sites exceptionnels supplémentaires sous 16 blocs admissibles",
+      "hash": "f13a08f51fa2070e550f102ab43ca8e0236d6be3bb7069dcbc8a9d8ce9ea5533",
+      "file": "archives/exploration-persistence/v11.html"
+    },
+    {
+      "version": 12,
+      "date": "2026-11-03T10:32:23.181Z",
+      "note": "Options de partie : ressources et trésors/sites exceptionnels activés par défaut, génération validée par le serveur",
+      "hash": "52af6001f767358ccc03da7c60fecb2e83ed5de2929c7c4e42280e6b169b165c",
+      "file": "archives/exploration-persistence/v12.html"
     }
   ],
   "article-exploration-persistence": [
@@ -3645,6 +3911,41 @@
       "note": "Fondation des camps sur place ou par expedition et evolutions selon le terrain",
       "hash": "3979d1335393704480592f21bbebd41092b1142f380245b8dcab556826df6674",
       "file": "archives/article-exploration-generation/v8.html"
+    },
+    {
+      "version": 9,
+      "date": "2026-11-02T01:26:26.717Z",
+      "note": "Contenu unique par case et huit voisines vides autour des ressources",
+      "hash": "19d7117898871a4ef03c25e62945f31d1b490f018af68e18909b11bfc677506c",
+      "file": "archives/article-exploration-generation/v9.html"
+    },
+    {
+      "version": 10,
+      "date": "2026-11-02T16:39:59.097Z",
+      "note": "Actualisation des tests de génération par blocs et des offres de rumeur à la Forge, sans modification des règles",
+      "hash": "c19c0571814b2bf4b579faad880999f53ee8cf1c03efd9fb57e75039d0a6b78d",
+      "file": "archives/article-exploration-generation/v10.html"
+    },
+    {
+      "version": 11,
+      "date": "2026-11-02T18:39:17.149Z",
+      "note": "Blocs fixes 3x3, quotas de vide et diversité, fusion des ressources et camp unique par zone",
+      "hash": "18a635b0b21bfa50ec8016472cba87cb9a54db3fd13470e6aef7e8268d970279",
+      "file": "archives/article-exploration-generation/v11.html"
+    },
+    {
+      "version": 12,
+      "date": "2026-11-03T10:09:04.577Z",
+      "note": "Petits terrains : création sans ressources ni sites exceptionnels supplémentaires sous 16 blocs admissibles",
+      "hash": "e89c6fa04dec2a24af65241b604a0dd9a167e3bfbbbb116b5b6d8187f03dd1b1",
+      "file": "archives/article-exploration-generation/v12.html"
+    },
+    {
+      "version": 13,
+      "date": "2026-11-03T10:32:23.181Z",
+      "note": "Options de partie : ressources et trésors/sites exceptionnels activés par défaut, génération validée par le serveur",
+      "hash": "2946e8fc603ba85c50df10115dd01229f4ce5e444d9e9bf34dbb76b6096b4975",
+      "file": "archives/article-exploration-generation/v13.html"
     }
   ],
   "article-exploration-privacy": [
@@ -3817,6 +4118,13 @@
       "note": "Cloture partagee des sites : missions concurrentes, indices et archives",
       "hash": "c4c3e26a114361a23814095f830c2dfa1cc060b9c77d56044aa49104ca87a440",
       "file": "archives/article-exploration-clues/v9.html"
+    },
+    {
+      "version": 10,
+      "date": "2026-11-02T02:13:15.293Z",
+      "note": "Rumeurs narratives uniques, suppression des explications et achats directs, récompenses d’indices",
+      "hash": "b894345131a51ab7ef4ee6f8f8e16bd5797ada89dbd47d41c1321b8e9c71479d",
+      "file": "archives/article-exploration-clues/v10.html"
     }
   ],
   "article-exploration-rumors-and-discovery": [
@@ -3868,6 +4176,20 @@
       "note": "Fondation des camps sur place ou par expedition et evolutions selon le terrain",
       "hash": "b5a5b612f05dc53bf6c8d26b65c0823fc614296bdbe275fcab02a4ccf5a23fbb",
       "file": "archives/article-exploration-rumors-and-discovery/v7.html"
+    },
+    {
+      "version": 8,
+      "date": "2026-11-02T02:13:15.293Z",
+      "note": "Rumeurs narratives uniques, suppression des explications et achats directs, récompenses d’indices",
+      "hash": "e25dccbb54dbb5db1c8c183aa0d8331817536ad33901a7f738a6daab8b3a64b7",
+      "file": "archives/article-exploration-rumors-and-discovery/v8.html"
+    },
+    {
+      "version": 9,
+      "date": "2026-11-02T18:39:17.149Z",
+      "note": "Blocs fixes 3x3, quotas de vide et diversité, fusion des ressources et camp unique par zone",
+      "hash": "d7ff718df083c40f3e299f1abe4423d507478fe3e249b075754c417d84882fc4",
+      "file": "archives/article-exploration-rumors-and-discovery/v9.html"
     }
   ],
   "article-tavern-rumors-and-documents": [
@@ -3877,6 +4199,20 @@
       "note": "Rumeurs payantes, messages de recherche et documents hors capacite des bagages",
       "hash": "91c19e8168c10b647def3ff26253f6e84c17825acd651050cab008bf50eb6f32",
       "file": "archives/article-tavern-rumors-and-documents/v1.html"
+    },
+    {
+      "version": 2,
+      "date": "2026-11-02T02:13:15.293Z",
+      "note": "Rumeurs narratives uniques, suppression des explications et achats directs, récompenses d’indices",
+      "hash": "d5594c9ebebe169ee682d56aaf16a58504358f57bfc7f73ab1f9c29ac0d190c5",
+      "file": "archives/article-tavern-rumors-and-documents/v2.html"
+    },
+    {
+      "version": 3,
+      "date": "2026-11-03T13:18:27.919Z",
+      "note": "Nouvel article PNJ : rôles, catalogue de taverne illustré, recrutement, rotation, rumeurs et exemple d’installation",
+      "hash": "519c0247975e9833207d0444b701b85c9a59fcbf42d837c4327aaf9a4e7ab159",
+      "file": "archives/article-tavern-rumors-and-documents/v3.html"
     }
   ],
   "article-exploration-search": [
@@ -3907,6 +4243,13 @@
       "note": "Resolution des sites exceptionnels : butin, puissance, degats, moral et retour",
       "hash": "9319148c4f88afc70113f0de76825a6c085b9b5dfa6a1271a8d20bdec809517a",
       "file": "archives/article-exploration-search/v4.html"
+    },
+    {
+      "version": 5,
+      "date": "2026-11-03T10:42:19.892Z",
+      "note": "Préparation mobile : bouton Trésor dans les aptitudes, quantités tactiles et jauges actualisées automatiquement par le serveur",
+      "hash": "e16085df6f4fc9dc609b031caf6993677f7ddfb20d732c4300f3e6a9c2cd73e8",
+      "file": "archives/article-exploration-search/v5.html"
     }
   ],
   "article-exceptional-expeditions": [
@@ -3930,6 +4273,13 @@
       "note": "Cloture partagee des sites : missions concurrentes, indices et archives",
       "hash": "0194af5b8562c5df76b2e50e5eff2c714bdd5b295cfc3a9e6ff59d3684c49487",
       "file": "archives/article-exceptional-expeditions/v3.html"
+    },
+    {
+      "version": 4,
+      "date": "2026-11-03T10:42:19.892Z",
+      "note": "Préparation mobile : bouton Trésor dans les aptitudes, quantités tactiles et jauges actualisées automatiquement par le serveur",
+      "hash": "30c99c107c7bf024ab10a45cfaf7451695fcaff91547b6643767e109e12ae5ef",
+      "file": "archives/article-exceptional-expeditions/v4.html"
     }
   ],
   "article-exceptional-site-resolution": [
@@ -3978,6 +4328,13 @@
       "note": "Fondation des camps sur place ou par expedition et evolutions selon le terrain",
       "hash": "b29f222a9785d4c467687cf172d7df45bf2bcd850fdcb999a77cd3ec966ba7c3",
       "file": "archives/article-camp-foundation-and-terrain/v1.html"
+    },
+    {
+      "version": 2,
+      "date": "2026-11-02T18:39:17.149Z",
+      "note": "Blocs fixes 3x3, quotas de vide et diversité, fusion des ressources et camp unique par zone",
+      "hash": "a134de33323007d6d4f233744bfc506101ff33e408dd336582578691d998dab9",
+      "file": "archives/article-camp-foundation-and-terrain/v2.html"
     }
   ],
   "article-exploration-map-and-sheets": [
@@ -3987,6 +4344,72 @@
       "note": "Carte des découvertes, fiches de préparation et validation du parcours",
       "hash": "19e8878c4a55f64127038cdc01643b0a8ded482898c8d14311f4791a7764742d",
       "file": "archives/article-exploration-map-and-sheets/v1.html"
+    }
+  ],
+  "article-terrain-blocks": [
+    {
+      "version": 1,
+      "date": "2026-11-02T18:39:17.149Z",
+      "note": "Blocs fixes 3x3, quotas de vide et diversité, fusion des ressources et camp unique par zone",
+      "hash": "7533dc05c2c506f2a5ea4ab7deda40aea051d565c5e1ac347fcafeb2d7c3ad7f",
+      "file": "archives/article-terrain-blocks/v1.html"
+    },
+    {
+      "version": 2,
+      "date": "2026-11-03T10:09:04.577Z",
+      "note": "Petits terrains : création sans ressources ni sites exceptionnels supplémentaires sous 16 blocs admissibles",
+      "hash": "0562558952238202b6f026b3714afb7d60032c4009ba484e058622494d65a3a5",
+      "file": "archives/article-terrain-blocks/v2.html"
+    },
+    {
+      "version": 3,
+      "date": "2026-11-03T10:32:23.181Z",
+      "note": "Options de partie : ressources et trésors/sites exceptionnels activés par défaut, génération validée par le serveur",
+      "hash": "9378d7061a52fd61c96a8597dfd04a18920f40c71355a704a68591a6a9b41e93",
+      "file": "archives/article-terrain-blocks/v3.html"
+    }
+  ],
+  "catalogue-objets": [
+    {
+      "version": 1,
+      "date": "2026-11-03T10:05:15.403Z",
+      "note": "Ajout du catalogue illustré des objets : équipements, reliques royales et objets de scénario",
+      "hash": "90cf5bf9d92551476befc4306e4f3d76c66bf1823d9f2b3a81d29b5bdc873db2",
+      "file": "archives/catalogue-objets/v1.html"
+    },
+    {
+      "version": 2,
+      "date": "2026-11-03T10:06:25.540Z",
+      "note": "Catalogue des objets : introductions et conditions de lecture des tableaux",
+      "hash": "80745e8b8ca536afc1a0505b308c8a312564723c53fe8762a39ee8f837711fa8",
+      "file": "archives/catalogue-objets/v2.html"
+    }
+  ],
+  "article-item-catalog": [
+    {
+      "version": 1,
+      "date": "2026-11-03T10:05:15.403Z",
+      "note": "Ajout du catalogue illustré des objets : équipements, reliques royales et objets de scénario",
+      "hash": "6ccf41b02b6d25c76b5ee5004a7297fa99b2ecb791adac714acee5ef75c6c547",
+      "file": "archives/article-item-catalog/v1.html"
+    }
+  ],
+  "article-location-commerce-and-corruption": [
+    {
+      "version": 1,
+      "date": "2026-11-03T13:09:39.275Z",
+      "note": "Spécification prévue du commerce des lieux, de la corruption et des marchés noirs",
+      "hash": "fe211b32824e13123786b9ccdde742eeab0fb053791551a2cbe0192970c7fa84",
+      "file": "archives/article-location-commerce-and-corruption/v1.html"
+    }
+  ],
+  "pnj": [
+    {
+      "version": 1,
+      "date": "2026-11-03T13:18:27.919Z",
+      "note": "Nouvel article PNJ : rôles, catalogue de taverne illustré, recrutement, rotation, rumeurs et exemple d’installation",
+      "hash": "2ac65482e3ea3ec5c5f2f06a64cf8d403debf197954b962b99cbc0a0f009a317",
+      "file": "archives/pnj/v1.html"
     }
   ]
 }

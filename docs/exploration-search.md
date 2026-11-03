@@ -1,8 +1,8 @@
 # Rechercher un site exceptionnel à l’extérieur
 
-Depuis le 1er novembre 2026, les trésors, artefacts et donjons sont placés uniquement hors de l’influence des lieux normaux. Toute cellule touchant leur portée normale est exclue du placement exceptionnel. Le parcours est unique : cartes de localisation, recherche extérieure avec la jauge, puis expédition de récupération (cette dernière reste à implémenter). Les lieux normaux fournissent toujours des indices, des rumeurs et des repères cartographiques.
+Depuis le 1er novembre 2026, les trésors, artefacts et donjons sont placés uniquement hors de l’influence des lieux normaux. Toute cellule touchant leur portée normale est exclue du placement exceptionnel. Le parcours est unique : cartes de localisation, recherche extérieure avec la jauge, puis expédition de récupération (récupération désormais disponible). Les lieux normaux fournissent toujours des indices, des rumeurs et des repères cartographiques.
 
-Depuis le 30 octobre 2026, l’action **Chercher un trésor** permet de rechercher
+Depuis le 30 octobre 2026, le bouton **Trésor** permet de rechercher
 un trésor, un artefact ou une entrée de donjon sur la case où se trouve le héros.
 La jauge prépare la découverte ; elle ne récupère pas encore la récompense.
 
@@ -48,8 +48,8 @@ par une réouverture de la fenêtre.
 ## Préparer la jauge
 
 Choisir les indices de recherche, les spécialités et les quantités transportées,
-puis utiliser **Actualiser la jauge** pour recevoir le calcul officiel du serveur.
-Le bouton de validation peut également transmettre directement les choix en cours.
+déclenche automatiquement l’actualisation de la jauge par le serveur.
+La validation attend le retour de cette actualisation.
 Le navigateur affiche les points reçus ; il ne calcule ni score de secours ni gain.
 
 Les spécialités proposées sont le géologue, le mineur, le bûcheron, le fermier,
@@ -139,3 +139,7 @@ La [préparation et le départ des expéditions exceptionnelles](exceptional-exp
 ## Résolution des sites — 1er novembre 2026
 
 La [résolution des sites exceptionnels](exceptional-site-resolution.md) est disponible. Les exigences et récompenses des trois difficultés sont configurées côté serveur et sauvegardées. Un seul tirage applique les provisions, récompenses et, pour les donjons, dégâts et moral des participants. Le site remporté est fermé pour tous. Les groupes reviennent ; les items ou cargaisons sans place restent conservés. Les résultats privés sont projetés sans tirage aléatoire ni données des autres joueurs. Cette mise à jour remplace les mentions antérieures de résolution à implémenter.
+
+## Préparation mobile — 3 novembre 2026
+
+Le bouton Trésor rejoint les aptitudes de la carte, avec une icône et son délai de recharge. Les recherches et expéditions proposent des boutons −, + et Max pour les quantités, ainsi que des sélections tactiles pour les indices et spécialistes. Chaque modification actualise automatiquement la préparation auprès du serveur. Pendant cet envoi, le pourcentage précédent est masqué et la validation ou le départ reste indisponible. Les scores et probabilités affichés proviennent uniquement de la réponse officielle. Les longs textes explicatifs restent dans ce guide ; les écrans conservent les états, délais, coûts utiles, erreurs et résultats. Aucun barème, coût, quota ou tirage n’est changé.

@@ -36,6 +36,12 @@
             "Lire le briefing, explorer, discuter avec les donneurs de quêtes, transporter des ressources, recruter, améliorer ses lieux et préparer ses combats : ces activités alimentent la progression. Le journal permet de retrouver les prochaines étapes.",
             "Les alliances et la difficulté dépendent des réglages de la partie. Le PvP doit être autorisé : croiser un autre joueur n’est pas à lui seul une permission d’attaque."
           ]
+        },
+        {
+          "title": "Choisir les ressources et les trésors de la partie",
+          "paragraphs": [
+            "Deux options de partie indépendantes, cochées par défaut, contrôlent les contenus supplémentaires : Ressources naturelles (bois, pierre, terre fertile, fer, or) et Trésors et sites exceptionnels (trésors, artefacts, donjons). L’organisateur les choisit avant le lancement ; les mêmes réglages existent pour le test sur carte fictive. Les lieux du scénario sont conservés. Le serveur génère uniquement les catégories activées, avec au moins 50 % de blocs vides et un exemplaire de chaque type activé si la place le permet. Il faut 16 blocs admissibles avec les deux options, 10 avec les ressources seules, 6 avec les sites seuls. Sous le seuil applicable, aucun contenu supplémentaire n’est généré. Si les deux options sont désactivées, tous les blocs restent vides. Une reprise conserve le terrain sauvegardé sans nouveau tirage."
+          ]
         }
       ],
       "references": [
@@ -56,11 +62,7 @@
           "file": "play-area-map.md"
         }
       ],
-      "seeAlso": [
-        "exploration",
-        "heros-armee",
-        "quetes"
-      ]
+      "seeAlso": ["exploration", "heros-armee", "quetes"]
     },
     {
       "id": "heros-armee",
@@ -96,20 +98,11 @@
           ],
           "table": {
             "caption": "Grades du héros et capacités standards",
-            "columns": [
-              "Grade",
-              "Niveau requis",
-              "Troupes maximum",
-              "Bagages"
-            ],
+            "columns": ["Grade", "Niveau requis", "Troupes maximum", "Bagages"],
             "rows": [
               {
                 "label": "Capitaine",
-                "values": [
-                  1,
-                  3,
-                  8
-                ],
+                "values": [1, 3, 8],
                 "illustration": {
                   "path": "portraits/hero-warrior-male-anime-v2.png",
                   "caption": "Portrait de héros ; le grade est indiqué par le libellé de la ligne."
@@ -117,11 +110,7 @@
               },
               {
                 "label": "Banneret",
-                "values": [
-                  5,
-                  4,
-                  10
-                ],
+                "values": [5, 4, 10],
                 "illustration": {
                   "path": "portraits/hero-warrior-male-anime-v2.png",
                   "caption": "Portrait de héros ; le grade est indiqué par le libellé de la ligne."
@@ -129,11 +118,7 @@
               },
               {
                 "label": "Commandant",
-                "values": [
-                  10,
-                  5,
-                  12
-                ],
+                "values": [10, 5, 12],
                 "illustration": {
                   "path": "portraits/hero-warrior-male-anime-v2.png",
                   "caption": "Portrait de héros ; le grade est indiqué par le libellé de la ligne."
@@ -141,11 +126,7 @@
               },
               {
                 "label": "Seigneur",
-                "values": [
-                  15,
-                  6,
-                  14
-                ],
+                "values": [15, 6, 14],
                 "illustration": {
                   "path": "portraits/hero-warrior-male-anime-v2.png",
                   "caption": "Portrait de héros ; le grade est indiqué par le libellé de la ligne."
@@ -153,11 +134,7 @@
               },
               {
                 "label": "Maréchal",
-                "values": [
-                  20,
-                  7,
-                  16
-                ],
+                "values": [20, 7, 16],
                 "illustration": {
                   "path": "portraits/hero-warrior-male-anime-v2.png",
                   "caption": "Portrait de héros ; le grade est indiqué par le libellé de la ligne."
@@ -221,12 +198,7 @@
           "file": "modular-portraits.md"
         }
       ],
-      "seeAlso": [
-        "classes",
-        "armee",
-        "pouvoirs",
-        "sante"
-      ]
+      "seeAlso": ["classes", "armee", "pouvoirs", "sante"]
     },
     {
       "id": "exploration",
@@ -273,7 +245,7 @@
           "title": "Cartes et parchemins réutilisables",
           "paragraphs": [
             "Les nouvelles parties génèrent une à trois cartes complémentaires par site exceptionnel. Les directions sont vérifiées sur les cases de la heatmap. Les lieux normaux servent de repères, sans héberger de site exceptionnel.",
-            "Les indices de localisation et de recherche ont un effet exclusif. Ces documents ne comptent pas dans la capacité de bagage et se lisent sans consommation et proviennent de stocks finis de loot, taverne ou académie. Les écoutes de rumeurs coûtent 5 or et peuvent remettre un message de recherche ou ne donner qu’une conversation sans importance. Les archives sont rachetées entre 5 et 10 or.",
+            "Les indices de localisation indiquent une destination ; ceux de recherche aident à découvrir le site sur place. Ils proviennent de stocks finis, se lisent sans consommation et ne prennent aucune place de bagage. Les tavernes ne proposent plus d’achat direct de carte ni d’explication. Les indices peuvent être offerts, obtenus par dialogue ou comme récompense configurée de quête ; les archives sont rachetées entre 5 et 10 or.",
             "La vente ou la perte en combat d’un indice authentique actif comporte un risque de disparition de 25 %, une fois par site et événement. La disparition s’applique à tous les joueurs ; les objets conservés deviennent obsolètes. La recherche extérieure est disponible ; la récupération reste à raccorder."
           ]
         },
@@ -287,7 +259,7 @@
         {
           "title": "Rumeurs et découvertes du terrain",
           "paragraphs": [
-            "Le chef du lieu de référence explique gratuitement une carte active transportée. En taverne, « Écouter une rumeur » coûte 5 or et peut remettre un message de recherche ou donner une conversation sans importance. Les explications des cartes détenues sont gratuites. Le PNJ utilise le nom, l’anagramme, l’ancien nom ou la légende générés pour la carte. Il n’invente pas de fausse information et ne récite pas les fragments absents.",
+            "La taverne, le chef et le forgeron proposent une seule conversation de rumeur à la fois. L’écoute est gratuite et peut rester sans intérêt, donner un indice de localisation ou donner un indice de recherche. Le réglage initial est de 25 % de conversation utile si le stock local le permet. Il n’existe ni faux indice ni fausse destination.",
             "Les expéditions de prospection révèlent les gisements traversés et les sites exceptionnels extérieurs actifs. Les spécialistes transportés peuvent révéler les ressources naturelles : réglage configurable de 50 % pour le métier pertinent et 20 % pour les généralistes. Un seul essai par joueur, cellule et spécialité est mémorisé, même après sauvegarde.",
             "Une découverte ne crée ni exploitation, ni production, ni équipement. Les cellules sous influence enregistrée restent neutralisées. Le journal affiche les connaissances du joueur ; les autres découvertes et les tirages restent privés."
           ]
@@ -295,15 +267,15 @@
         {
           "title": "Écoute payante et messages écrits",
           "paragraphs": [
-            "Une écoute de rumeur coûte 5 or. Le réglage initial configurable donne 25 % de chance d’obtenir un message de recherche si un indice reste disponible dans le stock de la taverne ; sinon, la conversation est sans importance. Aucune carte n’est nécessaire pour écouter et les rumeurs sans importance sont aussi payantes.",
-            "Un message utile est un item fiable et réutilisable qui aide à chercher sur place, sans indiquer la destination. Les explications des cartes déjà détenues sont gratuites. Les messages, papiers, parchemins et cartes restent consultables dans la section Documents, sans consommer de place de bagage.",
+            "Une conversation utile peut être un cadeau gratuit, une vente de renseignement pour 5 or après acceptation, ou un récit à approfondir par un choix de dialogue. Refuser ou couper court ne coûte rien et ne remet aucun indice. Une proposition en cours doit être terminée ou déclinée avant une autre écoute auprès de ce PNJ.",
+            "L’indice remis reste un document fiable : une carte ou un fragment pour la localisation, un parchemin pour la recherche sur place. Les documents restent consultables dans Documents et ne prennent aucune place de bagage. Les quêtes et scénarios peuvent aussi remettre un indice lorsqu’une récompense est explicitement configurée ; leurs récompenses existantes ne changent pas automatiquement.",
             "Le serveur mémorise chaque écoute et son résultat. Rejouer une commande ne provoque ni second débit ni nouveau tirage. Les documents peuvent être reçus avec les bagages pleins, depuis une rumeur, un butin ou un transfert autorisé."
           ]
         },
         {
           "title": "Rechercher un trésor, un artefact ou un donjon à l’extérieur",
           "paragraphs": [
-            "Le bouton « Chercher un trésor » ouvre une préparation sur la case officielle du héros. Dès l’ouverture acceptée, la recharge de 60 secondes et la discrétion réduite de 50 % commencent. Fermer ou annuler ne les supprime pas. Aucune ressource n’est consommée à l’ouverture.",
+            "Le bouton « Trésor » ouvre une préparation sur la case officielle du héros. Dès l’ouverture acceptée, la recharge de 60 secondes et la discrétion réduite de 50 % commencent. Fermer ou annuler ne les supprime pas. Aucune ressource n’est consommée à l’ouverture.",
             "Le barème validé donne +20 par indice de recherche correspondant (plafond 40), +10 par métier transporté sélectionné (plafond 30), bois et nourriture +1, bière +2, outil +5 (ressources plafonnées à 30). La jauge est plafonnée à 100 et donne une chance indicative de 90 % multiplié par jauge / 100 si un site actif est présent avec les bons indices.",
             "Le serveur vérifie les moyens et la présence sur la même case puis consomme les quantités validées, même en cas d’échec. Les documents et spécialistes ne sont pas consommés. Une réussite révèle le site au joueur sans distribuer le butin. Aucun site exceptionnel n’est généré sous l’influence d’un lieu normal.",
             "Les dates, la préparation et le résultat sont sauvegardés. Rejouer la validation ne provoque ni second débit ni nouveau tirage. La jauge proposée ne prouve pas la présence d’un site et les résultats aléatoires restent privés."
@@ -347,6 +319,24 @@
           "title": "Retrouver ses découvertes sur la carte",
           "paragraphs": [
             "Les cinq ressources découvertes disposent de marqueurs ouvrant la préparation d’installation. Un camp prend la place du marqueur de son gisement. Les sites exceptionnels actifs ouvrent la préparation d’expédition ; les résultats restent consultables et les indices périmés restent des documents archivables."
+          ]
+        },
+        {
+          "title": "Blocs de terrain et zones constructibles",
+          "paragraphs": [
+            "Les nouvelles cartes utilisent des blocs fixes de 3 × 3 cases, sans chevauchement. Le centre porte un seul type : vide, bois, pierre, terre fertile, fer, or, trésor, artefact ou donjon. Au moins 50 % des blocs admissibles restent vides et chacun des huit contenus non vides est présent au moins une fois. Avec les deux options activées, il faut donc au moins 16 blocs complets hors influence des lieux et des zones interdites ; en dessous de ce seuil, le minimum par type est désactivé et la carte est créée sans ressources naturelles ni sites exceptionnels supplémentaires. Les lieux du scénario sont conservés. Les blocs de même ressource partageant un côté fusionnent, transitivement, en une zone limitée à un camp actif pour tous les joueurs. Un contact par un coin ne fusionne pas les blocs. Le camp peut occuper toute case connue et disponible de cette zone, et hérite de sa ressource même hors du centre. Découvrir un bloc rend ses neuf cases connues ; les extensions inconnues de la zone restent cachées. Les marqueurs restent au centre et des contours discrets délimitent les blocs connus et les zones fusionnées. Les sauvegardes existantes conservent leur ancien terrain."
+          ]
+        },
+        {
+          "title": "Choisir les ressources et les trésors de la partie",
+          "paragraphs": [
+            "Deux options de partie indépendantes, cochées par défaut, contrôlent les contenus supplémentaires : Ressources naturelles (bois, pierre, terre fertile, fer, or) et Trésors et sites exceptionnels (trésors, artefacts, donjons). L’organisateur les choisit avant le lancement ; les mêmes réglages existent pour le test sur carte fictive. Les lieux du scénario sont conservés. Le serveur génère uniquement les catégories activées, avec au moins 50 % de blocs vides et un exemplaire de chaque type activé si la place le permet. Il faut 16 blocs admissibles avec les deux options, 10 avec les ressources seules, 6 avec les sites seuls. Sous le seuil applicable, aucun contenu supplémentaire n’est généré. Si les deux options sont désactivées, tous les blocs restent vides. Une reprise conserve le terrain sauvegardé sans nouveau tirage."
+          ]
+        },
+        {
+          "title": "Préparer une recherche ou une expédition sur mobile",
+          "paragraphs": [
+            "Le bouton Trésor rejoint les aptitudes de la carte, avec une icône et son délai de recharge. Les recherches et expéditions proposent des boutons −, + et Max pour les quantités, ainsi que des sélections tactiles pour les indices et spécialistes. Chaque modification actualise automatiquement la préparation auprès du serveur. Pendant cet envoi, le pourcentage précédent est masqué et la validation ou le départ reste indisponible. Les scores et probabilités affichés proviennent uniquement de la réponse officielle. Les longs textes explicatifs restent dans ce guide ; les écrans conservent les états, délais, coûts utiles, erreurs et résultats. Aucun barème, coût, quota ou tirage n’est changé."
           ]
         }
       ],
@@ -400,11 +390,7 @@
           "label": "Carte des découvertes, préparations, résultats et archives"
         }
       ],
-      "seeAlso": [
-        "pouvoirs",
-        "lieux",
-        "butin"
-      ]
+      "seeAlso": ["pouvoirs", "lieux", "butin"]
     },
     {
       "id": "pouvoirs",
@@ -434,10 +420,7 @@
             "rows": [
               {
                 "label": "Novice",
-                "values": [
-                  "30 unités de rayon selon le mode",
-                  3
-                ],
+                "values": ["30 unités de rayon selon le mode", 3],
                 "illustration": {
                   "path": "groups/watch-lookout-v1.png",
                   "caption": "Le guetteur représente une vigie, pas une troupe supplémentaire."
@@ -445,10 +428,7 @@
               },
               {
                 "label": "Avancé",
-                "values": [
-                  "37 unités de rayon selon le mode",
-                  3
-                ],
+                "values": ["37 unités de rayon selon le mode", 3],
                 "illustration": {
                   "path": "groups/watch-lookout-v1.png",
                   "caption": "Le guetteur représente une vigie, pas une troupe supplémentaire."
@@ -456,10 +436,7 @@
               },
               {
                 "label": "Maître",
-                "values": [
-                  "45 unités de rayon selon le mode",
-                  3
-                ],
+                "values": ["45 unités de rayon selon le mode", 3],
                 "illustration": {
                   "path": "groups/watch-lookout-v1.png",
                   "caption": "Le guetteur représente une vigie, pas une troupe supplémentaire."
@@ -587,11 +564,7 @@
           "label": "ranged-combat"
         }
       ],
-      "seeAlso": [
-        "heros-armee",
-        "exploration",
-        "sante"
-      ]
+      "seeAlso": ["heros-armee", "exploration", "sante"]
     },
     {
       "id": "armee",
@@ -616,11 +589,7 @@
             "rows": [
               {
                 "label": "Soldat",
-                "values": [
-                  0,
-                  6,
-                  1
-                ],
+                "values": [0, 6, 1],
                 "illustration": {
                   "path": "units/militia-thumbnail.png",
                   "caption": "Miliciens : exemple visuel de troupe, sans représentation graphique du grade."
@@ -628,11 +597,7 @@
               },
               {
                 "label": "Caporal",
-                "values": [
-                  100,
-                  10,
-                  2
-                ],
+                "values": [100, 10, 2],
                 "illustration": {
                   "path": "units/militia-thumbnail.png",
                   "caption": "Miliciens : exemple visuel de troupe, sans représentation graphique du grade."
@@ -640,11 +605,7 @@
               },
               {
                 "label": "Sergent",
-                "values": [
-                  250,
-                  14,
-                  3
-                ],
+                "values": [250, 14, 3],
                 "illustration": {
                   "path": "units/militia-thumbnail.png",
                   "caption": "Miliciens : exemple visuel de troupe, sans représentation graphique du grade."
@@ -652,11 +613,7 @@
               },
               {
                 "label": "Adjudant",
-                "values": [
-                  500,
-                  18,
-                  4
-                ],
+                "values": [500, 18, 4],
                 "illustration": {
                   "path": "units/militia-thumbnail.png",
                   "caption": "Miliciens : exemple visuel de troupe, sans représentation graphique du grade."
@@ -664,11 +621,7 @@
               },
               {
                 "label": "Lieutenant",
-                "values": [
-                  900,
-                  24,
-                  5
-                ],
+                "values": [900, 24, 5],
                 "illustration": {
                   "path": "units/militia-thumbnail.png",
                   "caption": "Miliciens : exemple visuel de troupe, sans représentation graphique du grade."
@@ -720,12 +673,7 @@
         }
       ],
       "references": [],
-      "seeAlso": [
-        "unites",
-        "heros-armee",
-        "combats",
-        "sante"
-      ]
+      "seeAlso": ["unites", "heros-armee", "combats", "sante"]
     },
     {
       "id": "equipement",
@@ -737,7 +685,7 @@
         {
           "title": "Porté ou transporté",
           "paragraphs": [
-            "Les emplacements portés sont la tête, le cou, le torse, les mains, les pieds et deux accessoires. Les bagages sont un espace distinct. Une arme à deux mains exige les places nécessaires ; un seul manteau et les combinaisons d’anneaux respectent leurs restrictions."
+            "Les huit emplacements portés restent la tête, le cou, le torse, les deux mains, les pieds et deux accessoires. Jambes et pieds désignent la même catégorie : bottes et protections utilisent l’unique emplacement Pieds, sans cumul. Les anciennes pièces portées en jambes sont déplacées aux pieds libres ou conservées dans les bagages à la reprise. Chaque classe dispose de pièces rares pour les catégories tête, main gauche, corps, pieds, cou et accessoires ; chacune garde un quota d’un exemplaire par partie. Les bagages sont un espace distinct. Une arme à deux mains exige les places nécessaires ; un seul manteau et les combinaisons d’anneaux respectent leurs restrictions."
           ]
         },
         {
@@ -754,16 +702,11 @@
           ],
           "table": {
             "caption": "Capacité standard de bagages",
-            "columns": [
-              "Grade du héros",
-              "Emplacements"
-            ],
+            "columns": ["Grade du héros", "Emplacements"],
             "rows": [
               {
                 "label": "Capitaine",
-                "values": [
-                  8
-                ],
+                "values": [8],
                 "illustration": {
                   "path": "equipment/round-shield.png",
                   "caption": "Un bouclier transporté illustre un objet de bagage ; il n’augmente pas la capacité du sac."
@@ -771,9 +714,7 @@
               },
               {
                 "label": "Banneret",
-                "values": [
-                  10
-                ],
+                "values": [10],
                 "illustration": {
                   "path": "equipment/round-shield.png",
                   "caption": "Un bouclier transporté illustre un objet de bagage ; il n’augmente pas la capacité du sac."
@@ -781,9 +722,7 @@
               },
               {
                 "label": "Commandant",
-                "values": [
-                  12
-                ],
+                "values": [12],
                 "illustration": {
                   "path": "equipment/round-shield.png",
                   "caption": "Un bouclier transporté illustre un objet de bagage ; il n’augmente pas la capacité du sac."
@@ -791,9 +730,7 @@
               },
               {
                 "label": "Seigneur",
-                "values": [
-                  14
-                ],
+                "values": [14],
                 "illustration": {
                   "path": "equipment/round-shield.png",
                   "caption": "Un bouclier transporté illustre un objet de bagage ; il n’augmente pas la capacité du sac."
@@ -801,9 +738,7 @@
               },
               {
                 "label": "Maréchal",
-                "values": [
-                  16
-                ],
+                "values": [16],
                 "illustration": {
                   "path": "equipment/round-shield.png",
                   "caption": "Un bouclier transporté illustre un objet de bagage ; il n’augmente pas la capacité du sac."
@@ -837,11 +772,7 @@
           "label": "hero-items"
         }
       ],
-      "seeAlso": [
-        "economie",
-        "cooperation",
-        "butin"
-      ]
+      "seeAlso": ["economie", "cooperation", "butin", "catalogue-objets"]
     },
     {
       "id": "lieux",
@@ -931,11 +862,413 @@
           "file": "modular-portraits.md"
         }
       ],
-      "seeAlso": [
-        "economie",
-        "armee",
-        "quetes"
-      ]
+      "seeAlso": ["economie", "armee", "quetes", "pnj"]
+    },
+    {
+      "id": "pnj",
+      "title": "PNJ, dialogues et recrutement",
+      "summary": "Rencontrer les personnages non joueurs, comprendre leurs services et choisir les spécialistes, travailleurs, officiers ou mentors utiles à son héros.",
+      "audience": "players",
+      "paragraphs": [
+        "Un PNJ est un personnage non joueur. Il peut accueillir le héros, lui confier une mission, transmettre un indice ou proposer un recrutement. Son rôle détermine les interactions possibles : tous les PNJ ne se recrutent pas et parler ne donne pas automatiquement une récompense."
+      ],
+      "topics": [
+        {
+          "title": "Qui sont les PNJ ?",
+          "paragraphs": [
+            "Les PNJ ne remplissent pas tous la même fonction. Le tableau distingue les principaux rôles, sans attribuer de statistiques de combat aux simples interlocuteurs."
+          ],
+          "table": {
+            "caption": "Rôles des PNJ et interactions",
+            "columns": ["Rôle", "Où le rencontrer", "Ce qu’il peut proposer"],
+            "rows": [
+              {
+                "label": "Responsable de lieu",
+                "values": [
+                  "Village, ville, capitale, camp, fort ou exploitation",
+                  "Affaires locales, dialogues et missions selon sa fiche"
+                ],
+                "illustration": {
+                  "path": "markers/village.png",
+                  "caption": "Repère de village, illustration d’un lieu avec responsable."
+                }
+              },
+              {
+                "label": "Tavernier",
+                "values": [
+                  "Lieu doté d’une taverne",
+                  "Missions, rumeurs, recrutements et services disponibles"
+                ],
+                "illustration": {
+                  "path": "improvements/tavern.png",
+                  "caption": "Taverne : symbole du service, pas portrait du tavernier."
+                }
+              },
+              {
+                "label": "Forgeron",
+                "values": [
+                  "Lieu doté d’une forge",
+                  "Équipements, fabrication, outils et rumeurs accessibles"
+                ],
+                "illustration": {
+                  "path": "improvements/forge.png",
+                  "caption": "Forge : symbole du service du forgeron."
+                }
+              },
+              {
+                "label": "Spécialiste ou travailleur",
+                "values": [
+                  "Offre de taverne compatible",
+                  "Transport, prospection ou installation productive"
+                ],
+                "illustration": {
+                  "path": "improvements/prospecting-post.png",
+                  "caption": "Poste de prospection illustrant un emploi possible des spécialistes."
+                }
+              },
+              {
+                "label": "Officier ou mentor",
+                "values": [
+                  "Offre de taverne compatible",
+                  "XP de troupe après affectation, ou formation du héros"
+                ],
+                "illustration": {
+                  "path": "improvements/military-school.png",
+                  "caption": "École militaire : illustration du rôle de formation."
+                }
+              },
+              {
+                "label": "Personnage de scénario",
+                "values": [
+                  "Lieu et étape définis par l’aventure",
+                  "Dialogue, objectif, objet à transporter ou événement prévu"
+                ],
+                "illustration": {
+                  "path": "characters/armand-valgrise.png",
+                  "caption": "Armand de Valgrise, exemple de personnage de scénario."
+                }
+              }
+            ]
+          },
+          "explanation": [
+            "Le tableau décrit des possibilités, pas une liste de services garantis dans chaque lieu. Les bâtiments, la relation au lieu, les stocks et les étapes du scénario déterminent les options réellement proposées. Un responsable de village ne devient pas un soldat parce qu’il apparaît dans une conversation."
+          ]
+        },
+        {
+          "title": "Responsables et personnages de scénario",
+          "paragraphs": [
+            "En l’absence de personnage spécifique, les villages ont un chef, les villes et capitales un bourgmestre, les camps un chef d’expédition et les forts un seigneur du fortin. Mines, carrières et chantiers de bois ont leur responsable de métier.",
+            "Un personnage défini par le scénario est prioritaire sur ce profil par défaut. Le maréchal Aldren ou Armand n’apparaissent donc pas obligatoirement dans toutes les parties. Leurs répliques et propositions dépendent de l’aventure et des objectifs accessibles.",
+            "Une conversation offre des choix préparés par les règles ou le scénario ; il ne s’agit pas d’une discussion libre donnant au joueur le droit d’inventer un objet, une quête ou une récompense. Un troc proposé par un chef dépend aussi de son quota et des ressources disponibles."
+          ]
+        },
+        {
+          "title": "Recruter dans une taverne",
+          "paragraphs": [
+            "Le héros doit être présent dans un lieu accessible disposant d’une taverne. L’offre doit encore être attribuée à ce lieu, son coût doit être disponible et un PNJ transportable exige une place de bagage. Voici les onze offres du catalogue actuel."
+          ],
+          "table": {
+            "caption": "Catalogue des PNJ de taverne : coûts et effets",
+            "columns": ["PNJ", "Coût", "Effet", "Lieux et conditions"],
+            "rows": [
+              {
+                "label": "Géologue",
+                "values": [
+                  "30 or",
+                  "Spécialiste transporté, utilisable pour la prospection",
+                  "Camp, village, fort, ville ou capitale"
+                ],
+                "illustration": {
+                  "path": "improvements/prospecting-post.png",
+                  "caption": "Symbole du rôle de Géologue ; ce bâtiment ne représente pas son portrait."
+                }
+              },
+              {
+                "label": "Explorateur aguerri",
+                "values": [
+                  "25 or",
+                  "Explorateur transporté, utilisable pour la prospection",
+                  "Camp, village, fort, ville ou capitale"
+                ],
+                "illustration": {
+                  "path": "improvements/prospecting-post.png",
+                  "caption": "Symbole du rôle de Explorateur aguerri ; ce bâtiment ne représente pas son portrait."
+                }
+              },
+              {
+                "label": "Cartographe",
+                "values": [
+                  "25 or",
+                  "Spécialiste transporté, utilisable pour la prospection",
+                  "Village, fort, ville ou capitale"
+                ],
+                "illustration": {
+                  "path": "improvements/prospecting-post.png",
+                  "caption": "Symbole du rôle de Cartographe ; ce bâtiment ne représente pas son portrait."
+                }
+              },
+              {
+                "label": "Mineur aguerri",
+                "values": [
+                  "45 or",
+                  "+1 production de fer par cycle après installation",
+                  "Village, fort, ville ou capitale"
+                ],
+                "illustration": {
+                  "path": "improvements/farm.png",
+                  "caption": "Symbole du rôle de Mineur aguerri ; ce bâtiment ne représente pas son portrait."
+                }
+              },
+              {
+                "label": "Bûcheron aguerri",
+                "values": [
+                  "40 or",
+                  "+1 production de bois par cycle après installation",
+                  "Village, fort, ville ou capitale"
+                ],
+                "illustration": {
+                  "path": "improvements/farm.png",
+                  "caption": "Symbole du rôle de Bûcheron aguerri ; ce bâtiment ne représente pas son portrait."
+                }
+              },
+              {
+                "label": "Maître fermier",
+                "values": [
+                  "40 or",
+                  "+1 production de nourriture par cycle après installation",
+                  "Village, fort, ville ou capitale"
+                ],
+                "illustration": {
+                  "path": "improvements/farm.png",
+                  "caption": "Symbole du rôle de Maître fermier ; ce bâtiment ne représente pas son portrait."
+                }
+              },
+              {
+                "label": "Officier instructeur",
+                "values": [
+                  "65 or",
+                  "Officier transporté : +40 XP à une troupe lors de son affectation",
+                  "Ville ou capitale"
+                ],
+                "illustration": {
+                  "path": "improvements/military-school.png",
+                  "caption": "Symbole du rôle de Officier instructeur ; ce bâtiment ne représente pas son portrait."
+                }
+              },
+              {
+                "label": "Capitaine vétéran",
+                "values": [
+                  "90 or",
+                  "Officier transporté : +80 XP à une troupe lors de son affectation",
+                  "Capitale ; verrou de quête, non levé dans le parcours actuel"
+                ],
+                "illustration": {
+                  "path": "improvements/military-school.png",
+                  "caption": "Symbole du rôle de Capitaine vétéran ; ce bâtiment ne représente pas son portrait."
+                }
+              },
+              {
+                "label": "Maître d’armes",
+                "values": [
+                  "80 or",
+                  "Formation immédiate : +1 attaque et +50 XP au héros",
+                  "Ville ou capitale"
+                ],
+                "illustration": {
+                  "path": "improvements/military-school.png",
+                  "caption": "Symbole du rôle de Maître d’armes ; ce bâtiment ne représente pas son portrait."
+                }
+              },
+              {
+                "label": "Tacticien de cour",
+                "values": [
+                  "95 or",
+                  "Formation immédiate : +1 défense et +75 XP au héros",
+                  "Capitale"
+                ],
+                "illustration": {
+                  "path": "improvements/military-school.png",
+                  "caption": "Symbole du rôle de Tacticien de cour ; ce bâtiment ne représente pas son portrait."
+                }
+              },
+              {
+                "label": "Sage itinérant",
+                "values": [
+                  "110 or",
+                  "Formation prévue : +1 Commandement et +100 XP au héros",
+                  "Capitale ; verrou de quête, non levé dans le parcours actuel"
+                ],
+                "illustration": {
+                  "path": "improvements/military-school.png",
+                  "caption": "Symbole du rôle de Sage itinérant ; ce bâtiment ne représente pas son portrait."
+                }
+              }
+            ]
+          },
+          "explanation": [
+            "Les spécialistes, travailleurs et officiers rejoignent d’abord les possessions transportées du héros. Un travailleur ne produit pas tant qu’il n’a pas été installé ; un officier ne donne pas son XP tant qu’il n’est pas affecté à une troupe. Le mentor applique au contraire sa formation immédiatement, sans personnage à transporter.",
+            "Les lieux indiqués supposent une taverne et une offre disponible ; un lieu de rang suffisant ne garantit pas sa présence. Une formation ne met pas automatiquement le héros au niveau suivant : ses choix et seuils de progression continuent de s’appliquer.",
+            "Le Capitaine vétéran et le Sage itinérant possèdent un prérequis de quête. Le parcours de recrutement actuel ne lève pas ce verrou : ces offres ne doivent pas être considérées comme recrutables par ce parcours, même si le catalogue les décrit."
+          ]
+        },
+        {
+          "title": "Rotation et disponibilité",
+          "paragraphs": [
+            "Les PNJ de taverne utilisent un pool commun à la partie, réparti entre les lieux admissibles. Les capacités ci-dessous sont des maximums théoriques, pas des stocks garantis."
+          ],
+          "table": {
+            "caption": "Places de PNJ dans une taverne",
+            "columns": ["Type du lieu", "Taverne niveau 1", "Taverne niveau 2"],
+            "rows": [
+              {
+                "label": "Camp",
+                "values": [2, 3],
+                "illustration": {
+                  "path": "markers/camp.png",
+                  "caption": "Repère de camp."
+                }
+              },
+              {
+                "label": "Village",
+                "values": [3, 4],
+                "illustration": {
+                  "path": "markers/village.png",
+                  "caption": "Repère de village."
+                }
+              },
+              {
+                "label": "Fort",
+                "values": [3, 4],
+                "illustration": {
+                  "path": "markers/fort.png",
+                  "caption": "Repère de fort."
+                }
+              },
+              {
+                "label": "Ville",
+                "values": [4, 5],
+                "illustration": {
+                  "path": "improvements/tavern.png",
+                  "caption": "Taverne illustrant le service d’une ville."
+                }
+              },
+              {
+                "label": "Capitale",
+                "values": [6, 7],
+                "illustration": {
+                  "path": "markers/capital.png",
+                  "caption": "Repère de capitale."
+                }
+              }
+            ]
+          },
+          "explanation": [
+            "La rotation intervient tous les six cycles de production, pas toutes les six minutes. Un PNJ du pool n’est pas proposé simultanément dans plusieurs tavernes. Selon les lieux, les conditions et les offres restantes, certaines places peuvent rester vides.",
+            "Une offre acquise est retirée du pool de cette partie et son état est sauvegardé. Fermer la fiche ou recharger ne remet pas un spécialiste déjà recruté en vente."
+          ]
+        },
+        {
+          "title": "Transporter, installer ou former",
+          "paragraphs": [
+            "Un spécialiste ou un officier transporté occupe la place prévue par sa fiche. Il n’est pas une troupe et ne compte pas comme un nouveau héros de l’équipe. Le déposer dans un lieu et le garder dans les bagages sont deux états différents.",
+            "Les mineurs, bûcherons et fermiers installés apportent leur bonus au lieu. Retirer un travailleur retire le bonus correspondant ; le rechargement ne doit pas cumuler une seconde fois le même bonus.",
+            "Affecter un officier instructeur ou un capitaine vétéran consomme cet officier et donne l’XP prévue à la troupe choisie. L’XP peut rendre une promotion possible, sans créer des soldats supplémentaires ni remplacer ses conditions.",
+            "Les PNJ, officiers, personnages de quête et populations ne s’achètent ni ne se revendent au marché ordinaire. Leur recrutement, transport ou remise passe par les interactions dédiées."
+          ]
+        },
+        {
+          "title": "Parler, écouter une rumeur et obtenir un indice",
+          "paragraphs": [
+            "Les taverniers, chefs et forgerons accessibles peuvent proposer une écoute de rumeur. L’écoute est gratuite ; une conversation peut rester une simple ambiance ou déboucher sur un renseignement."
+          ],
+          "table": {
+            "caption": "Rumeurs et renseignements des PNJ",
+            "columns": ["Interaction", "Coût ou valeur actuelle", "Résultat"],
+            "rows": [
+              {
+                "label": "Écouter une rumeur",
+                "values": ["0 or", "Une conversation, sans indice garanti"],
+                "illustration": {
+                  "path": "improvements/tavern.png",
+                  "caption": "Taverne, lieu d’écoute des rumeurs."
+                }
+              },
+              {
+                "label": "Conversation utile",
+                "values": [
+                  "25 % si le stock local le permet",
+                  "Cadeau, vente ou choix de dialogue"
+                ],
+                "illustration": {
+                  "path": "markers/quest.png",
+                  "caption": "Repère de quête illustrant un renseignement utile."
+                }
+              },
+              {
+                "label": "Acheter un renseignement",
+                "values": [
+                  "5 or après acceptation",
+                  "Un indice réel du stock disponible"
+                ],
+                "illustration": {
+                  "path": "improvements/trading-post.png",
+                  "caption": "Symbole d’échange ; le paiement se fait dans la conversation."
+                }
+              },
+              {
+                "label": "Recevoir un document",
+                "values": [
+                  "0 emplacement de bagage",
+                  "Document conservé dans Documents"
+                ],
+                "illustration": {
+                  "path": "markers/quest.png",
+                  "caption": "Un document renseigne sans prendre de place de bagage."
+                }
+              }
+            ]
+          },
+          "explanation": [
+            "Une conversation en cours doit être terminée ou déclinée avant une autre écoute auprès du même PNJ. Revenir sur les choix ne relance pas le tirage. Une proposition sans intérêt n’est pas un faux indice.",
+            "Un indice de localisation aide à trouver la destination ; un indice de recherche aide à découvrir le site sur place. Recevoir ou lire un document ne termine pas automatiquement une quête et ne révèle pas automatiquement son site. Les stocks finis et les choix déjà consommés restent enregistrés."
+          ]
+        },
+        {
+          "title": "Missions, portraits et limites",
+          "paragraphs": [
+            "Parler à un chef, visiter une taverne ou répondre à un personnage peut ouvrir une mission. La consulter, l’accepter et l’accomplir sont des étapes distinctes. Une livraison de personnage exige réellement sa prise en charge, le transport et la remise au bon destinataire.",
+            "Les portraits peuvent être composés à partir de l’identité, du rôle et du lieu ; des personnages nommés ont une apparence fixe. Vêtements, rides, armes dessinées et expressions ne donnent ni statistiques, ni équipement, ni attitude hostile supplémentaire.",
+            "Un groupe autonome visible sur la carte possède sa mission et ses règles de déplacement. Il ne faut pas le confondre avec un interlocuteur de lieu : un portrait de PNJ n’implique pas qu’il se déplace, combatte ou prenne des décisions militaires."
+          ]
+        }
+      ],
+      "example": {
+        "title": "Exemple : recruter puis installer un mineur",
+        "paragraphs": [
+          "Si un Mineur aguerri est proposé dans une taverne accessible, un héros disposant de 60 or et d’une place peut le recruter pour 45 or : il lui reste 15 or et le mineur rejoint ses bagages.",
+          "Le transporter vers un lieu où le dépôt est permis et l’y installer applique son bonus de fer. Dans un exemple sans autre bonus, une production de base de 2 fer par cycle devient une capacité de production de 3 fer par cycle, avant les limites de stockage ou pauses.",
+          "Le recrutement seul ne donne pas ce fer au héros. Si le travailleur est retiré ensuite, le bonus correspondant est retiré du lieu."
+        ],
+        "illustration": {
+          "path": "markers/mine.png",
+          "caption": "Une mine illustre le lieu d’installation de l’exemple ; elle n’annonce pas un lieu créé automatiquement."
+        }
+      },
+      "references": [
+        {
+          "file": "tavern-rumors-and-documents.md",
+          "label": "Rumeurs et documents"
+        },
+        {
+          "file": "location-improvements.md",
+          "label": "Services et travailleurs des lieux"
+        },
+        {
+          "file": "modular-portraits.md",
+          "label": "Présentation visuelle des personnages"
+        }
+      ],
+      "seeAlso": ["lieux", "economie", "quetes", "equipement", "armee"]
     },
     {
       "id": "economie",
@@ -965,16 +1298,11 @@
           ],
           "table": {
             "caption": "Fonctionnement des impôts",
-            "columns": [
-              "Élément",
-              "Valeur ou règle"
-            ],
+            "columns": ["Élément", "Valeur ou règle"],
             "rows": [
               {
                 "label": "Population",
-                "values": [
-                  "1 habitant ajoute 1 or au plafond"
-                ],
+                "values": ["1 habitant ajoute 1 or au plafond"],
                 "illustration": {
                   "path": "markers/village.png",
                   "caption": "Population"
@@ -982,9 +1310,7 @@
               },
               {
                 "label": "Bâtiment économique",
-                "values": [
-                  "Chaque niveau ajoute 2 or au plafond"
-                ],
+                "values": ["Chaque niveau ajoute 2 or au plafond"],
                 "illustration": {
                   "path": "improvements/farm.png",
                   "caption": "Bâtiment économique"
@@ -992,9 +1318,7 @@
               },
               {
                 "label": "Revenu",
-                "values": [
-                  "1 % du plafond par cycle"
-                ],
+                "values": ["1 % du plafond par cycle"],
                 "illustration": {
                   "path": "markers/capital.png",
                   "caption": "Revenu"
@@ -1002,9 +1326,7 @@
               },
               {
                 "label": "Collecte",
-                "values": [
-                  "Montant entier disponible ; fractions conservées"
-                ],
+                "values": ["Montant entier disponible ; fractions conservées"],
                 "illustration": {
                   "path": "improvements/trading-post.png",
                   "caption": "Collecte"
@@ -1056,6 +1378,10 @@
           "label": "location-taxes"
         },
         {
+          "file": "location-commerce-and-corruption.md",
+          "label": "Prévu : commerce des lieux, corruption et marchés noirs"
+        },
+        {
           "file": "location-improvements.md",
           "label": "location-improvements"
         },
@@ -1064,11 +1390,7 @@
           "label": "capital-ai"
         }
       ],
-      "seeAlso": [
-        "lieux",
-        "equipement",
-        "exploration"
-      ]
+      "seeAlso": ["lieux", "equipement", "exploration", "pnj"]
     },
     {
       "id": "quetes",
@@ -1123,11 +1445,7 @@
           "file": "missing-prospectors.md"
         }
       ],
-      "seeAlso": [
-        "cooperation",
-        "equipement",
-        "lieux"
-      ]
+      "seeAlso": ["cooperation", "equipement", "lieux", "pnj"]
     },
     {
       "id": "cooperation",
@@ -1183,11 +1501,7 @@
           "label": "Relais, guet et courrier"
         }
       ],
-      "seeAlso": [
-        "quetes",
-        "armee",
-        "equipement"
-      ]
+      "seeAlso": ["quetes", "armee", "equipement"]
     },
     {
       "id": "combats",
@@ -1210,16 +1524,11 @@
           ],
           "table": {
             "caption": "Budget d’ordres tactiques",
-            "columns": [
-              "Commandement final entier",
-              "Ordres par tour"
-            ],
+            "columns": ["Commandement final entier", "Ordres par tour"],
             "rows": [
               {
                 "label": "2 ou moins",
-                "values": [
-                  2
-                ],
+                "values": [2],
                 "illustration": {
                   "path": "units/heavy-cavalry-thumbnail.png",
                   "caption": "Une carte de troupe illustre les ordres ; le budget dépend du héros, pas de la cavalerie."
@@ -1227,9 +1536,7 @@
               },
               {
                 "label": "3",
-                "values": [
-                  3
-                ],
+                "values": [3],
                 "illustration": {
                   "path": "units/heavy-cavalry-thumbnail.png",
                   "caption": "Une carte de troupe illustre les ordres ; le budget dépend du héros, pas de la cavalerie."
@@ -1237,9 +1544,7 @@
               },
               {
                 "label": "4",
-                "values": [
-                  4
-                ],
+                "values": [4],
                 "illustration": {
                   "path": "units/heavy-cavalry-thumbnail.png",
                   "caption": "Une carte de troupe illustre les ordres ; le budget dépend du héros, pas de la cavalerie."
@@ -1247,9 +1552,7 @@
               },
               {
                 "label": "5 ou plus",
-                "values": [
-                  5
-                ],
+                "values": [5],
                 "illustration": {
                   "path": "units/heavy-cavalry-thumbnail.png",
                   "caption": "Une carte de troupe illustre les ordres ; le budget dépend du héros, pas de la cavalerie."
@@ -1323,11 +1626,7 @@
           "file": "battlefield-generation.md"
         }
       ],
-      "seeAlso": [
-        "armee",
-        "sante",
-        "butin"
-      ]
+      "seeAlso": ["armee", "sante", "butin"]
     },
     {
       "id": "sante",
@@ -1362,11 +1661,7 @@
           ],
           "table": {
             "caption": "PV rendus lors du retour du héros",
-            "columns": [
-              "Situation",
-              "PV rendus",
-              "Conditions principales"
-            ],
+            "columns": ["Situation", "PV rendus", "Conditions principales"],
             "rows": [
               {
                 "label": "Retour standard",
@@ -1381,10 +1676,7 @@
               },
               {
                 "label": "Chapelle niveau 2",
-                "values": [
-                  "75 % du maximum",
-                  "Présence et accès validés"
-                ],
+                "values": ["75 % du maximum", "Présence et accès validés"],
                 "illustration": {
                   "path": "improvements/chapel.png",
                   "caption": "Chapelle : le niveau est indiqué dans le tableau."
@@ -1408,11 +1700,7 @@
         }
       ],
       "references": [],
-      "seeAlso": [
-        "heros-armee",
-        "lieux",
-        "combats"
-      ]
+      "seeAlso": ["heros-armee", "lieux", "combats"]
     },
     {
       "id": "butin",
@@ -1449,11 +1737,7 @@
         }
       ],
       "references": [],
-      "seeAlso": [
-        "exploration",
-        "equipement",
-        "sante"
-      ]
+      "seeAlso": ["exploration", "equipement", "sante"]
     },
     {
       "id": "concevoir-quetes",
@@ -1543,16 +1827,11 @@
           ],
           "table": {
             "caption": "Contrôles vérifiés du prélèvement",
-            "columns": [
-              "Opération",
-              "Comportement"
-            ],
+            "columns": ["Opération", "Comportement"],
             "rows": [
               {
                 "label": "Retirer une ressource",
-                "values": [
-                  "Au plus le montant disponible, sans dette"
-                ],
+                "values": ["Au plus le montant disponible, sans dette"],
                 "illustration": {
                   "path": "markers/quest.png",
                   "caption": "Marqueur de quête utilisé dans le jeu ; ce contrôle appartient à la progression officielle de la quête."
@@ -1560,9 +1839,7 @@
               },
               {
                 "label": "Commande répétée",
-                "values": [
-                  "Aucun second prélèvement"
-                ],
+                "values": ["Aucun second prélèvement"],
                 "illustration": {
                   "path": "markers/quest.png",
                   "caption": "Marqueur de quête utilisé dans le jeu ; ce contrôle appartient à la progression officielle de la quête."
@@ -1607,7 +1884,8 @@
         "La perspective d’un joueur affiche son trajet et permet d’activer son champ de vision et le brouillard supervisé. Le serveur fournit la vision et conserve une exploration distincte par joueur à partir des positions officielles, avec des dates de première révélation et persistance au redémarrage. L’ancienne exploration locale du navigateur n’est pas récupérable : la date de début du suivi est indiquée. Les frontières actuelles des camps proviennent directement du moteur. Les marqueurs administrateur restent visibles sur le brouillard ; les pouvoirs temporaires de vision sont affichés au présent seulement. Ces informations de supervision n’appliquent aucun gain ni changement de règle.",
         "Les graphiques partagent une échelle de temps réglable : tout l’historique, 5, 15, 30 minutes ou 1 heure. Le curseur permet de consulter une période passée ; Revenir au direct réactive le suivi. Le graphique de production affiche aussi les stocks en colonnes, avec un axe distinct. Les nouveaux relevés additionnent réserve du lieu et production accumulée ; les anciens conservent leurs données initiales. Ce suivi ne change aucune règle du jeu.",
         "Le Dashboard est organisé en onglets Parties, Graphiques, Cartes et Sauvegardes. La présentation est compacte et autorise le défilement vertical de la page, avec les onglets accessibles en haut. Les cartes nommées sont des vignettes carrées sur la moitié gauche, avec aperçu à droite ; sur téléphone les colonnes se superposent. Les sauvegardes sont présentées en tableau avec nom, organisateur, date, joueurs et taille JSON UTF-8 calculée par le serveur. Cette taille est celle de chaque entrée sérialisée, regroupée dans server-state.json, pas un fichier indépendant. Sauvegardes liste toutes les parties sauvegardées du serveur et permet leur suppression après confirmation et validation administrateur. La suppression est persistée ; les comptes et parties déjà chargées sont conservés. Aucun changement des règles du moteur.",
-        "Les fiches des lieux présentent les PNJ : responsable explicite ou par défaut, personnages des bâtiments présents, offres actuellement affectées à la taverne et PNJ du monde explicitement rattachés au lieu. Le nom et la fonction sont visibles ; les informations détaillent notamment coûts, effets et cycles de présence. La consultation n’initialise aucune rotation de taverne, ne recrute personne et ne modifie aucune règle. Sans affectation enregistrée, aucune offre n’est inventée. Les listes décrivent l’état officiel actuel."
+        "Les fiches des lieux présentent les PNJ : responsable explicite ou par défaut, personnages des bâtiments présents, offres actuellement affectées à la taverne et PNJ du monde explicitement rattachés au lieu. Le nom et la fonction sont visibles ; les informations détaillent notamment coûts, effets et cycles de présence. La consultation n’initialise aucune rotation de taverne, ne recrute personne et ne modifie aucune règle. Sans affectation enregistrée, aucune offre n’est inventée. Les listes décrivent l’état officiel actuel.",
+        "La carte du Dashboard dispose de deux couches indépendantes « Ressources » et « Sites exceptionnels », activées par défaut. Les ressources de l’état d’exploration ont un marqueur illustré au centre et un contour coloré ; les trésors, artefacts et donjons ont un symbole distinct. Un clic sur le contour ou le marqueur ouvre la fiche, et les listes Gisements du terrain et Sites exceptionnels permettent aussi de les retrouver. Les cellules neutralisées et les sites remportés ou disparus sont grisés. Ces données réservées à l’administrateur montrent l’état actuel, même en lecture historique ou en perspective joueur. Elles ne révèlent rien aux joueurs, ne relancent aucune génération et ne modifient aucune règle. Les limites suivent les blocs 3 × 3 sauvegardés et les contours des zones fusionnées calculés par le serveur."
       ],
       "references": [
         {
@@ -1694,7 +1972,7 @@
           "title": "Trésors, artefacts et donjons : une seule interaction",
           "paragraphs": [
             "Les découvertes exceptionnelles sont placées uniquement hors de l’influence des lieux normaux. Les villages, mines et forts restent des repères cartographiques et des sources d’indices et de rumeurs.",
-            "Hors d’un lieu connu, l’interaction se fait à la découverte sur le terrain ou en lançant une expédition de prospection. Les répartitions sont validées : rien 45 %, bois 20 %, pierre 15 %, terre fertile 12 %, fer 6 %, or 2 %. Un tirage exceptionnel indépendant donne aucune découverte 94 %, trésor 3 %, artefact 2 %, donjon 1 % ; les chances de découverte restent distinctes."
+            "Les nouvelles cartes utilisent des blocs fixes de 3 × 3 cases, sans chevauchement. Le centre porte un seul type : vide, bois, pierre, terre fertile, fer, or, trésor, artefact ou donjon. Au moins 50 % des blocs admissibles restent vides et chacun des huit contenus non vides est présent au moins une fois. Avec les deux options activées, il faut donc au moins 16 blocs complets hors influence des lieux et des zones interdites ; en dessous de ce seuil, le minimum par type est désactivé et la carte est créée sans ressources naturelles ni sites exceptionnels supplémentaires. Les lieux du scénario sont conservés. Les blocs de même ressource partageant un côté fusionnent, transitivement, en une zone limitée à un camp actif pour tous les joueurs. Un contact par un coin ne fusionne pas les blocs. Le camp peut occuper toute case connue et disponible de cette zone, et hérite de sa ressource même hors du centre. Découvrir un bloc rend ses neuf cases connues ; les extensions inconnues de la zone restent cachées. Les marqueurs restent au centre et des contours discrets délimitent les blocs connus et les zones fusionnées. Les sauvegardes existantes conservent leur ancien terrain."
           ]
         },
         {
@@ -1740,16 +2018,16 @@
           ]
         },
         {
-          "title": "Décoder un nom de lieu et écouter une rumeur",
+          "title": "Conversations et indices",
           "paragraphs": [
             "Les cartes de localisation indiquent des directions en cases depuis un repère. Le chef du lieu de référence et les PNJ de taverne expliquent gratuitement les cartes détenues, sans donner de bonus de recherche. Les désignations visant un site intérieur sont abandonnées.",
-            "Depuis le 29 octobre 2026, écouter une rumeur est une action distincte à 5 or : elle peut remettre un message de recherche fiable ou donner une conversation sans importance. Le réglage initial est de 25 % d’indice utile si le stock le permet. Les messages, papiers et parchemins sont hors capacité des bagages."
+            "Les tavernes ne proposent plus de catalogue de cartes ni d’explications des cartes détenues. Une seule entrée « Écouter une rumeur » ouvre une conversation à la fois. L’écoute est gratuite : elle peut rester sans intérêt ou donner un indice de localisation ou de recherche. Le réglage initial conserve 25 % de chances de conversation utile si le stock local le permet. Le renseignement peut être offert, vendu pour 5 or après acceptation, ou confié à l’issue d’un choix de dialogue. Les chefs et les forgerons utilisent le même mécanisme. Une proposition en cours est conservée après fermeture et reprise : consulter les choix ne relance aucun tirage. Les stocks sont finis et les indices fiables, sans fausse destination. Les documents ne prennent aucune place de bagage."
           ]
         },
         {
           "title": "Chercher un trésor à l’extérieur",
           "paragraphs": [
-            "À l’endroit supposé grâce aux cartes, le joueur utilise « Chercher un trésor ». L’utilisation déclenche immédiatement 60 secondes de recharge et une réduction de discrétion de 50 % pendant 60 secondes. Le joueur prépare ensuite une jauge avec des indices de recherche, des spécialistes, du bois, de la nourriture, de la bière ou des outils. Les ressources engagées sont consommées à la validation ; les indices ne le sont pas.",
+            "À l’endroit supposé grâce aux cartes, le joueur utilise « Trésor ». L’utilisation déclenche immédiatement 60 secondes de recharge et une réduction de discrétion de 50 % pendant 60 secondes. Le joueur prépare ensuite une jauge avec des indices de recherche, des spécialistes, du bois, de la nourriture, de la bière ou des outils. Les ressources engagées sont consommées à la validation ; les indices ne le sont pas.",
             "Plus la jauge est remplie, plus la tentative peut débusquer un trésor, un artefact ou l’entrée d’un donjon. Les cartes de localisation ne donnent pas aussi un bonus à cette jauge. Les quantités, contributions, probabilités et zone couverte restent à définir. Ces règles sont prévues, pas encore implémentées."
           ]
         },
@@ -1789,7 +2067,7 @@
         {
           "title": "Paramètres validés le 26 octobre 2026",
           "paragraphs": [
-            "Répartition naturelle avant influence : rien 45 %, bois 20 %, pierre 15 %, terre fertile 12 %, fer 6 %, or 2 %. Tirage exceptionnel indépendant : aucune découverte 94 %, trésor 3 %, artefact 2 %, donjon 1 %. Il ne s’agit pas des probabilités de découverte.",
+            "Les nouvelles cartes utilisent des blocs fixes de 3 × 3 cases, sans chevauchement. Le centre porte un seul type : vide, bois, pierre, terre fertile, fer, or, trésor, artefact ou donjon. Au moins 50 % des blocs admissibles restent vides et chacun des huit contenus non vides est présent au moins une fois. Avec les deux options activées, il faut donc au moins 16 blocs complets hors influence des lieux et des zones interdites ; en dessous de ce seuil, le minimum par type est désactivé et la carte est créée sans ressources naturelles ni sites exceptionnels supplémentaires. Les lieux du scénario sont conservés. Les blocs de même ressource partageant un côté fusionnent, transitivement, en une zone limitée à un camp actif pour tous les joueurs. Un contact par un coin ne fusionne pas les blocs. Le camp peut occuper toute case connue et disponible de cette zone, et hérite de sa ressource même hors du centre. Découvrir un bloc rend ses neuf cases connues ; les extensions inconnues de la zone restent cachées. Les marqueurs restent au centre et des contours discrets délimitent les blocs connus et les zones fusionnées. Les sauvegardes existantes conservent leur ancien terrain.",
             "Le risque de disparition lors de la vente ou de la perte d’un indice actif est de 25 %. Les archives valent de 5 à 10 pièces d’or par item. Les bonus narratifs dépendent des informations obtenues dans la narration ; aucun montant universel n’est décidé."
           ]
         },
@@ -1821,7 +2099,9 @@
       "title": "Persistance de l’exploration",
       "summary": "Modèles privés du serveur, sauvegardes versionnées et reprise des anciennes parties.",
       "audience": "development",
-      "paragraphs": [],
+      "paragraphs": [
+        "Maintenance des tests de génération : les assertions suivent les blocs 3 × 3, le minimum de 16 blocs éligibles, les huit types et au moins 50 % de blocs vides. La somme des poids est comparée avec une marge de précision flottante ; un terrain entièrement sous influence est créé sans ressources ni sites supplémentaires, sans modifier les lieux du scénario. Le test Forge accepte aussi l’unique conversation de rumeur en conservant les contrôles d’achat. Aucun calcul ni règle du moteur n’est modifié."
+      ],
       "topics": [
         {
           "title": "Socle disponible",
@@ -1839,7 +2119,7 @@
           "title": "Génération des nouvelles parties — 28 octobre 2026",
           "paragraphs": [
             "Le serveur distribue les contenus naturels et exceptionnels sur la grille partagée avec la heatmap, hors exclusions. Une cellule touchée par la portée normale d’un lieu permanent placé est neutralisée. Aucun site exceptionnel n’y est placé. Les anciens sites intérieurs actifs sont clôturés à la reprise, sans récompense ni nouveau tirage ; leurs indices deviennent des archives.",
-            "Les répartitions validées sont utilisées pour deux tirages indépendants. Une graine privée et les résultats sont sauvegardés. Les grands terrains adaptent la taille des cellules pour rester sous 20 000 cellules candidates ; la taille de base reste inchangée pour les terrains plus petits. Aucune reprise ne relance la génération."
+            "Les nouvelles cartes utilisent des blocs fixes de 3 × 3 cases, sans chevauchement. Le centre porte un seul type : vide, bois, pierre, terre fertile, fer, or, trésor, artefact ou donjon. Au moins 50 % des blocs admissibles restent vides et chacun des huit contenus non vides est présent au moins une fois. Avec les deux options activées, il faut donc au moins 16 blocs complets hors influence des lieux et des zones interdites ; en dessous de ce seuil, le minimum par type est désactivé et la carte est créée sans ressources naturelles ni sites exceptionnels supplémentaires. Les lieux du scénario sont conservés. Les blocs de même ressource partageant un côté fusionnent, transitivement, en une zone limitée à un camp actif pour tous les joueurs. Un contact par un coin ne fusionne pas les blocs. Le camp peut occuper toute case connue et disponible de cette zone, et hérite de sa ressource même hors du centre. Découvrir un bloc rend ses neuf cases connues ; les extensions inconnues de la zone restent cachées. Les marqueurs restent au centre et des contours discrets délimitent les blocs connus et les zones fusionnées. Les sauvegardes existantes conservent leur ancien terrain."
           ]
         },
         {
@@ -1886,6 +2166,2123 @@
           "file": "exploration-rumors-and-discovery.md"
         }
       ]
+    },
+    {
+      "id": "catalogue-objets",
+      "title": "Catalogue des objets",
+      "summary": "Comparer les équipements et retrouver les usages des objets du jeu.",
+      "audience": "players",
+      "paragraphs": [],
+      "topics": [
+        {
+          "title": "Lire le catalogue",
+          "paragraphs": [
+            "Ce catalogue réunit les 88 équipements ordinaires du jeu, les huit reliques royales et les autres références officielles. La présence dans cette liste ne garantit pas un objet disponible dans votre partie : le scénario, les offres, les récompenses et les quotas déterminent son accès.",
+            "Le héros conserve huit emplacements : tête, cou, corps, main principale, main gauche, pieds et deux accessoires. Jambes et pieds partagent un seul emplacement. Les bonus indiqués sont ceux de l’objet, avant leur addition aux statistiques du héros. Aucune rareté légendaire n’est actuellement implémentée."
+          ]
+        },
+        {
+          "title": "Armes de mêlée",
+          "paragraphs": [
+            "Comparez les pièces de cette famille selon votre classe et les bonus recherchés."
+          ],
+          "table": {
+            "caption": "Armes de mêlée — caractéristiques officielles",
+            "columns": [
+              "Objet",
+              "Emplacement",
+              "Classes",
+              "Rareté",
+              "Bonus",
+              "Mains",
+              "Prix de base (or)",
+              "Quota mondial"
+            ],
+            "rows": [
+              {
+                "label": "Épée de fer",
+                "values": [
+                  "Main principale",
+                  "Guerrier, Éclaireur",
+                  "Commun",
+                  "+2 attaque",
+                  "1",
+                  "18",
+                  "6"
+                ],
+                "illustration": {
+                  "path": "equipment/iron-sword.png",
+                  "caption": "Épée de fer : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Épée d’acier",
+                "values": [
+                  "Main principale",
+                  "Guerrier, Éclaireur",
+                  "Commun",
+                  "+4 attaque",
+                  "1",
+                  "24",
+                  "6"
+                ],
+                "illustration": {
+                  "path": "equipment/steel-sword.png",
+                  "caption": "Épée d’acier : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Dague du pisteur",
+                "values": [
+                  "Main principale",
+                  "Éclaireur",
+                  "Peu commun",
+                  "+2 attaque, +1 mobilité",
+                  "1",
+                  "33",
+                  "3"
+                ],
+                "illustration": {
+                  "path": "equipment/prismadagger.png",
+                  "caption": "Dague du pisteur : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Marteau du capitaine",
+                "values": [
+                  "Main principale",
+                  "Guerrier",
+                  "Peu commun",
+                  "+3 attaque, +1 commandement",
+                  "1",
+                  "36",
+                  "3"
+                ],
+                "illustration": {
+                  "path": "equipment/hammer.png",
+                  "caption": "Marteau du capitaine : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Lame du porte-étendard",
+                "values": [
+                  "Main principale",
+                  "Guerrier",
+                  "Rare",
+                  "+4 attaque, +1 moral",
+                  "1",
+                  "51",
+                  "1"
+                ],
+                "illustration": {
+                  "path": "equipment/herosword.png",
+                  "caption": "Lame du porte-étendard : illustration utilisée dans le jeu."
+                }
+              }
+            ]
+          },
+          "explanation": [
+            "Le prix de base ne représente pas toutes les offres : le recéleur applique une majoration. Le quota limite les nouvelles émissions de cette référence, toutes sources ordinaires confondues ; il ne supprime pas les objets historiques ou placés par scénario."
+          ]
+        },
+        {
+          "title": "Arcs et arbalètes",
+          "paragraphs": [
+            "Comparez les pièces de cette famille selon votre classe et les bonus recherchés."
+          ],
+          "table": {
+            "caption": "Arcs et arbalètes — caractéristiques officielles",
+            "columns": [
+              "Objet",
+              "Emplacement",
+              "Classes",
+              "Rareté",
+              "Bonus",
+              "Mains",
+              "Prix de base (or)",
+              "Quota mondial"
+            ],
+            "rows": [
+              {
+                "label": "Arc de chasse",
+                "values": [
+                  "Main principale",
+                  "Guerrier, Éclaireur",
+                  "Commun",
+                  "+2 attaque",
+                  "2",
+                  "18",
+                  "6"
+                ],
+                "illustration": {
+                  "path": "equipment/shortbow.png",
+                  "caption": "Arc de chasse : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Arc de reconnaissance",
+                "values": [
+                  "Main principale",
+                  "Éclaireur",
+                  "Commun",
+                  "+2 attaque, +1 mobilité",
+                  "2",
+                  "21",
+                  "6"
+                ],
+                "illustration": {
+                  "path": "equipment/forestbow.png",
+                  "caption": "Arc de reconnaissance : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Arbalète de guerre",
+                "values": [
+                  "Main principale",
+                  "Guerrier, Éclaireur",
+                  "Peu commun",
+                  "+4 attaque",
+                  "2",
+                  "36",
+                  "3"
+                ],
+                "illustration": {
+                  "path": "equipment/heavycrossbow.png",
+                  "caption": "Arbalète de guerre : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Arbalète du guetteur",
+                "values": [
+                  "Main principale",
+                  "Éclaireur",
+                  "Peu commun",
+                  "+3 attaque, +1 défense",
+                  "2",
+                  "36",
+                  "3"
+                ],
+                "illustration": {
+                  "path": "equipment/lightcrossbow.png",
+                  "caption": "Arbalète du guetteur : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Arc du vent sylvestre",
+                "values": [
+                  "Main principale",
+                  "Éclaireur",
+                  "Rare",
+                  "+4 attaque, +2 mobilité",
+                  "2",
+                  "54",
+                  "1"
+                ],
+                "illustration": {
+                  "path": "equipment/longbow.png",
+                  "caption": "Arc du vent sylvestre : illustration utilisée dans le jeu."
+                }
+              }
+            ]
+          },
+          "explanation": [
+            "Le prix de base ne représente pas toutes les offres : le recéleur applique une majoration. Le quota limite les nouvelles émissions de cette référence, toutes sources ordinaires confondues ; il ne supprime pas les objets historiques ou placés par scénario."
+          ]
+        },
+        {
+          "title": "Armes de jet",
+          "paragraphs": [
+            "Comparez les pièces de cette famille selon votre classe et les bonus recherchés."
+          ],
+          "table": {
+            "caption": "Armes de jet — caractéristiques officielles",
+            "columns": [
+              "Objet",
+              "Emplacement",
+              "Classes",
+              "Rareté",
+              "Bonus",
+              "Mains",
+              "Prix de base (or)",
+              "Quota mondial"
+            ],
+            "rows": [
+              {
+                "label": "Couteau de voyage",
+                "values": [
+                  "Main principale",
+                  "Guerrier, Éclaireur, Mage",
+                  "Commun",
+                  "+1 attaque",
+                  "1",
+                  "15",
+                  "6"
+                ],
+                "illustration": {
+                  "path": "equipment/kitchenknife.png",
+                  "caption": "Couteau de voyage : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Couteaux de lancer équilibrés",
+                "values": [
+                  "Main principale",
+                  "Guerrier, Éclaireur",
+                  "Commun",
+                  "+2 attaque",
+                  "1",
+                  "18",
+                  "6"
+                ],
+                "illustration": {
+                  "path": "equipment/dagger.png",
+                  "caption": "Couteaux de lancer équilibrés : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Javelots du garde-frontière",
+                "values": [
+                  "Main principale",
+                  "Guerrier, Éclaireur",
+                  "Peu commun",
+                  "+2 attaque, +1 défense",
+                  "1",
+                  "33",
+                  "3"
+                ],
+                "illustration": {
+                  "path": "equipment/ironspear.png",
+                  "caption": "Javelots du garde-frontière : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Hachettes du berserker",
+                "values": [
+                  "Main principale",
+                  "Guerrier",
+                  "Peu commun",
+                  "+4 attaque, -1 défense",
+                  "1",
+                  "36",
+                  "3"
+                ],
+                "illustration": {
+                  "path": "equipment/steelaxe.png",
+                  "caption": "Hachettes du berserker : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Lames de brume",
+                "values": [
+                  "Main principale",
+                  "Éclaireur",
+                  "Rare",
+                  "+3 attaque, +1 mobilité",
+                  "1",
+                  "48",
+                  "1"
+                ],
+                "illustration": {
+                  "path": "equipment/kunai.png",
+                  "caption": "Lames de brume : illustration utilisée dans le jeu."
+                }
+              }
+            ]
+          },
+          "explanation": [
+            "Le prix de base ne représente pas toutes les offres : le recéleur applique une majoration. Le quota limite les nouvelles émissions de cette référence, toutes sources ordinaires confondues ; il ne supprime pas les objets historiques ou placés par scénario."
+          ]
+        },
+        {
+          "title": "Bâtons",
+          "paragraphs": [
+            "Comparez les pièces de cette famille selon votre classe et les bonus recherchés."
+          ],
+          "table": {
+            "caption": "Bâtons — caractéristiques officielles",
+            "columns": [
+              "Objet",
+              "Emplacement",
+              "Classes",
+              "Rareté",
+              "Bonus",
+              "Mains",
+              "Prix de base (or)",
+              "Quota mondial"
+            ],
+            "rows": [
+              {
+                "label": "Bâton d’apprenti",
+                "values": [
+                  "Main principale",
+                  "Mage",
+                  "Commun",
+                  "+1 attaque, +1 défense",
+                  "2",
+                  "18",
+                  "6"
+                ],
+                "illustration": {
+                  "path": "equipment/woodbranch.png",
+                  "caption": "Bâton d’apprenti : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Bâton de braise",
+                "values": [
+                  "Main principale",
+                  "Mage",
+                  "Commun",
+                  "+3 attaque",
+                  "2",
+                  "21",
+                  "6"
+                ],
+                "illustration": {
+                  "path": "equipment/wizardwand.png",
+                  "caption": "Bâton de braise : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Bâton du gardien",
+                "values": [
+                  "Main principale",
+                  "Mage",
+                  "Peu commun",
+                  "+2 défense, +5 santé maximale",
+                  "2",
+                  "45",
+                  "3"
+                ],
+                "illustration": {
+                  "path": "equipment/celestialrod.png",
+                  "caption": "Bâton du gardien : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Bâton du rassemblement",
+                "values": [
+                  "Main principale",
+                  "Mage",
+                  "Peu commun",
+                  "+2 commandement, +1 moral",
+                  "2",
+                  "33",
+                  "3"
+                ],
+                "illustration": {
+                  "path": "equipment/transcendance.png",
+                  "caption": "Bâton du rassemblement : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Bâton de l’archimage",
+                "values": [
+                  "Main principale",
+                  "Mage",
+                  "Rare",
+                  "+3 attaque, +2 défense, +1 commandement",
+                  "2",
+                  "54",
+                  "1"
+                ],
+                "illustration": {
+                  "path": "equipment/t13staff.png",
+                  "caption": "Bâton de l’archimage : illustration utilisée dans le jeu."
+                }
+              }
+            ]
+          },
+          "explanation": [
+            "Le prix de base ne représente pas toutes les offres : le recéleur applique une majoration. Le quota limite les nouvelles émissions de cette référence, toutes sources ordinaires confondues ; il ne supprime pas les objets historiques ou placés par scénario."
+          ]
+        },
+        {
+          "title": "Boucliers",
+          "paragraphs": [
+            "Comparez les pièces de cette famille selon votre classe et les bonus recherchés."
+          ],
+          "table": {
+            "caption": "Boucliers — caractéristiques officielles",
+            "columns": [
+              "Objet",
+              "Emplacement",
+              "Classes",
+              "Rareté",
+              "Bonus",
+              "Mains",
+              "Prix de base (or)",
+              "Quota mondial"
+            ],
+            "rows": [
+              {
+                "label": "Bouclier rond",
+                "values": [
+                  "Main gauche",
+                  "Guerrier, Éclaireur",
+                  "Commun",
+                  "+2 défense",
+                  "1",
+                  "18",
+                  "6"
+                ],
+                "illustration": {
+                  "path": "equipment/round-shield.png",
+                  "caption": "Bouclier rond : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Rondache du voyageur",
+                "values": [
+                  "Main gauche",
+                  "Guerrier, Éclaireur",
+                  "Commun",
+                  "+1 défense, +1 mobilité",
+                  "1",
+                  "18",
+                  "6"
+                ],
+                "illustration": {
+                  "path": "equipment/buckler.png",
+                  "caption": "Rondache du voyageur : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Écu du sergent",
+                "values": [
+                  "Main gauche",
+                  "Guerrier",
+                  "Peu commun",
+                  "+2 défense, +1 commandement",
+                  "1",
+                  "33",
+                  "3"
+                ],
+                "illustration": {
+                  "path": "equipment/oakshield.png",
+                  "caption": "Écu du sergent : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Pavois renforcé",
+                "values": [
+                  "Main gauche",
+                  "Guerrier",
+                  "Peu commun",
+                  "+4 défense, -1 mobilité",
+                  "1",
+                  "36",
+                  "3"
+                ],
+                "illustration": {
+                  "path": "equipment/woodshield.png",
+                  "caption": "Pavois renforcé : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Bouclier du serment",
+                "values": [
+                  "Main gauche",
+                  "Guerrier",
+                  "Rare",
+                  "+3 défense, +1 moral",
+                  "1",
+                  "48",
+                  "1"
+                ],
+                "illustration": {
+                  "path": "equipment/stpatrickshield.png",
+                  "caption": "Bouclier du serment : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Rondache des sentiers",
+                "values": [
+                  "Main gauche",
+                  "Éclaireur",
+                  "Rare",
+                  "+2 défense, +1 mobilité",
+                  "1",
+                  "45",
+                  "1"
+                ],
+                "illustration": {
+                  "path": "equipment/buckler.png",
+                  "caption": "Rondache des sentiers : illustration utilisée dans le jeu."
+                }
+              }
+            ]
+          },
+          "explanation": [
+            "Le prix de base ne représente pas toutes les offres : le recéleur applique une majoration. Le quota limite les nouvelles émissions de cette référence, toutes sources ordinaires confondues ; il ne supprime pas les objets historiques ou placés par scénario."
+          ]
+        },
+        {
+          "title": "Focaliseurs",
+          "paragraphs": [
+            "Comparez les pièces de cette famille selon votre classe et les bonus recherchés."
+          ],
+          "table": {
+            "caption": "Focaliseurs — caractéristiques officielles",
+            "columns": [
+              "Objet",
+              "Emplacement",
+              "Classes",
+              "Rareté",
+              "Bonus",
+              "Mains",
+              "Prix de base (or)",
+              "Quota mondial"
+            ],
+            "rows": [
+              {
+                "label": "Grimoire d’initiation",
+                "values": [
+                  "Main gauche",
+                  "Mage",
+                  "Commun",
+                  "+1 attaque",
+                  "1",
+                  "15",
+                  "6"
+                ],
+                "illustration": {
+                  "path": "equipment/artifactscroll.png",
+                  "caption": "Grimoire d’initiation : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Cube de protection",
+                "values": [
+                  "Main gauche",
+                  "Mage",
+                  "Commun",
+                  "+2 défense",
+                  "1",
+                  "18",
+                  "6"
+                ],
+                "illustration": {
+                  "path": "equipment/t13catalyst.png",
+                  "caption": "Cube de protection : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Pierre de vitalité",
+                "values": [
+                  "Main gauche",
+                  "Mage",
+                  "Peu commun",
+                  "+5 santé maximale, +1 moral",
+                  "1",
+                  "42",
+                  "3"
+                ],
+                "illustration": {
+                  "path": "equipment/t12catalyst.png",
+                  "caption": "Pierre de vitalité : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Livre des voix unies",
+                "values": [
+                  "Main gauche",
+                  "Mage",
+                  "Peu commun",
+                  "+2 commandement",
+                  "1",
+                  "30",
+                  "3"
+                ],
+                "illustration": {
+                  "path": "equipment/tomeofknowledge.png",
+                  "caption": "Livre des voix unies : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Lanterne astrale",
+                "values": [
+                  "Main gauche",
+                  "Mage",
+                  "Rare",
+                  "+1 attaque, +1 défense, +1 mobilité",
+                  "1",
+                  "45",
+                  "1"
+                ],
+                "illustration": {
+                  "path": "equipment/tombcurse1.png",
+                  "caption": "Lanterne astrale : illustration utilisée dans le jeu."
+                }
+              }
+            ]
+          },
+          "explanation": [
+            "Le prix de base ne représente pas toutes les offres : le recéleur applique une majoration. Le quota limite les nouvelles émissions de cette référence, toutes sources ordinaires confondues ; il ne supprime pas les objets historiques ou placés par scénario."
+          ]
+        },
+        {
+          "title": "Casques",
+          "paragraphs": [
+            "Comparez les pièces de cette famille selon votre classe et les bonus recherchés."
+          ],
+          "table": {
+            "caption": "Casques — caractéristiques officielles",
+            "columns": [
+              "Objet",
+              "Emplacement",
+              "Classes",
+              "Rareté",
+              "Bonus",
+              "Mains",
+              "Prix de base (or)",
+              "Quota mondial"
+            ],
+            "rows": [
+              {
+                "label": "Casque de milicien",
+                "values": [
+                  "Tête",
+                  "Guerrier, Éclaireur",
+                  "Commun",
+                  "+1 défense",
+                  "0",
+                  "15",
+                  "6"
+                ],
+                "illustration": {
+                  "path": "equipment/helmet.png",
+                  "caption": "Casque de milicien : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Cervelière renforcée",
+                "values": [
+                  "Tête",
+                  "Guerrier, Éclaireur",
+                  "Commun",
+                  "+2 défense",
+                  "0",
+                  "18",
+                  "6"
+                ],
+                "illustration": {
+                  "path": "equipment/ironcap.png",
+                  "caption": "Cervelière renforcée : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Heaume du vétéran",
+                "values": [
+                  "Tête",
+                  "Guerrier",
+                  "Peu commun",
+                  "+2 défense, +1 moral",
+                  "0",
+                  "33",
+                  "3"
+                ],
+                "illustration": {
+                  "path": "equipment/vikinghelm.png",
+                  "caption": "Heaume du vétéran : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Casque du capitaine",
+                "values": [
+                  "Tête",
+                  "Guerrier",
+                  "Peu commun",
+                  "+1 défense, +2 commandement",
+                  "0",
+                  "33",
+                  "3"
+                ],
+                "illustration": {
+                  "path": "equipment/centurionhelmet.png",
+                  "caption": "Casque du capitaine : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Heaume du dernier rempart",
+                "values": [
+                  "Tête",
+                  "Guerrier",
+                  "Rare",
+                  "+3 défense, +5 santé maximale, -1 mobilité",
+                  "0",
+                  "60",
+                  "1"
+                ],
+                "illustration": {
+                  "path": "equipment/chesshelm.png",
+                  "caption": "Heaume du dernier rempart : illustration utilisée dans le jeu."
+                }
+              }
+            ]
+          },
+          "explanation": [
+            "Le prix de base ne représente pas toutes les offres : le recéleur applique une majoration. Le quota limite les nouvelles émissions de cette référence, toutes sources ordinaires confondues ; il ne supprime pas les objets historiques ou placés par scénario."
+          ]
+        },
+        {
+          "title": "Capuches",
+          "paragraphs": [
+            "Comparez les pièces de cette famille selon votre classe et les bonus recherchés."
+          ],
+          "table": {
+            "caption": "Capuches — caractéristiques officielles",
+            "columns": [
+              "Objet",
+              "Emplacement",
+              "Classes",
+              "Rareté",
+              "Bonus",
+              "Mains",
+              "Prix de base (or)",
+              "Quota mondial"
+            ],
+            "rows": [
+              {
+                "label": "Bonnet de voyage",
+                "values": [
+                  "Tête",
+                  "Guerrier, Éclaireur, Mage",
+                  "Commun",
+                  "+1 moral",
+                  "0",
+                  "15",
+                  "6"
+                ],
+                "illustration": {
+                  "path": "equipment/leathercap.png",
+                  "caption": "Bonnet de voyage : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Capuche d'éclaireur",
+                "values": [
+                  "Tête",
+                  "Éclaireur",
+                  "Commun",
+                  "+1 mobilité",
+                  "0",
+                  "15",
+                  "6"
+                ],
+                "illustration": {
+                  "path": "equipment/scout-hood.png",
+                  "caption": "Capuche d'éclaireur : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Chapeau runique",
+                "values": [
+                  "Tête",
+                  "Mage",
+                  "Peu commun",
+                  "+1 attaque, +1 défense",
+                  "0",
+                  "30",
+                  "3"
+                ],
+                "illustration": {
+                  "path": "equipment/wizardcone.png",
+                  "caption": "Chapeau runique : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Capuche des sentiers secrets",
+                "values": [
+                  "Tête",
+                  "Éclaireur",
+                  "Peu commun",
+                  "+2 mobilité",
+                  "0",
+                  "30",
+                  "3"
+                ],
+                "illustration": {
+                  "path": "equipment/blackcowl.png",
+                  "caption": "Capuche des sentiers secrets : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Coiffe du sage",
+                "values": [
+                  "Tête",
+                  "Mage",
+                  "Rare",
+                  "+2 commandement, +1 moral",
+                  "0",
+                  "45",
+                  "1"
+                ],
+                "illustration": {
+                  "path": "equipment/astralhat.png",
+                  "caption": "Coiffe du sage : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Capuche du veilleur sylvestre",
+                "values": [
+                  "Tête",
+                  "Éclaireur",
+                  "Rare",
+                  "+1 défense, +2 mobilité",
+                  "0",
+                  "45",
+                  "1"
+                ],
+                "illustration": {
+                  "path": "equipment/blackcowl.png",
+                  "caption": "Capuche du veilleur sylvestre : illustration utilisée dans le jeu."
+                }
+              }
+            ]
+          },
+          "explanation": [
+            "Le prix de base ne représente pas toutes les offres : le recéleur applique une majoration. Le quota limite les nouvelles émissions de cette référence, toutes sources ordinaires confondues ; il ne supprime pas les objets historiques ou placés par scénario."
+          ]
+        },
+        {
+          "title": "Armures lourdes",
+          "paragraphs": [
+            "Comparez les pièces de cette famille selon votre classe et les bonus recherchés."
+          ],
+          "table": {
+            "caption": "Armures lourdes — caractéristiques officielles",
+            "columns": [
+              "Objet",
+              "Emplacement",
+              "Classes",
+              "Rareté",
+              "Bonus",
+              "Mains",
+              "Prix de base (or)",
+              "Quota mondial"
+            ],
+            "rows": [
+              {
+                "label": "Cotte de mailles",
+                "values": [
+                  "Corps",
+                  "Guerrier",
+                  "Commun",
+                  "+3 défense, -1 mobilité",
+                  "0",
+                  "21",
+                  "6"
+                ],
+                "illustration": {
+                  "path": "equipment/chainmail.png",
+                  "caption": "Cotte de mailles : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Brigandine de guerre",
+                "values": [
+                  "Corps",
+                  "Guerrier",
+                  "Commun",
+                  "+2 défense, +5 santé maximale",
+                  "0",
+                  "33",
+                  "6"
+                ],
+                "illustration": {
+                  "path": "equipment/ringmail.png",
+                  "caption": "Brigandine de guerre : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Cuirasse du capitaine",
+                "values": [
+                  "Corps",
+                  "Guerrier",
+                  "Peu commun",
+                  "+3 défense, +1 commandement, -1 mobilité",
+                  "0",
+                  "36",
+                  "3"
+                ],
+                "illustration": {
+                  "path": "equipment/breastplate.png",
+                  "caption": "Cuirasse du capitaine : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Harnois du vétéran",
+                "values": [
+                  "Corps",
+                  "Guerrier",
+                  "Peu commun",
+                  "+4 défense, +1 moral, -1 mobilité",
+                  "0",
+                  "39",
+                  "3"
+                ],
+                "illustration": {
+                  "path": "equipment/scalemail.png",
+                  "caption": "Harnois du vétéran : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Armure de la citadelle",
+                "values": [
+                  "Corps",
+                  "Guerrier",
+                  "Rare",
+                  "+5 défense, +10 santé maximale, -2 mobilité",
+                  "0",
+                  "81",
+                  "1"
+                ],
+                "illustration": {
+                  "path": "equipment/cuirass.png",
+                  "caption": "Armure de la citadelle : illustration utilisée dans le jeu."
+                }
+              }
+            ]
+          },
+          "explanation": [
+            "Le prix de base ne représente pas toutes les offres : le recéleur applique une majoration. Le quota limite les nouvelles émissions de cette référence, toutes sources ordinaires confondues ; il ne supprime pas les objets historiques ou placés par scénario."
+          ]
+        },
+        {
+          "title": "Armures légères",
+          "paragraphs": [
+            "Comparez les pièces de cette famille selon votre classe et les bonus recherchés."
+          ],
+          "table": {
+            "caption": "Armures légères — caractéristiques officielles",
+            "columns": [
+              "Objet",
+              "Emplacement",
+              "Classes",
+              "Rareté",
+              "Bonus",
+              "Mains",
+              "Prix de base (or)",
+              "Quota mondial"
+            ],
+            "rows": [
+              {
+                "label": "Armure de cuir",
+                "values": [
+                  "Corps",
+                  "Guerrier, Éclaireur",
+                  "Commun",
+                  "+1 défense, +1 mobilité",
+                  "0",
+                  "18",
+                  "6"
+                ],
+                "illustration": {
+                  "path": "equipment/leatherarmor.png",
+                  "caption": "Armure de cuir : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Gambison de voyage",
+                "values": [
+                  "Corps",
+                  "Guerrier, Éclaireur, Mage",
+                  "Commun",
+                  "+1 défense, +5 santé maximale",
+                  "0",
+                  "30",
+                  "6"
+                ],
+                "illustration": {
+                  "path": "equipment/padded.png",
+                  "caption": "Gambison de voyage : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Cuir clouté",
+                "values": [
+                  "Corps",
+                  "Guerrier, Éclaireur",
+                  "Peu commun",
+                  "+2 défense",
+                  "0",
+                  "30",
+                  "3"
+                ],
+                "illustration": {
+                  "path": "equipment/studded.png",
+                  "caption": "Cuir clouté : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Veste du pisteur",
+                "values": [
+                  "Corps",
+                  "Éclaireur",
+                  "Peu commun",
+                  "+1 défense, +2 mobilité",
+                  "0",
+                  "33",
+                  "3"
+                ],
+                "illustration": {
+                  "path": "equipment/exploreroutfit.png",
+                  "caption": "Veste du pisteur : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Armure de la feuille d’acier",
+                "values": [
+                  "Corps",
+                  "Éclaireur",
+                  "Rare",
+                  "+3 défense, +1 mobilité",
+                  "0",
+                  "48",
+                  "1"
+                ],
+                "illustration": {
+                  "path": "equipment/windrunnerarmor.png",
+                  "caption": "Armure de la feuille d’acier : illustration utilisée dans le jeu."
+                }
+              }
+            ]
+          },
+          "explanation": [
+            "Le prix de base ne représente pas toutes les offres : le recéleur applique une majoration. Le quota limite les nouvelles émissions de cette référence, toutes sources ordinaires confondues ; il ne supprime pas les objets historiques ou placés par scénario."
+          ]
+        },
+        {
+          "title": "Robes",
+          "paragraphs": [
+            "Comparez les pièces de cette famille selon votre classe et les bonus recherchés."
+          ],
+          "table": {
+            "caption": "Robes — caractéristiques officielles",
+            "columns": [
+              "Objet",
+              "Emplacement",
+              "Classes",
+              "Rareté",
+              "Bonus",
+              "Mains",
+              "Prix de base (or)",
+              "Quota mondial"
+            ],
+            "rows": [
+              {
+                "label": "Robe d’apprenti",
+                "values": [
+                  "Corps",
+                  "Mage",
+                  "Commun",
+                  "+1 défense",
+                  "0",
+                  "15",
+                  "6"
+                ],
+                "illustration": {
+                  "path": "equipment/robe.png",
+                  "caption": "Robe d’apprenti : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Robe du cercle protecteur",
+                "values": [
+                  "Corps",
+                  "Mage",
+                  "Commun",
+                  "+2 défense, +5 santé maximale",
+                  "0",
+                  "33",
+                  "6"
+                ],
+                "illustration": {
+                  "path": "equipment/wizardrobe.png",
+                  "caption": "Robe du cercle protecteur : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Robe des braises",
+                "values": [
+                  "Corps",
+                  "Mage",
+                  "Peu commun",
+                  "+2 attaque, +1 défense",
+                  "0",
+                  "33",
+                  "3"
+                ],
+                "illustration": {
+                  "path": "equipment/disciplerobe.png",
+                  "caption": "Robe des braises : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Robe du seigneur",
+                "values": [
+                  "Corps",
+                  "Mage",
+                  "Peu commun",
+                  "+2 commandement, +1 moral",
+                  "0",
+                  "33",
+                  "3"
+                ],
+                "illustration": {
+                  "path": "equipment/vampirerobe.png",
+                  "caption": "Robe du seigneur : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Robe du firmament",
+                "values": [
+                  "Corps",
+                  "Mage",
+                  "Rare",
+                  "+2 attaque, +2 défense, +5 santé maximale",
+                  "0",
+                  "63",
+                  "1"
+                ],
+                "illustration": {
+                  "path": "equipment/t13robe.png",
+                  "caption": "Robe du firmament : illustration utilisée dans le jeu."
+                }
+              }
+            ]
+          },
+          "explanation": [
+            "Le prix de base ne représente pas toutes les offres : le recéleur applique une majoration. Le quota limite les nouvelles émissions de cette référence, toutes sources ordinaires confondues ; il ne supprime pas les objets historiques ou placés par scénario."
+          ]
+        },
+        {
+          "title": "Manteaux",
+          "paragraphs": [
+            "Comparez les pièces de cette famille selon votre classe et les bonus recherchés."
+          ],
+          "table": {
+            "caption": "Manteaux — caractéristiques officielles",
+            "columns": [
+              "Objet",
+              "Emplacement",
+              "Classes",
+              "Rareté",
+              "Bonus",
+              "Mains",
+              "Prix de base (or)",
+              "Quota mondial"
+            ],
+            "rows": [
+              {
+                "label": "Manteau de voyage",
+                "values": [
+                  "Accessoire",
+                  "Guerrier, Éclaireur, Mage",
+                  "Commun",
+                  "+5 santé maximale",
+                  "0",
+                  "27",
+                  "6"
+                ],
+                "illustration": {
+                  "path": "equipment/furcloak.png",
+                  "caption": "Manteau de voyage : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Cape du messager",
+                "values": [
+                  "Accessoire",
+                  "Guerrier, Éclaireur, Mage",
+                  "Commun",
+                  "+1 mobilité, +1 moral",
+                  "0",
+                  "18",
+                  "6"
+                ],
+                "illustration": {
+                  "path": "equipment/squirecloak.png",
+                  "caption": "Cape du messager : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Manteau de commandement",
+                "values": [
+                  "Accessoire",
+                  "Guerrier",
+                  "Peu commun",
+                  "+2 commandement",
+                  "0",
+                  "30",
+                  "3"
+                ],
+                "illustration": {
+                  "path": "equipment/scalecloak.png",
+                  "caption": "Manteau de commandement : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Cape des sous-bois",
+                "values": [
+                  "Accessoire",
+                  "Éclaireur",
+                  "Peu commun",
+                  "+2 mobilité",
+                  "0",
+                  "30",
+                  "3"
+                ],
+                "illustration": {
+                  "path": "equipment/elvencloak.png",
+                  "caption": "Cape des sous-bois : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Manteau des constellations",
+                "values": [
+                  "Accessoire",
+                  "Mage",
+                  "Rare",
+                  "+1 attaque, +1 défense, +1 moral",
+                  "0",
+                  "45",
+                  "1"
+                ],
+                "illustration": {
+                  "path": "equipment/siacloak.png",
+                  "caption": "Manteau des constellations : illustration utilisée dans le jeu."
+                }
+              }
+            ]
+          },
+          "explanation": [
+            "Le prix de base ne représente pas toutes les offres : le recéleur applique une majoration. Le quota limite les nouvelles émissions de cette référence, toutes sources ordinaires confondues ; il ne supprime pas les objets historiques ou placés par scénario."
+          ]
+        },
+        {
+          "title": "Bottes",
+          "paragraphs": [
+            "Comparez les pièces de cette famille selon votre classe et les bonus recherchés."
+          ],
+          "table": {
+            "caption": "Bottes — caractéristiques officielles",
+            "columns": [
+              "Objet",
+              "Emplacement",
+              "Classes",
+              "Rareté",
+              "Bonus",
+              "Mains",
+              "Prix de base (or)",
+              "Quota mondial"
+            ],
+            "rows": [
+              {
+                "label": "Bottes de marche",
+                "values": [
+                  "Pieds / jambes",
+                  "Guerrier, Éclaireur, Mage",
+                  "Commun",
+                  "+2 mobilité",
+                  "0",
+                  "18",
+                  "6"
+                ],
+                "illustration": {
+                  "path": "equipment/leatherboots.png",
+                  "caption": "Bottes de marche : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Bottes ferrées",
+                "values": [
+                  "Pieds / jambes",
+                  "Guerrier",
+                  "Commun",
+                  "+1 défense, +1 mobilité",
+                  "0",
+                  "18",
+                  "6"
+                ],
+                "illustration": {
+                  "path": "equipment/heavyboots.png",
+                  "caption": "Bottes ferrées : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Bottes du traqueur",
+                "values": [
+                  "Pieds / jambes",
+                  "Éclaireur",
+                  "Peu commun",
+                  "+2 mobilité, +1 attaque",
+                  "0",
+                  "33",
+                  "3"
+                ],
+                "illustration": {
+                  "path": "equipment/forestshoes.png",
+                  "caption": "Bottes du traqueur : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Bottes du pèlerin",
+                "values": [
+                  "Pieds / jambes",
+                  "Guerrier, Éclaireur, Mage",
+                  "Peu commun",
+                  "+1 mobilité, +5 santé maximale",
+                  "0",
+                  "42",
+                  "3"
+                ],
+                "illustration": {
+                  "path": "equipment/harpyshoes.png",
+                  "caption": "Bottes du pèlerin : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Bottes du passage astral",
+                "values": [
+                  "Pieds / jambes",
+                  "Mage",
+                  "Rare",
+                  "+2 mobilité, +1 défense",
+                  "0",
+                  "45",
+                  "1"
+                ],
+                "illustration": {
+                  "path": "equipment/platinumshoes.png",
+                  "caption": "Bottes du passage astral : illustration utilisée dans le jeu."
+                }
+              }
+            ]
+          },
+          "explanation": [
+            "Le prix de base ne représente pas toutes les offres : le recéleur applique une majoration. Le quota limite les nouvelles émissions de cette référence, toutes sources ordinaires confondues ; il ne supprime pas les objets historiques ou placés par scénario."
+          ]
+        },
+        {
+          "title": "Anneaux",
+          "paragraphs": [
+            "Comparez les pièces de cette famille selon votre classe et les bonus recherchés."
+          ],
+          "table": {
+            "caption": "Anneaux — caractéristiques officielles",
+            "columns": [
+              "Objet",
+              "Emplacement",
+              "Classes",
+              "Rareté",
+              "Bonus",
+              "Mains",
+              "Prix de base (or)",
+              "Quota mondial"
+            ],
+            "rows": [
+              {
+                "label": "Anneau de chance",
+                "values": [
+                  "Accessoire",
+                  "Guerrier, Éclaireur, Mage",
+                  "Commun",
+                  "+1 moral",
+                  "0",
+                  "15",
+                  "6"
+                ],
+                "illustration": {
+                  "path": "equipment/noblering.png",
+                  "caption": "Anneau de chance : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Anneau de fer",
+                "values": [
+                  "Accessoire",
+                  "Guerrier, Éclaireur, Mage",
+                  "Commun",
+                  "+1 défense",
+                  "0",
+                  "15",
+                  "6"
+                ],
+                "illustration": {
+                  "path": "equipment/silverband.png",
+                  "caption": "Anneau de fer : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Anneau de vigueur",
+                "values": [
+                  "Accessoire",
+                  "Guerrier, Éclaireur, Mage",
+                  "Peu commun",
+                  "+5 santé maximale",
+                  "0",
+                  "39",
+                  "3"
+                ],
+                "illustration": {
+                  "path": "equipment/gatormaidring.png",
+                  "caption": "Anneau de vigueur : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Anneau du duelliste",
+                "values": [
+                  "Accessoire",
+                  "Guerrier, Éclaireur",
+                  "Peu commun",
+                  "+2 attaque",
+                  "0",
+                  "30",
+                  "3"
+                ],
+                "illustration": {
+                  "path": "equipment/mysteriousring.png",
+                  "caption": "Anneau du duelliste : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Anneau du conclave",
+                "values": [
+                  "Accessoire",
+                  "Mage",
+                  "Rare",
+                  "+1 attaque, +1 commandement",
+                  "0",
+                  "42",
+                  "1"
+                ],
+                "illustration": {
+                  "path": "equipment/t12ring.png",
+                  "caption": "Anneau du conclave : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Anneau du gardien du serment",
+                "values": [
+                  "Accessoire",
+                  "Guerrier",
+                  "Rare",
+                  "+1 défense, +2 moral",
+                  "0",
+                  "45",
+                  "1"
+                ],
+                "illustration": {
+                  "path": "equipment/noblering.png",
+                  "caption": "Anneau du gardien du serment : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Anneau de la piste silencieuse",
+                "values": [
+                  "Accessoire",
+                  "Éclaireur",
+                  "Rare",
+                  "+1 attaque, +1 mobilité",
+                  "0",
+                  "42",
+                  "1"
+                ],
+                "illustration": {
+                  "path": "equipment/mysteriousring.png",
+                  "caption": "Anneau de la piste silencieuse : illustration utilisée dans le jeu."
+                }
+              }
+            ]
+          },
+          "explanation": [
+            "Le prix de base ne représente pas toutes les offres : le recéleur applique une majoration. Le quota limite les nouvelles émissions de cette référence, toutes sources ordinaires confondues ; il ne supprime pas les objets historiques ou placés par scénario."
+          ]
+        },
+        {
+          "title": "Colliers",
+          "paragraphs": [
+            "Comparez les pièces de cette famille selon votre classe et les bonus recherchés."
+          ],
+          "table": {
+            "caption": "Colliers — caractéristiques officielles",
+            "columns": [
+              "Objet",
+              "Emplacement",
+              "Classes",
+              "Rareté",
+              "Bonus",
+              "Mains",
+              "Prix de base (or)",
+              "Quota mondial"
+            ],
+            "rows": [
+              {
+                "label": "Amulette de commandement",
+                "values": [
+                  "Cou",
+                  "Guerrier, Éclaireur, Mage",
+                  "Commun",
+                  "+1 commandement, +1 moral",
+                  "0",
+                  "18",
+                  "6"
+                ],
+                "illustration": {
+                  "path": "equipment/goldamulet.png",
+                  "caption": "Amulette de commandement : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Pendentif de vitalité",
+                "values": [
+                  "Cou",
+                  "Guerrier, Éclaireur, Mage",
+                  "Commun",
+                  "+5 santé maximale",
+                  "0",
+                  "27",
+                  "6"
+                ],
+                "illustration": {
+                  "path": "equipment/pendant.png",
+                  "caption": "Pendentif de vitalité : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Torque du conquérant",
+                "values": [
+                  "Cou",
+                  "Guerrier",
+                  "Peu commun",
+                  "+2 attaque, +1 commandement",
+                  "0",
+                  "33",
+                  "3"
+                ],
+                "illustration": {
+                  "path": "equipment/noblechain.png",
+                  "caption": "Torque du conquérant : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Collier des chemins oubliés",
+                "values": [
+                  "Cou",
+                  "Éclaireur",
+                  "Peu commun",
+                  "+2 mobilité, +1 moral",
+                  "0",
+                  "33",
+                  "3"
+                ],
+                "illustration": {
+                  "path": "equipment/vipamulet.png",
+                  "caption": "Collier des chemins oubliés : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Médaillon de l’équilibre",
+                "values": [
+                  "Cou",
+                  "Mage",
+                  "Rare",
+                  "+1 attaque, +1 défense, +1 commandement",
+                  "0",
+                  "45",
+                  "1"
+                ],
+                "illustration": {
+                  "path": "equipment/sunpendant.png",
+                  "caption": "Médaillon de l’équilibre : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Médaillon du bastion",
+                "values": [
+                  "Cou",
+                  "Guerrier",
+                  "Rare",
+                  "+1 défense, +2 commandement",
+                  "0",
+                  "45",
+                  "1"
+                ],
+                "illustration": {
+                  "path": "equipment/goldamulet.png",
+                  "caption": "Médaillon du bastion : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Pendentif de l’horizon",
+                "values": [
+                  "Cou",
+                  "Éclaireur",
+                  "Rare",
+                  "+2 mobilité, +1 moral",
+                  "0",
+                  "45",
+                  "1"
+                ],
+                "illustration": {
+                  "path": "equipment/vipamulet.png",
+                  "caption": "Pendentif de l’horizon : illustration utilisée dans le jeu."
+                }
+              }
+            ]
+          },
+          "explanation": [
+            "Le prix de base ne représente pas toutes les offres : le recéleur applique une majoration. Le quota limite les nouvelles émissions de cette référence, toutes sources ordinaires confondues ; il ne supprime pas les objets historiques ou placés par scénario."
+          ]
+        },
+        {
+          "title": "Chausses, grèves et jambières",
+          "paragraphs": [
+            "Comparez les pièces de cette famille selon votre classe et les bonus recherchés."
+          ],
+          "table": {
+            "caption": "Chausses, grèves et jambières — caractéristiques officielles",
+            "columns": [
+              "Objet",
+              "Emplacement",
+              "Classes",
+              "Rareté",
+              "Bonus",
+              "Mains",
+              "Prix de base (or)",
+              "Quota mondial"
+            ],
+            "rows": [
+              {
+                "label": "Chausses de voyage",
+                "values": [
+                  "Pieds / jambes",
+                  "Guerrier, Éclaireur, Mage",
+                  "Commun",
+                  "+5 santé maximale",
+                  "0",
+                  "27",
+                  "6"
+                ],
+                "illustration": {
+                  "path": "equipment/leg-armor.svg",
+                  "caption": "Chausses de voyage : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Jambières renforcées",
+                "values": [
+                  "Pieds / jambes",
+                  "Guerrier, Éclaireur",
+                  "Commun",
+                  "+1 défense",
+                  "0",
+                  "15",
+                  "6"
+                ],
+                "illustration": {
+                  "path": "equipment/leg-armor.svg",
+                  "caption": "Jambières renforcées : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Grèves du vétéran",
+                "values": [
+                  "Pieds / jambes",
+                  "Guerrier",
+                  "Peu commun",
+                  "+2 défense",
+                  "0",
+                  "30",
+                  "3"
+                ],
+                "illustration": {
+                  "path": "equipment/leg-armor.svg",
+                  "caption": "Grèves du vétéran : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Jambières du pisteur",
+                "values": [
+                  "Pieds / jambes",
+                  "Éclaireur",
+                  "Peu commun",
+                  "+1 défense, +1 mobilité",
+                  "0",
+                  "30",
+                  "3"
+                ],
+                "illustration": {
+                  "path": "equipment/leg-armor.svg",
+                  "caption": "Jambières du pisteur : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Chausses de la trame astrale",
+                "values": [
+                  "Pieds / jambes",
+                  "Mage",
+                  "Rare",
+                  "+1 défense, +5 santé maximale, +1 commandement",
+                  "0",
+                  "57",
+                  "1"
+                ],
+                "illustration": {
+                  "path": "equipment/leg-armor.svg",
+                  "caption": "Chausses de la trame astrale : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Grèves de la citadelle",
+                "values": [
+                  "Pieds / jambes",
+                  "Guerrier",
+                  "Rare",
+                  "+3 défense, -1 mobilité",
+                  "0",
+                  "45",
+                  "1"
+                ],
+                "illustration": {
+                  "path": "equipment/leg-armor.svg",
+                  "caption": "Grèves de la citadelle : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Jambières de la foulée sylvestre",
+                "values": [
+                  "Pieds / jambes",
+                  "Éclaireur",
+                  "Rare",
+                  "+1 défense, +2 mobilité",
+                  "0",
+                  "45",
+                  "1"
+                ],
+                "illustration": {
+                  "path": "equipment/leg-armor.svg",
+                  "caption": "Jambières de la foulée sylvestre : illustration utilisée dans le jeu."
+                }
+              }
+            ]
+          },
+          "explanation": [
+            "Le prix de base ne représente pas toutes les offres : le recéleur applique une majoration. Le quota limite les nouvelles émissions de cette référence, toutes sources ordinaires confondues ; il ne supprime pas les objets historiques ou placés par scénario."
+          ]
+        },
+        {
+          "title": "Reliques royales",
+          "paragraphs": [
+            "Ces huit pièces relèvent de la distribution royale existante et sont exclues des tirages ordinaires. Elles ne constituent pas un palier légendaire."
+          ],
+          "table": {
+            "caption": "Les huit équipements royaux",
+            "columns": ["Objet", "Emplacement", "Bonus"],
+            "rows": [
+              {
+                "label": "Couronne du souverain",
+                "values": ["Tête", "+3 défense"],
+                "illustration": {
+                  "path": "equipment/tiara.png",
+                  "caption": "Couronne du souverain : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Sceau du commandement royal",
+                "values": ["Cou", "+2 commandement"],
+                "illustration": {
+                  "path": "equipment/holysymbol.png",
+                  "caption": "Sceau du commandement royal : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Armure du dernier rempart",
+                "values": ["Corps", "+5 défense"],
+                "illustration": {
+                  "path": "equipment/t12heavyarmor.png",
+                  "caption": "Armure du dernier rempart : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Lame du serment brisé",
+                "values": ["Main principale", "+6 attaque"],
+                "illustration": {
+                  "path": "equipment/longsword.png",
+                  "caption": "Lame du serment brisé : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Égide de la capitale",
+                "values": ["Main gauche", "+4 défense"],
+                "illustration": {
+                  "path": "equipment/prideshield.png",
+                  "caption": "Égide de la capitale : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Solerets de marche royale",
+                "values": ["Pieds / jambes", "+2 mobilité"],
+                "illustration": {
+                  "path": "equipment/berserkerboots.png",
+                  "caption": "Solerets de marche royale : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Anneau du maréchal",
+                "values": ["Accessoire", "+3 moral"],
+                "illustration": {
+                  "path": "equipment/noblering.png",
+                  "caption": "Anneau du maréchal : illustration utilisée dans le jeu."
+                }
+              },
+              {
+                "label": "Insigne du conquérant",
+                "values": ["Accessoire", "+2 attaque, +1 commandement"],
+                "illustration": {
+                  "path": "equipment/medal.png",
+                  "caption": "Insigne du conquérant : illustration utilisée dans le jeu."
+                }
+              }
+            ]
+          },
+          "explanation": [
+            "Ces références conservent leur distribution et leurs conditions propres ; leur présence au catalogue ne garantit pas leur disponibilité dans une partie."
+          ]
+        },
+        {
+          "title": "Ressources, consommables et objets de scénario",
+          "paragraphs": [
+            "Les documents peuvent partager un nom tout en ayant des identifiants distincts. Les spécialistes et personnages transportés ne sont pas des équipements portés. Les usages de quête dépendent du scénario."
+          ],
+          "table": {
+            "caption": "Autres références du catalogue officiel",
+            "columns": ["Objet", "Référence", "Usage"],
+            "rows": [
+              {
+                "label": "Message écrit",
+                "values": [
+                  "message",
+                  "Peut être lu, transporté ou remis selon son contenu."
+                ]
+              },
+              {
+                "label": "Message écrit",
+                "values": [
+                  "written_message",
+                  "Peut être lu, transporté ou remis selon son contenu."
+                ]
+              },
+              {
+                "label": "Message scellé",
+                "values": [
+                  "sealed_fort_message",
+                  "Peut être lu, transporté ou remis selon son contenu."
+                ]
+              },
+              {
+                "label": "Parchemin",
+                "values": [
+                  "parchment",
+                  "Peut être lu, transporté ou remis selon son contenu."
+                ]
+              },
+              {
+                "label": "Papier",
+                "values": [
+                  "paper",
+                  "Peut être lu, transporté ou remis selon son contenu."
+                ]
+              },
+              {
+                "label": "Parchemin",
+                "values": [
+                  "scroll",
+                  "Peut être lu, transporté ou remis selon son contenu."
+                ]
+              },
+              {
+                "label": "Lettre",
+                "values": [
+                  "letter",
+                  "Peut être lu, transporté ou remis selon son contenu."
+                ]
+              },
+              {
+                "label": "Mandat d’autorité",
+                "values": [
+                  "authority_writ",
+                  "Équiper dans un emplacement d’accessoire : +3 autorité, soit une unité de lanciers au grade Soldat."
+                ]
+              },
+              {
+                "label": "Or",
+                "values": [
+                  "gold",
+                  "Sert à recruter, commercer et financer certains développements."
+                ]
+              },
+              {
+                "label": "Bois",
+                "values": [
+                  "wood",
+                  "Sert principalement à construire et améliorer les bâtiments."
+                ]
+              },
+              {
+                "label": "Pierre",
+                "values": [
+                  "stone",
+                  "Sert aux constructions durables et aux fortifications."
+                ]
+              },
+              {
+                "label": "Fer",
+                "values": [
+                  "iron",
+                  "Sert à fabriquer ou renforcer l’équipement et les installations militaires."
+                ]
+              },
+              {
+                "label": "Nourriture",
+                "values": [
+                  "food",
+                  "Évite la faim et accorde +1 moral pendant sa période d’effet."
+                ]
+              },
+              {
+                "label": "Bière",
+                "values": [
+                  "beer",
+                  "Accorde +2 moral mais réduit temporairement la défense de 1."
+                ]
+              },
+              {
+                "label": "Chevaux",
+                "values": [
+                  "horse",
+                  "Utilisables pour les convois, la prospection et le recrutement des unités de cavalerie."
+                ]
+              },
+              {
+                "label": "Outils d’exploration",
+                "values": [
+                  "exploration_tools",
+                  "Requis pour lancer une mission de prospection."
+                ]
+              },
+              {
+                "label": "Géologue",
+                "values": [
+                  "specialist_geologist",
+                  "Peut diriger une mission de prospection."
+                ]
+              },
+              {
+                "label": "Cartographe",
+                "values": [
+                  "specialist_cartographer",
+                  "Peut diriger une mission de prospection."
+                ]
+              },
+              {
+                "label": "Aventurier",
+                "values": [
+                  "specialist_adventurer",
+                  "Peut diriger une mission de prospection."
+                ]
+              },
+              {
+                "label": "Mineur aguerri",
+                "values": [
+                  "specialist_miner",
+                  "Augmente la production de fer lorsqu’il est déposé dans un lieu producteur."
+                ]
+              },
+              {
+                "label": "Bûcheron aguerri",
+                "values": [
+                  "specialist_lumberjack",
+                  "Augmente la production de bois lorsqu’il est déposé dans un lieu producteur."
+                ]
+              },
+              {
+                "label": "Maître fermier",
+                "values": [
+                  "specialist_farmer",
+                  "Augmente la production de nourriture lorsqu’il est déposé dans un lieu producteur."
+                ]
+              },
+              {
+                "label": "Officier instructeur",
+                "values": [
+                  "officer_drill",
+                  "Peut être appliqué à une unité pour lui donner 40 XP."
+                ]
+              },
+              {
+                "label": "Capitaine vétéran",
+                "values": [
+                  "officer_veteran",
+                  "Peut être appliqué à une unité pour lui donner 80 XP."
+                ]
+              },
+              {
+                "label": "Population",
+                "values": [
+                  "population",
+                  "Doit être conduit vers un lieu sûr pouvant les accueillir."
+                ]
+              },
+              {
+                "label": "Géologue royal",
+                "values": [
+                  "royal_geologist",
+                  "Personnage de quête à escorter jusqu’à sa destination."
+                ]
+              },
+              {
+                "label": "Rapport incomplet des prospecteurs",
+                "values": [
+                  "incomplete_mine_report",
+                  "Objet de quête fournissant un indice sur leur disparition."
+                ]
+              },
+              {
+                "label": "Rapport sur la mine",
+                "values": [
+                  "abandoned_mine_report",
+                  "Objet de quête à remettre aux autorités royales."
+                ]
+              }
+            ]
+          },
+          "explanation": [
+            "Ces références conservent leur distribution et leurs conditions propres ; leur présence au catalogue ne garantit pas leur disponibilité dans une partie."
+          ]
+        },
+        {
+          "title": "Obtenir et porter un objet",
+          "paragraphs": [
+            "Les équipements ordinaires peuvent provenir des commerces, de la forge, du recéleur et des récompenses compatibles. Toutes les familles ne sont pas forgeables et une recette dans la fiche ne garantit pas une commande disponible. Consultez les règles d’équipement pour les sources et leurs conditions.",
+            "Les armes à deux mains occupent les deux mains. Un seul manteau peut être porté ; les deux accessoires doivent respecter les incompatibilités. La santé maximale supplémentaire ne soigne pas le héros. Les pièces de pieds et de jambes se remplacent sans cumul."
+          ]
+        }
+      ],
+      "references": [
+        {
+          "file": "item-catalog.md",
+          "label": "Portée et lecture du catalogue"
+        },
+        {
+          "file": "hero-items.md",
+          "label": "Équipement : obtention, prix et conditions"
+        }
+      ],
+      "seeAlso": ["equipement", "butin"],
+      "category": "Catalogue"
     }
   ]
 }

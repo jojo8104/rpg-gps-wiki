@@ -17,7 +17,8 @@
     "summary": "Préparer le terrain réel, les quêtes, les lieux et les QR codes avant la sortie.",
     "explanation": [
       "La préparation suit un ordre : le terrain fixe le cadre, puis le scénario détermine les quêtes et leurs lieux. Un lieu partagé entre plusieurs quêtes conserve une seule configuration, ce qui évite de placer plusieurs fois le même village.",
-      "Un emplacement QR doit être confirmé sur le terrain ; une position connue sur la carte et une installation réellement validée sont deux états différents. Les contraintes de présence et d’accès continuent d’être contrôlées par le serveur."
+      "Un emplacement QR doit être confirmé sur le terrain ; une position connue sur la carte et une installation réellement validée sont deux états différents. Les contraintes de présence et d’accès continuent d’être contrôlées par le serveur.",
+      "Deux options de partie indépendantes, cochées par défaut, contrôlent les contenus supplémentaires : Ressources naturelles (bois, pierre, terre fertile, fer, or) et Trésors et sites exceptionnels (trésors, artefacts, donjons). L’organisateur les choisit avant le lancement ; les mêmes réglages existent pour le test sur carte fictive. Les lieux du scénario sont conservés. Le serveur génère uniquement les catégories activées, avec au moins 50 % de blocs vides et un exemplaire de chaque type activé si la place le permet. Il faut 16 blocs admissibles avec les deux options, 10 avec les ressources seules, 6 avec les sites seuls. Sous le seuil applicable, aucun contenu supplémentaire n’est généré. Si les deux options sont désactivées, tous les blocs restent vides. Une reprise conserve le terrain sauvegardé sans nouveau tirage."
     ],
     "images": [
       {
@@ -31,7 +32,9 @@
     "summary": "Comprendre les emplacements, les sources d’équipement et les limites d’acquisition.",
     "explanation": [
       "Il faut distinguer posséder un objet dans les bagages et le porter. Les incompatibilités, comme une arme à deux mains et un objet déjà tenu, sont vérifiées avant toute modification : un refus ne doit pas consommer l’objet.",
-      "Les stocks et quotas évitent qu’un rechargement de page crée de nouveaux équipements. Une récompense débloquée peut encore dépendre du quota disponible au moment de son retrait. Le nom du fichier d’image n’indique pas les pouvoirs de l’objet : seuls sa fiche et ses bonus font foi."
+      "Les stocks et quotas évitent qu’un rechargement de page crée de nouveaux équipements. Une récompense débloquée peut encore dépendre du quota disponible au moment de son retrait. Le nom du fichier d’image n’indique pas les pouvoirs de l’objet : seuls sa fiche et ses bonus font foi.",
+      "Le catalogue comporte désormais 88 références et huit emplacements portés. Les protections de jambes utilisent la catégorie Pieds, comme les bottes. Les pièces rares complètent les catégories manquantes par classe. Les anciennes références, les bonus historiques et les huit reliques royales sont conservés ; ces ajouts sont rares et ne créent pas un niveau légendaire.",
+      "Jambes et pieds sont un seul emplacement : équiper une protection remplace les bottes. Les sauvegardes transitoires sont reprises sans supprimer ni dupliquer les objets et sans conserver les bonus des pièces remises dans les bagages."
     ],
     "images": [
       {
@@ -41,6 +44,10 @@
       {
         "path": "equipment/round-shield.png",
         "caption": "Bouclier rond : son emplacement et ses bonus proviennent de la fiche d’équipement."
+      },
+      {
+        "path": "equipment/leg-armor.svg",
+        "caption": "Illustration générique commune aux sept protections de jambes ; la fiche distingue leurs classes, raretés et bonus."
       }
     ],
     "audience": "players"
@@ -157,6 +164,31 @@
       }
     ],
     "audience": "players"
+  },
+  "location-commerce-and-corruption.md": {
+    "summary": "Règles prévues : interlocuteurs selon le lieu, fermeture et taxation du commerce, corruption et marchés noirs privés.",
+    "explanation": [
+      "Le type du lieu et ses améliorations déterminent les interlocuteurs et les services. Le commerce limité du chef, le commerce d’un comptoir et la gestion du propriétaire sont des interactions distinctes.",
+      "Une fermeture ou une taxe commerciale permettrait de tenter une corruption avec un PNJ de l’inventaire, de l’or et un objet offert. Le chef du lieu devra toujours coûter plus cher à corrompre qu’un responsable d’amélioration.",
+      "Les ventes officielles alimenteraient les impôts par leur taxe ; les ventes clandestines alimenteraient une cagnotte secrète du village. Le corrupteur pourrait partager son marché et percevoir un impôt secret distinct. Les coefficients, les plafonds et les modalités encore indéfinis sont explicitement recensés."
+    ],
+    "status": "Prévu — non disponible",
+    "images": [
+      {
+        "path": "markers/village.png",
+        "caption": "Repère de village : le chef est l’interlocuteur du lieu dans les règles prévues."
+      },
+      {
+        "path": "improvements/trading-post.png",
+        "caption": "Illustration du comptoir, amélioration associée au commerce."
+      },
+      {
+        "path": "markers/mine.png",
+        "caption": "Repère de mine : exemple de lieu où un mineur peut contribuer à la corruption prévue."
+      }
+    ],
+    "audience": "planned",
+    "topics": ["commerce", "lieux", "corruption", "marchés noirs", "impôts"]
   },
   "location-taxes.md": {
     "summary": "Une réserve fiscale plafonnée se remplit au rythme de la production.",
@@ -626,7 +658,7 @@
       "La disparition d’une découverte exceptionnelle concerne tous les joueurs de la partie. Les expéditions vers les trésors et donjons sont préparées : la compétence du groupe augmente la chance de revenir avec du butin. Les formules et les conséquences détaillées restent à définir.",
       "Artefact : score d’expédition et un item puissant. Trésor : score d’expédition, or important et items. Donjon : puissance et expédition, or, item et XP. La préparation engage PNJ, volontaires, montures, matériel et ressources ; le héros peut transporter les moyens ou envoyer une mission depuis la tente de prospection après découverte. Les formules restent à définir.",
       "La ressource du terrain limite les évolutions du camp : rien vers fort, bois vers camp de bûcheron, pierre vers carrière, terre fertile vers village ou ville, fer vers mine de fer et or vers mine d’or. Le camp est autorisé dans tous les cas. Une découverte exceptionnelle remportée par un joueur ou déclarée disparue perd son statut pour tous.",
-      "Les indices de localisation sont des cartes au trésor lisibles, générées automatiquement au début de la partie en séries de une à trois cartes selon la position et la valeur du site. Un nom, une anagramme, un ancien nom ou une légende peut désigner un lieu existant. Les PNJ peuvent expliquer ces désignations ; écouter une rumeur coûte 5 pièces d’or. Un module serveur commun pour les cartes et les informations de PNJ est recommandé, avec diffusion par dialogues et banque de rumeurs.",
+      "Les tavernes ne proposent plus de catalogue de cartes ni d’explications des cartes détenues. Une seule entrée « Écouter une rumeur » ouvre une conversation à la fois. L’écoute est gratuite : elle peut rester sans intérêt ou donner un indice de localisation ou de recherche. Le réglage initial conserve 25 % de chances de conversation utile si le stock local le permet. Le renseignement peut être offert, vendu pour 5 or après acceptation, ou confié à l’issue d’un choix de dialogue. Les chefs et les forgerons utilisent le même mécanisme. Une proposition en cours est conservée après fermeture et reprise : consulter les choix ne relance aucun tirage. Les stocks sont finis et les indices fiables, sans fausse destination. Les documents ne prennent aucune place de bagage.",
       "Les choix du dialogue donnent un bonus final au score d’expédition. Un exemple complet à six issues illustre cette préparation avec des valeurs proposées, non validées. Donjons, trésors et artefacts suivent le même processus de recherche. Les indices restent des items réutilisables, revendables pour archives lorsqu’ils deviennent obsolètes. L’utilisation de la recherche déclenche immédiatement une minute de recharge et réduit la discrétion de 50 % pendant une minute ; les ressources ne sont consommées qu’à la validation.",
       "Toute tentative dans un donjon, réussie ou échouée, inflige des dégâts et modifie le moral du héros participant et des troupes engagées selon le résultat. Les valeurs, durées et pertes possibles restent à définir. Un héros qui ne participe pas à une expédition envoyée reste hors de ces conséquences.",
       "Les répartitions naturelles et exceptionnelles sont validées, ainsi que le risque de disparition de 25 % et les archives à 5–10 or. Le bonus narratif dépend de la narration. Le barème plafonné d’expédition et sa formule de réussite sont désormais validés en conception. Le barème distinct de la jauge de recherche reste proposé, non validé.",
@@ -672,8 +704,9 @@
   "exploration-generation.md": {
     "summary": "Génération serveur des ressources et sites exceptionnels au lancement, sur la grille commune à la heatmap.",
     "explanation": [
-      "Les répartitions validées alimentent deux tirages indépendants par cellule. Les exclusions sont respectées et les ressources sous emprise des lieux sont neutralisées ; les sites exceptionnels sont rattachés à un seul lieu principal sans interaction superposée.",
-      "Une graine privée et le terrain sont sauvegardés. Les reprises conservent le tirage ; les anciens mondes ne sont pas remplis rétroactivement. Le bloc reste privé et les interactions de découverte et récupération ne sont pas encore raccordées."
+      "La génération actuelle utilise des blocs complets de 3 × 3 cellules hors influence. Avec les deux options activées, au moins 16 blocs éligibles sont nécessaires pour représenter les huit types avec au moins 50 % de blocs vides ; en dessous de ce seuil, la carte est créée sans ressources naturelles ni sites exceptionnels supplémentaires, en conservant les lieux du scénario. La grille reste commune à la heatmap.",
+      "Les tests tiennent compte des arrondis de la somme des poids et utilisent des terrains suffisamment grands. Le test Forge autorise l’unique conversation de rumeur tout en conservant ses vérifications d’achats. Ces corrections ne changent pas les règles. La graine privée et le terrain restent sauvegardés sans régénération des anciennes parties.",
+      "Deux options de partie indépendantes, cochées par défaut, contrôlent les contenus supplémentaires : Ressources naturelles (bois, pierre, terre fertile, fer, or) et Trésors et sites exceptionnels (trésors, artefacts, donjons). L’organisateur les choisit avant le lancement ; les mêmes réglages existent pour le test sur carte fictive. Les lieux du scénario sont conservés. Le serveur génère uniquement les catégories activées, avec au moins 50 % de blocs vides et un exemplaire de chaque type activé si la place le permet. Il faut 16 blocs admissibles avec les deux options, 10 avec les ressources seules, 6 avec les sites seuls. Sous le seuil applicable, aucun contenu supplémentaire n’est généré. Si les deux options sont désactivées, tous les blocs restent vides. Une reprise conserve le terrain sauvegardé sans nouveau tirage."
     ],
     "audience": "development",
     "status": "Génération au lancement implémentée le 28 octobre 2026",
@@ -706,14 +739,14 @@
   "exploration-rumors-and-discovery.md": {
     "summary": "Comprendre les cartes avec les PNJ et révéler les gisements sans créer automatiquement une exploitation.",
     "explanation": [
-      "Les explications des cartes sont gratuites et mémorisées. L’écoute payante à 5 or peut donner un message de recherche fiable ou une conversation sans importance.",
+      "Les tavernes ne proposent plus de catalogue de cartes ni d’explications des cartes détenues. Une seule entrée « Écouter une rumeur » ouvre une conversation à la fois. L’écoute est gratuite : elle peut rester sans intérêt ou donner un indice de localisation ou de recherche. Le réglage initial conserve 25 % de chances de conversation utile si le stock local le permet. Le renseignement peut être offert, vendu pour 5 or après acceptation, ou confié à l’issue d’un choix de dialogue. Les chefs et les forgerons utilisent le même mécanisme. Une proposition en cours est conservée après fermeture et reprise : consulter les choix ne relance aucun tirage. Les stocks sont finis et les indices fiables, sans fausse destination. Les documents ne prennent aucune place de bagage.",
       "La prospection révèle les ressources et les sites extérieurs traversés. Les métiers transportés ont leurs chances propres, avec un essai mémorisé par joueur, cellule et spécialité. Les documents sont hors capacité de bagage."
     ],
     "images": [],
     "audience": "players"
   },
   "tavern-rumors-and-documents.md": {
-    "summary": "Payer une écoute en taverne, recevoir un message de recherche ou une rumeur d’ambiance, et conserver ses documents sans encombrement.",
+    "summary": "Les tavernes ne proposent plus de catalogue de cartes ni d’explications des cartes détenues. Une seule entrée « Écouter une rumeur » ouvre une conversation à la fois. L’écoute est gratuite : elle peut rester sans intérêt ou donner un indice de localisation ou de recherche. Le réglage initial conserve 25 % de chances de conversation utile si le stock local le permet. Le renseignement peut être offert, vendu pour 5 or après acceptation, ou confié à l’issue d’un choix de dialogue. Les chefs et les forgerons utilisent le même mécanisme. Une proposition en cours est conservée après fermeture et reprise : consulter les choix ne relance aucun tirage. Les stocks sont finis et les indices fiables, sans fausse destination. Les documents ne prennent aucune place de bagage.",
     "explanation": [
       "Une écoute validée coûte 5 or dans les deux cas. Le réglage initial est de 25 % de message utile si le stock le permet. Les autres conversations ne remettent aucun faux papier.",
       "Les messages, papiers, parchemins et cartes sont des items hors capacité des bagages. Le serveur enregistre le résultat et empêche un second débit au rejeu ; les objets restent consultables, perdables et archivables selon leurs règles."
@@ -725,7 +758,8 @@
     "summary": "Préparer une recherche extérieure, gérer la recharge et la discrétion, puis valider les ressources pour découvrir un site exceptionnel.",
     "explanation": [
       "L’ouverture déclenche immédiatement les deux échéances de 60 secondes, même si le joueur ferme ou annule. Les ressources sont dépensées uniquement à la validation, tandis que les papiers et spécialistes sont conservés.",
-      "Le barème de jauge est validé ; une jauge complète donne 90 % si la case et les indices correspondent au site actif. Le serveur calcule et vérifie les actions, conserve les résultats sans les rejouer et ne révèle aucun site caché par la prévisualisation."
+      "Le barème de jauge est validé ; une jauge complète donne 90 % si la case et les indices correspondent au site actif. Le serveur calcule et vérifie les actions, conserve les résultats sans les rejouer et ne révèle aucun site caché par la prévisualisation.",
+      "Le bouton Trésor rejoint les aptitudes de la carte, avec une icône et son délai de recharge. Les recherches et expéditions proposent des boutons −, + et Max pour les quantités, ainsi que des sélections tactiles pour les indices et spécialistes. Chaque modification actualise automatiquement la préparation auprès du serveur. Pendant cet envoi, le pourcentage précédent est masqué et la validation ou le départ reste indisponible. Les scores et probabilités affichés proviennent uniquement de la réponse officielle. Les longs textes explicatifs restent dans ce guide ; les écrans conservent les états, délais, coûts utiles, erreurs et résultats. Aucun barème, coût, quota ou tirage n’est changé."
     ],
     "images": [],
     "audience": "players"
@@ -734,7 +768,8 @@
     "summary": "Sélectionner les moyens réels, calculer le score et partir avec le héros ou depuis un poste de prospection.",
     "explanation": [
       "Les deux départs utilisent le même barème et une validation serveur. Les soldats sont comptés individuellement et les spécialités une seule fois.",
-      "La préparation ne dépense rien ; le groupe envoyé retire réellement ses moyens du poste. Le trajet et les sauvegardes sont disponibles, mais la résolution et les récompenses restent à raccorder."
+      "La préparation ne dépense rien ; le groupe envoyé retire réellement ses moyens du poste. Le trajet, la résolution serveur, les récompenses et les sauvegardes sont disponibles.",
+      "Le bouton Trésor rejoint les aptitudes de la carte, avec une icône et son délai de recharge. Les recherches et expéditions proposent des boutons −, + et Max pour les quantités, ainsi que des sélections tactiles pour les indices et spécialistes. Chaque modification actualise automatiquement la préparation auprès du serveur. Pendant cet envoi, le pourcentage précédent est masqué et la validation ou le départ reste indisponible. Les scores et probabilités affichés proviennent uniquement de la réponse officielle. Les longs textes explicatifs restent dans ce guide ; les écrans conservent les états, délais, coûts utiles, erreurs et résultats. Aucun barème, coût, quota ou tirage n’est changé."
     ],
     "images": [],
     "audience": "players"
@@ -760,7 +795,7 @@
   "camp-foundation-and-terrain.md": {
     "summary": "Fonder un camp sur une case connue, envoyer les matériaux et respecter les évolutions autorisées par son terrain.",
     "explanation": [
-      "La fondation et l’évolution sont validées côté serveur. Les coûts sont retirés des bagages sur place ou du poste lors d’un envoi ; une seule fondation peut occuper une cellule.",
+      "Le serveur autorise un camp par zone de ressource fusionnée sur une case connue et disponible. Le camp hérite de la ressource du bloc, même sur une case périphérique. Les coûts et les contrôles de position restent identiques.",
       "Le camp conserve son gisement, attend des habitants et ne produit naturellement qu’après spécialisation. Les lieux des scénarios gardent leur progression historique."
     ],
     "images": [
@@ -784,5 +819,33 @@
       }
     ],
     "audience": "players"
+  },
+  "terrain-blocks.md": {
+    "summary": "Comprendre les blocs 3 × 3, leur fusion et la construction d’un seul camp par zone.",
+    "explanation": [
+      "Les nouvelles cartes utilisent des blocs fixes de 3 × 3 cases, sans chevauchement. Le centre porte un seul type : vide, bois, pierre, terre fertile, fer, or, trésor, artefact ou donjon. Au moins 50 % des blocs admissibles restent vides et chacun des huit contenus non vides est présent au moins une fois. Avec les deux options activées, il faut donc au moins 16 blocs complets hors influence des lieux et des zones interdites ; en dessous de ce seuil, le minimum par type est désactivé et la carte est créée sans ressources naturelles ni sites exceptionnels supplémentaires. Les lieux du scénario sont conservés. Les blocs de même ressource partageant un côté fusionnent, transitivement, en une zone limitée à un camp actif pour tous les joueurs. Un contact par un coin ne fusionne pas les blocs. Le camp peut occuper toute case connue et disponible de cette zone, et hérite de sa ressource même hors du centre. Découvrir un bloc rend ses neuf cases connues ; les extensions inconnues de la zone restent cachées. Les marqueurs restent au centre et des contours discrets délimitent les blocs connus et les zones fusionnées. Les sauvegardes existantes conservent leur ancien terrain.",
+      "Deux options de partie indépendantes, cochées par défaut, contrôlent les contenus supplémentaires : Ressources naturelles (bois, pierre, terre fertile, fer, or) et Trésors et sites exceptionnels (trésors, artefacts, donjons). L’organisateur les choisit avant le lancement ; les mêmes réglages existent pour le test sur carte fictive. Les lieux du scénario sont conservés. Le serveur génère uniquement les catégories activées, avec au moins 50 % de blocs vides et un exemplaire de chaque type activé si la place le permet. Il faut 16 blocs admissibles avec les deux options, 10 avec les ressources seules, 6 avec les sites seuls. Sous le seuil applicable, aucun contenu supplémentaire n’est généré. Si les deux options sont désactivées, tous les blocs restent vides. Une reprise conserve le terrain sauvegardé sans nouveau tirage."
+    ],
+    "audience": "players",
+    "images": [
+      {
+        "path": "markers/map/resource-wood.png",
+        "caption": "Marqueur existant de bois placé au centre d’un bloc de ressource découvert."
+      }
+    ]
+  },
+  "item-catalog.md": {
+    "summary": "Retrouver les objets officiels et comprendre les limites du catalogue.",
+    "audience": "players",
+    "explanation": [
+      "Le catalogue illustré présente les caractéristiques des équipements par famille et distingue les reliques royales des acquisitions ordinaires. Les autres objets sont décrits par leur usage.",
+      "Les huit emplacements actuels sont conservés. Jambes et pieds constituent un seul emplacement. Une référence existante ne garantit ni une offre ni une récompense dans chaque scénario."
+    ],
+    "images": [
+      {
+        "path": "equipment/iron-sword.png",
+        "caption": "Épée de fer : un équipement ordinaire du catalogue."
+      }
+    ]
   }
 }

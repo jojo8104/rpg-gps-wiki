@@ -2,7 +2,7 @@
 
 ## Illustrations
 
-Les 75 équipements et les huit reliques royales utilisent les illustrations fournies dans `app/assets/equipment`. L’association explicite se trouve dans `app/js/core/equipment-art.js`. Les noms de fichiers sont techniques : ils ne définissent ni le nom ni l’histoire de l’objet dans le jeu.
+Les 75 équipements historiques et les huit reliques royales utilisent les illustrations fournies dans `app/assets/equipment`. L’association explicite se trouve dans `app/js/core/equipment-art.js`. Les noms de fichiers sont techniques : ils ne définissent ni le nom ni l’histoire de l’objet dans le jeu.
 
 Exemples d’adaptation : `vampirerobe.png` illustre la **Robe du seigneur**, `t13catalyst.png` le **Cube de protection**, `tiara.png` la **Couronne du souverain**. Deux arcs deviennent des arbalètes ; la fronde devient un couteau de voyage. Les identifiants sauvegardés, les bonus, les classes, les emplacements et les règles d’obtention sont conservés. Le champ `family: "bow"` comprend ainsi les arcs et les arbalètes.
 
@@ -10,12 +10,12 @@ Les visuels s’affichent dans l’équipement, les bagages, les fiches, les off
 
 La page `playtest/equipment-gallery.html` est une galerie statique du catalogue illustré au moment de cette intégration, consultable directement dans un navigateur.
 
-Le catalogue `app/js/core/hero-item-catalog.js` définit 75 équipements, cinq par famille. `item-catalog.js` les expose avec les ressources, objets de quête et huit équipements royaux existants. Les images et identifiants des anciens objets sont conservés.
+Le catalogue `app/js/core/hero-item-catalog.js` définit 88 équipements dans 16 familles : les 75 références historiques, six pièces rares supplémentaires pour les catégories existantes et sept protections de jambes, dont trois rares. `item-catalog.js` les expose avec les ressources, objets de quête et huit équipements royaux existants. Les images et identifiants des anciens objets sont conservés.
 
 ## Équipement
 
 - Classes : Guerrier (`warrior`), Éclaireur (`ranger`), Mage (`mage`). Les anciens identifiants `fighter` et `scout` correspondent respectivement au Guerrier et à l’Éclaireur. Les héros historiques sans classe restent compatibles.
-- Huit emplacements conservés : tête, cou, torse, main principale, main secondaire, pieds, deux accessoires.
+- Huit emplacements conservés : tête, cou, torse, main principale, main secondaire, pieds et deux accessoires. « Jambes » et « pieds » désignent la même catégorie : les bottes, chausses, grèves et jambières occupent toutes l’unique emplacement Pieds et ne se cumulent pas.
 - Arcs et bâtons : deux mains. Retirer d’abord l’objet incompatible ; le moteur refuse l’action sans modifier l’inventaire.
 - Un seul manteau ; deux anneaux différents, ou un anneau et un manteau.
 - Les bonus s’additionnent aux statistiques du héros. La santé augmente les PV maximum sans soigner ; retirer un objet réduit les PV actuels seulement s’ils dépassent le nouveau maximum.
@@ -107,3 +107,33 @@ Tests dédiés : `node --test tests/hero-items.test.js`. Le catalogue et les rè
 ## Documents hors capacité des bagages
 
 Depuis le 29 octobre 2026, les messages, lettres, papiers, parchemins et cartes de localisation ne consomment aucune place dans les bagages du héros. Ils restent des objets consultables et transportables. Ils peuvent être reçus malgré des bagages pleins, y compris par le butin, et restent soumis à leurs règles de remise, perte, vente et archives. Les autres objets conservent leur encombrement.
+
+
+## Complément des pièces rares — 3 novembre 2026
+
+Chaque classe possède désormais des pièces rares pour la tête, la main gauche, le corps, les pieds, le cou et les accessoires. Les protections de jambes appartiennent à la catégorie Pieds. Les pièces rares de corps existaient déjà : Armure de la citadelle (Guerrier), Armure de la feuille d’acier (Éclaireur) et Robe du firmament (Mage). Elles sont conservées avec leurs bonus.
+
+| Pièce rare ajoutée | Emplacement | Classe | Bonus |
+| --- | --- | --- | --- |
+| Capuche du veilleur sylvestre | Tête | Éclaireur | +1 défense, +2 mobilité |
+| Rondache des sentiers | Main gauche | Éclaireur | +2 défense, +1 mobilité |
+| Chausses de la trame astrale | Pieds | Mage | +1 défense, +5 santé maximale, +1 commandement |
+| Grèves de la citadelle | Pieds | Guerrier | +3 défense, -1 mobilité |
+| Jambières de la foulée sylvestre | Pieds | Éclaireur | +1 défense, +2 mobilité |
+| Anneau du gardien du serment | Accessoire | Guerrier | +1 défense, +2 moral |
+| Anneau de la piste silencieuse | Accessoire | Éclaireur | +1 attaque, +1 mobilité |
+| Médaillon du bastion | Cou | Guerrier | +1 défense, +2 commandement |
+| Pendentif de l’horizon | Cou | Éclaireur | +2 mobilité, +1 moral |
+
+Ces pièces sont de rareté **rare**, avec un exemplaire attribuable par référence et par partie. Elles utilisent les mêmes restrictions de classe, quotas et sources compatibles que les autres rares, notamment les artefacts. Aucun niveau légendaire ni pouvoir actif supplémentaire n’est ajouté. Les prix et recettes suivent le barème existant ; seules les familles déjà autorisées à la forge y restent fabricables. Les protections de jambes communes et peu communes rejoignent le commerce général ; leurs variantes rares proviennent des sources qui admettent les rares.
+
+Les protections ajoutées à la catégorie Pieds ont sept références : Chausses de voyage et Jambières renforcées (communes), Grèves du vétéran et Jambières du pisteur (peu communes), puis les trois protections rares du tableau. Le dessin générique de protection de jambes est commun à ces sept pièces ; les six autres nouvelles références réutilisent des illustrations existantes. La fiche donne le nom, la classe et les bonus exacts.
+
+Équiper une pièce applique ses bonus côté serveur ; la retirer les enlève. Les PV maximum peuvent augmenter sans soin gratuit. Les restrictions des armes à deux mains, du manteau unique et des anneaux sont conservées. Les huit reliques royales et les huit emplacements portés restent les mêmes.
+
+
+## Simplification des emplacements — 3 novembre 2026
+
+L’emplacement séparé Jambes est retiré. Bottes et protections de jambes utilisent uniquement Pieds : équiper une protection remplace les bottes et remet celles-ci dans les bagages. Les bonus ne se cumulent pas. Les objets, leurs identifiants, leurs classes et leurs quotas sont conservés.
+
+À la reprise d’une sauvegarde transitoire, un objet équipé dans l’ancien emplacement Jambes est déplacé aux pieds si la place est libre. Si des bottes sont déjà portées, elles restent équipées et la protection est conservée dans les bagages, même si ceux-ci dépassent alors leur capacité. Ses bonus sont retirés, les PV sont plafonnés au nouveau maximum sans soin gratuit, et une nouvelle reprise ne crée aucun exemplaire supplémentaire. Les anciennes définitions personnalisées « legs » sont normalisées vers « feet » à l’import ; l’éditeur ne propose que les emplacements actuels.

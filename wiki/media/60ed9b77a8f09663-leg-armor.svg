@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Protection de jambes</title>
+  <g stroke="#302b28" stroke-width="2.5" stroke-linejoin="round">
+    <path fill="#7b8c98" d="M16 6h32l-1 19-4 32H31l1-27-1-5-2 5-1 27H16l-1-32z"/>
+    <path fill="#a9b5bc" d="m17 13 12 2-2 15-11-1zm19 2 11-2-1 16-11 1z"/>
+    <path fill="#c7a461" d="M16 6h32v7H16z"/>
+    <path fill="#536673" d="m16 35 11 1-1 18h-9zm19 1 10-1-3 19h-9z"/>
+    <path fill="none" stroke="#d3dadd" stroke-width="1.5" d="m20 17-1 9m22-9-1 9m-21 14-1 10m21-10-1 10"/>
+  </g>
+</svg>

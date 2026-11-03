@@ -187,7 +187,7 @@ export async function buildWiki({
     add({
       ...guide,
       audience,
-      category: audiences[audience],
+      category: guide.category ?? audiences[audience],
       summary: guide.summary ?? guide.paragraphs[0],
       body: `${guide.summary ? `<p class="lead">${esc(guide.summary)}</p>` : ""}${art ? await image(...art, "guide-art") : ""}${toc}${guide.paragraphs.map((p) => `<p>${esc(p)}</p>`).join("")}${topicBody}${await renderRuleExample(guide.example, image)}${playerReferences.length ? `<h2>Règles détaillées et cas particuliers</h2>${articleLinks(playerReferences)}` : ""}${guide.seeAlso?.length ? `<h2>Thèmes liés</h2>${articleLinks(guide.seeAlso.map((id) => ({ id, title: guides.find((g) => g.id === id)?.title ?? { classes: "Classes de héros", unites: "Catalogue des unités" }[id] ?? id })))}` : ""}${otherReferences.length ? `<details class="article-toc"><summary>Conception, présentation et autres références</summary>${articleLinks(otherReferences)}</details>` : ""}`,
     });
@@ -398,7 +398,7 @@ export async function buildWiki({
         articles: articles.map((a) => ({
           id: a.id,
           audience: a.audience,
-          theme: guides.some((g) => g.id === a.id) && a.audience === "players",
+          theme: guides.some((g) => g.id === a.id) && a.audience === "players" && a.category !== "Catalogue",
           topics: (a.topics ?? []).map((topic) => topic.title),
         })),
       },

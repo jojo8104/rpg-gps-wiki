@@ -1,5 +1,9 @@
 # Ressources cachées et fondation de campements
 
+## Règle actuelle — 2 novembre 2026
+
+Les [blocs fixes de 3 × 3 cases](terrain-blocks.md) remplacent les anciens tirages par cellule. Au moins 50 % des blocs admissibles sont vides, avec les cinq ressources et les trois types exceptionnels représentés au moins une fois. Le centre porte le contenu ; les blocs de même ressource voisins par un côté fusionnent en une zone limitée à un camp. Le camp peut occuper une case périphérique connue et hérite de la ressource de la zone. Les anciennes sauvegardes et les historiques ci-dessous sont conservés.
+
 Depuis le 1er novembre 2026, les trésors, artefacts et donjons sont placés uniquement hors de l’influence des lieux normaux. Toute cellule touchant leur portée normale est exclue du placement exceptionnel. Le parcours est unique : cartes de localisation, recherche extérieure avec la jauge, puis expédition de récupération (cette dernière reste à implémenter). Les lieux normaux fournissent toujours des indices, des rumeurs et des repères cartographiques.
 
 À la reprise d’une ancienne sauvegarde, les sites encore actifs rattachés à un lieu ou placés dans une cellule neutralisée sont clôturés sans récompense ni nouveau tirage. Leurs indices actifs deviennent obsolètes et restent archivables ; les objets et les historiques sont conservés. Cette migration technique ne produit pas d’annonce de victoire fictive. Les sites déjà remportés ou disparus restent inchangés.

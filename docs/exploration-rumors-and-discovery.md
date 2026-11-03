@@ -2,15 +2,14 @@
 
 Depuis le 1er novembre 2026, les trésors, artefacts et donjons sont placés uniquement hors de l’influence des lieux normaux. Toute cellule touchant leur portée normale est exclue du placement exceptionnel. Le parcours est unique : cartes de localisation, recherche extérieure avec la jauge, puis expédition de récupération (cette dernière reste à implémenter). Les lieux normaux fournissent toujours des indices, des rumeurs et des repères cartographiques.
 
-Les PNJ expliquent les cartes détenues. La prospection et les spécialistes
+Les PNJ proposent des conversations donnant parfois un indice de localisation ou de recherche. La prospection et les spécialistes
 transportés révèlent le terrain au joueur concerné, sans créer d’exploitation.
 Ces règles sont disponibles côté serveur en GPS comme sur carte fictive.
 
 | Action | Conditions et effet |
 | --- | --- |
-| Écouter une rumeur | Taverne accessible, 5 or ; 25 % de chance de message de recherche si le stock le permet, sinon rumeur sans importance |
-| Faire expliquer une carte | Carte active détenue ; gratuit auprès du chef du lieu de référence ou en taverne |
-| Relire une information | Explication conservée dans le journal ; aucun parchemin consommé |
+| Écouter une rumeur | Gratuit ; 25 % de conversation utile si le stock local le permet ; cadeau, vente à 5 or après accord ou embranchement |
+| Relire une information | Document acquis consultable sans consommation ; anciens renseignements conservés |
 | Prospection | Expédition existante du poste de prospection ; révèle les gisements traversés et les sites exceptionnels extérieurs actifs |
 | Géologue transporté | Pierre, fer et or : 50 % par cellule et spécialité |
 | Mineur transporté | Fer et or : 50 % |
@@ -20,42 +19,13 @@ Ces règles sont disponibles côté serveur en GPS comme sur carte fictive.
 
 Le barème des spécialistes est le réglage configurable retenu, pas une
 probabilité de génération des ressources. Les répartitions du terrain restent
-inchangées. Une spécialité tente une découverte une seule fois par joueur et
-cellule. Un deuxième exemplaire du même spécialiste ne multiplie pas les essais.
+inchangées. Sur les nouvelles cartes à blocs, une spécialité tente une découverte une seule fois par joueur et bloc, y compris depuis une case périphérique. Sur les anciens terrains, la limite reste par cellule. Un deuxième exemplaire du même spécialiste ne multiplie pas les essais.
 
-## Comprendre une carte avec les PNJ
+## Conversations et rumeurs
 
-Le chef ou le PNJ de taverne utilise la même correspondance que la génération
-des cartes. Une désignation par nom, anagramme, ancien nom ou légende est
-expliquée en donnant le nom actuel du lieu principal. Par exemple :
-« Cette ancienne désignation indique Valombre. C’est dans ce lieu qu’il faut
-poursuivre vos recherches. » Le lieu devient connu, sans créer de second marqueur.
+Les tavernes ne proposent plus de catalogue de cartes ni d’explications des cartes détenues. Une seule entrée « Écouter une rumeur » ouvre une conversation à la fois. L’écoute est gratuite : elle peut rester sans intérêt ou donner un indice de localisation ou de recherche. Le réglage initial conserve 25 % de chances de conversation utile si le stock local le permet. Le renseignement peut être offert, vendu pour 5 or après acceptation, ou confié à l’issue d’un choix de dialogue. Les chefs et les forgerons utilisent le même mécanisme. Une proposition en cours est conservée après fermeture et reprise : consulter les choix ne relance aucun tirage. Les stocks sont finis et les indices fiables, sans fausse destination. Les documents ne prennent aucune place de bagage.
 
-Pour une carte en directions, le PNJ rappelle le point de départ et la lecture
-des cases. Il ne récite pas les déplacements des fragments absents. Les cartes
-restent complémentaires ; l’explication ne donne aucun bonus de recherche et
-ne découvre pas automatiquement le trésor ou le donjon.
-
-Les explications des cartes détenues sont désormais gratuites, auprès du chef
-concerné ou d’un PNJ de taverne. Elles sont mémorisées, sans consommation de carte.
-
-## Écouter une rumeur : message utile ou bruit de taverne
-
-Depuis le 29 octobre 2026, une écoute coûte 5 or et peut donner un indice de
-recherche sous forme de message écrit. Le réglage initial est de 25 % si le
-stock de la taverne contient un indice utile. Sinon, le PNJ raconte une histoire
-sans rapport avec une découverte : aucune fausse destination ni faux papier
-n’est remis. Les rumeurs sans importance sont également payantes.
-
-L’écoute ne nécessite pas de carte. Les achats directs de cartes de localisation
-restent séparés. Un message utile conserve son seul effet de recherche et ne
-localise pas le site. Chaque écoute est enregistrée pour éviter un second débit
-lors du rejeu d’une commande. Ouvrir le dialogue ne relance aucun tirage.
-
-Les messages, papiers, parchemins et cartes ne comptent pas dans la limite des
-bagages. Ils restent consultables, réutilisables pour les indices, et soumis à
-leurs règles de perte, vente et archives. Voir l’article Écouter une rumeur et
-conserver ses documents pour les conditions détaillées.
+Les quêtes et scénarios peuvent aussi remettre un indice avec une récompense explicitement configurée. Voir [Rumeurs, conversations et documents](tavern-rumors-and-documents.md).
 
 ## Prospection sans exploitation automatique
 

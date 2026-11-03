@@ -271,3 +271,8 @@ Exemple : une convocation acceptée mène à Parler → Accepter / Refuser. Acce
 termine en réussite et publie la vraie mission suivante ; Refuser mène à Modifier
 → Héros → Ressource → gold → Retirer → 20 puis à une fin d’échec. Le refus natif
 d’une offre avant acceptation n’est pas encore disponible.
+
+
+## Récompense d’indice — 2 novembre 2026
+
+Les conséquences d’une quête ou d’un embranchement acceptent `grantExplorationClue`. Exemple : `{ "type": "grantExplorationClue", "rewardId": "voyageur-carte", "kind": "localization" }`. `kind` peut valoir `localization` ou `search` ; sans type, le serveur choisit un indice disponible. `siteId` est un filtre facultatif interne au serveur. Donner un `rewardId` distinct à chaque remise prévue. Le moteur prélève un document existant du stock fini, réserve les documents déjà proposés dans une discussion et conserve la remise pour éviter un deuxième gain après reprise. Aucun indice n’est inventé si le stock est épuisé. Cet effet peut être placé dans une récompense d’action ou une conséquence de sortie ; les scénarios historiques utilisent aussi ce type d’effet. Il ne crée pas automatiquement de nouvelles quêtes.

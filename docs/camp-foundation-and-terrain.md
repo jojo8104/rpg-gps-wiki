@@ -13,11 +13,15 @@ Après une prospection ou une découverte par spécialiste, une case connue peut
 
 Les pictogrammes distinguent les terrains ; ils ne révèlent aucune ressource cachée. Le camp reste possible sur les six terrains. La terre fertile n’autorise pas une capitale. Une mine de fer et une mine d’or utilisent le type de lieu « mine », mais leur ressource reste différente et contrôlée.
 
+## Blocs et zones constructibles
+
+Sur les nouvelles cartes, les [blocs fixes de 3 × 3 cases](terrain-blocks.md) de même ressource partageant un côté fusionnent en une zone. Un seul camp actif est autorisé dans toute cette zone, pour tous les joueurs. Après découverte d’un bloc, le camp peut être fondé sur une de ses neuf cases disponible : il hérite de la ressource centrale, même s’il occupe une case périphérique. Les blocs vides sont constructibles individuellement ; les blocs exceptionnels et les bordures incomplètes ne le sont pas. Les anciennes parties gardent leur terrain et leurs règles par cellule.
+
 ## Fondation sur place
 
 Utilisez « Installer un camp » puis « Fonder sur ma case actuelle ». Le héros doit être actif, disponible et réellement sur la case connue. En GPS, une précision supérieure à 50 mètres empêche l’action. Le navigateur ne peut ni imposer une ressource ni créer un camp à distance.
 
-La case ne doit pas être occupée ou neutralisée par l’influence d’un autre lieu. Le camp est placé au centre de la cellule ; l’espacement entre lieux permanents est vérifié en GPS comme en simulation. Un seul camp actif peut occuper la même case, même lorsque deux joueurs essaient de la construire.
+La case ne doit pas être occupée ou neutralisée par l’influence d’un autre lieu. Le camp est placé au centre de la cellule ; l’espacement entre lieux permanents est vérifié en GPS comme en simulation. Un seul camp actif peut occuper la même zone fusionnée sur les nouvelles cartes, même lorsque deux joueurs visent des cases différentes. Sur les anciens terrains, la limite par cellule reste conservée.
 
 | Réglage initial proposé et appliqué | Coût ou valeur |
 | --- | --- |
@@ -52,7 +56,7 @@ Un même envoi rejoué ne prélève pas un second chargement. Les trajets, maté
 
 ## Influence et conservation du gisement
 
-Le camp conserve une référence à sa cellule et au terrain officiel qui a permis son installation. Son propre gisement n’est pas annulé par sa propre influence : il reste le support de ses évolutions, y compris après sauvegarde ou changement de propriétaire.
+Le camp conserve une référence à sa cellule et au terrain officiel qui a permis son installation. Les gisements de toute sa zone fusionnée ne sont pas annulés par sa propre influence : il reste le support de ses évolutions, y compris après sauvegarde ou changement de propriétaire.
 
 Les cellules voisines touchées par sa portée normale sont neutralisées pour les installations et ressources naturelles. Selon la règle déjà validée excluant les sites exceptionnels des lieux normaux, un site encore actif couvert par le nouveau camp disparaît : aucun trésor, artefact ou butin de donjon n’est attribué par une construction. La clôture est partagée, les indices deviennent obsolètes et les missions concurrentes sont rappelées. La règle générale d’annonce de disparition après cinq minutes s’applique. Un site déjà remporté conserve son issue et ses récompenses en attente de retrait.
 

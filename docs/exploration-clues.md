@@ -11,7 +11,7 @@ consomme pas et ne donne pas automatiquement la récompense.
 | Carte de localisation 🗺️ | Un seul effet : indiquer où aller ; 1 à 3 fragments ordonnés par site |
 | Parchemin de recherche 📜 | Un seul effet : aider la recherche sur place ; aucune direction |
 | Encombrement | Aucun slot de bagage pour les documents, cartes et fragments compris |
-| Taverne | Écouter une rumeur : 5 or, message de recherche ou conversation sans importance ; carte de localisation vendue séparément |
+| Taverne | Écoute gratuite ; cadeau, vente de renseignement à 5 or après accord ou embranchement ; localisation ou recherche, sans catalogue de cartes |
 | Académie de magie | Retrait gratuit d’un parchemin du stock fini, depuis le panneau Équipements d’un lieu permettant le commerce |
 | Butin | Un indice disponible attribué au premier héros joueur actif de l’équipe victorieuse ; réception même si les bagages sont pleins |
 | Vente d’un indice actif | 5 or ; risque de disparition du site : 25 % |
@@ -57,7 +57,7 @@ d’un objet obtenable. Un stock retiré ne réapparaît pas après rechargement
 
 Tous les indices sont fiables : il n’existe plus de faux parchemins ni de tirage d’authenticité. Les anciens objets marqués comme faux sont conservés comme indices normaux lors de la reprise.
 
-Les rumeurs d’ambiance sont désormais raccordées à l’écoute payante en taverne. Elles parlent d’autres sujets et ne remettent aucun faux indice. Un résultat utile donne un vrai message de recherche écrit, hors capacité des bagages.
+Les tavernes ne proposent plus de catalogue de cartes ni d’explications des cartes détenues. Une seule entrée « Écouter une rumeur » ouvre une conversation à la fois. L’écoute est gratuite : elle peut rester sans intérêt ou donner un indice de localisation ou de recherche. Le réglage initial conserve 25 % de chances de conversation utile si le stock local le permet. Le renseignement peut être offert, vendu pour 5 or après acceptation, ou confié à l’issue d’un choix de dialogue. Les chefs et les forgerons utilisent le même mécanisme. Une proposition en cours est conservée après fermeture et reprise : consulter les choix ne relance aucun tirage. Les stocks sont finis et les indices fiables, sans fausse destination. Les documents ne prennent aucune place de bagage.
 
 Le butin réserve un indice fini par bataille victorieuse, s’il en reste. Les documents sont remis même si les bagages sont pleins. Les ressources ne sont débitées qu’après
 vérification du stock, des droits et de la place disponible.

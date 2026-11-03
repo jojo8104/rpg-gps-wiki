@@ -9,7 +9,16 @@ test("le parcours principal présente les règles par thème et conserve les rub
   const manifest = JSON.parse(await read("wiki/build-manifest.json"));
   const index = await read("wiki/index.html");
   const themes = manifest.articles.filter((article) => article.theme);
-  assert.equal(themes.length, 13);
+  const content = JSON.parse(await read("docs/wiki-content.json"));
+  const expectedThemes = content.sections.filter(
+    (section) =>
+      (section.audience ?? "players") === "players" &&
+      section.category !== "Catalogue",
+  );
+  assert.deepEqual(
+    themes.map((theme) => theme.id).sort(),
+    expectedThemes.map((theme) => theme.id).sort(),
+  );
   for (const id of [
     "armee",
     "exploration",
@@ -19,6 +28,7 @@ test("le parcours principal présente les règles par thème et conserve les rub
     "cooperation",
     "sante",
     "butin",
+    "pnj",
   ])
     assert.ok(
       themes.some((theme) => theme.id === id),

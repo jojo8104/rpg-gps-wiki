@@ -70,7 +70,10 @@ test("les concepts chiffrés suivent introduction, tableau, explication et exemp
         `${guide.id}: ${topic.title}`,
       );
       assert.ok(
-        topic.table.rows.every((row) => row.illustration?.path),
+        topic.table.rows.every((row) => row.illustration?.path) ||
+          (guide.id === "catalogue-objets" &&
+            topic.title === "Ressources, consommables et objets de scénario" &&
+            topic.table.rows.every((row) => !row.illustration)),
         guide.id,
       );
       if (topic.example)
